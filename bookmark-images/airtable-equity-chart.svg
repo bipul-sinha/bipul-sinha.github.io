@@ -1,0 +1,106 @@
+<svg viewBox="0 0 900 580" xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="chartTitle chartDesc" font-family="'Proxima Nova','Helvetica Neue',Arial,sans-serif">
+  <title id="chartTitle">Cash and equity by level, offer vs. actual payout</title>
+  <desc id="chartDesc">Grouped bar chart for IC3 through IC6. Cash stays the same between offer and actual. Quoted equity shrinks to a small fraction once investors are repaid ahead of employees.</desc>
+  <defs>
+    <pattern id="hatch" width="6" height="6" patternTransform="rotate(45)" patternUnits="userSpaceOnUse">
+      <rect width="6" height="6" fill="#FBEFD4"/>
+      <line x1="0" y1="0" x2="0" y2="6" stroke="#F0CE8E" stroke-width="2"/>
+    </pattern>
+  </defs>
+
+  <rect x="0" y="0" width="900" height="580" rx="14" fill="#FBF8F2"/>
+
+  <!-- legend -->
+  <g font-family="inherit" font-size="13">
+    <rect x="70" y="34" width="14" height="14" rx="3" fill="#2E9E82"/>
+    <text x="90" y="45" fill="#4A473E">Cash (base + bonus)</text>
+
+    <rect x="260" y="34" width="14" height="14" rx="3" fill="#E8A33D"/>
+    <text x="280" y="45" fill="#4A473E">Equity, actually received</text>
+
+    <rect x="500" y="34" width="14" height="14" rx="3" fill="url(#hatch)" stroke="#E8A33D" stroke-width="1.5" stroke-dasharray="3 2"/>
+    <text x="520" y="45" fill="#4A473E">Equity as quoted at offer</text>
+  </g>
+
+  <!-- gridlines + y labels -->
+  <g stroke="#E5DFD0" stroke-width="1">
+    <line x1="70" y1="490" x2="880" y2="490"/>
+    <line x1="70" y1="432.86" x2="880" y2="432.86" stroke-dasharray="2 4"/>
+    <line x1="70" y1="375.71" x2="880" y2="375.71" stroke-dasharray="2 4"/>
+    <line x1="70" y1="318.57" x2="880" y2="318.57" stroke-dasharray="2 4"/>
+    <line x1="70" y1="261.43" x2="880" y2="261.43" stroke-dasharray="2 4"/>
+    <line x1="70" y1="204.29" x2="880" y2="204.29" stroke-dasharray="2 4"/>
+    <line x1="70" y1="147.14" x2="880" y2="147.14" stroke-dasharray="2 4"/>
+    <line x1="70" y1="90" x2="880" y2="90" stroke-dasharray="2 4"/>
+  </g>
+  <g font-family="inherit" font-size="12" fill="#8C887C" text-anchor="end">
+    <text x="60" y="494">$0</text>
+    <text x="60" y="436.86">$100K</text>
+    <text x="60" y="379.71">$200K</text>
+    <text x="60" y="322.57">$300K</text>
+    <text x="60" y="265.43">$400K</text>
+    <text x="60" y="208.29">$500K</text>
+    <text x="60" y="151.14">$600K</text>
+    <text x="60" y="94">$700K</text>
+  </g>
+
+  <!-- IC3 group: x 70-272.5 -->
+  <g>
+    <!-- offer bar -->
+    <rect x="93.25" y="398.0" width="70" height="92.0" rx="3" fill="#2E9E82"/>
+    <rect x="93.25" y="354.29" width="70" height="41.71" rx="3" fill="url(#hatch)" stroke="#E8A33D" stroke-width="1.5" stroke-dasharray="3 2"/>
+    <text x="128.25" y="348" text-anchor="middle" font-size="13.5" font-weight="700" fill="#3A372E">$234K</text>
+    <!-- actual bar -->
+    <rect x="179.25" y="398.0" width="70" height="92.0" rx="3" fill="#2E9E82"/>
+    <rect x="179.25" y="391.43" width="70" height="4.57" rx="2" fill="#E8A33D"/>
+    <text x="214.25" y="385" text-anchor="middle" font-size="13.5" font-weight="700" fill="#3A372E">$169K</text>
+    <text x="171.25" y="512" text-anchor="middle" font-size="13" fill="#6C6A60">Offer</text>
+    <text x="214.25" y="512" text-anchor="middle" font-size="13" fill="#6C6A60">Actual</text>
+    <text x="171.25" y="534" text-anchor="middle" font-size="15" font-weight="700" fill="#3A372E">IC3</text>
+    <text x="171.25" y="552" text-anchor="middle" font-size="11.5" fill="#8C887C">Entry, L1</text>
+  </g>
+
+  <!-- IC4 group: x 272.5-475 -->
+  <g>
+    <rect x="295.75" y="384.29" width="70" height="105.71" rx="3" fill="#2E9E82"/>
+    <rect x="295.75" y="312.86" width="70" height="71.43" rx="3" fill="url(#hatch)" stroke="#E8A33D" stroke-width="1.5" stroke-dasharray="3 2"/>
+    <text x="330.75" y="306" text-anchor="middle" font-size="13.5" font-weight="700" fill="#3A372E">$310K</text>
+    <rect x="381.75" y="384.29" width="70" height="105.71" rx="3" fill="#2E9E82"/>
+    <rect x="381.75" y="376.29" width="70" height="8.0" rx="2" fill="#E8A33D"/>
+    <text x="416.75" y="370" text-anchor="middle" font-size="13.5" font-weight="700" fill="#3A372E">$199K</text>
+    <text x="373.75" y="512" text-anchor="middle" font-size="13" fill="#6C6A60">Offer</text>
+    <text x="416.75" y="512" text-anchor="middle" font-size="13" fill="#6C6A60">Actual</text>
+    <text x="373.75" y="534" text-anchor="middle" font-size="15" font-weight="700" fill="#3A372E">IC4</text>
+    <text x="373.75" y="552" text-anchor="middle" font-size="11.5" fill="#8C887C">Mid, L2</text>
+  </g>
+
+  <!-- IC5 group: x 475-677.5 -->
+  <g>
+    <rect x="498.25" y="355.71" width="70" height="134.29" rx="3" fill="#2E9E82"/>
+    <rect x="498.25" y="235.71" width="70" height="120.0" rx="3" fill="url(#hatch)" stroke="#E8A33D" stroke-width="1.5" stroke-dasharray="3 2"/>
+    <text x="533.25" y="229" text-anchor="middle" font-size="13.5" font-weight="700" fill="#3A372E">$445K</text>
+    <rect x="584.25" y="355.71" width="70" height="134.29" rx="3" fill="#2E9E82"/>
+    <rect x="584.25" y="342.57" width="70" height="13.14" rx="2" fill="#E8A33D"/>
+    <text x="619.25" y="336" text-anchor="middle" font-size="13.5" font-weight="700" fill="#3A372E">$258K</text>
+    <text x="576.25" y="512" text-anchor="middle" font-size="13" fill="#6C6A60">Offer</text>
+    <text x="619.25" y="512" text-anchor="middle" font-size="13" fill="#6C6A60">Actual</text>
+    <text x="576.25" y="534" text-anchor="middle" font-size="15" font-weight="700" fill="#3A372E">IC5</text>
+    <text x="576.25" y="552" text-anchor="middle" font-size="11.5" fill="#8C887C">Senior, L3</text>
+  </g>
+
+  <!-- IC6 group: x 677.5-880 -->
+  <g>
+    <rect x="700.75" y="335.71" width="70" height="154.29" rx="3" fill="#2E9E82"/>
+    <rect x="700.75" y="107.14" width="70" height="228.57" rx="3" fill="url(#hatch)" stroke="#E8A33D" stroke-width="1.5" stroke-dasharray="3 2"/>
+    <text x="735.75" y="100" text-anchor="middle" font-size="13.5" font-weight="700" fill="#3A372E">$670K</text>
+    <rect x="786.75" y="335.71" width="70" height="154.29" rx="3" fill="#2E9E82"/>
+    <rect x="786.75" y="310.57" width="70" height="25.14" rx="2" fill="#E8A33D"/>
+    <text x="821.75" y="304" text-anchor="middle" font-size="13.5" font-weight="700" fill="#3A372E">$314K</text>
+    <text x="778.75" y="512" text-anchor="middle" font-size="13" fill="#6C6A60">Offer</text>
+    <text x="821.75" y="512" text-anchor="middle" font-size="13" fill="#6C6A60">Actual</text>
+    <text x="778.75" y="534" text-anchor="middle" font-size="15" font-weight="700" fill="#3A372E">IC6</text>
+    <text x="778.75" y="552" text-anchor="middle" font-size="11.5" fill="#8C887C">Staff, L4</text>
+  </g>
+
+  <text x="70" y="573" font-size="11" fill="#A5A192">Source: levels.fyi</text>
+</svg>

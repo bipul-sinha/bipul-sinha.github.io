@@ -136,14 +136,14 @@
   .hl-row .hl-text strong{font-weight:700}
   .hl-row .hl-text .hl-ctx{color:var(--muted);font-style:italic;font-size:0.9em}
 
-  /* ---------- TIL view ---------- */
-  .til-view{display:none}
-  .til-view.is-active{display:block}
+  /* ---------- Bookmarks view ---------- */
+  .bookmarks-view{display:none}
+  .bookmarks-view.is-active{display:block}
 
-  .til-body{display:flex;gap:44px;align-items:flex-start;margin-top:26px}
+  .bookmarks-body{display:flex;gap:44px;align-items:flex-start;margin-top:26px}
 
   /* the announcement board */
-  .til-board{
+  .bookmarks-board{
     flex:1;min-width:0;border-radius:14px;padding:40px;
     background-color:#BE7E51;
     background-image:
@@ -155,15 +155,15 @@
     background-position:0 0, 0 0, 0 0, 2px 3px;
     box-shadow:inset 0 0 0 1px rgba(0,0,0,0.12), inset 0 2px 10px rgba(0,0,0,0.10);
   }
-  .til-board-grid{
+  .bookmarks-board-grid{
     display:grid;grid-template-columns:repeat(4,1fr);gap:36px 32px;
     align-items:start;grid-auto-flow:row dense;
   }
-  .til-board-grid .size-xl{grid-column:span 4}
-  .til-board-grid .size-md{grid-column:span 2}
+  .bookmarks-board-grid .size-xl{grid-column:span 4}
+  .bookmarks-board-grid .size-md{grid-column:span 2}
 
   /* pinned card — a different light paper treatment per card, tinted per card */
-  .til-card{
+  .bookmark-card{
     position:relative;border-radius:2px;
     background-color:var(--card-tint, var(--surface));
     background-blend-mode:multiply;
@@ -171,30 +171,30 @@
     padding:34px 26px 28px;scroll-margin-top:92px;
   }
   /* texture treatments — cycle via .tex-1..5, assigned by JS (i % 5), not by DOM position */
-  .til-card.tex-1{
+  .bookmark-card.tex-1{
     background-image:
       radial-gradient(rgba(0,0,0,0.025) 1px, transparent 1px),
       radial-gradient(rgba(0,0,0,0.016) 1px, transparent 1px);
     background-size:3px 3px, 7px 7px;
     background-position:0 0, 2px 3px;
   }
-  .til-card.tex-2{
+  .bookmark-card.tex-2{
     --card-tint:#E3EBE0;
     background-image:
       repeating-linear-gradient(45deg, rgba(0,0,0,0.022) 0 1px, transparent 1px 6px),
       repeating-linear-gradient(-45deg, rgba(0,0,0,0.016) 0 1px, transparent 1px 6px);
   }
-  .til-card.tex-3{
+  .bookmark-card.tex-3{
     background-image:repeating-linear-gradient(0deg, rgba(0,0,0,0.028) 0 1px, transparent 1px 4px);
   }
-  .til-card.tex-4{
+  .bookmark-card.tex-4{
     --card-tint:#F1DECE;
     background-image:
       radial-gradient(circle at 22% 28%, rgba(0,0,0,0.028) 0%, transparent 42%),
       radial-gradient(circle at 72% 62%, rgba(0,0,0,0.022) 0%, transparent 46%),
       radial-gradient(circle at 40% 82%, rgba(0,0,0,0.02) 0%, transparent 38%);
   }
-  .til-card.tex-5{
+  .bookmark-card.tex-5{
     --card-tint:#DEE5EF;
     background-image:
       linear-gradient(rgba(0,0,0,0.022) 1px, transparent 1px),
@@ -202,91 +202,91 @@
     background-size:9px 9px;
   }
 
-  .til-pin{
+  .bookmark-pin{
     position:absolute;top:-24px;left:50%;transform:translateX(-50%);
     width:33px;height:42px;z-index:2;pointer-events:none;
     filter:drop-shadow(0 5px 4px rgba(0,0,0,0.38));
   }
-  .til-card .num{
+  .bookmark-card .num{
     display:inline-block;font-family:'Rubik',sans-serif;font-weight:800;
     font-size:18px;color:var(--accent);margin-bottom:8px;
   }
-  .til-card h2{
+  .bookmark-card h2{
     font-family:'Rubik',sans-serif;font-weight:500;font-size:19px;line-height:1.3;
     margin:0 0 14px;text-wrap:balance;
   }
-  .til-card p{
+  .bookmark-card p{
     font-family:'Rubik',sans-serif;font-size:15px;line-height:1.65;
     margin:0 0 14px;color:var(--ink);
   }
-  .til-card p:last-child{margin-bottom:0}
-  .til-card .til-quote{
+  .bookmark-card p:last-child{margin-bottom:0}
+  .bookmark-card .bookmark-quote{
     border-left:2px solid var(--accent);padding-left:16px;margin:16px 0;
     font-family:'Rubik',sans-serif;font-style:italic;font-size:15.5px;line-height:1.55;
   }
-  .til-card .til-quote p{font-family:inherit;font-style:inherit;font-size:inherit;line-height:inherit;margin:0 0 8px}
-  .til-card .til-quote p:last-child{margin-bottom:0}
-  .til-card .til-quote cite{
+  .bookmark-card .bookmark-quote p{font-family:inherit;font-style:inherit;font-size:inherit;line-height:inherit;margin:0 0 8px}
+  .bookmark-card .bookmark-quote p:last-child{margin-bottom:0}
+  .bookmark-card .bookmark-quote cite{
     display:block;margin-top:8px;font-family:'Rubik',sans-serif;
     font-style:normal;font-size:12px;color:var(--muted);
   }
-  .til-card .til-quote cite::before{content:"— "}
-  .til-card p a{color:var(--accent);text-decoration:underline;text-decoration-color:rgba(46,74,60,0.35)}
-  .til-card .til-figure{margin:18px 0}
-  .til-card .til-figure img{
+  .bookmark-card .bookmark-quote cite::before{content:"— "}
+  .bookmark-card p a{color:var(--accent);text-decoration:underline;text-decoration-color:rgba(46,74,60,0.35)}
+  .bookmark-card .bookmark-figure{margin:18px 0}
+  .bookmark-card .bookmark-figure img{
     width:100%;display:block;border:1px solid rgba(0,0,0,0.1);
     box-shadow:0 3px 10px rgba(28,20,10,0.18);
   }
-  .til-card .til-figure figcaption{
+  .bookmark-card .bookmark-figure figcaption{
     font-family:'Rubik',sans-serif;font-size:12px;line-height:1.4;
     color:var(--muted);margin-top:7px;
   }
-  .til-card .til-tweet{margin:18px 0}
-  .til-card .til-tweet .twitter-tweet{margin:0 auto !important}
-  .til-card .til-source{margin-top:14px;font-size:12px;color:var(--faint)}
-  .til-card .til-source a{color:var(--faint)}
+  .bookmark-card .bookmark-tweet{margin:18px 0}
+  .bookmark-card .bookmark-tweet .twitter-tweet{margin:0 auto !important}
+  .bookmark-card .bookmark-source{margin-top:14px;font-size:12px;color:var(--faint)}
+  .bookmark-card .bookmark-source a{color:var(--faint)}
 
   /* index rail */
-  .til-index{width:190px;flex:none;position:sticky;top:92px}
-  .til-index .eyebrow{
+  .bookmarks-index{width:190px;flex:none;position:sticky;top:92px}
+  .bookmarks-index .eyebrow{
     font-size:11px;letter-spacing:0.06em;text-transform:uppercase;
     color:var(--faint);margin:0 0 14px;
   }
-  .til-index ol{list-style:none;margin:0;padding:0;display:flex;flex-direction:column;gap:15px}
-  .til-index a{
+  .bookmarks-index ol{list-style:none;margin:0;padding:0;display:flex;flex-direction:column;gap:15px}
+  .bookmarks-index a{
     display:flex;gap:8px;font-family:'Rubik',sans-serif;font-size:13px;
     line-height:1.4;color:var(--muted);text-decoration:none;
   }
-  .til-index a .n{flex:none;font-variant-numeric:tabular-nums;color:var(--faint)}
-  .til-index a:hover{color:var(--ink)}
-  .til-index a.current{color:var(--ink);font-weight:600}
-  .til-index a.current .n{color:var(--accent)}
+  .bookmarks-index a .n{flex:none;font-variant-numeric:tabular-nums;color:var(--faint)}
+  .bookmarks-index a:hover{color:var(--ink)}
+  .bookmarks-index a.current{color:var(--ink);font-weight:600}
+  .bookmarks-index a.current .n{color:var(--accent)}
 
-  .til-pagination{
+  .bookmarks-pagination{
     display:flex;align-items:center;justify-content:center;gap:18px;
     margin-top:44px;padding-top:26px;border-top:1px solid var(--line);
   }
-  .til-page-btn{
+  .bookmarks-page-btn{
     font-family:'Rubik',ui-sans-serif,sans-serif;font-size:14px;font-weight:600;
     padding:9px 20px;border-radius:8px;border:1px solid var(--line);
     background:var(--surface);color:var(--ink);cursor:pointer;
   }
-  .til-page-btn:hover:not(:disabled){border-color:var(--accent);color:var(--accent)}
-  .til-page-btn:disabled{opacity:0.35;cursor:default}
-  .til-page-status{
+  .bookmarks-page-btn:hover:not(:disabled){border-color:var(--accent);color:var(--accent)}
+  .bookmarks-page-btn:disabled{opacity:0.35;cursor:default}
+  .bookmarks-page-status{
     font-family:'Rubik',ui-sans-serif,sans-serif;font-size:13px;color:var(--muted);
     font-variant-numeric:tabular-nums;
   }
 
   @media (max-width:820px){
-    .til-body{flex-direction:column}
-    .til-index{position:static;width:100%;order:-1}
-    .til-index ol{flex-direction:row;flex-wrap:wrap;gap:14px 20px}
+    .bookmarks-body{flex-direction:column}
+    .bookmarks-index{position:static;width:100%;order:-1}
+    .bookmarks-index ol{flex-direction:row;flex-wrap:wrap;gap:14px 20px}
   }
 
   @media (max-width:700px){
-    .til-board-grid .size-md{grid-column:span 4}
-    .til-board{padding:26px}
+    .bookmarks-board-grid .size-md{grid-column:span 4}
+    .bookmarks-board{padding:26px}
   }
 
   /* ---------- Essays ---------- */
@@ -442,7 +442,7 @@
     </div>
     <nav>
       <a id="navEssays" href="/essays">Essays</a>
-      <a id="navTIL" href="/til">TIL</a>
+      <a id="navBookmarks" href="/bookmarks">Bookmarks</a>
       <a id="navBooks" href="/books">Books</a>
       <a id="navPrinciples" href="/principles">Principles</a>
       <a id="navAbout" class="active" href="/about">About</a>
@@ -475,20 +475,20 @@
     <div class="highlights" id="highlights"></div>
   </div>
 
-  <!-- ============ TIL VIEW ============ -->
-  <div class="til-view" id="tilView">
+  <!-- ============ BOOKMARKS VIEW ============ -->
+  <div class="bookmarks-view" id="bookmarksView">
     <div class="page-head">
-      <h1>TIL</h1>
+      <h1>Bookmarks</h1>
     </div>
 
-    <div class="til-body">
-      <div class="til-board">
-        <div class="til-board-grid" id="tilBoard"></div>
-        <div class="til-pagination" id="tilPagination"></div>
+    <div class="bookmarks-body">
+      <div class="bookmarks-board">
+        <div class="bookmarks-board-grid" id="bookmarksBoard"></div>
+        <div class="bookmarks-pagination" id="bookmarksPagination"></div>
       </div>
-      <div class="til-index">
+      <div class="bookmarks-index">
         <p class="eyebrow">On this board</p>
-        <ol id="tilIndex"></ol>
+        <ol id="bookmarksIndex"></ol>
       </div>
     </div>
   </div>
@@ -543,7 +543,7 @@
       <div class="about-body">
         <p>I'm currently a Product Lead at Circle, where I work on developer products.</p>
         <p>Before Circle, I was a Group Product Manager at Coinbase, working on Coinbase Wallet, Coinbase Pay, and Direct Deposit. Earlier, I led product management for payments, payouts, and fraud at Twitch, and before that I was a Product Manager at AWS, where I helped launch and scale EC2 instance families like C5, C5d, and Z1d. I started my career as a management consultant at Boston Consulting Group.</p>
-        <p>Outside of product work, this site is where I write about the ideas, books, and small moments that shape how I think — see <a id="aboutEssaysLink">Essays</a> and <a id="aboutTILLink">TIL</a>.</p>
+        <p>Outside of product work, this site is where I write about the ideas, books, and small moments that shape how I think — see <a id="aboutEssaysLink">Essays</a> and <a id="aboutBookmarksLink">Bookmarks</a>.</p>
       </div>
 
       <div class="about-section">
@@ -589,7 +589,7 @@ function abs(path){
   }
 })();
 
-const tilEntries = [
+const bookmarkEntries = [
   {
     size:"xl",
     title:"Qualitative data vs. quantitative data",
@@ -644,7 +644,7 @@ const tilEntries = [
     title:"Blame the phone, not the app",
     blocks:[
       {p:"Facebook previously used a custom loading animation (shown on the left) while the app fetched data. Later, they switched to the standard iOS spinner (shown on the right). The speed of the app load didn’t change. This was a pure UX change."},
-      {img:"til-images/facebook-loading-spinner.png", alt:"Two iPhone screens side by side showing the Facebook app loading screen, one with a custom three-bar loading animation and one with the standard iOS spinner", caption:"Facebook’s old custom loading animation (left) vs. the standard iOS spinner (right)."},
+      {img:"bookmark-images/facebook-loading-spinner.png", alt:"Two iPhone screens side by side showing the Facebook app loading screen, one with a custom three-bar loading animation and one with the standard iOS spinner", caption:"Facebook’s old custom loading animation (left) vs. the standard iOS spinner (right)."},
       {p:"Facebook noticed that users started complaining less. When Facebook used the custom loading animation, users thought the delay was due to Facebook. With the standard iOS spinner, they assumed their phone or the operating system was slow."},
       {p:"Product quality isn’t only about engineering and making tangible improvements. It’s also about framing."},
       {source:"https://x.com/Stammy/status/1940938534212260012", sourceLabel:"link"}
@@ -666,23 +666,53 @@ const tilEntries = [
     blocks:[
       {tweet:"https://x.com/hnshah/status/1919851159939928307"}
     ]
+  },
+  {
+    size:"md",
+    title:"Meat proxy",
+    blocks:[
+      {p:"A person who forwards AI-generated text, code, or other output without reading, understanding, or validating it. The person acts only as a relay between the AI system and the intended recipient."}
+    ]
+  },
+  {
+    size:"md",
+    title:"Thinking is now cheap",
+    blocks:[
+      {tweet:"https://x.com/thedankoe/status/2091514562075930798"}
+    ]
+  },
+  {
+    size:"xl",
+    title:"Best sales advice",
+    blocks:[
+      {tweet:"https://x.com/TechSalesGuy/status/2085111331091284067"}
+    ]
+  },
+  {
+    size:"xl",
+    title:"Investors get paid first",
+    blocks:[
+      {p:"Bending Spoons acquired Airtable for an enterprise value of $1.285B. Airtable had earlier reached a valuation of $11.7B in its Series F round in 2021. Employees got wiped out as investors got paid first."},
+      {img:"bookmark-images/airtable-equity-chart.svg", alt:"Grouped bar chart of cash and equity by level for IC3 through IC6, comparing the offer as quoted against what employees actually received. Cash stays flat between offer and actual; equity shrinks from a large quoted amount to a small fraction once investors are repaid.", caption:"Cash didn’t move. Quoted equity did — down to a sliver."},
+      {source:"https://lnkd.in/p/gwr9bvES", sourceLabel:"link"}
+    ]
   }
 
 ];
 
-function renderTilBlock(block){
+function renderBookmarkBlock(block){
   if(block.quote){
     const paras = block.quote.map(q=>`<p>${q}</p>`).join('');
-    return `<blockquote class="til-quote">${paras}<cite>${block.cite}</cite></blockquote>`;
+    return `<blockquote class="bookmark-quote">${paras}<cite>${block.cite}</cite></blockquote>`;
   }
   if(block.img){
-    return `<figure class="til-figure"><img src="${abs(block.img)}" alt="${block.alt||''}" loading="lazy">${block.caption?`<figcaption>${block.caption}</figcaption>`:''}</figure>`;
+    return `<figure class="bookmark-figure"><img src="${abs(block.img)}" alt="${block.alt||''}" loading="lazy">${block.caption?`<figcaption>${block.caption}</figcaption>`:''}</figure>`;
   }
   if(block.tweet){
-    return `<div class="til-tweet"><blockquote class="twitter-tweet" data-dnt="true"><a href="${block.tweet}"></a></blockquote></div>`;
+    return `<div class="bookmark-tweet"><blockquote class="twitter-tweet" data-dnt="true"><a href="${block.tweet}"></a></blockquote></div>`;
   }
   if(block.source){
-    return `<p class="til-source">Source: <a href="${block.source}" target="_blank" rel="noopener">${block.sourceLabel || 'link'}</a></p>`;
+    return `<p class="bookmark-source">Source: <a href="${block.source}" target="_blank" rel="noopener">${block.sourceLabel || 'link'}</a></p>`;
   }
   return `<p>${block.p}</p>`;
 }
@@ -705,7 +735,7 @@ function pinSVG(i){
   const dark = shade(color, -0.3);
   const darker = shade(color, -0.5);
   return `
-    <svg class="til-pin" viewBox="0 0 36 46" aria-hidden="true">
+    <svg class="bookmark-pin" viewBox="0 0 36 46" aria-hidden="true">
       <defs>
         <radialGradient id="pinHead${i}" cx="32%" cy="26%" r="80%">
           <stop offset="0%" stop-color="#ffffff"/>
@@ -733,81 +763,87 @@ function pinSVG(i){
   `;
 }
 
-function renderTilCard(entry, i){
+function renderBookmarkCard(entry, i){
   const texClass = `tex-${(i % 5) + 1}`;
   return `
-    <div class="til-card size-${entry.size} ${texClass}" id="til-card-${i+1}">
+    <div class="bookmark-card size-${entry.size} ${texClass}" id="bookmark-card-${i+1}">
       ${pinSVG(i)}
       <span class="num">#${i+1}:</span>
       <h2>${entry.title}</h2>
-      ${entry.blocks.map(renderTilBlock).join('')}
+      ${entry.blocks.map(renderBookmarkBlock).join('')}
     </div>
   `;
 }
 
-const TIL_PAGE_SIZE = 20;
-let tilPage = 1;
-let tilObserver = null;
+const BOOKMARKS_PAGE_SIZE = 20;
+let bookmarksPage = 1;
+let bookmarksObserver = null;
 
-function tilTotalPages(){
-  return Math.max(1, Math.ceil(tilEntries.length / TIL_PAGE_SIZE));
+function bookmarksTotalPages(){
+  return Math.max(1, Math.ceil(bookmarkEntries.length / BOOKMARKS_PAGE_SIZE));
 }
 
-function setTilPage(n){
-  tilPage = Math.min(Math.max(1, n), tilTotalPages());
-  renderTIL();
+function setBookmarksPage(n){
+  bookmarksPage = Math.min(Math.max(1, n), bookmarksTotalPages());
+  renderBookmarks();
   window.scrollTo(0, 0);
 }
 
-function renderTilPagination(){
-  const el = document.getElementById('tilPagination');
-  const totalPages = tilTotalPages();
+function renderBookmarksPagination(){
+  const el = document.getElementById('bookmarksPagination');
+  const totalPages = bookmarksTotalPages();
   if(totalPages <= 1){ el.innerHTML = ''; return; }
   el.innerHTML = `
-    <button class="til-page-btn" id="tilPrevBtn" ${tilPage <= 1 ? 'disabled' : ''}>Previous</button>
-    <span class="til-page-status">Page ${tilPage} of ${totalPages}</span>
-    <button class="til-page-btn" id="tilNextBtn" ${tilPage >= totalPages ? 'disabled' : ''}>Next</button>
+    <button class="bookmarks-page-btn" id="bookmarksPrevBtn" ${bookmarksPage <= 1 ? 'disabled' : ''}>Previous</button>
+    <span class="bookmarks-page-status">Page ${bookmarksPage} of ${totalPages}</span>
+    <button class="bookmarks-page-btn" id="bookmarksNextBtn" ${bookmarksPage >= totalPages ? 'disabled' : ''}>Next</button>
   `;
-  document.getElementById('tilPrevBtn').addEventListener('click', ()=>setTilPage(tilPage - 1));
-  document.getElementById('tilNextBtn').addEventListener('click', ()=>setTilPage(tilPage + 1));
+  document.getElementById('bookmarksPrevBtn').addEventListener('click', ()=>setBookmarksPage(bookmarksPage - 1));
+  document.getElementById('bookmarksNextBtn').addEventListener('click', ()=>setBookmarksPage(bookmarksPage + 1));
 }
 
-function setupTilScrollspy(){
-  if(tilObserver) tilObserver.disconnect();
-  const tilIndexLinks = document.querySelectorAll('#tilIndex a');
-  if(tilIndexLinks.length && 'IntersectionObserver' in window){
-    tilObserver = new IntersectionObserver((entries)=>{
+function setupBookmarksScrollspy(){
+  if(bookmarksObserver) bookmarksObserver.disconnect();
+  const bookmarksIndexLinks = document.querySelectorAll('#bookmarksIndex a');
+  if(bookmarksIndexLinks.length && 'IntersectionObserver' in window){
+    bookmarksObserver = new IntersectionObserver((entries)=>{
       entries.forEach(entry=>{
-        const link = document.querySelector(`#tilIndex a[data-target="${entry.target.id}"]`);
+        const link = document.querySelector(`#bookmarksIndex a[data-target="${entry.target.id}"]`);
         if(link) link.classList.toggle('current', entry.isIntersecting);
       });
     }, { rootMargin: '-15% 0px -70% 0px' });
-    document.querySelectorAll('.til-card').forEach(card=>tilObserver.observe(card));
+    document.querySelectorAll('.bookmark-card').forEach(card=>bookmarksObserver.observe(card));
   }
 }
 
-function renderTIL(){
-  const start = (tilPage - 1) * TIL_PAGE_SIZE;
-  const pageEntries = tilEntries.map((entry,i)=>({entry,i})).slice(start, start + TIL_PAGE_SIZE);
+function bookmarksDisplayOrder(){
+  // Newest entries are appended to the end of bookmarkEntries; show latest first.
+  return bookmarkEntries.map((_,i)=>i).reverse();
+}
 
-  document.getElementById('tilBoard').innerHTML = pageEntries.map(({entry,i})=>renderTilCard(entry,i)).join('');
-  document.getElementById('tilIndex').innerHTML = pageEntries.map(({entry,i})=>`
-    <li><a href="/til/${slugify(entry.title)}" data-target="til-card-${i+1}" data-slug="${slugify(entry.title)}">
+function renderBookmarks(){
+  const order = bookmarksDisplayOrder();
+  const start = (bookmarksPage - 1) * BOOKMARKS_PAGE_SIZE;
+  const pageEntries = order.slice(start, start + BOOKMARKS_PAGE_SIZE).map(i=>({entry:bookmarkEntries[i], i}));
+
+  document.getElementById('bookmarksBoard').innerHTML = pageEntries.map(({entry,i})=>renderBookmarkCard(entry,i)).join('');
+  document.getElementById('bookmarksIndex').innerHTML = pageEntries.map(({entry,i})=>`
+    <li><a href="/bookmarks/${slugify(entry.title)}" data-target="bookmark-card-${i+1}" data-slug="${slugify(entry.title)}">
       <span class="n">${String(i+1).padStart(2,'0')}</span><span>${entry.title}</span>
     </a></li>
   `).join('');
 
-  renderTilPagination();
-  setupTilScrollspy();
+  renderBookmarksPagination();
+  setupBookmarksScrollspy();
   if(window.twttr && window.twttr.widgets) window.twttr.widgets.load();
 }
-renderTIL();
+renderBookmarks();
 
-document.getElementById('tilIndex').addEventListener('click', (ev)=>{
+document.getElementById('bookmarksIndex').addEventListener('click', (ev)=>{
   const a = ev.target.closest('a[data-slug]');
   if(!a) return;
   ev.preventDefault();
-  openTilCard(a.dataset.slug);
+  openBookmarkCard(a.dataset.slug);
 });
 
 const principles = [
@@ -1421,11 +1457,11 @@ function renderShelf(){
 
 const shelfView = document.getElementById('shelfView');
 const detailView = document.getElementById('detailView');
-const tilView = document.getElementById('tilView');
+const bookmarksView = document.getElementById('bookmarksView');
 const essaysListView = document.getElementById('essaysListView');
 const essayDetailView = document.getElementById('essayDetailView');
 const detailCover = document.getElementById('detailCover');
-const navTIL = document.getElementById('navTIL');
+const navBookmarks = document.getElementById('navBookmarks');
 const navBooks = document.getElementById('navBooks');
 const navEssays = document.getElementById('navEssays');
 const navAbout = document.getElementById('navAbout');
@@ -1436,12 +1472,12 @@ const principlesView = document.getElementById('principlesView');
 function showView(name){
   shelfView.classList.toggle('is-hidden', name !== 'shelf');
   detailView.classList.toggle('is-active', name === 'detail');
-  tilView.classList.toggle('is-active', name === 'til');
+  bookmarksView.classList.toggle('is-active', name === 'bookmarks');
   essaysListView.classList.toggle('is-active', name === 'essaysList');
   essayDetailView.classList.toggle('is-active', name === 'essayDetail');
   aboutView.classList.toggle('is-active', name === 'about');
   principlesView.classList.toggle('is-active', name === 'principles');
-  navTIL.classList.toggle('active', name === 'til');
+  navBookmarks.classList.toggle('active', name === 'bookmarks');
   navBooks.classList.toggle('active', name === 'shelf' || name === 'detail');
   navEssays.classList.toggle('active', name === 'essaysList' || name === 'essayDetail');
   navAbout.classList.toggle('active', name === 'about');
@@ -1468,7 +1504,7 @@ function openBook(i, opts){
 // Simple (no per-item content) views: each just needs a path + page title.
 const SIMPLE_VIEWS = {
   shelf: {path: '/books', title: 'Books'},
-  til: {path: '/til', title: 'TIL'},
+  bookmarks: {path: '/bookmarks', title: 'Bookmarks'},
   essaysList: {path: '/essays', title: 'Essays'},
   about: {path: '/about', title: 'About'},
   principles: {path: '/principles', title: 'Principles'}
@@ -1476,9 +1512,9 @@ const SIMPLE_VIEWS = {
 
 function navigateSimple(view, opts){
   opts = opts || {};
-  if(view === 'til' && tilPage !== 1){
-    tilPage = 1;
-    renderTIL();
+  if(view === 'bookmarks' && bookmarksPage !== 1){
+    bookmarksPage = 1;
+    renderBookmarks();
   }
   showView(view);
   document.title = `${SIMPLE_VIEWS[view].title} — Bipul Sinha`;
@@ -1487,24 +1523,25 @@ function navigateSimple(view, opts){
   }
 }
 
-function openTilCard(slug, opts){
+function openBookmarkCard(slug, opts){
   opts = opts || {};
-  const i = tilEntries.findIndex(entry => slugify(entry.title) === slug);
+  const i = bookmarkEntries.findIndex(entry => slugify(entry.title) === slug);
   if(i === -1){
-    navigateSimple('til', opts);
+    navigateSimple('bookmarks', opts);
     return;
   }
-  const targetPage = Math.floor(i / TIL_PAGE_SIZE) + 1;
-  if(targetPage !== tilPage){
-    tilPage = targetPage;
-    renderTIL();
+  const displayPos = bookmarksDisplayOrder().indexOf(i);
+  const targetPage = Math.floor(displayPos / BOOKMARKS_PAGE_SIZE) + 1;
+  if(targetPage !== bookmarksPage){
+    bookmarksPage = targetPage;
+    renderBookmarks();
   }
-  showView('til');
-  document.title = `${tilEntries[i].title} — Bipul Sinha`;
+  showView('bookmarks');
+  document.title = `${bookmarkEntries[i].title} — Bipul Sinha`;
   if(opts.push !== false){
-    history.pushState({}, '', `/til/${slug}`);
+    history.pushState({}, '', `/bookmarks/${slug}`);
   }
-  const card = document.getElementById(`til-card-${i+1}`);
+  const card = document.getElementById(`bookmark-card-${i+1}`);
   if(card) card.scrollIntoView({behavior: opts.push === false ? 'auto' : 'smooth', block: 'start'});
 }
 
@@ -1515,8 +1552,8 @@ function routeFromLocation(){
     const i = books.findIndex(b => slugify(b.title) === m[1]);
     if(i !== -1){ openBook(i, {push: false}); return; }
   }
-  if((m = path.match(/^\/til\/([^/]+)\/?$/))){
-    openTilCard(m[1], {push: false});
+  if((m = path.match(/^\/bookmarks\/([^/]+)\/?$/))){
+    openBookmarkCard(m[1], {push: false});
     return;
   }
   if((m = path.match(/^\/essays\/([^/]+)\/?$/))){
@@ -1524,7 +1561,7 @@ function routeFromLocation(){
     if(i !== -1){ openEssay(i, {push: false}); return; }
   }
   const simple = path.replace(/\/$/, '') || '/';
-  if(simple === '/til'){ navigateSimple('til', {push: false}); return; }
+  if(simple === '/bookmarks'){ navigateSimple('bookmarks', {push: false}); return; }
   if(simple === '/essays'){ navigateSimple('essaysList', {push: false}); return; }
   if(simple === '/principles'){ navigateSimple('principles', {push: false}); return; }
   if(simple === '/books'){ navigateSimple('shelf', {push: false}); return; }
@@ -1540,13 +1577,13 @@ function navClick(view){
 
 document.getElementById('siteName').addEventListener('click', navClick('about'));
 document.getElementById('backBtn').addEventListener('click', navClick('shelf'));
-navTIL.addEventListener('click', navClick('til'));
+navBookmarks.addEventListener('click', navClick('bookmarks'));
 navBooks.addEventListener('click', navClick('shelf'));
 navEssays.addEventListener('click', navClick('essaysList'));
 navAbout.addEventListener('click', navClick('about'));
 navPrinciples.addEventListener('click', navClick('principles'));
 document.getElementById('aboutEssaysLink').addEventListener('click', navClick('essaysList'));
-document.getElementById('aboutTILLink').addEventListener('click', navClick('til'));
+document.getElementById('aboutBookmarksLink').addEventListener('click', navClick('bookmarks'));
 
 function renderPrinciples(){
   document.getElementById('principlesList').innerHTML = principles.map((p, i)=>`
