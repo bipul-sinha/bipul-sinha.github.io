@@ -262,6 +262,22 @@
   .til-index a.current{color:var(--ink);font-weight:600}
   .til-index a.current .n{color:var(--accent)}
 
+  .til-pagination{
+    display:flex;align-items:center;justify-content:center;gap:18px;
+    margin-top:44px;padding-top:26px;border-top:1px solid var(--line);
+  }
+  .til-page-btn{
+    font-family:'Rubik',ui-sans-serif,sans-serif;font-size:14px;font-weight:600;
+    padding:9px 20px;border-radius:8px;border:1px solid var(--line);
+    background:var(--surface);color:var(--ink);cursor:pointer;
+  }
+  .til-page-btn:hover:not(:disabled){border-color:var(--accent);color:var(--accent)}
+  .til-page-btn:disabled{opacity:0.35;cursor:default}
+  .til-page-status{
+    font-family:'Rubik',ui-sans-serif,sans-serif;font-size:13px;color:var(--muted);
+    font-variant-numeric:tabular-nums;
+  }
+
   @media (max-width:820px){
     .til-body{flex-direction:column}
     .til-index{position:static;width:100%;order:-1}
@@ -468,6 +484,7 @@
     <div class="til-body">
       <div class="til-board">
         <div class="til-board-grid" id="tilBoard"></div>
+        <div class="til-pagination" id="tilPagination"></div>
       </div>
       <div class="til-index">
         <p class="eyebrow">On this board</p>
@@ -650,6 +667,7 @@ const tilEntries = [
       {tweet:"https://x.com/hnshah/status/1919851159939928307"}
     ]
   }
+
 ];
 
 function renderTilBlock(block){
@@ -727,13 +745,61 @@ function renderTilCard(entry, i){
   `;
 }
 
+const TIL_PAGE_SIZE = 20;
+let tilPage = 1;
+let tilObserver = null;
+
+function tilTotalPages(){
+  return Math.max(1, Math.ceil(tilEntries.length / TIL_PAGE_SIZE));
+}
+
+function setTilPage(n){
+  tilPage = Math.min(Math.max(1, n), tilTotalPages());
+  renderTIL();
+  window.scrollTo(0, 0);
+}
+
+function renderTilPagination(){
+  const el = document.getElementById('tilPagination');
+  const totalPages = tilTotalPages();
+  if(totalPages <= 1){ el.innerHTML = ''; return; }
+  el.innerHTML = `
+    <button class="til-page-btn" id="tilPrevBtn" ${tilPage <= 1 ? 'disabled' : ''}>Previous</button>
+    <span class="til-page-status">Page ${tilPage} of ${totalPages}</span>
+    <button class="til-page-btn" id="tilNextBtn" ${tilPage >= totalPages ? 'disabled' : ''}>Next</button>
+  `;
+  document.getElementById('tilPrevBtn').addEventListener('click', ()=>setTilPage(tilPage - 1));
+  document.getElementById('tilNextBtn').addEventListener('click', ()=>setTilPage(tilPage + 1));
+}
+
+function setupTilScrollspy(){
+  if(tilObserver) tilObserver.disconnect();
+  const tilIndexLinks = document.querySelectorAll('#tilIndex a');
+  if(tilIndexLinks.length && 'IntersectionObserver' in window){
+    tilObserver = new IntersectionObserver((entries)=>{
+      entries.forEach(entry=>{
+        const link = document.querySelector(`#tilIndex a[data-target="${entry.target.id}"]`);
+        if(link) link.classList.toggle('current', entry.isIntersecting);
+      });
+    }, { rootMargin: '-15% 0px -70% 0px' });
+    document.querySelectorAll('.til-card').forEach(card=>tilObserver.observe(card));
+  }
+}
+
 function renderTIL(){
-  document.getElementById('tilBoard').innerHTML = tilEntries.map(renderTilCard).join('');
-  document.getElementById('tilIndex').innerHTML = tilEntries.map((entry,i)=>`
+  const start = (tilPage - 1) * TIL_PAGE_SIZE;
+  const pageEntries = tilEntries.map((entry,i)=>({entry,i})).slice(start, start + TIL_PAGE_SIZE);
+
+  document.getElementById('tilBoard').innerHTML = pageEntries.map(({entry,i})=>renderTilCard(entry,i)).join('');
+  document.getElementById('tilIndex').innerHTML = pageEntries.map(({entry,i})=>`
     <li><a href="/til/${slugify(entry.title)}" data-target="til-card-${i+1}" data-slug="${slugify(entry.title)}">
       <span class="n">${String(i+1).padStart(2,'0')}</span><span>${entry.title}</span>
     </a></li>
   `).join('');
+
+  renderTilPagination();
+  setupTilScrollspy();
+  if(window.twttr && window.twttr.widgets) window.twttr.widgets.load();
 }
 renderTIL();
 
@@ -743,18 +809,6 @@ document.getElementById('tilIndex').addEventListener('click', (ev)=>{
   ev.preventDefault();
   openTilCard(a.dataset.slug);
 });
-
-// scrollspy: highlight whichever card is currently in view
-const tilIndexLinks = document.querySelectorAll('#tilIndex a');
-if(tilIndexLinks.length && 'IntersectionObserver' in window){
-  const tilObserver = new IntersectionObserver((entries)=>{
-    entries.forEach(entry=>{
-      const link = document.querySelector(`#tilIndex a[data-target="${entry.target.id}"]`);
-      if(link) link.classList.toggle('current', entry.isIntersecting);
-    });
-  }, { rootMargin: '-15% 0px -70% 0px' });
-  document.querySelectorAll('.til-card').forEach(card=>tilObserver.observe(card));
-}
 
 const principles = [
   {
@@ -1422,6 +1476,10 @@ const SIMPLE_VIEWS = {
 
 function navigateSimple(view, opts){
   opts = opts || {};
+  if(view === 'til' && tilPage !== 1){
+    tilPage = 1;
+    renderTIL();
+  }
   showView(view);
   document.title = `${SIMPLE_VIEWS[view].title} — Bipul Sinha`;
   if(opts.push !== false){
@@ -1435,6 +1493,11 @@ function openTilCard(slug, opts){
   if(i === -1){
     navigateSimple('til', opts);
     return;
+  }
+  const targetPage = Math.floor(i / TIL_PAGE_SIZE) + 1;
+  if(targetPage !== tilPage){
+    tilPage = targetPage;
+    renderTIL();
   }
   showView('til');
   document.title = `${tilEntries[i].title} — Bipul Sinha`;
