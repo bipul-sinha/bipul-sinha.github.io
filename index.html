@@ -243,6 +243,8 @@
   }
   .til-card .til-tweet{margin:18px 0}
   .til-card .til-tweet .twitter-tweet{margin:0 auto !important}
+  .til-card .til-source{margin-top:14px;font-size:12px;color:var(--faint)}
+  .til-card .til-source a{color:var(--faint)}
 
   /* index rail */
   .til-index{width:190px;flex:none;position:sticky;top:92px}
@@ -619,6 +621,27 @@ const tilEntries = [
     blocks:[
       {tweet:"https://x.com/MAstronomers/status/2005055593502179767"}
     ]
+  },
+  {
+    size:"xl",
+    title:"Blame the phone, not the app",
+    blocks:[
+      {p:"Facebook previously used a custom loading animation (shown on the left) while the app fetched data. Later, they switched to the standard iOS spinner (shown on the right). The speed of the app load didn’t change. This was a pure UX change."},
+      {img:"til-images/facebook-loading-spinner.png", alt:"Two iPhone screens side by side showing the Facebook app loading screen, one with a custom three-bar loading animation and one with the standard iOS spinner", caption:"Facebook’s old custom loading animation (left) vs. the standard iOS spinner (right)."},
+      {p:"Facebook noticed that users started complaining less. When Facebook used the custom loading animation, users thought the delay was due to Facebook. With the standard iOS spinner, they assumed their phone or the operating system was slow."},
+      {p:"Product quality isn’t only about engineering and making tangible improvements. It’s also about framing."},
+      {source:"https://x.com/Stammy/status/1940938534212260012", sourceLabel:"link"}
+    ]
+  },
+  {
+    size:"xl",
+    title:"Precise wording matters",
+    blocks:[
+      {p:"An example of why precise wording matters."},
+      {p:"A core value proposition that WhatsApp emphasizes in its marketing is that messages are end-to-end encrypted and secure. However, the company once posted a joke suggesting they “see” people who end messages with “lol.”"},
+      {p:"Even though it was clearly meant humorously, the wording made it easy for people to misinterpret the message as implying that the company reads private chats. Moments like this show why brands must be extremely careful with language — a single poorly phrased post can unintentionally undermine the very trust or positioning they are trying to build."},
+      {tweet:"https://x.com/rapidodraws/status/1983044776405451005"}
+    ]
   }
 ];
 
@@ -632,6 +655,9 @@ function renderTilBlock(block){
   }
   if(block.tweet){
     return `<div class="til-tweet"><blockquote class="twitter-tweet" data-dnt="true"><a href="${block.tweet}"></a></blockquote></div>`;
+  }
+  if(block.source){
+    return `<p class="til-source">Source: <a href="${block.source}" target="_blank" rel="noopener">${block.sourceLabel || 'link'}</a></p>`;
   }
   return `<p>${block.p}</p>`;
 }
