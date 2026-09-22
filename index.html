@@ -423,14 +423,14 @@
     <nav>
       <a id="navEssays" href="/essays">Essays</a>
       <a id="navTIL" href="/til">TIL</a>
-      <a id="navBooks" class="active" href="/books">Books</a>
+      <a id="navBooks" href="/books">Books</a>
       <a id="navPrinciples" href="/principles">Principles</a>
-      <a id="navAbout" href="/about">About</a>
+      <a id="navAbout" class="active" href="/about">About</a>
     </nav>
   </div>
 
   <!-- ============ GRID VIEW ============ -->
-  <div class="shelf-view" id="shelfView">
+  <div class="shelf-view is-hidden" id="shelfView">
     <div class="page-head">
       <h1>Books</h1>
     </div>
@@ -505,7 +505,7 @@
   </div>
 
   <!-- ============ ABOUT VIEW ============ -->
-  <div class="about-view" id="aboutView">
+  <div class="about-view is-active" id="aboutView">
     <div class="page-head">
       <h1>About</h1>
     </div>
@@ -1404,10 +1404,10 @@ function routeFromLocation(){
   const simple = path.replace(/\/$/, '') || '/';
   if(simple === '/til'){ navigateSimple('til', {push: false}); return; }
   if(simple === '/essays'){ navigateSimple('essaysList', {push: false}); return; }
-  if(simple === '/about'){ navigateSimple('about', {push: false}); return; }
   if(simple === '/principles'){ navigateSimple('principles', {push: false}); return; }
-  // '/', '/books', or anything unrecognized falls back to the shelf
-  navigateSimple('shelf', {push: false});
+  if(simple === '/books'){ navigateSimple('shelf', {push: false}); return; }
+  // '/', '/about', or anything unrecognized falls back to the home (About) page
+  navigateSimple('about', {push: false});
 }
 
 window.addEventListener('popstate', routeFromLocation);
