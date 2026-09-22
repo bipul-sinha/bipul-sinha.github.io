@@ -421,11 +421,11 @@
       <span class="name" id="siteName">Bipul Sinha</span>
     </div>
     <nav>
-      <a id="navEssays">Essays</a>
-      <a id="navTIL">TIL</a>
-      <a id="navBooks" class="active">Books</a>
-      <a id="navPrinciples">Principles</a>
-      <a id="navAbout">About</a>
+      <a id="navEssays" href="/essays">Essays</a>
+      <a id="navTIL" href="/til">TIL</a>
+      <a id="navBooks" class="active" href="/books">Books</a>
+      <a id="navPrinciples" href="/principles">Principles</a>
+      <a id="navAbout" href="/about">About</a>
     </nav>
   </div>
 
@@ -549,6 +549,25 @@
 </div>
 
 <script>
+// Resources are referenced with root-relative paths (e.g. "covers/x.jpg"), but
+// once client-side routing puts the browser on a nested URL like
+// /highlights/<slug>, a bare relative path resolves against that URL's
+// directory instead of the site root. Force every such reference to an
+// absolute path so it keeps working no matter what the current URL is.
+function abs(path){
+  if(!path || /^(https?:)?\//.test(path)) return path;
+  return '/' + path;
+}
+
+// Restore the real URL after the 404.html SPA redirect (see /404.html)
+(function(){
+  const redirect = sessionStorage.redirectPath;
+  if(redirect){
+    sessionStorage.removeItem('redirectPath');
+    if(redirect !== '/') history.replaceState(null, '', redirect);
+  }
+})();
+
 const tilEntries = [
   {
     size:"xl",
@@ -626,7 +645,7 @@ function renderTilBlock(block){
     return `<blockquote class="til-quote">${paras}<cite>${block.cite}</cite></blockquote>`;
   }
   if(block.img){
-    return `<figure class="til-figure"><img src="${block.img}" alt="${block.alt||''}" loading="lazy">${block.caption?`<figcaption>${block.caption}</figcaption>`:''}</figure>`;
+    return `<figure class="til-figure"><img src="${abs(block.img)}" alt="${block.alt||''}" loading="lazy">${block.caption?`<figcaption>${block.caption}</figcaption>`:''}</figure>`;
   }
   return `<p>${block.p}</p>`;
 }
@@ -692,12 +711,19 @@ function renderTilCard(entry, i){
 function renderTIL(){
   document.getElementById('tilBoard').innerHTML = tilEntries.map(renderTilCard).join('');
   document.getElementById('tilIndex').innerHTML = tilEntries.map((entry,i)=>`
-    <li><a href="#til-card-${i+1}" data-target="til-card-${i+1}">
+    <li><a href="/til/${slugify(entry.title)}" data-target="til-card-${i+1}" data-slug="${slugify(entry.title)}">
       <span class="n">${String(i+1).padStart(2,'0')}</span><span>${entry.title}</span>
     </a></li>
   `).join('');
 }
 renderTIL();
+
+document.getElementById('tilIndex').addEventListener('click', (ev)=>{
+  const a = ev.target.closest('a[data-slug]');
+  if(!a) return;
+  ev.preventDefault();
+  openTilCard(a.dataset.slug);
+});
 
 // scrollspy: highlight whichever card is currently in view
 const tilIndexLinks = document.querySelectorAll('#tilIndex a');
@@ -1297,8 +1323,14 @@ const essays = [
 let books = [];
 
 function coverHTML(b){
-  if(b.cover) return `<img src="${b.cover}" alt="${b.title} by ${b.author}" loading="lazy">`;
+  if(b.cover) return `<img src="${abs(b.cover)}" alt="${b.title} by ${b.author}" loading="lazy">`;
   return `<div class="title-on-cover">${b.title}</div>`;
+}
+
+function slugify(title){
+  return title.toLowerCase().trim()
+    .replace(/[^a-z0-9]+/g, '-')
+    .replace(/^-+|-+$/g, '');
 }
 
 const shelf = document.getElementById('shelf');
@@ -1344,7 +1376,8 @@ function showView(name){
   window.scrollTo(0,0);
 }
 
-function openBook(i){
+function openBook(i, opts){
+  opts = opts || {};
   const b = books[i];
   detailCover.style.background = b.color;
   detailCover.innerHTML = coverHTML(b);
@@ -1353,17 +1386,85 @@ function openBook(i){
 
   renderHighlights(b);
   showView('detail');
+  document.title = `${b.title} — Bipul Sinha`;
+  if(opts.push !== false){
+    history.pushState({}, '', `/highlights/${slugify(b.title)}`);
+  }
 }
 
-document.getElementById('siteName').addEventListener('click', ()=>showView('about'));
-document.getElementById('backBtn').addEventListener('click', ()=>showView('shelf'));
-navTIL.addEventListener('click', ()=>showView('til'));
-navBooks.addEventListener('click', ()=>showView('shelf'));
-navEssays.addEventListener('click', ()=>showView('essaysList'));
-navAbout.addEventListener('click', ()=>showView('about'));
-navPrinciples.addEventListener('click', ()=>showView('principles'));
-document.getElementById('aboutEssaysLink').addEventListener('click', ()=>showView('essaysList'));
-document.getElementById('aboutTILLink').addEventListener('click', ()=>showView('til'));
+// Simple (no per-item content) views: each just needs a path + page title.
+const SIMPLE_VIEWS = {
+  shelf: {path: '/books', title: 'Books'},
+  til: {path: '/til', title: 'TIL'},
+  essaysList: {path: '/essays', title: 'Essays'},
+  about: {path: '/about', title: 'About'},
+  principles: {path: '/principles', title: 'Principles'}
+};
+
+function navigateSimple(view, opts){
+  opts = opts || {};
+  showView(view);
+  document.title = `${SIMPLE_VIEWS[view].title} — Bipul Sinha`;
+  if(opts.push !== false){
+    history.pushState({}, '', SIMPLE_VIEWS[view].path);
+  }
+}
+
+function openTilCard(slug, opts){
+  opts = opts || {};
+  const i = tilEntries.findIndex(entry => slugify(entry.title) === slug);
+  if(i === -1){
+    navigateSimple('til', opts);
+    return;
+  }
+  showView('til');
+  document.title = `${tilEntries[i].title} — Bipul Sinha`;
+  if(opts.push !== false){
+    history.pushState({}, '', `/til/${slug}`);
+  }
+  const card = document.getElementById(`til-card-${i+1}`);
+  if(card) card.scrollIntoView({behavior: opts.push === false ? 'auto' : 'smooth', block: 'start'});
+}
+
+function routeFromLocation(){
+  const path = location.pathname;
+  let m;
+  if((m = path.match(/^\/highlights\/([^/]+)\/?$/))){
+    const i = books.findIndex(b => slugify(b.title) === m[1]);
+    if(i !== -1){ openBook(i, {push: false}); return; }
+  }
+  if((m = path.match(/^\/til\/([^/]+)\/?$/))){
+    openTilCard(m[1], {push: false});
+    return;
+  }
+  if((m = path.match(/^\/essays\/([^/]+)\/?$/))){
+    const i = essays.findIndex(e => e.slug === m[1]);
+    if(i !== -1){ openEssay(i, {push: false}); return; }
+  }
+  const simple = path.replace(/\/$/, '') || '/';
+  if(simple === '/til'){ navigateSimple('til', {push: false}); return; }
+  if(simple === '/essays'){ navigateSimple('essaysList', {push: false}); return; }
+  if(simple === '/about'){ navigateSimple('about', {push: false}); return; }
+  if(simple === '/principles'){ navigateSimple('principles', {push: false}); return; }
+  // '/', '/books', or anything unrecognized falls back to the shelf
+  navigateSimple('shelf', {push: false});
+}
+
+window.addEventListener('popstate', routeFromLocation);
+
+function navClick(view){
+  return (ev) => { ev.preventDefault(); navigateSimple(view); };
+}
+
+document.getElementById('siteName').addEventListener('click', navClick('about'));
+document.getElementById('backBtn').addEventListener('click', navClick('shelf'));
+navTIL.addEventListener('click', navClick('til'));
+navBooks.addEventListener('click', navClick('shelf'));
+navEssays.addEventListener('click', navClick('essaysList'));
+navAbout.addEventListener('click', navClick('about'));
+navPrinciples.addEventListener('click', navClick('principles'));
+document.getElementById('aboutEssaysLink').addEventListener('click', navClick('essaysList'));
+document.getElementById('aboutTILLink').addEventListener('click', navClick('til'));
 
 function renderPrinciples(){
   document.getElementById('principlesList').innerHTML = principles.map((p, i)=>`
@@ -1388,7 +1489,7 @@ function renderEssayBlock(block){
     case 'ol': return `<ol>${block.items.map(it=>`<li>${it}</li>`).join('')}</ol>`;
     case 'pre': return `<pre>${block.text}</pre>`;
     case 'hr': return `<hr>`;
-    case 'img': return `<figure><img src="${block.src}" alt="${block.alt||''}" loading="lazy"></figure>`;
+    case 'img': return `<figure><img src="${abs(block.src)}" alt="${block.alt||''}" loading="lazy"></figure>`;
     default: return '';
   }
 }
@@ -1399,7 +1500,7 @@ essays.forEach((e, i)=>{
   el.className = 'essay-card';
   el.setAttribute('aria-label', e.title);
   el.innerHTML = `
-    <div class="hero"><img src="${e.hero}" alt="" loading="lazy"></div>
+    <div class="hero"><img src="${abs(e.hero)}" alt="" loading="lazy"></div>
     <h2>${e.title}</h2>
     <p class="dek">${e.dek}</p>
     <p class="date">${e.date}</p>
@@ -1408,7 +1509,8 @@ essays.forEach((e, i)=>{
   essaysGrid.appendChild(el);
 });
 
-function openEssay(i){
+function openEssay(i, opts){
+  opts = opts || {};
   const e = essays[i];
   document.getElementById('essayDate').textContent = e.date;
   document.getElementById('essayTitle').textContent = e.title;
@@ -1416,9 +1518,13 @@ function openEssay(i){
   document.getElementById('essayBody').innerHTML = e.blocks.map(renderEssayBlock).join('');
   document.getElementById('essaySource').innerHTML = `Originally published on <a href="${e.sourceUrl}" target="_blank" rel="noopener">Substack</a>.`;
   showView('essayDetail');
+  document.title = `${e.title} — Bipul Sinha`;
+  if(opts.push !== false){
+    history.pushState({}, '', `/essays/${e.slug}`);
+  }
 }
 
-document.getElementById('essayBackBtn').addEventListener('click', ()=>showView('essaysList'));
+document.getElementById('essayBackBtn').addEventListener('click', navClick('essaysList'));
 
 function formatHighlight(h){
   const paras = h.trim().split(/\n\s*\n/);
@@ -1442,17 +1548,10 @@ function renderHighlights(b){
 function initBooks(loadedBooks){
   books = loadedBooks;
   renderShelf();
-  // pre-render book 0 so the detail view isn't empty the first time it's opened
-  if(books.length){
-    renderHighlights(books[0]);
-    document.getElementById('detailCover').style.background = books[0].color;
-    document.getElementById('detailCover').innerHTML = coverHTML(books[0]);
-    document.getElementById('detailTitle').textContent = books[0].title;
-    document.getElementById('detailAuthor').textContent = books[0].author;
-  }
+  routeFromLocation();
 }
 
-fetch('books.json').then(r => r.json()).then(initBooks).catch(err => console.error('Failed to load books.json', err));
+fetch('/books.json').then(r => r.json()).then(initBooks).catch(err => console.error('Failed to load books.json', err));
 </script>
 
 </body>

@@ -1,0 +1,15 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Bipul Sinha</title>
+<script>
+  // GitHub Pages serves this file for any unknown path. Stash the path the
+  // visitor actually wanted, then redirect to the real app at "/" so it can
+  // restore the URL client-side (see the snippet near the top of index.html).
+  sessionStorage.redirectPath = location.pathname + location.search + location.hash;
+  location.replace('/');
+</script>
+</head>
+<body></body>
+</html>
