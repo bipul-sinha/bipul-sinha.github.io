@@ -241,6 +241,8 @@
     font-family:'Rubik',sans-serif;font-size:12px;line-height:1.4;
     color:var(--muted);margin-top:7px;
   }
+  .til-card .til-tweet{margin:18px 0}
+  .til-card .til-tweet .twitter-tweet{margin:0 auto !important}
 
   /* index rail */
   .til-index{width:190px;flex:none;position:sticky;top:92px}
@@ -596,6 +598,13 @@ const tilEntries = [
     blocks:[
       {quote:["As I always say, the iron rule of life is that only 20% of the people can be in the top fifth."], cite:"Charlie Munger"}
     ]
+  },
+  {
+    size:"xl",
+    title:"Perfect is the enemy of good",
+    blocks:[
+      {tweet:"https://x.com/gilbert/status/1960715698843607371"}
+    ]
   }
 ];
 
@@ -606,6 +615,9 @@ function renderTilBlock(block){
   }
   if(block.img){
     return `<figure class="til-figure"><img src="${abs(block.img)}" alt="${block.alt||''}" loading="lazy">${block.caption?`<figcaption>${block.caption}</figcaption>`:''}</figure>`;
+  }
+  if(block.tweet){
+    return `<div class="til-tweet"><blockquote class="twitter-tweet" data-dnt="true"><a href="${block.tweet}"></a></blockquote></div>`;
   }
   return `<p>${block.p}</p>`;
 }
@@ -1514,5 +1526,6 @@ function initBooks(loadedBooks){
 fetch('/books.json').then(r => r.json()).then(initBooks).catch(err => console.error('Failed to load books.json', err));
 </script>
 
+<script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
 </body>
 </html>
