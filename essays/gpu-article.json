@@ -1,0 +1,243 @@
+[
+ {
+  "type": "img",
+  "src": "essays/gpu-images/img01.jpg",
+  "alt": ""
+ },
+ {
+  "type": "p",
+  "text": "Nvidia is now the world\u2019s most valuable company, driven by the rise of artificial intelligence. At its core is the GPU \u2014 the Graphics Processing Unit, which Nvidia invented 25 years ago. In this article, I\u2019ll explain why GPUs are the perfect chips for AI and how they propelled Nvidia to the top."
+ },
+ {
+  "type": "p",
+  "text": "Here\u2019s an outline of the article:"
+ },
+ {
+  "type": "ol",
+  "items": [
+   "First, I\u2019ll explain what a GPU is and how it differs from its cousin, the more familiar CPU",
+   "Then, I\u2019ll cover the 3 waves of GPU adoption over the past two decades, focusing on why GPUs were the ideal chip for the last two: Wave 1: Video graphics in gaming. Wave 2: Cryptocurrency mining. Wave 3: Machine learning and AI"
+  ]
+ },
+ {
+  "type": "h2",
+  "text": "[1] What is a GPU?"
+ },
+ {
+  "type": "p",
+  "text": "A GPU, or Graphics Processing Unit, is a specialized semiconductor chip. A chip is made of many logic gates. If you\u2019ve used Excel functions such as AND() or OR(), you already know the basic idea. For instance, the AND() function in excel takes two logical inputs (whose answer can be either \u201cTRUE\u201d or \u201cFALSE\u201d) and outputs \u201cTRUE\u201d only if both the 2 inputs are \u201cTRUE\u201d. Similarly an AND gate in a chip takes 2 inputs (in the case of semiconductor chips, these inputs are voltage signals) and outputs a signal only if both of them are \u201cON\u201d or have a non zero voltage."
+ },
+ {
+  "type": "p",
+  "text": "Logic gates are built from transistors \u2014 tiny switches that control the flow of electricity. Made from silicon, transistors allow current to pass under certain conditions. Modern chips contain trillions of transistors organized into billions of logic gates."
+ },
+ {
+  "type": "p",
+  "text": "A GPU is a chip in which these transistors and logic gates are organized in a way to achieve some specialized functions."
+ },
+ {
+  "type": "img",
+  "src": "essays/gpu-images/img02.jpg",
+  "alt": ""
+ },
+ {
+  "type": "h2",
+  "text": "[2] CPU vs. GPU"
+ },
+ {
+  "type": "p",
+  "text": "CPUs (Central Processing Units) and GPUs (Graphics Processing Units) are both semiconductor chips built to perform mathematical calculations, but they differ in architecture and purpose. They are not the only kind of semiconductor chips\u2014memory chips, such as DRAM (which makes up a computer\u2019s memory) or solid-state storage (\u201chard drive\u201d of a computer) are also semiconductor chips."
+ },
+ {
+  "type": "h4",
+  "text": "Key Differences Between CPUs and GPUs"
+ },
+ {
+  "type": "p",
+  "text": "(a) Core count: CPUs and GPUs are built from cores \u2014 independent units in a processor (either CPU or GPU) that can process tasks independently. Complex tasks can be split into smaller parts and run across multiple cores in parallel, speeding up computation."
+ },
+ {
+  "type": "p",
+  "text": "CPUs usually have far fewer cores than GPUs. For example, Apple\u2019s M4 CPU has 10 cores, while Nvidia\u2019s GeForce RTX 5090 GPU has over 20,000."
+ },
+ {
+  "type": "img",
+  "src": "essays/gpu-images/img03.jpg",
+  "alt": ""
+ },
+ {
+  "type": "img",
+  "src": "essays/gpu-images/img04.jpg",
+  "alt": ""
+ },
+ {
+  "type": "p",
+  "text": "This difference gives GPUs a huge advantage in tasks that are \u201cparallel\u201d i.e. tasks that can be broken into 1000s of mini-tasks that are not dependent on each other. CPUs with a few cores are great for sequential tasks i.e. tasks where a step is dependent on the output from previous steps."
+ },
+ {
+  "type": "p",
+  "text": "(b) Clock speed: Clock speed measures how fast a processor core can execute instructions. It is measured in gigahertz (GHz). A 1 GHz CPU can handle 1 billion instructions per second. For example, adding two numbers might require multiple instructions (like fetch number 1 from memory, fetch number 2 from memory etc). Therefore, a 1GHz CPU core can perform millions of additions per second."
+ },
+ {
+  "type": "p",
+  "text": "CPUs generally run at higher clock speeds than GPUs. For example, Apple\u2019s M4 CPU reaches 4.5 GHz, while Nvidia\u2019s GeForce RTX GPUs run around 2 GHz."
+ },
+ {
+  "type": "p",
+  "text": "There\u2019s a tradeoff between having more cores and higher clock speeds. More cores generate more heat, especially if each core runs at a high clock speed. GPUs, with thousands of cores, have lower clock speeds to avoid excessive heat and power consumption. A CPU or GPU is typically part of a computer (laptop, servers etc) and, therefore, heat/power requirement is an important consideration."
+ },
+ {
+  "type": "p",
+  "text": "In summary, GPUs are a type of semiconductor chip that has 1000s of cores. GPUs excel at tasks that require parallel processing. Use cases like video graphics, bitcoin mining and AI involve operations with parallel processing."
+ },
+ {
+  "type": "h2",
+  "text": "[3] GPU usage in Bitcoin mining:"
+ },
+ {
+  "type": "p",
+  "text": "GPUs were used for Bitcoin mining in the mid-2010s. Today, miners rely on ASICs (Application-Specific Integrated Circuits) \u2014 chips designed solely for Bitcoin mining."
+ },
+ {
+  "type": "p",
+  "text": "How does Bitcoin mining works? A miner takes a block (collection) of transactions and a nonce (just a number) and then computes SHA256 hash of the combination."
+ },
+ {
+  "type": "p",
+  "text": "A hash function transforms an input into a unique, fixed-size output. SHA256 is a popular hash function. Each input has a unique mapping, meaning a different input will always generate a different output. A small change in the input will produce a completely different output. The following table shows the SHA256 output for some inputs. Notice how the outputs change drastically for seemingly a simple change in input."
+ },
+ {
+  "type": "img",
+  "src": "essays/gpu-images/img05.jpg",
+  "alt": ""
+ },
+ {
+  "type": "p",
+  "text": "Miners cycle through millions of nonce values, each producing a different hash. The goal is to find one that meets a strict condition: the hash must begin with a certain number of leading zeros (e.g., \u201c00000000ABCDEF\u2026\u201d). This condition is set by the Bitcoin protocol. The miner who is the first to submit a hash with the required number of leading zeros earns the Bitcoin mining reward, which is 3.25BTC at the time of writing."
+ },
+ {
+  "type": "img",
+  "src": "essays/gpu-images/img06.jpg",
+  "alt": ""
+ },
+ {
+  "type": "p",
+  "text": "This difficulty adjusts automatically as more miners join, ensuring that one block is mined about every 10 minutes. For instance, if there are many active miners then the Bitcoin protocol will require more leading zeros in the hash. Probability of generating a hash with more leading zeros is smaller and, therefore, miners have to try more combinations (i.e. guesses of nonces) to generate such a hash."
+ },
+ {
+  "type": "p",
+  "text": "These characteristics make bitcoin mining a good use case for GPUs. Specifically:"
+ },
+ {
+  "type": "ul",
+  "items": [
+   "Calculating hashes by varying nonces is a highly parallel operation. Each nonce can be processed independently. For example, a miner doesn\u2019t need to complete hashes for nonces 1\u2013100 before trying nonces 1000\u20131100, since hash functions have no correlation between inputs and outputs.",
+   "Billions of hashes must be computed to find one that meets the leading-zero requirement."
+  ]
+ },
+ {
+  "type": "p",
+  "text": "Professional mining rigs in 2025 can mine at rates exceeding 100 TH/s\u2014calculating 100 trillion hashes per second."
+ },
+ {
+  "type": "img",
+  "src": "essays/gpu-images/img07.png",
+  "alt": ""
+ },
+ {
+  "type": "h2",
+  "text": "[4] GPU usage in ML & Artificial Intelligence:"
+ },
+ {
+  "type": "p",
+  "text": "One of the most important tasks in machine learning (ML) and artificial intelligence (AI) is model training. The goal is to create a model (which we can think of as a mathematical equation) that has analyzed billions of data points (called the training data) and encodes the patterns or \"signal\" in those data points in the model/mathematical equation. When presented with a completely new data point, the model uses what it learned from the training data to predict a response."
+ },
+ {
+  "type": "p",
+  "text": "Imagine we have the following training data:"
+ },
+ {
+  "type": "img",
+  "src": "essays/gpu-images/img08.png",
+  "alt": ""
+ },
+ {
+  "type": "p",
+  "text": "Note that real-world ML/AI models are trained on billions of data points. For simplicity, I\u2019ve included only five data points. We can guess that a linear model might fit this data well. Again real-world models are tested on various different forms (like linear, non-linear) but let\u2019s use a linear model form for now. Let\u2019s assume the model takes the following form (y = \u03b20 + \u03b21\u00b7X1 + \u03b22\u00b7X2):"
+ },
+ {
+  "type": "p",
+  "text": "Here, X1 and X2 are input variables, Y is the output variable dependent on the inputs, and the Beta values are coefficients (or weights) of the input variables. While this format may seem abstract, let\u2019s consider a real world example in which a fitness model can calculate the weight of a person using the inputs like calories consumed and steps taken"
+ },
+ {
+  "type": "ul",
+  "items": [
+   "Y = weight of the person",
+   "X1 = average daily calories consumed over the past three months",
+   "X2 = average daily steps taken over the past three months"
+  ]
+ },
+ {
+  "type": "p",
+  "text": "We can organize this data into matrices. A matrix is a mathematical structure that organizes data efficiently and has special properties useful for calculations. Let\u2019s define some key matrices based on our training data:"
+ },
+ {
+  "type": "img",
+  "src": "essays/gpu-images/img09.jpg",
+  "alt": ""
+ },
+ {
+  "type": "p",
+  "text": "The Beta matrix contains the coefficients we want to find. Once we determine the values in this matrix, we\u2019ll have our model and can say we\u2019ve trained it. This trained model can then be used to guess the output for data points that it has not seen."
+ },
+ {
+  "type": "p",
+  "text": "The Beta matrix is the result of the following formula (\u03b2 = (X\u1d40X)\u207b\u00b9X\u1d40y):"
+ },
+ {
+  "type": "p",
+  "text": "This formula involves matrix-specific operations like transpose (denoted by the superscript T) and inverse (denoted by \u207b\u00b9). For our purpose, we don\u2019t need to understand how these matrix operators work. The primary step here is matrix multiplication. For example, we multiply X\u1d40 by X and X\u1d40 by y."
+ },
+ {
+  "type": "p",
+  "text": "Matrix multiplication is illustrated as follows: we take one data point from each matrix (A and B), calculate their product, and sum these products:"
+ },
+ {
+  "type": "img",
+  "src": "essays/gpu-images/img10.jpg",
+  "alt": ""
+ },
+ {
+  "type": "p",
+  "text": "Since these operations (multiplication followed by addition) are independent, each element of the product matrix can be computed in parallel. For e.g., calculation of the first element in the product matrix (i.e. 140) is independent of the calculation steps involved for the other elements (146, 320 and 335)."
+ },
+ {
+  "type": "p",
+  "text": "Modern ML/AI models handle billions of parameters and trillions of data points, resulting in enormous matrices with billions of rows and columns. Populating a single element of the product matrix requires multiplying and summing billions of values."
+ },
+ {
+  "type": "p",
+  "text": "This is why GPUs are ideal for training ML and AI models\u2014they excel at performing parallel operations, making them highly efficient for matrix computations at massive scales. Calculating each element in the product matrix (let\u2019s take the Beta matrix as an example) can be farmed out to invidual GPU core as shown below."
+ },
+ {
+  "type": "img",
+  "src": "essays/gpu-images/img11.jpg",
+  "alt": ""
+ },
+ {
+  "type": "h2",
+  "text": "Key takeaways:"
+ },
+ {
+  "type": "ul",
+  "items": [
+   "GPUs are a type of semiconductor chip.",
+   "Compared to CPUs, they differ in two key ways: GPUs have thousands of cores, each acting as an independent processing unit within the chip. GPUs have lower clock speeds, meaning they are generally slower than CPUs for sequential tasks.",
+   "GPUs are ideal for use cases that require parallel processing, where tasks can be broken down into millions of smaller, independent operations that run simultaneously.",
+   "Examples of parallel processing applications include 3D game graphics, Bitcoin mining, and machine learning (ML) or artificial intelligence (AI) model training.",
+   "Bitcoin mining involves guessing hashes that meet specific requirements. Each guess is independent of the others, making it possible to distribute the workload across the thousands of cores in a GPU.",
+   "While GPUs were popular for Bitcoin mining in the mid-2010s, they are no longer profitable due to the rise of application-specific integrated circuits (ASICs), which are purpose built and optimized for calculating hashes",
+   "Training ML and AI models involves performing large-scale matrix multiplications. This requires billions of multiplication and addition operations that can be processed independently. Because of their parallel processing capabilities, GPUs are the ideal choice for this type of computation."
+  ]
+ }
+]

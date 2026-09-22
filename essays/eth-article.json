@@ -1,0 +1,311 @@
+[
+ {
+  "type": "img",
+  "src": "essays/eth-images/img01.jpg",
+  "alt": ""
+ },
+ {
+  "type": "p",
+  "text": "[Background: When I started learning about crypto, I found many great resources on Bitcoin \u2014 for instance, books like The Bitcoin Standard and Broken Money. But I noticed there were far fewer resources that clearly explain Ethereum or other \u201csmart contract\u201d based blockchains. A lot of innovation in decentralized finance is happening in the Ethereum ecosystem. Ethereum (and other smart contract based blockchains) is also harder to understand because it introduces new ideas like smart contracts and tokens \u2014 things that don\u2019t exist in Bitcoin. My goal with this article series is to give a clear, beginner-friendly, yet in-depth overview of Ethereum.]"
+ },
+ {
+  "type": "hr"
+ },
+ {
+  "type": "p",
+  "text": "Ethereum is an open-source, globally decentralized computing platform that runs programs called smart contracts. It uses a blockchain to synchronize and store changes to the system\u2019s state. Its native cryptocurrency, ether, is used to meter and limit the cost of computational resources. We\u2019ll unpack these ideas in more detail throughout the rest of the article."
+ },
+ {
+  "type": "p",
+  "text": "Vitalik Buterin proposed the idea for Ethereum in a 2014 white paper, introducing the concepts of \u201cstate\u201d and \u201cstate transition systems.\u201d From the white paper:"
+ },
+ {
+  "type": "blockquote",
+  "text": "In a standard banking system, for example, the state is a balance sheet, a transaction is a request to move $X from A to B, and the state transition function reduces the value in A's account by $X and increases the value in B's account by $X. If A's account has less than $X in the first place, the state transition function returns an error."
+ },
+ {
+  "type": "p",
+  "text": "The \u201cstate\u201d of a system (like a bank) is a snapshot of its ledger or balance sheet, showing account balances. This state changes only through transactions, which follow rules (e.g., a user cannot transfer more funds than they have, transactions have to be initiated by users and cannot be initiated by the bank). A system that applies transactions to an existing state (state A) to create a new one (state B) is called a state transition system."
+ },
+ {
+  "type": "p",
+  "text": "Vitalik applied this terminology to Bitcoin:"
+ },
+ {
+  "type": "blockquote",
+  "text": "From a technical standpoint, the ledger of a cryptocurrency such as Bitcoin can be thought of as a state transition system, where there is a \"state\" consisting of the ownership status of all existing bitcoins and a \"state transition function\" that takes a state and a transaction and outputs a new state which is the result."
+ },
+ {
+  "type": "p",
+  "text": "Exhibit 1 illustrates how a transaction modifies Bitcoin\u2019s state. Users with accounts \u20187b53ab84\u2019 and \u20183ce6f712\u2019 can decide to spend their bitcoins. These will be debited from their accounts. The equivalent amount has to be credited to other accounts as that is how Bitcoin\u2019s state transition system is defined."
+ },
+ {
+  "type": "img",
+  "src": "essays/eth-images/img02.png",
+  "alt": ""
+ },
+ {
+  "type": "p",
+  "text": "In the white paper, Vitalik highlighted Bitcoin's limitations: it handles simple state changes (e.g., transferring bitcoin) but cannot manage more complex transitions, such as conditional statements enabling advanced use cases. This motivated Ethereum\u2019s creation."
+ },
+ {
+  "type": "p",
+  "text": "Ethereum is a blockchain with a built-in Turing-complete programming language, allowing anyone to write smart contracts and decentralized applications where they can create their own arbitrary rules for ownership, transaction formats and state transition functions. I unpack this definition below:"
+ },
+ {
+  "type": "p",
+  "text": "[1] Turing-complete programming language: This means that any program of any complexity can be computed by Ethereum. Bitcoin has a \u201cscript\u201d system, which is not Turing complete and can be used for relatively simple use cases."
+ },
+ {
+  "type": "p",
+  "text": "[2] Smart contracts: These are programs that run on Ethereum. These are distributed i.e. the program is not stored on a single computer but is part of Ethereum\u2019s state that is distributed across all the computers/nodes that are running Ethereum. Smart contracts have the following properties:"
+ },
+ {
+  "type": "ul",
+  "items": [
+   "Transparent: The code is publicly visible for auditing.",
+   "Permissionless: Anyone can execute the code by following rules, without needing approval.",
+   "Deterministic: The outcome is consistent and impartial for all users.",
+   "Immutable: Contract code cannot change but can be deleted if the code includes such a function."
+  ]
+ },
+ {
+  "type": "p",
+  "text": "Users can interact with the smart contract and audit its code (or rely on audits done by third parties) and can assume that the program will run in a specific way and will continue to exist for the foreseeable future."
+ },
+ {
+  "type": "p",
+  "text": "Vitalik describes smart contracts as cryptographic boxes that contain value and only unlock if certain conditions are met."
+ },
+ {
+  "type": "p",
+  "text": "[3] Decentralized applications: These are also known as dapps. A dapp is a collection of smart contracts and typically a UI interface to make it easy for users to interact with the underlying smart contracts. Some common dapps are: Uniswap, Compound, Aave."
+ },
+ {
+  "type": "p",
+  "text": "Therefore, Ethereum is a blockchain that allows developers to write smart contracts (a special type of code with properties described above) that can execute state transitions that are more complicated than some of the simpler transitions that we discussed earlier (e.g. bank accounts, Bitcoin). An example of Ethereum state transition function is shown in exhibit 2."
+ },
+ {
+  "type": "img",
+  "src": "essays/eth-images/img03.jpg",
+  "alt": ""
+ },
+ {
+  "type": "p",
+  "text": "We will cover this state transition in more details later in this article. Before getting to that, we need to understand 2 other Ethereum concepts: (1) Ethereum accounts and (2) Transactions."
+ },
+ {
+  "type": "h2",
+  "text": "Ethereum accounts:"
+ },
+ {
+  "type": "p",
+  "text": "Ethereum accounts fall into two categories:"
+ },
+ {
+  "type": "img",
+  "src": "essays/eth-images/img04.jpg",
+  "alt": ""
+ },
+ {
+  "type": "p",
+  "text": "[1] Externally owned accounts (EOAs): are controlled by private keys and are typically used by retail users. For example, users can create EOAs through popular Ethereum wallets like MetaMask, Coinbase Wallet."
+ },
+ {
+  "type": "p",
+  "text": "In Ethereum, a private key is a random number less than 115792089237316195423570985008687907853269984665640564039457584007908834671663. Using cryptography (specifically Elliptic curve cryptography), a corresponding public key is mathematically derived from the private key. The address of the account is then derived from the public key."
+ },
+ {
+  "type": "p",
+  "text": "A common analogy is to think that the public key or the account address is the email address (e.g. john@gmail.com) and the private key is the password associated with that email."
+ },
+ {
+  "type": "p",
+  "text": "[2] Contract accounts: contain smart contract code and have addresses similar to EOAs. However, they do not have a private key; instead, their behavior is governed by the logic embedded in their code."
+ },
+ {
+  "type": "p",
+  "text": "The properties of the above type of accounts are described below:"
+ },
+ {
+  "type": "img",
+  "src": "essays/eth-images/img05.png",
+  "alt": ""
+ },
+ {
+  "type": "h2",
+  "text": "Transactions:"
+ },
+ {
+  "type": "p",
+  "text": "Transactions are the sole mechanism for initiating changes in Ethereum\u2019s state or executing smart contracts. Ethereum doesn\u2019t operate autonomously; everything starts with a transaction. And each transaction has to be triggered by an EOA. Each transaction comprises the following components:"
+ },
+ {
+  "type": "ul",
+  "items": [
+   "Recipient Address: A 20-byte Ethereum address that can be an EOA or a contract account. Transactions sent to contract accounts trigger the execution of the contract using the transaction and associated data as inputs.",
+   "Signature: Only EOAs can initiate transactions. The owner of the EOA must sign the transaction with their private key to authorize the action.",
+   "Nonce: This ensures transactions are processed in the correct order. Each originating address maintains a unique nonce for its transactions. Transactions are processed sequentially, and any gaps in the nonce sequence (e.g., skipping a nonce) will delay subsequent transactions.",
+   "Value: The amount of ETH transferred from the sender to the recipient. ETH can be sent to both EOAs and contract accounts.",
+   "Data: An optional field, typically used for transactions directed at contract accounts. It can also be sent to EOAs, but its interpretation depends on the wallet software accessing the EOA."
+  ]
+ },
+ {
+  "type": "p",
+  "text": "Before explaining the remaining components\u2014gas limit and gas price\u2014let\u2019s first build some intuition for the concept of gas."
+ },
+ {
+  "type": "h4",
+  "text": "Gas in Ethereum:"
+ },
+ {
+  "type": "p",
+  "text": "Ethereum\u2019s Turing-complete nature allows it to compute any program, regardless of complexity. This flexibility introduces security and resource management challenges. For example, a malicious smart contract could be designed to run indefinitely, consuming network resources and potentially overwhelming the system in a DDoS-like attack."
+ },
+ {
+  "type": "p",
+  "text": "To address this, Ethereum employs a metering system called gas. Gas ensures users pay for the computational resources their transactions consume, making such attacks prohibitively expensive. Vitalik Buterin explained the concept in his white paper:"
+ },
+ {
+  "type": "blockquote",
+  "text": "Each transaction is required to set a limit on how many computational steps of code execution it can use. The fundamental unit of computation is 'gas'; usually, a computational step costs 1 gas, but some operations cost more due to higher complexity. There\u2019s also a fee for every byte in the transaction data. This fee system ensures that any transaction consuming greater resources must incur a proportional gas fee."
+ },
+ {
+  "type": "p",
+  "text": "Key attributes related to gas that are included in a transaction are:"
+ },
+ {
+  "type": "ul",
+  "items": [
+   "Gas Limit: The maximum gas the sender is willing to spend for a transaction. Simple transactions like transferring ETH from one EOA to another require 21,000 gas units.",
+   "Gas Price: The price the sender is willing to pay per gas unit, measured in wei (a subunit of ETH). Wallets adjust gas prices for faster transaction confirmations."
+  ]
+ },
+ {
+  "type": "h2",
+  "text": "State Changes via Transactions"
+ },
+ {
+  "type": "p",
+  "text": "Exhibit 2 illustrates how a transaction can alter Ethereum\u2019s state."
+ },
+ {
+  "type": "img",
+  "src": "essays/eth-images/img06.jpg",
+  "alt": ""
+ },
+ {
+  "type": "p",
+  "text": "Initially, the state (State A) comprises the following:"
+ },
+ {
+  "type": "ul",
+  "items": [
+   "Two EOAs: Account 14c5f8ba: Balance of 1024 ETH. Account 4096ad65: Balance of 77 ETH.",
+   "Two Contract Accounts: Account bb75a980: Balance of 5202 ETH, containing contract code and data ([0, 235235, 0, ALICE, \u2026]). Account 892bf92f: Balance of 0 ETH, containing contract code and data ([ALICE, BOB, CHARLIE])"
+  ]
+ },
+ {
+  "type": "p",
+  "text": "The transaction in exhibit 2 originates from EOA 14c5f8ba (remember only EOAs can initiate transactions) and is sent to contract account bb75a980. The transaction value is 10 ETH, implying that this amount should be transferred from 14c5f8ba to bb75a980."
+ },
+ {
+  "type": "p",
+  "text": "After the transaction, the new state (State B) shows:"
+ },
+ {
+  "type": "ul",
+  "items": [
+   "EOA 14c5f8ba: Balance reduced to 1014 ETH.",
+   "Contract bb75a980: Balance increased to 5212 ETH."
+  ]
+ },
+ {
+  "type": "h2",
+  "text": "Contract Code and Execution"
+ },
+ {
+  "type": "p",
+  "text": "We also have some data that consists of: 2, Charlie. The data included in the transaction is included as an array. Array is a type of data structure i.e. a way to organize the data. This array is recognized or referred to as \u201ctx.data[x]\u201d by the contract code. The \u2018x\u2019 inside the square bracket is used to refer to the position (index) inside the array. For this transaction, the data is represented as follows:"
+ },
+ {
+  "type": "pre",
+  "text": "tx.data = [2, Charlie]"
+ },
+ {
+  "type": "p",
+  "text": "The length of this array is 2 as there are 2 data points inside it. An \"index\" can be used to specify a specific item inside the array. Example:"
+ },
+ {
+  "type": "pre",
+  "text": "tx.data[0] = [2]\ntx.data[1] = [Charlie]"
+ },
+ {
+  "type": "p",
+  "text": "Now let's look at the code included inside the contract account:"
+ },
+ {
+  "type": "pre",
+  "text": "if !contract.storage[tx.data[0]]:\ncontract.storage[tx.data[0]] = tx.data[1]"
+ },
+ {
+  "type": "p",
+  "text": "This contract is referring to 2 arrays:"
+ },
+ {
+  "type": "ol",
+  "items": [
+   "tx.data[] array, which consists of the data that is being included in the transaction",
+   "contract.storage[] array, which consists of the data that already is present in the contract account in state A"
+  ]
+ },
+ {
+  "type": "pre",
+  "text": "contract.storage[] = [0, 235235, 0, ALICE, \u2026.]"
+ },
+ {
+  "type": "p",
+  "text": "Therefore,"
+ },
+ {
+  "type": "pre",
+  "text": "contract.storage[0] = [0]\ncontract.storage[1] = [235235]\ncontract.storage[2] = [0]\ncontract.storage[3] = [ALICE]"
+ },
+ {
+  "type": "p",
+  "text": "The contract code runs in the following manner:"
+ },
+ {
+  "type": "ol",
+  "items": [
+   "Check value for contract.storage[tx.data[0]] = contract.storage[2] = [0]",
+   "If the above is 0 then execute: contract.storage[tx.data[0]] = tx.data[1]. Since value in step 1 is 0, step 2 gets executed as follows:",
+   "contract.storage[tx.data[0]] = tx.data[1] = [Charlie]",
+   "contract.storage[2] = [Charlie]"
+  ]
+ },
+ {
+  "type": "p",
+  "text": "Therefore, the contract\u2019s storage array will be updated because of the transaction as shown in the future state in the diagram."
+ },
+ {
+  "type": "p",
+  "text": "Therefore, we can see that the state transition system in Ethereum could do more complicated tasks that Bitcoin\u2019s state transition system: It was able to update the ETH balances for accounts and was able to run some arbitrary program/code with conditional statements."
+ },
+ {
+  "type": "h2",
+  "text": "Key takeaways:"
+ },
+ {
+  "type": "ul",
+  "items": [
+   "Ethereum offers more flexibility than Bitcoin as it is Turing complete and allows highly complex state transition functions",
+   "Ethereum has 2 types of accounts: (1) EOA (Externally Owned Account) and (2) Contract accounts",
+   "EOA are accounts that are typically controlled by retail users (using their private key, which is just a random number less than a very large number)",
+   "Contract accounts contain code/program known as smart contract. Smart contracts have some special properties like permissionless, permanence, being deterministic etc",
+   "Ethereum\u2019s state can be changed only via a transaction that is triggered by an EOA",
+   "A transaction can transfer ETH from one account to another",
+   "A transaction can trigger a contract code and cause it to take some action (e.g. updating the values that are stored in an account)"
+  ]
+ }
+]

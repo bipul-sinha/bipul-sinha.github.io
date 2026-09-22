@@ -1,0 +1,1448 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Bipul Sinha</title>
+<meta name="description" content="Essays, things I learned, books I have read, and principles I try to live by.">
+<style>
+  @import url('https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,400;0,500;0,600;0,700;0,800;1,400;1,500&display=swap');
+
+  :root{
+    --bg:#F7F6F2;
+    --surface:#FFFFFF;
+    --ink:#1C1B18;
+    --muted:#78766E;
+    --faint:#A6A399;
+    --line:#E5E2D9;
+    --accent:#2E4A3C;
+    --shadow: 0 1px 2px rgba(28,27,24,0.04);
+  }
+
+  *{box-sizing:border-box}
+  html{scroll-behavior:smooth}
+  @media (prefers-reduced-motion: reduce){ html{scroll-behavior:auto} }
+  body{
+    margin:0;
+    background:var(--bg);
+    color:var(--ink);
+    font-family:'Rubik', ui-sans-serif, system-ui, sans-serif;
+    padding:0 20px;
+  }
+
+  .wrap{max-width:1040px;margin:0 auto}
+
+  /* ---------- top bar ---------- */
+  .topbar{
+    display:flex;align-items:center;justify-content:space-between;
+    padding:28px 0 22px;
+    border-bottom:1px solid var(--line);
+    margin-bottom:34px;
+    position:sticky;top:0;z-index:50;
+    background:var(--bg);
+  }
+  .site .name{font-size:14.5px;font-weight:600;letter-spacing:-0.01em;cursor:pointer}
+  .site .name:hover{color:var(--accent)}
+  nav{display:flex;gap:26px;font-size:13.5px}
+  nav a{color:var(--muted);text-decoration:none;cursor:pointer}
+  nav a.active{color:var(--ink)}
+  nav a:hover{color:var(--ink)}
+  #navPrinciples{display:none}
+
+  .page-head{margin-bottom:30px}
+  h1{
+    font-family:'Rubik',sans-serif;font-weight:500;font-size:32px;letter-spacing:-0.01em;
+    margin:0;text-wrap:balance;
+  }
+  .page-dek{margin:10px 0 0;font-size:15px;color:var(--muted);max-width:520px;line-height:1.5}
+
+  /* ---------- grid view ---------- */
+  .shelf{
+    display:grid;
+    grid-template-columns:repeat(auto-fill, minmax(148px,1fr));
+    gap:22px 18px;
+    padding-bottom:60px;
+  }
+  .book{
+    background:none;border:none;padding:0;cursor:pointer;
+    font:inherit;color:inherit;text-align:left;
+    display:flex;flex-direction:column;gap:10px;
+  }
+  .cover{
+    position:relative;
+    aspect-ratio:2/3;
+    border-radius:3px;
+    border:1px solid rgba(0,0,0,0.06);
+    box-shadow:var(--shadow);
+    overflow:hidden;
+    display:flex;align-items:flex-end;
+    transition:transform .18s ease, box-shadow .18s ease;
+  }
+  .book:hover .cover{
+    transform:translateY(-4px);
+    box-shadow:0 10px 18px rgba(28,27,24,0.14);
+  }
+  .book:focus-visible .cover{outline:2px solid var(--accent);outline-offset:2px}
+  .cover .title-on-cover{
+    font-family:'Rubik',sans-serif;font-weight:500;font-size:14px;line-height:1.25;
+    color:#fff;padding:14px 12px 16px;text-wrap:balance;
+  }
+  .cover img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover}
+
+  /* ---------- detail view ---------- */
+  .detail{display:none}
+  .detail.is-active{display:block}
+  .shelf-view.is-hidden{display:none}
+
+  .back{
+    display:inline-flex;align-items:center;gap:6px;
+    background:none;border:none;cursor:pointer;
+    font:inherit;font-size:13.5px;color:var(--muted);padding:0;margin-bottom:22px;
+  }
+  .back:hover{color:var(--ink)}
+  .back svg{width:14px;height:14px}
+
+  .book-head{
+    display:flex;gap:22px;align-items:flex-end;
+    padding-bottom:26px;margin-bottom:8px;border-bottom:1px solid var(--line);
+  }
+  .book-head .mini-cover{
+    position:relative;overflow:hidden;
+    width:74px;aspect-ratio:2/3;border-radius:3px;flex:none;
+    border:1px solid rgba(0,0,0,0.06);box-shadow:var(--shadow);
+    display:flex;align-items:flex-end;
+  }
+  .book-head .mini-cover .title-on-cover{font-size:9px;padding:8px 7px 9px}
+  .book-head .mini-cover img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover}
+  .book-head .meta{flex:1}
+  .book-head h1{margin-bottom:4px}
+  .book-head .by{color:var(--muted);font-size:14.5px;margin:0}
+
+  /* Highlights — bold number tag over each quote, generous rhythm */
+  .highlights{max-width:640px;margin-top:26px;padding-bottom:80px}
+  .hl-row{padding:32px 0}
+  .hl-row:first-child{padding-top:6px}
+  .hl-row:last-child{padding-bottom:0}
+  .hl-row .num{
+    display:inline-block;font-family:'Rubik',sans-serif;font-weight:800;
+    font-size:28px;letter-spacing:-0.01em;color:var(--accent);
+    margin-bottom:12px;
+  }
+  .hl-row .hl-text p{
+    margin:0 0 14px;font-family:'Rubik',sans-serif;font-weight:400;
+    font-size:16.5px;line-height:1.7;color:var(--ink);
+  }
+  .hl-row .hl-text p:last-child{margin-bottom:0}
+  .hl-row .hl-text strong{font-weight:700}
+  .hl-row .hl-text .hl-ctx{color:var(--muted);font-style:italic;font-size:0.9em}
+
+  /* ---------- TIL view ---------- */
+  .til-view{display:none}
+  .til-view.is-active{display:block}
+
+  .til-body{display:flex;gap:44px;align-items:flex-start;margin-top:26px}
+
+  /* the announcement board */
+  .til-board{
+    flex:1;min-width:0;border-radius:14px;padding:40px;
+    background-color:#BE7E51;
+    background-image:
+      repeating-linear-gradient(0deg, rgba(32,17,8,0.5) 0 1px, transparent 1px 40px),
+      repeating-linear-gradient(90deg, rgba(32,17,8,0.5) 0 1px, transparent 1px 40px),
+      radial-gradient(rgba(255,232,205,0.4) 0.6px, transparent 1.2px),
+      radial-gradient(rgba(60,28,10,0.22) 0.6px, transparent 1.2px);
+    background-size:40px 40px, 40px 40px, 5px 5px, 7px 7px;
+    background-position:0 0, 0 0, 0 0, 2px 3px;
+    box-shadow:inset 0 0 0 1px rgba(0,0,0,0.12), inset 0 2px 10px rgba(0,0,0,0.10);
+  }
+  .til-board-grid{
+    display:grid;grid-template-columns:repeat(4,1fr);gap:36px 32px;
+    align-items:start;grid-auto-flow:row dense;
+  }
+  .til-board-grid .size-xl{grid-column:span 4}
+  .til-board-grid .size-md{grid-column:span 2}
+
+  /* pinned card — a different light paper treatment per card, tinted per card */
+  .til-card{
+    position:relative;border-radius:2px;
+    background-color:var(--card-tint, var(--surface));
+    background-blend-mode:multiply;
+    box-shadow:0 10px 20px rgba(28,20,10,0.22), 0 2px 5px rgba(28,20,10,0.12);
+    padding:34px 26px 28px;scroll-margin-top:92px;
+  }
+  /* texture treatments — cycle via .tex-1..5, assigned by JS (i % 5), not by DOM position */
+  .til-card.tex-1{
+    background-image:
+      radial-gradient(rgba(0,0,0,0.025) 1px, transparent 1px),
+      radial-gradient(rgba(0,0,0,0.016) 1px, transparent 1px);
+    background-size:3px 3px, 7px 7px;
+    background-position:0 0, 2px 3px;
+  }
+  .til-card.tex-2{
+    --card-tint:#E3EBE0;
+    background-image:
+      repeating-linear-gradient(45deg, rgba(0,0,0,0.022) 0 1px, transparent 1px 6px),
+      repeating-linear-gradient(-45deg, rgba(0,0,0,0.016) 0 1px, transparent 1px 6px);
+  }
+  .til-card.tex-3{
+    background-image:repeating-linear-gradient(0deg, rgba(0,0,0,0.028) 0 1px, transparent 1px 4px);
+  }
+  .til-card.tex-4{
+    --card-tint:#F1DECE;
+    background-image:
+      radial-gradient(circle at 22% 28%, rgba(0,0,0,0.028) 0%, transparent 42%),
+      radial-gradient(circle at 72% 62%, rgba(0,0,0,0.022) 0%, transparent 46%),
+      radial-gradient(circle at 40% 82%, rgba(0,0,0,0.02) 0%, transparent 38%);
+  }
+  .til-card.tex-5{
+    --card-tint:#DEE5EF;
+    background-image:
+      linear-gradient(rgba(0,0,0,0.022) 1px, transparent 1px),
+      linear-gradient(90deg, rgba(0,0,0,0.022) 1px, transparent 1px);
+    background-size:9px 9px;
+  }
+
+  .til-pin{
+    position:absolute;top:-24px;left:50%;transform:translateX(-50%);
+    width:33px;height:42px;z-index:2;pointer-events:none;
+    filter:drop-shadow(0 5px 4px rgba(0,0,0,0.38));
+  }
+  .til-card .num{
+    display:inline-block;font-family:'Rubik',sans-serif;font-weight:800;
+    font-size:18px;color:var(--accent);margin-bottom:8px;
+  }
+  .til-card h2{
+    font-family:'Rubik',sans-serif;font-weight:500;font-size:19px;line-height:1.3;
+    margin:0 0 14px;text-wrap:balance;
+  }
+  .til-card p{
+    font-family:'Rubik',sans-serif;font-size:15px;line-height:1.65;
+    margin:0 0 14px;color:var(--ink);
+  }
+  .til-card p:last-child{margin-bottom:0}
+  .til-card .til-quote{
+    border-left:2px solid var(--accent);padding-left:16px;margin:16px 0;
+    font-family:'Rubik',sans-serif;font-style:italic;font-size:15.5px;line-height:1.55;
+  }
+  .til-card .til-quote p{font-family:inherit;font-style:inherit;font-size:inherit;line-height:inherit;margin:0 0 8px}
+  .til-card .til-quote p:last-child{margin-bottom:0}
+  .til-card .til-quote cite{
+    display:block;margin-top:8px;font-family:'Rubik',sans-serif;
+    font-style:normal;font-size:12px;color:var(--muted);
+  }
+  .til-card .til-quote cite::before{content:"— "}
+  .til-card p a{color:var(--accent);text-decoration:underline;text-decoration-color:rgba(46,74,60,0.35)}
+  .til-card .til-figure{margin:18px 0}
+  .til-card .til-figure img{
+    width:100%;display:block;border:1px solid rgba(0,0,0,0.1);
+    box-shadow:0 3px 10px rgba(28,20,10,0.18);
+  }
+  .til-card .til-figure figcaption{
+    font-family:'Rubik',sans-serif;font-size:12px;line-height:1.4;
+    color:var(--muted);margin-top:7px;
+  }
+
+  /* index rail */
+  .til-index{width:190px;flex:none;position:sticky;top:92px}
+  .til-index .eyebrow{
+    font-size:11px;letter-spacing:0.06em;text-transform:uppercase;
+    color:var(--faint);margin:0 0 14px;
+  }
+  .til-index ol{list-style:none;margin:0;padding:0;display:flex;flex-direction:column;gap:15px}
+  .til-index a{
+    display:flex;gap:8px;font-family:'Rubik',sans-serif;font-size:13px;
+    line-height:1.4;color:var(--muted);text-decoration:none;
+  }
+  .til-index a .n{flex:none;font-variant-numeric:tabular-nums;color:var(--faint)}
+  .til-index a:hover{color:var(--ink)}
+  .til-index a.current{color:var(--ink);font-weight:600}
+  .til-index a.current .n{color:var(--accent)}
+
+  @media (max-width:820px){
+    .til-body{flex-direction:column}
+    .til-index{position:static;width:100%;order:-1}
+    .til-index ol{flex-direction:row;flex-wrap:wrap;gap:14px 20px}
+  }
+
+  @media (max-width:700px){
+    .til-board-grid .size-md{grid-column:span 4}
+    .til-board{padding:26px}
+  }
+
+  /* ---------- Essays ---------- */
+  .essays-view{display:none}
+  .essays-view.is-active{display:block}
+
+  .essays-grid{
+    display:grid;grid-template-columns:repeat(auto-fill, minmax(260px,1fr));
+    gap:28px;margin-top:26px;padding-bottom:60px;
+  }
+  .essay-card{
+    background:none;border:none;padding:0;cursor:pointer;text-align:left;font:inherit;color:inherit;
+    display:flex;flex-direction:column;gap:14px;
+  }
+  .essay-card .hero{
+    aspect-ratio:16/9;border-radius:6px;overflow:hidden;border:1px solid var(--line);
+    box-shadow:var(--shadow);background:var(--line);
+    transition:transform .18s ease, box-shadow .18s ease;
+  }
+  .essay-card:hover .hero{transform:translateY(-3px);box-shadow:0 10px 18px rgba(28,27,24,0.14)}
+  .essay-card:focus-visible .hero{outline:2px solid var(--accent);outline-offset:2px}
+  .essay-card .hero img{width:100%;height:100%;object-fit:cover;display:block}
+  .essay-card h2{font-family:'Rubik',sans-serif;font-weight:500;font-size:19px;margin:0;line-height:1.3;text-wrap:balance}
+  .essay-card .dek{font-size:13.5px;color:var(--muted);margin:0;line-height:1.5}
+  .essay-card .date{font-size:12px;color:var(--faint);margin:0}
+
+  /* essay reading view */
+  .essay{max-width:700px;margin-top:6px;padding-bottom:70px}
+  .essay-date{font-size:12.5px;color:var(--faint);margin:0 0 10px}
+  .essay h1{font-size:32px;margin-bottom:10px}
+  .essay-dek{
+    font-family:'Rubik',sans-serif;font-style:italic;font-size:18px;color:var(--muted);
+    margin:0 0 30px;line-height:1.4;
+  }
+  .essay-body{
+    font-family:'Rubik',sans-serif;font-size:18px;line-height:1.7;color:var(--ink);
+  }
+  .essay-body p{margin:0 0 22px}
+  .essay-body h2{
+    font-family:'Rubik',sans-serif;font-weight:700;font-size:14px;
+    letter-spacing:0.03em;text-transform:uppercase;color:var(--accent);
+    margin:44px 0 18px;
+  }
+  .essay-body h4{
+    font-family:'Rubik',sans-serif;font-weight:700;font-size:15.5px;
+    color:var(--ink);margin:28px 0 14px;
+  }
+  .essay-body ul, .essay-body ol{margin:0 0 22px;padding-left:22px}
+  .essay-body li{margin-bottom:10px}
+  .essay-body blockquote{
+    border-left:2px solid var(--accent);padding-left:20px;margin:28px 0;
+    font-style:italic;color:var(--ink);
+  }
+  .essay-body pre{
+    font-family:ui-monospace, 'SF Mono', Menlo, monospace;font-size:14px;line-height:1.6;
+    background:#EFEDE4;border-radius:6px;padding:16px 18px;
+    margin:24px 0;overflow-x:auto;white-space:pre-wrap;word-break:break-word;color:var(--ink);
+  }
+  .essay-body figure{margin:32px 0}
+  .essay-body img{width:100%;border-radius:6px;border:1px solid var(--line);display:block}
+  .essay-body hr{border:none;border-top:1px solid var(--line);margin:36px 0}
+  .essay-source{
+    margin-top:50px;padding-top:20px;border-top:1px solid var(--line);
+    font-size:13px;color:var(--faint);
+  }
+  .essay-source a{color:var(--muted)}
+
+  /* ---------- About ---------- */
+  .about-view{display:none}
+  .about-view.is-active{display:block}
+  .about{max-width:640px;padding-bottom:70px}
+
+  .about-head{display:flex;gap:22px;align-items:center;padding-bottom:28px;margin-bottom:28px;border-bottom:1px solid var(--line)}
+  .about-head .avatar{
+    flex:none;width:88px;height:88px;border-radius:50%;
+    background:var(--accent);color:#fff;display:flex;align-items:center;justify-content:center;
+    font-size:30px;font-weight:600;letter-spacing:-0.02em;
+  }
+  .about-head .meta h2{margin:0 0 6px;font-size:24px;font-weight:600;letter-spacing:-0.01em}
+  .about-head .headline{margin:0 0 4px;font-size:15px;color:var(--ink)}
+  .about-head .location{margin:0;font-size:13px;color:var(--muted)}
+
+  .about-body{font-size:16.5px;line-height:1.7;color:var(--ink);margin-bottom:38px}
+  .about-body p{margin:0 0 20px}
+  .about-body a{color:var(--accent);text-decoration:underline;text-decoration-color:rgba(46,74,60,0.35)}
+
+  .about-section{margin-bottom:34px}
+  .about-section h3{
+    font-weight:700;font-size:12px;letter-spacing:0.06em;text-transform:uppercase;
+    color:var(--muted);margin:0 0 16px;
+  }
+  .about-list{list-style:none;margin:0;padding:0;display:flex;flex-direction:column;gap:14px}
+  .about-list li{display:flex;justify-content:space-between;gap:16px;font-size:15px;padding-bottom:14px;border-bottom:1px solid var(--line)}
+  .about-list li:last-child{border-bottom:none;padding-bottom:0}
+  .about-list .role{color:var(--ink)}
+  .about-list .org{color:var(--muted);flex:none;text-align:right}
+
+  .about-links a{color:var(--accent);text-decoration:none;font-size:14px;font-weight:600}
+  .about-links a:hover{text-decoration:underline}
+
+  /* ---------- Principles ---------- */
+  .principles-view{display:none}
+  .principles-view.is-active{display:block}
+  .principles{max-width:640px;padding-bottom:70px}
+
+  .principle-row{padding:34px 0;border-bottom:1px solid var(--line);display:flex;gap:22px;align-items:flex-start}
+  .principle-row:first-child{padding-top:6px}
+  .principle-row:last-child{border-bottom:none;padding-bottom:0}
+  .principle-row .num{
+    flex:none;font-family:'Rubik',sans-serif;font-weight:700;
+    font-size:16px;color:#fff;line-height:1;
+    width:34px;height:34px;border-radius:50%;background:#DB6B26;
+    display:flex;align-items:center;justify-content:center;
+    margin-top:2px;
+  }
+  .principle-row .p-text p{
+    margin:0 0 10px;font-size:16.5px;line-height:1.7;color:var(--ink);
+  }
+  .principle-row .p-text p:last-of-type{margin-bottom:0}
+  .principle-row .p-text .source{
+    display:block;margin-top:10px;font-size:13px;color:var(--muted);
+  }
+  .principle-row .p-text .source::before{content:"— "}
+
+  @media (max-width:480px){
+    .principle-row{gap:14px}
+    .principle-row .num{width:28px;height:28px;font-size:13px}
+  }
+
+  @media (max-width:480px){
+    .about-head{flex-direction:column;align-items:flex-start;gap:16px}
+    .about-list li{flex-direction:column;gap:2px}
+    .about-list .org{text-align:left}
+  }
+
+  @media (max-width:520px){
+    h1{font-size:27px}
+    .book-head{flex-wrap:wrap}
+    .essay h1{font-size:25px}
+    .essay-body{font-size:16.5px}
+  }
+
+  html{color-scheme:light}
+  body{font-size:14px}
+  img{max-width:100%}
+</style>
+</head>
+<body>
+<div class="wrap">
+  <div class="topbar">
+    <div class="site">
+      <span class="name" id="siteName">Bipul Sinha</span>
+    </div>
+    <nav>
+      <a id="navEssays">Essays</a>
+      <a id="navTIL">TIL</a>
+      <a id="navBooks" class="active">Books</a>
+      <a id="navPrinciples">Principles</a>
+      <a id="navAbout">About</a>
+    </nav>
+  </div>
+
+  <!-- ============ GRID VIEW ============ -->
+  <div class="shelf-view" id="shelfView">
+    <div class="page-head">
+      <h1>Books</h1>
+    </div>
+    <div class="shelf" id="shelf"></div>
+  </div>
+
+  <!-- ============ DETAIL VIEW ============ -->
+  <div class="detail" id="detailView">
+    <button class="back" id="backBtn">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M15 18l-6-6 6-6"/></svg>
+      Books
+    </button>
+
+    <div class="book-head">
+      <div class="mini-cover" id="detailCover"></div>
+      <div class="meta">
+        <h1 id="detailTitle"></h1>
+        <p class="by" id="detailAuthor"></p>
+      </div>
+    </div>
+
+    <div class="highlights" id="highlights"></div>
+  </div>
+
+  <!-- ============ TIL VIEW ============ -->
+  <div class="til-view" id="tilView">
+    <div class="page-head">
+      <h1>TIL</h1>
+    </div>
+
+    <div class="til-body">
+      <div class="til-board">
+        <div class="til-board-grid" id="tilBoard"></div>
+      </div>
+      <div class="til-index">
+        <p class="eyebrow">On this board</p>
+        <ol id="tilIndex"></ol>
+      </div>
+    </div>
+  </div>
+
+  <!-- ============ ESSAYS LIST VIEW ============ -->
+  <div class="essays-view" id="essaysListView">
+    <div class="page-head">
+      <h1>Essays</h1>
+    </div>
+    <div class="essays-grid" id="essaysGrid"></div>
+  </div>
+
+  <!-- ============ ESSAY DETAIL VIEW ============ -->
+  <div class="essays-view" id="essayDetailView">
+    <button class="back" id="essayBackBtn">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M15 18l-6-6 6-6"/></svg>
+      Essays
+    </button>
+    <article class="essay">
+      <p class="essay-date" id="essayDate"></p>
+      <h1 id="essayTitle"></h1>
+      <p class="essay-dek" id="essayDek"></p>
+      <div class="essay-body" id="essayBody"></div>
+      <p class="essay-source" id="essaySource"></p>
+    </article>
+  </div>
+
+  <!-- ============ PRINCIPLES VIEW ============ -->
+  <div class="principles-view" id="principlesView">
+    <div class="page-head">
+      <h1>Principles</h1>
+      <p class="page-dek">A running list of things I try to live and work by — updated as I go.</p>
+    </div>
+    <div class="principles" id="principlesList"></div>
+  </div>
+
+  <!-- ============ ABOUT VIEW ============ -->
+  <div class="about-view" id="aboutView">
+    <div class="page-head">
+      <h1>About</h1>
+    </div>
+    <div class="about">
+      <div class="about-head">
+        <div class="avatar">BS</div>
+        <div class="meta">
+          <h2>Bipul Sinha</h2>
+          <p class="headline">Product Lead at Circle — ex-Coinbase, Twitch, AWS, BCG</p>
+          <p class="location">San Francisco Bay Area</p>
+        </div>
+      </div>
+
+      <div class="about-body">
+        <p>I'm currently a Product Lead at Circle, where I work on developer products.</p>
+        <p>Before Circle, I was a Group Product Manager at Coinbase, working on Coinbase Wallet, Coinbase Pay, and Direct Deposit. Earlier, I led product management for payments, payouts, and fraud at Twitch, and before that I was a Product Manager at AWS, where I helped launch and scale EC2 instance families like C5, C5d, and Z1d. I started my career as a management consultant at Boston Consulting Group.</p>
+        <p>Outside of product work, this site is where I write about the ideas, books, and small moments that shape how I think — see <a id="aboutEssaysLink">Essays</a> and <a id="aboutTILLink">TIL</a>.</p>
+      </div>
+
+      <div class="about-section">
+        <h3>Experience</h3>
+        <ul class="about-list">
+          <li><span class="role">Product Lead, Developer Products</span><span class="org">Circle</span></li>
+          <li><span class="role">Group Product Manager — Wallet, Pay, Direct Deposit</span><span class="org">Coinbase</span></li>
+          <li><span class="role">Product Management, Payments &amp; Fraud</span><span class="org">Twitch</span></li>
+          <li><span class="role">Product Manager — EC2 (C5, C5d, Z1d)</span><span class="org">AWS</span></li>
+          <li><span class="role">Management Consultant</span><span class="org">Boston Consulting Group</span></li>
+        </ul>
+      </div>
+
+      <div class="about-section">
+        <h3>Education</h3>
+        <ul class="about-list">
+          <li><span class="role">MBA</span><span class="org">Harvard Business School</span></li>
+        </ul>
+      </div>
+
+      <p class="about-links"><a href="https://www.linkedin.com/in/bipulsinha/" target="_blank" rel="noopener">LinkedIn ↗</a></p>
+    </div>
+  </div>
+</div>
+
+<script>
+const tilEntries = [
+  {
+    size:"xl",
+    title:"Qualitative data vs. quantitative data",
+    blocks:[
+      {quote:["You can learn a lot from collecting data from thousands of users or by watching just one."], cite:"Marissa Mayer"},
+      {p:"This resonates. Early in my product career, I used to dismiss qualitative data. I was working on products with millions of users, and I felt that talking to 5–10 customers would not give me insights to improve the experience for those millions of users."},
+      {p:"I was wrong. Over time, I have realized that qualitative feedback from even a few customers is valuable. It is important to select a representative set of users — interviews with the right user can provide incredibly valuable insights."},
+      {p:"Clay Christensen also talks about this bias toward quantitative data:"},
+      {quote:[
+        "There is a misconception about data that is so prevalent it’s tacitly embedded in many organizations — the idea that only quantitative data is objective. There’s a pervasive belief that there is some set of ideal data that can, together, yield the perfect insights about customers. In short, we can know “truth” if we just gather the right data in quantitative form, the kind of information that can be fed into a spreadsheet or regression analysis. How many? What? Where? Who? When?",
+        "By contrast, qualitative data — observations and insights that don’t fit neatly into a spreadsheet to be sliced and diced — is not as reliable as quantitative, because there’s no single “truth” at the core. Quantitative data, the thinking goes, is somehow better."
+      ], cite:"Clay Christensen"}
+    ]
+  },
+  {
+    size:"md",
+    title:"Doing vs. reading",
+    blocks:[
+      {quote:["You get your dopamine from information gathering. Dopamine from information gathering is a dangerous drug. That’s the dopamine you get when you read the personal development book, even though you haven’t acted on any of the insights from it. The most successful people in the world have a razor-thin gap between gathering information and acting on that information. Get your dopamine from action."], cite:"Sahil Bloom"},
+      {p:"We sometimes equate information gathering (via reading) with action. Reading feels productive. It is safe — there is no risk of failure. But while information gathering is important, as it equips us with the context and knowledge needed to direct our actions, it should not be confused with action itself."},
+      {p:"It is an important skill to recognize when you have learned enough and it’s time to act. Even if your actions are not perfect, the rest of the learning will follow from active doing and making mistakes — rather than passive gathering of more information."}
+    ]
+  },
+  {
+    size:"md",
+    title:"Motion vs. progress",
+    blocks:[
+      {p:"At Meta, one of my favorite posters was a picture of a rocking horse that said:"},
+      {quote:["Do not mistake motion for progress."], cite:"Julie Zhuo, ex Facebook VP"},
+      {p:"Sometimes I see a “shipping at all costs” culture become prominent at companies — measuring PRs shipped per week, or how many hours everyone is working. Hard work is table stakes for success, but a mindless focus on shipping is misguided."},
+      {p:"It’s much better to have a clear strategy and direction before execution. As with everything in life, this needs to be done in moderation — the right balance between gathering information (by reading and analyzing) and actually implementing the roadmap."}
+    ]
+  },
+  {
+    size:"md",
+    title:"Speeding tickets, not parking tickets",
+    blocks:[
+      {quote:["“Speeding tickets not parking tickets” is something you hear a lot at Google lately. It means that we’d rather go too fast than sit idle."], cite:"Google"},
+      {p:"The speed at which you can ship your product roadmap is a big source of competitive advantage. Speed does not always mean a poor work–life balance — fast time to market can also come from better product planning, and from identifying the right MVP scope instead of adding features customers may not care about yet. It’s still important to avoid the mindless focus on “shipping” for its own sake."},
+      {p:"As Elon Musk says, “A maniacal sense of urgency is our operating principle.”"}
+    ]
+  },
+  {
+    size:"md",
+    title:"One point at a time",
+    blocks:[
+      {quote:["When you are playing a point, then it is the most important thing in the world. But after the point — whether you won or lost — is behind you, and you need to stop thinking about it."], cite:"Roger Federer"}
+    ]
+  },
+  {
+    size:"xl",
+    title:"The power of small changes",
+    blocks:[
+      {p:"Aakash Gupta wrote that in 2012, a Microsoft employee made a simple change by making ad headlines longer and combining them with the first line of text below the headline. This simple change led to more than $100M per year in incremental revenue."},
+      {img:"til-images/bing-ad-titles-experiment.jpg", alt:"Bing search results comparing the control ad display to the Long Ad Titles treatment, with the differences circled in red", caption:"Bing’s 2012 “Long Ad Titles” experiment — control vs. treatment. (Ronny Kohavi)"},
+      {p:"I have seen many examples of small changes that can have a big impact on product success. For instance, at a previous company, I worked on the checkout experience and added a lock icon to the checkout page, where users see the “Buy” button. The hypothesis was that this lock icon would signal to users that their payment details were secure. This simple change led to a 15% increase in our conversion rate."}
+    ]
+  },
+  {
+    size:"xl",
+    title:"How many chromosomes do we have?",
+    blocks:[
+      {p:"In The Disappearing Spoon podcast, I listened to the history behind the discovery of the number of human chromosomes. In 1923, Theophilus Painter published a paper reporting that humans have 48 chromosomes. This became the accepted number for decades. Scientists didn’t question it because it fit the methods and expectations of the era."},
+      {img:"til-images/chromosomes-48-figure.jpg", alt:"An old textbook illustration outlining 48 human chromosomes", caption:"The 48 “human” chromosomes, as published in 1929 — later shown to be wrong."},
+      {p:"In the 1950s, another group of scientists — including <a href=\"https://www.sciencehistory.org/stories/magazine/joe-hin-tjio-counts-chromosomes/\" target=\"_blank\" rel=\"noopener\">Joe Hin Tjio</a> — showed that humans actually have 46 chromosomes. Looking back at the older images and counts, it’s clear that a more careful examination might have revealed the true number earlier. Even something as fundamental as how many chromosomes humans have went unchallenged for decades. Because everyone thought it was already settled."},
+      {p:"What other “facts” do we take for granted today that we should be questioning?"}
+    ]
+  }
+];
+
+function renderTilBlock(block){
+  if(block.quote){
+    const paras = block.quote.map(q=>`<p>${q}</p>`).join('');
+    return `<blockquote class="til-quote">${paras}<cite>${block.cite}</cite></blockquote>`;
+  }
+  if(block.img){
+    return `<figure class="til-figure"><img src="${block.img}" alt="${block.alt||''}" loading="lazy">${block.caption?`<figcaption>${block.caption}</figcaption>`:''}</figure>`;
+  }
+  return `<p>${block.p}</p>`;
+}
+
+const PIN_COLORS = ["#B5502E", "#9A8228", "#3E6551", "#4C5F82", "#8A4A6B"];
+
+function shade(hex, pct){
+  const num = parseInt(hex.slice(1), 16);
+  let r = (num >> 16) & 255, g = (num >> 8) & 255, b = num & 255;
+  const t = pct < 0 ? 0 : 255, p = Math.abs(pct);
+  r = Math.round((t - r) * p) + r;
+  g = Math.round((t - g) * p) + g;
+  b = Math.round((t - b) * p) + b;
+  return `rgb(${r},${g},${b})`;
+}
+
+function pinSVG(i){
+  const color = PIN_COLORS[i % PIN_COLORS.length];
+  const light = shade(color, 0.4);
+  const dark = shade(color, -0.3);
+  const darker = shade(color, -0.5);
+  return `
+    <svg class="til-pin" viewBox="0 0 36 46" aria-hidden="true">
+      <defs>
+        <radialGradient id="pinHead${i}" cx="32%" cy="26%" r="80%">
+          <stop offset="0%" stop-color="#ffffff"/>
+          <stop offset="24%" stop-color="${light}"/>
+          <stop offset="68%" stop-color="${color}"/>
+          <stop offset="100%" stop-color="${dark}"/>
+        </radialGradient>
+        <linearGradient id="pinRim${i}" x1="0" y1="0" x2="0" y2="1">
+          <stop offset="0%" stop-color="${dark}"/>
+          <stop offset="100%" stop-color="${darker}"/>
+        </linearGradient>
+        <linearGradient id="pinShaft${i}" x1="0" y1="0" x2="1" y2="0.3">
+          <stop offset="0%" stop-color="#ececec"/>
+          <stop offset="50%" stop-color="#bcbcbc"/>
+          <stop offset="100%" stop-color="#787878"/>
+        </linearGradient>
+      </defs>
+      <ellipse cx="18" cy="22" rx="6.5" ry="3" fill="rgba(0,0,0,0.22)"/>
+      <path d="M18 45 L15.3 24 L20.7 24 Z" fill="url(#pinShaft${i})"/>
+      <path d="M17.2 24 L18 43.5 L18.8 24 Z" fill="#ffffff" opacity="0.3"/>
+      <ellipse cx="18" cy="17" rx="4.8" ry="2.8" fill="url(#pinRim${i})"/>
+      <circle cx="18" cy="14.5" r="14" fill="url(#pinHead${i})"/>
+      <ellipse cx="12.5" cy="8.5" rx="5" ry="3.4" fill="rgba(255,255,255,0.7)"/>
+    </svg>
+  `;
+}
+
+function renderTilCard(entry, i){
+  const texClass = `tex-${(i % 5) + 1}`;
+  return `
+    <div class="til-card size-${entry.size} ${texClass}" id="til-card-${i+1}">
+      ${pinSVG(i)}
+      <span class="num">#${i+1}:</span>
+      <h2>${entry.title}</h2>
+      ${entry.blocks.map(renderTilBlock).join('')}
+    </div>
+  `;
+}
+
+function renderTIL(){
+  document.getElementById('tilBoard').innerHTML = tilEntries.map(renderTilCard).join('');
+  document.getElementById('tilIndex').innerHTML = tilEntries.map((entry,i)=>`
+    <li><a href="#til-card-${i+1}" data-target="til-card-${i+1}">
+      <span class="n">${String(i+1).padStart(2,'0')}</span><span>${entry.title}</span>
+    </a></li>
+  `).join('');
+}
+renderTIL();
+
+// scrollspy: highlight whichever card is currently in view
+const tilIndexLinks = document.querySelectorAll('#tilIndex a');
+if(tilIndexLinks.length && 'IntersectionObserver' in window){
+  const tilObserver = new IntersectionObserver((entries)=>{
+    entries.forEach(entry=>{
+      const link = document.querySelector(`#tilIndex a[data-target="${entry.target.id}"]`);
+      if(link) link.classList.toggle('current', entry.isIntersecting);
+    });
+  }, { rootMargin: '-15% 0px -70% 0px' });
+  document.querySelectorAll('.til-card').forEach(card=>tilObserver.observe(card));
+}
+
+const principles = [
+  {
+    text:["<strong>Give a damn</strong>: about your family, about your customers, about your work, about your team, about your career, and about yourself."]
+  },
+  {
+    text:["Listen with the intent to understand, not to respond."]
+  },
+  {
+    text:["Feedback is a gift."],
+    source:"Facebook's leadership principles"
+  },
+  {
+    text:["<strong>Empathize</strong>: empathy is being smart. For negotiators, the reason to empathize with the enemy is not because it is somehow the “nice” or “liberal” or “enlightened” approach to dealing with nasty people. We need to empathize because it makes it more likely that we can achieve our own goals."],
+    source:"Prof. Deepak Malhotra"
+  },
+  {
+    text:["Anger is a hot coal you hold in your hand while waiting to throw it at someone else."]
+  }
+];
+
+const essays = [
+  {
+    "slug": "gpus-the-engine-driving-ai",
+    "title": "GPUs: The Engine Driving AI",
+    "dek": "Inside the hardware that powers today's AI revolution",
+    "date": "Jan 9, 2025",
+    "sourceUrl": "https://bsinha.substack.com/p/the-ai-revolution-runs-on-gpus-heres",
+    "hero": "essays/gpu-images/img01.jpg",
+    "blocks": [
+      {
+        "type": "p",
+        "text": "Nvidia is now the world’s most valuable company, driven by the rise of artificial intelligence. At its core is the GPU — the Graphics Processing Unit, which Nvidia invented 25 years ago. In this article, I’ll explain why GPUs are the perfect chips for AI and how they propelled Nvidia to the top."
+      },
+      {
+        "type": "p",
+        "text": "Here’s an outline of the article:"
+      },
+      {
+        "type": "ol",
+        "items": [
+          "First, I’ll explain what a GPU is and how it differs from its cousin, the more familiar CPU",
+          "Then, I’ll cover the 3 waves of GPU adoption over the past two decades, focusing on why GPUs were the ideal chip for the last two: Wave 1: Video graphics in gaming. Wave 2: Cryptocurrency mining. Wave 3: Machine learning and AI"
+        ]
+      },
+      {
+        "type": "h2",
+        "text": "[1] What is a GPU?"
+      },
+      {
+        "type": "p",
+        "text": "A GPU, or Graphics Processing Unit, is a specialized semiconductor chip. A chip is made of many logic gates. If you’ve used Excel functions such as AND() or OR(), you already know the basic idea. For instance, the AND() function in excel takes two logical inputs (whose answer can be either “TRUE” or “FALSE”) and outputs “TRUE” only if both the 2 inputs are “TRUE”. Similarly an AND gate in a chip takes 2 inputs (in the case of semiconductor chips, these inputs are voltage signals) and outputs a signal only if both of them are “ON” or have a non zero voltage."
+      },
+      {
+        "type": "p",
+        "text": "Logic gates are built from transistors — tiny switches that control the flow of electricity. Made from silicon, transistors allow current to pass under certain conditions. Modern chips contain trillions of transistors organized into billions of logic gates."
+      },
+      {
+        "type": "p",
+        "text": "A GPU is a chip in which these transistors and logic gates are organized in a way to achieve some specialized functions."
+      },
+      {
+        "type": "img",
+        "src": "essays/gpu-images/img02.jpg",
+        "alt": ""
+      },
+      {
+        "type": "h2",
+        "text": "[2] CPU vs. GPU"
+      },
+      {
+        "type": "p",
+        "text": "CPUs (Central Processing Units) and GPUs (Graphics Processing Units) are both semiconductor chips built to perform mathematical calculations, but they differ in architecture and purpose. They are not the only kind of semiconductor chips—memory chips, such as DRAM (which makes up a computer’s memory) or solid-state storage (“hard drive” of a computer) are also semiconductor chips."
+      },
+      {
+        "type": "h4",
+        "text": "Key Differences Between CPUs and GPUs"
+      },
+      {
+        "type": "p",
+        "text": "(a) Core count: CPUs and GPUs are built from cores — independent units in a processor (either CPU or GPU) that can process tasks independently. Complex tasks can be split into smaller parts and run across multiple cores in parallel, speeding up computation."
+      },
+      {
+        "type": "p",
+        "text": "CPUs usually have far fewer cores than GPUs. For example, Apple’s M4 CPU has 10 cores, while Nvidia’s GeForce RTX 5090 GPU has over 20,000."
+      },
+      {
+        "type": "img",
+        "src": "essays/gpu-images/img03.jpg",
+        "alt": ""
+      },
+      {
+        "type": "img",
+        "src": "essays/gpu-images/img04.jpg",
+        "alt": ""
+      },
+      {
+        "type": "p",
+        "text": "This difference gives GPUs a huge advantage in tasks that are “parallel” i.e. tasks that can be broken into 1000s of mini-tasks that are not dependent on each other. CPUs with a few cores are great for sequential tasks i.e. tasks where a step is dependent on the output from previous steps."
+      },
+      {
+        "type": "p",
+        "text": "(b) Clock speed: Clock speed measures how fast a processor core can execute instructions. It is measured in gigahertz (GHz). A 1 GHz CPU can handle 1 billion instructions per second. For example, adding two numbers might require multiple instructions (like fetch number 1 from memory, fetch number 2 from memory etc). Therefore, a 1GHz CPU core can perform millions of additions per second."
+      },
+      {
+        "type": "p",
+        "text": "CPUs generally run at higher clock speeds than GPUs. For example, Apple’s M4 CPU reaches 4.5 GHz, while Nvidia’s GeForce RTX GPUs run around 2 GHz."
+      },
+      {
+        "type": "p",
+        "text": "There’s a tradeoff between having more cores and higher clock speeds. More cores generate more heat, especially if each core runs at a high clock speed. GPUs, with thousands of cores, have lower clock speeds to avoid excessive heat and power consumption. A CPU or GPU is typically part of a computer (laptop, servers etc) and, therefore, heat/power requirement is an important consideration."
+      },
+      {
+        "type": "p",
+        "text": "In summary, GPUs are a type of semiconductor chip that has 1000s of cores. GPUs excel at tasks that require parallel processing. Use cases like video graphics, bitcoin mining and AI involve operations with parallel processing."
+      },
+      {
+        "type": "h2",
+        "text": "[3] GPU usage in Bitcoin mining:"
+      },
+      {
+        "type": "p",
+        "text": "GPUs were used for Bitcoin mining in the mid-2010s. Today, miners rely on ASICs (Application-Specific Integrated Circuits) — chips designed solely for Bitcoin mining."
+      },
+      {
+        "type": "p",
+        "text": "How does Bitcoin mining works? A miner takes a block (collection) of transactions and a nonce (just a number) and then computes SHA256 hash of the combination."
+      },
+      {
+        "type": "p",
+        "text": "A hash function transforms an input into a unique, fixed-size output. SHA256 is a popular hash function. Each input has a unique mapping, meaning a different input will always generate a different output. A small change in the input will produce a completely different output. The following table shows the SHA256 output for some inputs. Notice how the outputs change drastically for seemingly a simple change in input."
+      },
+      {
+        "type": "img",
+        "src": "essays/gpu-images/img05.jpg",
+        "alt": ""
+      },
+      {
+        "type": "p",
+        "text": "Miners cycle through millions of nonce values, each producing a different hash. The goal is to find one that meets a strict condition: the hash must begin with a certain number of leading zeros (e.g., “00000000ABCDEF…”). This condition is set by the Bitcoin protocol. The miner who is the first to submit a hash with the required number of leading zeros earns the Bitcoin mining reward, which is 3.25BTC at the time of writing."
+      },
+      {
+        "type": "img",
+        "src": "essays/gpu-images/img06.jpg",
+        "alt": ""
+      },
+      {
+        "type": "p",
+        "text": "This difficulty adjusts automatically as more miners join, ensuring that one block is mined about every 10 minutes. For instance, if there are many active miners then the Bitcoin protocol will require more leading zeros in the hash. Probability of generating a hash with more leading zeros is smaller and, therefore, miners have to try more combinations (i.e. guesses of nonces) to generate such a hash."
+      },
+      {
+        "type": "p",
+        "text": "These characteristics make bitcoin mining a good use case for GPUs. Specifically:"
+      },
+      {
+        "type": "ul",
+        "items": [
+          "Calculating hashes by varying nonces is a highly parallel operation. Each nonce can be processed independently. For example, a miner doesn’t need to complete hashes for nonces 1–100 before trying nonces 1000–1100, since hash functions have no correlation between inputs and outputs.",
+          "Billions of hashes must be computed to find one that meets the leading-zero requirement."
+        ]
+      },
+      {
+        "type": "p",
+        "text": "Professional mining rigs in 2025 can mine at rates exceeding 100 TH/s—calculating 100 trillion hashes per second."
+      },
+      {
+        "type": "img",
+        "src": "essays/gpu-images/img07.png",
+        "alt": ""
+      },
+      {
+        "type": "h2",
+        "text": "[4] GPU usage in ML & Artificial Intelligence:"
+      },
+      {
+        "type": "p",
+        "text": "One of the most important tasks in machine learning (ML) and artificial intelligence (AI) is model training. The goal is to create a model (which we can think of as a mathematical equation) that has analyzed billions of data points (called the training data) and encodes the patterns or \"signal\" in those data points in the model/mathematical equation. When presented with a completely new data point, the model uses what it learned from the training data to predict a response."
+      },
+      {
+        "type": "p",
+        "text": "Imagine we have the following training data:"
+      },
+      {
+        "type": "img",
+        "src": "essays/gpu-images/img08.png",
+        "alt": ""
+      },
+      {
+        "type": "p",
+        "text": "Note that real-world ML/AI models are trained on billions of data points. For simplicity, I’ve included only five data points. We can guess that a linear model might fit this data well. Again real-world models are tested on various different forms (like linear, non-linear) but let’s use a linear model form for now. Let’s assume the model takes the following form (y = β0 + β1·X1 + β2·X2):"
+      },
+      {
+        "type": "p",
+        "text": "Here, X1 and X2 are input variables, Y is the output variable dependent on the inputs, and the Beta values are coefficients (or weights) of the input variables. While this format may seem abstract, let’s consider a real world example in which a fitness model can calculate the weight of a person using the inputs like calories consumed and steps taken"
+      },
+      {
+        "type": "ul",
+        "items": [
+          "Y = weight of the person",
+          "X1 = average daily calories consumed over the past three months",
+          "X2 = average daily steps taken over the past three months"
+        ]
+      },
+      {
+        "type": "p",
+        "text": "We can organize this data into matrices. A matrix is a mathematical structure that organizes data efficiently and has special properties useful for calculations. Let’s define some key matrices based on our training data:"
+      },
+      {
+        "type": "img",
+        "src": "essays/gpu-images/img09.jpg",
+        "alt": ""
+      },
+      {
+        "type": "p",
+        "text": "The Beta matrix contains the coefficients we want to find. Once we determine the values in this matrix, we’ll have our model and can say we’ve trained it. This trained model can then be used to guess the output for data points that it has not seen."
+      },
+      {
+        "type": "p",
+        "text": "The Beta matrix is the result of the following formula (β = (XᵀX)⁻¹Xᵀy):"
+      },
+      {
+        "type": "p",
+        "text": "This formula involves matrix-specific operations like transpose (denoted by the superscript T) and inverse (denoted by ⁻¹). For our purpose, we don’t need to understand how these matrix operators work. The primary step here is matrix multiplication. For example, we multiply Xᵀ by X and Xᵀ by y."
+      },
+      {
+        "type": "p",
+        "text": "Matrix multiplication is illustrated as follows: we take one data point from each matrix (A and B), calculate their product, and sum these products:"
+      },
+      {
+        "type": "img",
+        "src": "essays/gpu-images/img10.jpg",
+        "alt": ""
+      },
+      {
+        "type": "p",
+        "text": "Since these operations (multiplication followed by addition) are independent, each element of the product matrix can be computed in parallel. For e.g., calculation of the first element in the product matrix (i.e. 140) is independent of the calculation steps involved for the other elements (146, 320 and 335)."
+      },
+      {
+        "type": "p",
+        "text": "Modern ML/AI models handle billions of parameters and trillions of data points, resulting in enormous matrices with billions of rows and columns. Populating a single element of the product matrix requires multiplying and summing billions of values."
+      },
+      {
+        "type": "p",
+        "text": "This is why GPUs are ideal for training ML and AI models—they excel at performing parallel operations, making them highly efficient for matrix computations at massive scales. Calculating each element in the product matrix (let’s take the Beta matrix as an example) can be farmed out to invidual GPU core as shown below."
+      },
+      {
+        "type": "img",
+        "src": "essays/gpu-images/img11.jpg",
+        "alt": ""
+      },
+      {
+        "type": "h2",
+        "text": "Key takeaways:"
+      },
+      {
+        "type": "ul",
+        "items": [
+          "GPUs are a type of semiconductor chip.",
+          "Compared to CPUs, they differ in two key ways: GPUs have thousands of cores, each acting as an independent processing unit within the chip. GPUs have lower clock speeds, meaning they are generally slower than CPUs for sequential tasks.",
+          "GPUs are ideal for use cases that require parallel processing, where tasks can be broken down into millions of smaller, independent operations that run simultaneously.",
+          "Examples of parallel processing applications include 3D game graphics, Bitcoin mining, and machine learning (ML) or artificial intelligence (AI) model training.",
+          "Bitcoin mining involves guessing hashes that meet specific requirements. Each guess is independent of the others, making it possible to distribute the workload across the thousands of cores in a GPU.",
+          "While GPUs were popular for Bitcoin mining in the mid-2010s, they are no longer profitable due to the rise of application-specific integrated circuits (ASICs), which are purpose built and optimized for calculating hashes",
+          "Training ML and AI models involves performing large-scale matrix multiplications. This requires billions of multiplication and addition operations that can be processed independently. Because of their parallel processing capabilities, GPUs are the ideal choice for this type of computation."
+        ]
+      }
+    ]
+  },
+  {
+    "slug": "ethereum-101-part-1-the-basics",
+    "title": "Ethereum 101 - Part 1: The Basics",
+    "dek": "Deconstructing the core concepts of Ethereum",
+    "date": "Jan 2, 2025",
+    "sourceUrl": "https://bsinha.substack.com/p/ethereum-101-part-1-the-basics",
+    "hero": "essays/eth-images/img01.jpg",
+    "blocks": [
+      {
+        "type": "p",
+        "text": "[Background: When I started learning about crypto, I found many great resources on Bitcoin — for instance, books like The Bitcoin Standard and Broken Money. But I noticed there were far fewer resources that clearly explain Ethereum or other “smart contract” based blockchains. A lot of innovation in decentralized finance is happening in the Ethereum ecosystem. Ethereum (and other smart contract based blockchains) is also harder to understand because it introduces new ideas like smart contracts and tokens — things that don’t exist in Bitcoin. My goal with this article series is to give a clear, beginner-friendly, yet in-depth overview of Ethereum.]"
+      },
+      {
+        "type": "hr"
+      },
+      {
+        "type": "p",
+        "text": "Ethereum is an open-source, globally decentralized computing platform that runs programs called smart contracts. It uses a blockchain to synchronize and store changes to the system’s state. Its native cryptocurrency, ether, is used to meter and limit the cost of computational resources. We’ll unpack these ideas in more detail throughout the rest of the article."
+      },
+      {
+        "type": "p",
+        "text": "Vitalik Buterin proposed the idea for Ethereum in a 2014 white paper, introducing the concepts of “state” and “state transition systems.” From the white paper:"
+      },
+      {
+        "type": "blockquote",
+        "text": "In a standard banking system, for example, the state is a balance sheet, a transaction is a request to move $X from A to B, and the state transition function reduces the value in A's account by $X and increases the value in B's account by $X. If A's account has less than $X in the first place, the state transition function returns an error."
+      },
+      {
+        "type": "p",
+        "text": "The “state” of a system (like a bank) is a snapshot of its ledger or balance sheet, showing account balances. This state changes only through transactions, which follow rules (e.g., a user cannot transfer more funds than they have, transactions have to be initiated by users and cannot be initiated by the bank). A system that applies transactions to an existing state (state A) to create a new one (state B) is called a state transition system."
+      },
+      {
+        "type": "p",
+        "text": "Vitalik applied this terminology to Bitcoin:"
+      },
+      {
+        "type": "blockquote",
+        "text": "From a technical standpoint, the ledger of a cryptocurrency such as Bitcoin can be thought of as a state transition system, where there is a \"state\" consisting of the ownership status of all existing bitcoins and a \"state transition function\" that takes a state and a transaction and outputs a new state which is the result."
+      },
+      {
+        "type": "p",
+        "text": "Exhibit 1 illustrates how a transaction modifies Bitcoin’s state. Users with accounts ‘7b53ab84’ and ‘3ce6f712’ can decide to spend their bitcoins. These will be debited from their accounts. The equivalent amount has to be credited to other accounts as that is how Bitcoin’s state transition system is defined."
+      },
+      {
+        "type": "img",
+        "src": "essays/eth-images/img02.png",
+        "alt": ""
+      },
+      {
+        "type": "p",
+        "text": "In the white paper, Vitalik highlighted Bitcoin's limitations: it handles simple state changes (e.g., transferring bitcoin) but cannot manage more complex transitions, such as conditional statements enabling advanced use cases. This motivated Ethereum’s creation."
+      },
+      {
+        "type": "p",
+        "text": "Ethereum is a blockchain with a built-in Turing-complete programming language, allowing anyone to write smart contracts and decentralized applications where they can create their own arbitrary rules for ownership, transaction formats and state transition functions. I unpack this definition below:"
+      },
+      {
+        "type": "p",
+        "text": "[1] Turing-complete programming language: This means that any program of any complexity can be computed by Ethereum. Bitcoin has a “script” system, which is not Turing complete and can be used for relatively simple use cases."
+      },
+      {
+        "type": "p",
+        "text": "[2] Smart contracts: These are programs that run on Ethereum. These are distributed i.e. the program is not stored on a single computer but is part of Ethereum’s state that is distributed across all the computers/nodes that are running Ethereum. Smart contracts have the following properties:"
+      },
+      {
+        "type": "ul",
+        "items": [
+          "Transparent: The code is publicly visible for auditing.",
+          "Permissionless: Anyone can execute the code by following rules, without needing approval.",
+          "Deterministic: The outcome is consistent and impartial for all users.",
+          "Immutable: Contract code cannot change but can be deleted if the code includes such a function."
+        ]
+      },
+      {
+        "type": "p",
+        "text": "Users can interact with the smart contract and audit its code (or rely on audits done by third parties) and can assume that the program will run in a specific way and will continue to exist for the foreseeable future."
+      },
+      {
+        "type": "p",
+        "text": "Vitalik describes smart contracts as cryptographic boxes that contain value and only unlock if certain conditions are met."
+      },
+      {
+        "type": "p",
+        "text": "[3] Decentralized applications: These are also known as dapps. A dapp is a collection of smart contracts and typically a UI interface to make it easy for users to interact with the underlying smart contracts. Some common dapps are: Uniswap, Compound, Aave."
+      },
+      {
+        "type": "p",
+        "text": "Therefore, Ethereum is a blockchain that allows developers to write smart contracts (a special type of code with properties described above) that can execute state transitions that are more complicated than some of the simpler transitions that we discussed earlier (e.g. bank accounts, Bitcoin). An example of Ethereum state transition function is shown in exhibit 2."
+      },
+      {
+        "type": "img",
+        "src": "essays/eth-images/img03.jpg",
+        "alt": ""
+      },
+      {
+        "type": "p",
+        "text": "We will cover this state transition in more details later in this article. Before getting to that, we need to understand 2 other Ethereum concepts: (1) Ethereum accounts and (2) Transactions."
+      },
+      {
+        "type": "h2",
+        "text": "Ethereum accounts:"
+      },
+      {
+        "type": "p",
+        "text": "Ethereum accounts fall into two categories:"
+      },
+      {
+        "type": "img",
+        "src": "essays/eth-images/img04.jpg",
+        "alt": ""
+      },
+      {
+        "type": "p",
+        "text": "[1] Externally owned accounts (EOAs): are controlled by private keys and are typically used by retail users. For example, users can create EOAs through popular Ethereum wallets like MetaMask, Coinbase Wallet."
+      },
+      {
+        "type": "p",
+        "text": "In Ethereum, a private key is a random number less than 115792089237316195423570985008687907853269984665640564039457584007908834671663. Using cryptography (specifically Elliptic curve cryptography), a corresponding public key is mathematically derived from the private key. The address of the account is then derived from the public key."
+      },
+      {
+        "type": "p",
+        "text": "A common analogy is to think that the public key or the account address is the email address (e.g. john@gmail.com) and the private key is the password associated with that email."
+      },
+      {
+        "type": "p",
+        "text": "[2] Contract accounts: contain smart contract code and have addresses similar to EOAs. However, they do not have a private key; instead, their behavior is governed by the logic embedded in their code."
+      },
+      {
+        "type": "p",
+        "text": "The properties of the above type of accounts are described below:"
+      },
+      {
+        "type": "img",
+        "src": "essays/eth-images/img05.png",
+        "alt": ""
+      },
+      {
+        "type": "h2",
+        "text": "Transactions:"
+      },
+      {
+        "type": "p",
+        "text": "Transactions are the sole mechanism for initiating changes in Ethereum’s state or executing smart contracts. Ethereum doesn’t operate autonomously; everything starts with a transaction. And each transaction has to be triggered by an EOA. Each transaction comprises the following components:"
+      },
+      {
+        "type": "ul",
+        "items": [
+          "Recipient Address: A 20-byte Ethereum address that can be an EOA or a contract account. Transactions sent to contract accounts trigger the execution of the contract using the transaction and associated data as inputs.",
+          "Signature: Only EOAs can initiate transactions. The owner of the EOA must sign the transaction with their private key to authorize the action.",
+          "Nonce: This ensures transactions are processed in the correct order. Each originating address maintains a unique nonce for its transactions. Transactions are processed sequentially, and any gaps in the nonce sequence (e.g., skipping a nonce) will delay subsequent transactions.",
+          "Value: The amount of ETH transferred from the sender to the recipient. ETH can be sent to both EOAs and contract accounts.",
+          "Data: An optional field, typically used for transactions directed at contract accounts. It can also be sent to EOAs, but its interpretation depends on the wallet software accessing the EOA."
+        ]
+      },
+      {
+        "type": "p",
+        "text": "Before explaining the remaining components—gas limit and gas price—let’s first build some intuition for the concept of gas."
+      },
+      {
+        "type": "h4",
+        "text": "Gas in Ethereum:"
+      },
+      {
+        "type": "p",
+        "text": "Ethereum’s Turing-complete nature allows it to compute any program, regardless of complexity. This flexibility introduces security and resource management challenges. For example, a malicious smart contract could be designed to run indefinitely, consuming network resources and potentially overwhelming the system in a DDoS-like attack."
+      },
+      {
+        "type": "p",
+        "text": "To address this, Ethereum employs a metering system called gas. Gas ensures users pay for the computational resources their transactions consume, making such attacks prohibitively expensive. Vitalik Buterin explained the concept in his white paper:"
+      },
+      {
+        "type": "blockquote",
+        "text": "Each transaction is required to set a limit on how many computational steps of code execution it can use. The fundamental unit of computation is 'gas'; usually, a computational step costs 1 gas, but some operations cost more due to higher complexity. There’s also a fee for every byte in the transaction data. This fee system ensures that any transaction consuming greater resources must incur a proportional gas fee."
+      },
+      {
+        "type": "p",
+        "text": "Key attributes related to gas that are included in a transaction are:"
+      },
+      {
+        "type": "ul",
+        "items": [
+          "Gas Limit: The maximum gas the sender is willing to spend for a transaction. Simple transactions like transferring ETH from one EOA to another require 21,000 gas units.",
+          "Gas Price: The price the sender is willing to pay per gas unit, measured in wei (a subunit of ETH). Wallets adjust gas prices for faster transaction confirmations."
+        ]
+      },
+      {
+        "type": "h2",
+        "text": "State Changes via Transactions"
+      },
+      {
+        "type": "p",
+        "text": "Exhibit 2 illustrates how a transaction can alter Ethereum’s state."
+      },
+      {
+        "type": "img",
+        "src": "essays/eth-images/img06.jpg",
+        "alt": ""
+      },
+      {
+        "type": "p",
+        "text": "Initially, the state (State A) comprises the following:"
+      },
+      {
+        "type": "ul",
+        "items": [
+          "Two EOAs: Account 14c5f8ba: Balance of 1024 ETH. Account 4096ad65: Balance of 77 ETH.",
+          "Two Contract Accounts: Account bb75a980: Balance of 5202 ETH, containing contract code and data ([0, 235235, 0, ALICE, …]). Account 892bf92f: Balance of 0 ETH, containing contract code and data ([ALICE, BOB, CHARLIE])"
+        ]
+      },
+      {
+        "type": "p",
+        "text": "The transaction in exhibit 2 originates from EOA 14c5f8ba (remember only EOAs can initiate transactions) and is sent to contract account bb75a980. The transaction value is 10 ETH, implying that this amount should be transferred from 14c5f8ba to bb75a980."
+      },
+      {
+        "type": "p",
+        "text": "After the transaction, the new state (State B) shows:"
+      },
+      {
+        "type": "ul",
+        "items": [
+          "EOA 14c5f8ba: Balance reduced to 1014 ETH.",
+          "Contract bb75a980: Balance increased to 5212 ETH."
+        ]
+      },
+      {
+        "type": "h2",
+        "text": "Contract Code and Execution"
+      },
+      {
+        "type": "p",
+        "text": "We also have some data that consists of: 2, Charlie. The data included in the transaction is included as an array. Array is a type of data structure i.e. a way to organize the data. This array is recognized or referred to as “tx.data[x]” by the contract code. The ‘x’ inside the square bracket is used to refer to the position (index) inside the array. For this transaction, the data is represented as follows:"
+      },
+      {
+        "type": "pre",
+        "text": "tx.data = [2, Charlie]"
+      },
+      {
+        "type": "p",
+        "text": "The length of this array is 2 as there are 2 data points inside it. An \"index\" can be used to specify a specific item inside the array. Example:"
+      },
+      {
+        "type": "pre",
+        "text": "tx.data[0] = [2]\ntx.data[1] = [Charlie]"
+      },
+      {
+        "type": "p",
+        "text": "Now let's look at the code included inside the contract account:"
+      },
+      {
+        "type": "pre",
+        "text": "if !contract.storage[tx.data[0]]:\ncontract.storage[tx.data[0]] = tx.data[1]"
+      },
+      {
+        "type": "p",
+        "text": "This contract is referring to 2 arrays:"
+      },
+      {
+        "type": "ol",
+        "items": [
+          "tx.data[] array, which consists of the data that is being included in the transaction",
+          "contract.storage[] array, which consists of the data that already is present in the contract account in state A"
+        ]
+      },
+      {
+        "type": "pre",
+        "text": "contract.storage[] = [0, 235235, 0, ALICE, ….]"
+      },
+      {
+        "type": "p",
+        "text": "Therefore,"
+      },
+      {
+        "type": "pre",
+        "text": "contract.storage[0] = [0]\ncontract.storage[1] = [235235]\ncontract.storage[2] = [0]\ncontract.storage[3] = [ALICE]"
+      },
+      {
+        "type": "p",
+        "text": "The contract code runs in the following manner:"
+      },
+      {
+        "type": "ol",
+        "items": [
+          "Check value for contract.storage[tx.data[0]] = contract.storage[2] = [0]",
+          "If the above is 0 then execute: contract.storage[tx.data[0]] = tx.data[1]. Since value in step 1 is 0, step 2 gets executed as follows:",
+          "contract.storage[tx.data[0]] = tx.data[1] = [Charlie]",
+          "contract.storage[2] = [Charlie]"
+        ]
+      },
+      {
+        "type": "p",
+        "text": "Therefore, the contract’s storage array will be updated because of the transaction as shown in the future state in the diagram."
+      },
+      {
+        "type": "p",
+        "text": "Therefore, we can see that the state transition system in Ethereum could do more complicated tasks that Bitcoin’s state transition system: It was able to update the ETH balances for accounts and was able to run some arbitrary program/code with conditional statements."
+      },
+      {
+        "type": "h2",
+        "text": "Key takeaways:"
+      },
+      {
+        "type": "ul",
+        "items": [
+          "Ethereum offers more flexibility than Bitcoin as it is Turing complete and allows highly complex state transition functions",
+          "Ethereum has 2 types of accounts: (1) EOA (Externally Owned Account) and (2) Contract accounts",
+          "EOA are accounts that are typically controlled by retail users (using their private key, which is just a random number less than a very large number)",
+          "Contract accounts contain code/program known as smart contract. Smart contracts have some special properties like permissionless, permanence, being deterministic etc",
+          "Ethereum’s state can be changed only via a transaction that is triggered by an EOA",
+          "A transaction can transfer ETH from one account to another",
+          "A transaction can trigger a contract code and cause it to take some action (e.g. updating the values that are stored in an account)"
+        ]
+      }
+    ]
+  }
+];
+
+const books = [{"title":"Excellent Advice for Living","author":"Kevin Kelly","color":"#3B4A63","cover":"covers/excellent-advice-for-living.jpg","highlights":["Being enthusiastic is worth 25 IQ points.","A deadline prevents you from trying to make it perfect, so you have to make it different. Different is better.","Forgiveness is not something we do for others; it is a gift to ourselves.","A great way to understand yourself is to seriously reflect on everything you find irritating in others.","Whenever you have a choice between being right or being kind, be kind. No exceptions.","Promptness is a sign of respect.","When you are young, spend at least 6 months to 1 year living as cheaply as you can, owning as little as you possibly can, eating beans and rice in a tiny room or tent. That way any time you have to risk something in the future, you won’t be afraid of the “worst-case” scenario.","If you ask for someone’s feedback, you’ll get a critic. But if instead you ask for advice, you’ll get a partner.","While you invent, don’t select. While you sketch, don’t inspect. While you write the first draft, don’t reflect. At the start, the creator’s mind must be unleashed from judgment.","A vacation + a disaster = an adventure.","Forgiveness is accepting the apology you will never get.","To cultivate a habit, switch your language from “I can or can’t do” to “I do or don’t do.” You shift the weight from a wavering choice to an unwavering identity.","Imagination is the most potent force in the universe. And you can get better at it. It’s the one skill in life that benefits from ignoring what everyone else knows.","When someone tells you something is wrong, they’re usually right. When they tell you how to fix it they’re usually wrong.","This is the best time ever to make something. None of the greatest, coolest creations 20 years from now have been invented yet. You are not late.","If your goal does not have a schedule, it is a dream.","About 99% of the time the right time is right now.","To manage yourself use your head; to manage others use your heart.","Speak confidently as if you are right but listen carefully as if you are wrong.","Don’t wait for the storm to pass; dance in the rain.","A wise man said: Before you speak, let your words pass through three gates. At the first gate, ask yourself, “Is it true?” At the second gate, ask, “Is it necessary?” At the third gate, ask, “Is it kind?”","To get your message across, follow this formula used by ad writers everywhere: simplify, simplify, simplify, then exaggerate.","For lofty goals, measure your progress from where you started rather than where you need to finish.","Your flaws and your strengths are two poles of the same traits. For instance, there is only a tiny difference between stubbornness and perseverance or between courage and foolishness. The sole difference is in the goal. It’s stupid stubbornness and reckless foolishness if the goal does not matter, and relentless perseverance and courage if it does.","Don’t define yourself by your opinions because then you can’t change your mind. Define yourself by your values.","See that old person taking forever in line? That is the future you. Have patience."]},{"title":"Hell Yeah or No","author":"Derek Sivers","color":"#6E6A2E","cover":"covers/hell-yeah-or-no.jpg","highlights":["Success comes from doing, not declaring.","I rebel against anything that feels like addiction. When I hear myself saying “I need this,” I want to challenge that dependency and prove my independence.","Many people are so worried about looking good that they never do anything great. Many people are so worried about doing something great that they never do anything at all.","A new college campus was built, but one thing was still debated: Where in the grass should we put the paved walkways?\n\nOne professor had the winning idea: Don’t make any walkways this year. At the end of the year, look where the grass has worn away. That shows where the students are walking. Then just pave those paths.\n\nSo when should you make decisions? When you have the most information, when you’re at your smartest: as late as possible.","[On holding on to old beliefs:] The solution is deliberate unlearning. Doubt what I know. Stop the habit of thinking I know it. Require current proof that it’s still true today. Otherwise, let it go.\n\nJohn Cage said, “I can’t understand why people are frightened of new ideas. I’m frightened of the old ones.”","Life can be improved by adding, or by subtracting. The world pushes us to add, because that benefits them. But the secret is to focus on subtracting.\n\nThe adding mindset is deeply ingrained. It’s easy to think I need something else. It’s hard to look instead at what to remove. Subtracting reminds me that what I need to change is something already here, not out there.","You really learn only when you’re surprised. If you’re not surprised, then everything is fitting into your existing thought patterns. So to get smarter, you need to get surprised, think in new ways, and deeply understand different perspectives.","Sometimes people ask me if there’s one motto or rule of thumb I use most often. This is it: Whatever scares you, go do it.\n\nBest of all, once you do something that scared you, you’re not scared of it anymore!"]},{"title":"Greenlights","author":"Matthew McConaughey","color":"#7A4B2A","cover":"covers/greenlight.jpg","highlights":["I am an optimist by nature, and humor has been one of my great teachers. It has helped me deal with pain, loss, and lack of trust. I am not perfect; no, I step in shit all the time and recognize it when I do. I have just learned how to scrape it off my boots and carry on.","I have earned a few scars getting through this rodeo of humanity. I have been good at it, I have been not so good at it, and ultimately, I have found some pleasure in all of it, either way.","When I kept whining about my lone pair of tennis shoes being old and out of fashion, my mom told me, “Keep gripping and I will take you [to] meet the boy with no feet.”","The arrival is inevitable: Death.\nA unanimous end, a unified destination.\nA noun without regard. Our eulogy. Written.\nLived.\nThe approach is relative: Life.\nA singular procession, our personal journey.\nA verb with regard. Our résumé. Write it.\nLive it.","I once asked her if she ever went to bed with any regrets. She quickly told me, “Every night, son. I just forget them by the time I wake up.”","DNA and work.\nGenetics and willpower.\nLife’s a combination.\nSome get the genes but never the work ethic or resilience.\nOthers work their ass off but never had the innate ability.\nOthers have both and never rely on the first.","I was ready to graduate and take “I would if I could” to “I can and I am.”","[On a relationship:] “She even presses my jeans.”\nBeth smiled then said something I hadn’t ever thought to myself, and haven’t forgotten since.\n“That’s great, Matthew, if you want your jeans pressed.”\nI’d never thought to ask myself if I wanted my jeans pressed before because for the first time in my life I could have them pressed.\nNo, actually. I didn’t want my jeans to be pressed.","[On landing the lead in A Time to Kill:] Two weeks later, working on the set of Lone Star in Eagle Pass, Texas, in the full-moon desert at midnight, I got a phone call. It was Joel Schumacher and John Grisham.\n“You wanna be Jake Brigance?”\n“You’re damn right I do.”\nI ran off into the night until I was about a mile away from anyone. Then, with tears in my eyes, I dropped to my knees, faced that full moon, extended my right hand up to it, and said, “Thank you.”","The day of the opening of “A Time to Kill,” I strolled to my favorite deli on the Third Street Promenade in Santa Monica, California, to get a tuna fish sandwich on toasted sourdough with extra pickles and ketchup on the side.\nIt was like any other stroll down that Promenade for me. Four hundred or so people milling about. Three hundred ninety-six made nothing of me. Four did. A few girls who thought I was cute and one dude who liked my shoes.\nThat night, A Time to Kill premiered in theaters across America and grossed fifteen million dollars in its opening weekend. \nThe following Monday I went back to the Promenade to get a tuna fish sandwich on toasted sourdough with extra pickles and ketchup on the side.\nIt was not like any other stroll down that Promenade for me. Four hundred or so people milling about. Three hundred ninety-six stared at me. Four did not. Three babies and a blind man.\nI was famous.","Just because the seats are empty doesn’t mean they’re not taken.\nSometimes the guest list needs to be for one.\nYOU.","God, when I cross the truth, give me the awareness to receive it, the consciousness to recognize it, the presence to personalize it, the patience to preserve it, and the courage to live it.","Ever been to a Baptist church in the Deep South?\nThey pray real prayers.\nThey pray for things they need.\nGod, if I am sick bring me a doctor.\nBlue collar prayers.\nThen there’s the privileged prayers.\nThey pray fake prayers.\nThey pray for things they want.\nGod, help me win this game.\nWhite collar prayers.\nWe need to quit asking God to answer these types of prayers.\nHe’s busy, trying to get a new set of tires.","It is not about win or lose, it is about do you accept the challenge.","Dozens of romantic comedy offers came my way. Only romantic comedy offers came my way. I read them out of respect but I stayed the course, stuck to the plan, and ultimately passed on them all. Just how puritanical was I about it?\nWell, I got a $5M offer for two months’ work on one. I read it. I passed. Then $14.5M. Hmmm… let me reread it. I declined the offer.","Truth’s like a jalapeno. The closer to the root the hotter it gets.","[On preparing to play Ron Woodroof:] His diary is how I found him (Ron Woodroof, the character on whom the movie Dallas Buyers Club is based)—who he was after contracting HIV, but even more important, who he was before.\n\nDiary entry: “Hope I get that call back tomorrow to go install those two JVC home speakers at Tom and Betty’s house. They live across town, ’bout 42 miles away so I figure $8 gas there and back, $6 for the monster cable speaker wire I gotta supply, that’ll clear me $24 off the $38 I am charging them to install the speakers. Hot damn! I’ll hit the Sonic afterwards and get me a double cheeseburger and a taste of Nancy.”\n\nThen he’d wake up early the next morning. Until his pager buzzed, Tom and Betty’s number. “We’re gonna cancel the speaker install today, found a company that costs a little more than you but they’ll insure the work, thanks, Ron.” His heart would sink.","We don’t live longer when we try not to die, we live longer when we’re too busy livin’.\n\nLife is our résumé. It is our story to tell, and the choices we make write the chapters."]},{"title":"The 4-Hour Workweek","author":"Tim Ferriss","color":"#2F5A63","cover":"covers/the-4-hour-workweek.jpg","highlights":["The New Rich (NR) are those who abandon the deferred-life plan and create luxury lifestyles in the present using the currency of the New Rich: time and mobility. This is an art and a science we will refer to as Lifestyle Design (LD).","Money is multiplied in practical value depending on the number of W’s you control in your life: what you do, when you do it, where you do it, and with whom you do it. I call this the “freedom multiplier.” Using this as our criterion, the 80-hour-per-week, $500,000-per-year investment banker is less “powerful” than the employed NR who works ¼ the hours for $40,000, but has complete freedom of when, where, and how to live.","Learn the rules like a pro, so you can break them like an artist. — Pablo Picasso","Few people choose to (or are able to) measure the results of their actions and thus measure their contribution in time. More time equals more self-worth and more reinforcement from those above and around them. The NR, despite fewer hours in the office, produce more meaningful results than the next dozen non-NR combined.","Many a false step was made by standing still. — Fortune cookie\n\nAction may not always bring happiness, but there is no happiness without action. — Benjamin Disraeli, former British Prime Minister","What is it costing you—financially, emotionally, and physically—to postpone action? Don’t only evaluate the potential downside of action. It is equally important to measure the atrocious cost of inaction. If you don’t pursue those things that excite you, where will you be in one year, five years, and ten years? How will you feel having allowed circumstance to impose itself upon you and having allowed ten more years of your finite life to pass doing what you know will not fulfill you? If you telescope out 10 years and know with 100% certainty that it is a path of disappointment and regret, and if we define risk as “the likelihood of an irreversible negative outcome,” inaction is the greatest risk of all.","“Would you tell me, please, which way I ought to go from here?” “That depends a good deal on where you want to get to,” said the Cat. “I don’t much care where …” said Alice. “Then it doesn’t matter which way you go,” said the Cat. — Lewis Carroll, Alice in Wonderland","Ninety-nine percent of people in the world are convinced they are incapable of achieving great things, so they aim for the mediocre. The level of competition is thus fiercest for “realistic” goals, paradoxically making them the most time- and energy-consuming. It is easier to raise $1,000,000 than it is $100,000.","The opposite of love is indifference, and the opposite of happiness is—here’s the clincher—boredom.\n\nExcitement is the more practical synonym for happiness, and it is precisely what you should strive to chase. It is the cure-all. When people suggest you follow your “passion” or your “bliss,” I propose that they are, in fact, referring to the same singular concept: excitement. This brings us full circle. The question you should be asking isn’t, “What do I want?” or “What are my goals?” but “What would excite me?”","Life is too short to be small. — Benjamin Disraeli","Create two timelines—6 months and 12 months—and list up to five things you dream of having (including, but not limited to, material wants: house, car, clothing, etc.), being (be a great cook, be fluent in Chinese, etc.), and doing (visiting Thailand, tracing your roots overseas, racing ostriches, etc.) in that order.\n\nConvert each “being” into a “doing” to make it actionable. Identify an action that would characterize this state of being or a task that would mean you had achieved it. People find it easier to brainstorm “being” first, but this column is just a temporary holding spot for “doing” actions.","Perfection is not when there is no more to add, but no more to take away. — Antoine de Saint-Exupéry","Effectiveness is doing the things that get you closer to your goals. Efficiency is performing a given task (whether important or not) in the most economical manner possible. Being efficient without regard to effectiveness is the default mode of the universe. I would consider the best door-to-door salesperson efficient—that is, refined and excellent at selling door-to-door without wasting time—but utterly ineffective. He or she would sell more using a better vehicle such as e-mail or direct mail.\n\nWhat you do is infinitely more important than how you do it. Efficiency is still important, but it is useless unless applied to the right things.\n\nMost things make no difference. Being busy is a form of laziness—lazy thinking and indiscriminate action.\n\nBeing overwhelmed is often as unproductive as doing nothing, and is far more unpleasant. Being selective—doing less—is the path of the productive. Focus on the important few and ignore the rest.","Am I being productive or just active? Am I inventing things to do to avoid the important?\n\nWhat are the top-three activities that I use to fill time to feel as though I’ve been productive? These are usually used to postpone more important actions (often uncomfortable because there is a chance of failure or rejection). Be honest with yourself, as we all do this on occasion. What are your crutch activities?\n\nIf this is the only thing I accomplish today, will I be satisfied with my day?","Lifestyle design is based on massive action—output. Increased output necessitates decreased input. Most information is time-consuming, negative, irrelevant to your goals, and outside of your influence. I challenge you to look at whatever you read or watched today and tell me that it wasn’t at least two of the four.\n\nFocus on what digerati Kathy Sierra calls “just-in-time” information instead of “just-in-case” information.","Delegation is to be used as a further step in reduction, not as an excuse to create more movement and add the unimportant. Remember—unless something is well-defined and important, no one should do it. Eliminate before you delegate. Never automate something that can be eliminated, and never delegate something that can be automated or streamlined. Otherwise, you waste someone else’s time instead of your own, which now wastes your hard-earned cash.","Principle number one is to refine rules and processes before adding people. Using people to leverage a refined process multiplies production; using people as a solution to a poor process multiplies problems.","[On testing before you commit:] He was once recruited to design an advertisement for a manufacturer’s watch line. The manufacturer wanted to feature nine different watches in the ad, and Joe recommended featuring just one. The client insisted and Joe offered to do both and test them in the same issue of The Wall Street Journal. The result? The one-watch offer outsold the nine-watch offer 6-to-1.","Liberty means responsibility. That is why most men dread it. — George Bernard Shaw","All courses of action are risky, so prudence is not in avoiding danger (it’s impossible), but calculating risk and acting decisively. Make mistakes of ambition and not mistakes of sloth. Develop the strength to do bold things, not the strength to suffer. — Niccolò Machiavelli, The Prince","Would you like me to give you a formula for success? It’s quite simple, really. Double your rate of failure. — Thomas J. Watson, founder of IBM","Only those who are asleep make no mistakes. — Ingvar Kamprad, founder of IKEA, the world’s largest furniture brand","Can you have a two-hour dinner with Spanish friends without getting anxious? Can you get accustomed to a small town where all businesses take a siesta for two hours in the afternoon and then close at 4:00 P.M.? If not, you need to ask, “Why?” Learn to slow down. Get lost intentionally. Observe how you judge both yourself and those around you.","Man is so made that he can only find relaxation from one kind of labor by taking up another. — Anatole France, author of The Crime of Sylvestre Bonnard","Whenever upset or anxious, ask “why” at least three times and put the answers down on paper. Describing these doubts in writing reduces their impact twofold. First, it’s often the ambiguous nature of self-doubt that hurts most. Defining and exploring it in writing—just as with forcing colleagues to e-mail—demands clarity of thought, after which most concerns are found to be baseless. Second, recording these concerns seems to somehow remove them from your head.","Ho imparato che niente è impossibile, e anche che quasi niente è facile … (I’ve learned that nothing is impossible, and that almost nothing is easy …) — Articolo 31 (Italian rap group), “Un Urlo”","Perfection is a good ideal and direction to have, but recognize it for what it is: an impossible destination.","Remembering that you are going to die is the best way I know to avoid the trap of thinking you have something to lose. — Steve Jobs","Two years ago, I was forwarded the following poem—originally written by child psychologist David L. Weatherford—by a close friend. He quit his own deferred-life plan after reading it, and I hope you will do the same. Here it is.\n\nHave you ever watched kids \nOn a merry-go-round? \nOr listened to the rain \nSlapping on the ground? \nEver followed a butterfly’s erratic flight? \nOr gazed at the sun into the fading night? \nYou better slow down. \nDon’t dance so fast."]},{"title":"The Art of Spending Money","author":"Morgan Housel","color":"#6B2F3E","cover":"covers/the-art-of-spending-money.jpg","highlights":["The best use of money is as a tool to leverage who you are, but never to define who you are.","Money is so tangible that it’s an easy goal to strive for, and pursuing it can become the path of least resistance for those who haven’t discovered what truly feeds their soul.","An important question I love is: What have you experienced that I haven’t that makes you believe what you do? And would I believe the same if I experienced what you have?","Comedian George Carlin once said, “Everyone driving slower than you is an idiot, and everyone driving faster than you is a maniac!” It’s natural to view everyone’s decisions as wrong when they differ from yours.","Résumé virtues are things like salary, job title, net worth, and how fancy your possessions are. Eulogy virtues can be boiled down to how much people actually respect and admire you.","Irish novelist Iris Murdoch brilliantly framed the curse of not appreciating what you have: “People from a planet without flowers would think we must be mad with joy the whole time to have such things about us.”","A good life is everything you need and some of what you want. If you have everything you want, you appreciate none of what you have.","Everyone’s different, but my own desire to live a relatively simple life is not because I don’t enjoy nice things. It’s quite the opposite. When you live a simple and modest life, your occasional experience with nice things can generate more joy than if you had those things all the time.\n\nChristmas morning, the Fourth of July, birthdays, and the last day of school feel great because they happen just once a year. The same joy can be had when the luxury items in your life become occasional treats rather than constant needs. \n\nA simple life can be the most potent way to enjoy luxury items. That’s so counterintuitive until you realize how powerful contrast can be. Figure out your own details, everyone’s different, but when I find something I love—a restaurant, a trip, a drink—I tend to ask how I can turn it into an occasional treat versus a constant new addition.","The power of contrast can make ordinary things feel incredible and extraordinary things feel bland. Rich people who fly in their own private jets will tell you it’s the most amazing, satisfying thing extreme wealth can buy, and it never gets old. Why don’t we ordinary people say the same thing about driving in our own cars—“private cars”? My theory is that most people who fly in private jets used to fly commercial before they were rich, so they remember the slog of flying like an ordinary person: long lines, going through security, the middle seat, the snoring passengers. Compared to that, flying private is a dream. But most people who drive “private” cars don’t have anything similar to compare the experience with. They’ve been in “private” cars their whole life. There is no contrast between current and previous experiences. But go back to the early 1900s, when cars were new and people could contrast the experience to the horse and buggy. What did people say about cars back then? They seemed so magical and luxurious that many feared they would create a haves-versus-have-nots war that could tear the country apart.","There is a Scottish proverb: “Be happy while you are living, for you are a long time dead.”","Good memories are the closest thing to living for today while compounding for tomorrow. The anonymous Twitter account FedSpeak once wrote, “The purpose of life is to experience things for which you will later experience nostalgia.”","The author C. S. Lewis once defined this feeling so well in an essay called “The Inner Ring.” Life, he described, is often viewed as a series of social rings, and people’s desire is to break into the next level, the more exclusive ring. If you’re outside of a ring, nothing seems better than the thought of being on the inside. But once you’re on the inside of one ring, you realize you’re not nearly as happy as you thought you’d be, and you shift your attention to the next ring, where nirvana seems to reside.\n\nAuthor Rob Henderson once noted that when he was a student at Yale, his classmates loved the Broadway play Hamilton. But once the play was released on Disney’s streaming platform—available to the masses—they hated it, found it boring, and stopped talking about it. The Yale students didn’t care about the play as much as they cared that they could watch something others couldn’t. Hamilton was cool when it was exclusive to their social ring; much less so when anyone could watch it.","There’s no such thing as unspent money. You spend every single cent you’ve ever earned. You spend every dollar in your bank account, whether you know it or not. Money you haven’t spent buys something intangible but valuable: freedom, independence, and being able to spend time in your own way. Every dollar of savings buys a claim check on the future. (And every dollar of debt you hold is a piece of your future that someone else controls.)","[On the highest level of independence:] Level 15: You wake up every morning realizing that you can spend your time doing what you want, with whom you want, for as long as you want. Bosses don’t control your day. Social debt doesn’t influence your decisions. Actual debt doesn’t control your options. You beat the game. And you realize that while this doesn’t guarantee happiness and there are still plenty of opportunities for you to screw up your life, you have unlocked a lifestyle boost that 99.99 percent of humans who have ever lived have not experienced. The only risk is that you forget how grateful you should be to be in this situation.","Refusing to recognize that you’ve met your goal can be as bad as never meeting the goal to begin with.","Visa founder Dee Hock had a great saying: “A belief is not dangerous until it turns absolute.”\n\nThe best definition of independent thinking is when your beliefs on one topic can’t be predicted from your beliefs on another topic. If you tell me what political party you belong to and I can instantly and accurately guess your views on immigration, abortion, taxes, and guns, are you really thinking independently, or just going along with your tribe? It’s the same with money. Particularly for those with an above-average income: If you tell me your salary, and I can accurately guess how much you spend on cars, homes, clothes, and vacations, are you using money as a tool to leverage your unique personality, or are you just going along with what society says you should want to spend your money on?","A dad played a game with his son every week. He offered the son a dime and a nickel, and told him to pick one. The son picked the nickel every time. His brother told him he’s crazy, because the dime is worth more. “No, because if I pick the dime, Dad might stop playing this game,” the son replied. If you’re fortunate to have enough money to spend some on your kids—or your friends, your neighbor, your partner, whoever it might be—remember that the ones who love you almost certainly don’t want your money as much as they want your love and attention.","If you’re fortunate to have some disposable income and, say, buy a luxury car when you have young kids, but then your kids go on to decide to become kindergarten teachers and can only afford modest cars, do they feel ashamed? Like they failed relative to their parents? Will they in fact pick a career they don’t enjoy but that pays well because they feel pressure to at least match the lifestyle they grew up with?\n\nGenerational growth—the feeling that you have matched or exceeded the life built by your parents—is an important part of most people’s well-being.","Author Rory Sutherland writes, “The opposite of a good idea can also be a good idea.”","The luckier you are, the nicer you should be. Having money can accentuate who you are, but it can also blind you to who others are.\n\nUnderstand that people who have made different decisions than you, and ended up with a different outcome than you, can be just as smart, funny, insightful, and worthy as you."]},{"title":"The Thinking Machine","author":"Stephen Witt","color":"#7A4B2A","cover":"covers/the-thinking-machine.jpg","highlights":["[On Nvidia’s near-bankruptcy:] Already the triage had begun, with the company’s bills organized in the order in which payment could be delayed. First, vendors would get stiffed, then utilities, then finally employees. Whatever else happened, Huang was determined to make payroll until the day the lights were turned off.","[On Nvidia’s reliance on emulators:] Following the Riva’s launch, Huang invested in emulators and gave up on physical prototypes. “To this day, we are the largest user of emulators in the world,” Huang said. The bias in the semiconductor industry in favor of hard prototypes had seemed reasonable—imagine trying to sell a car that had never undergone a real-world crash test. Prototyping seemed like the practical approach that the “adult in the room” would take.","Desperation, not inspiration, was the mother of victory. Huang encouraged his employees to preserve the mindset they’d adopted during the Riva crunch, asking them to constantly behave as if the company was teetering on the verge of bankruptcy even when it was making massive profits. For years to come, Jensen opened staff presentations with the words “Our company is thirty days from going out of business.” Even today at Nvidia, this sentence remains the corporate mantra.","[On the graphics-chip industry’s shakeout:] “In five years, there will be three: a big one in charge, a laggard playing catch-up, and a small one trying to disrupt the other two.” Huang intended to be the one in charge.","It was [Clayton] Christensen who explained, really for the first time, why the big players like Sun and Silicon Graphics had declined to invest in PC video game hardware—not because they hated gamers but because the margins sucked compared to workstations and because, succeed or fail, gamers would not initially make a substantial difference in their bottom line. But in ceding the PC gaming market to Nvidia, the workstation companies had made a fatal mistake, just as GM had by ignoring Honda decades earlier. Nvidia, like Honda, was today selling low-margin products to teenage boys, but if the analogy held, tomorrow they might overtake the business workstations of Sun Microsystems and SGI.","[On how Nvidia’s pixel pipelines beat 3dfx:] One thing [John] Carmack wanted was multiple “pixel shaders.” These were the algorithms that assigned colors to individual pixels in a three-dimensional scene. By running more than one shading algorithm at a time, one could first decorate the wall with a light source, then subsequently decorate it with blood spatter.\n\n3dfx, the leader in the graphics-accelerator market, had solved the problem by putting two graphics chips on the same card. [Chief scientist David] Kirk and his team had a more radical solution in mind. What if you split the pixel-shading into two datasets, then ran the same instruction set on each pipeline at the same time, all on a single chip?\n\nHuang was skeptical at first. This approach, known as “parallel computing,” had been tried before by vendors of expensive supercomputers. But then Huang began to reason from first principles. Carmack wouldn’t stop at two separate pixel pipelines, he surmised. As the shooting games grew in complexity, he’d always want more.\n\nBy dedicating a chip to each light source, 3dfx would eventually run out of real estate on the circuit board.","[On why Nvidia had to move beyond add-in cards:] Moore’s Law had already consumed the peripheral circuit-board market segment in which Nvidia originally operated. As first conceived, in 1993, the 3D graphics accelerator would be one of many slot-in add-on cards, alongside sound cards, networking cards, printer cards, et cetera. But by the late 1990s, Intel had folded sound, networking, and printing functionality into the motherboard.","Huang was employing a scheduling technique he called the “speed of light.” He drilled this management concept into his employees with the fervor of religious doctrine—almost everyone at Nvidia I talked to referenced the “speed of light” at least once. “Speed of light” did not mean, as one might assume, to move quickly. Instead, Huang encouraged managers to identify the absolute fastest that something could conceivably be accomplished, given an unlimited budget, and assuming that every single thing went right. (For example, traveling from New York to London at the “speed of light” would involve perfect weather, zero traffic, and a supersonic plane.) Managers could then work backward from this unachievable constant.","[On activist investor Jeffrey Smith of Starboard Value:] Smith, forty-two, was youthful and energetic, with curly hair and a boyish face. He liked to question operational decisions in excruciating detail: he once managed to replace the entire twelve-person board of Darden Restaurants while holding less than 6 percent of the company’s stock on the basis of a 294-slide plan to turn around the struggling Olive Garden chain. Starboard’s Olive Garden slideshow became a legendary document among equity analysts, particularly slide 104, which criticized the restaurant’s breadstick strategy. (Historically, Olive Garden waiters would bring one breadstick for every guest, plus one for the table; they would then refill the breadstick container as needed. But over time the quality of service deteriorated, and servers just started dumping a bunch of breadsticks on the table, reducing the amount of food that customers ordered.)","[On AlexNet, the neural network that launched the deep-learning boom:] After a few trial runs, [Alex] Krizhevsky slotted the two GPUs into the desktop computer in his bedroom, then let them rip for a week.\n\nHere, finally, was the customer Huang had dreamed of, the programmer so broke he could only afford to do his experiments on a repurposed graphics accelerator. Here was Krizhevsky, a weirdo recluse whom even his colleagues knew little about. Here was the mad scientist. Here was the iconoclast. Here was the man who would build CUDA’s killer app.\n\nThe accompanying academic paper for the SuperVision network, credited to Krizhevsky, Sutskever, and Hinton, has to date been cited more than 150,000 times, making it one of the single-most-important findings in the history of computer science. Krizhevsky pioneered a number of important programming techniques, but his key finding was that a GPU could train neural networks hundreds of times faster than a CPU could.","[On Nvidia’s DGX-1 supercomputer:] By wiring eight P100 chips together with an NVLink connection, Nvidia collapsed separate silicon mazes into a single computing super-labyrinth. This magnificent eight-chip array formed the spine of the DGX-1, which was housed in a handsome metal case with a pebbled exterior. The computer weighed 134 pounds, cost $129,000, and drew as much power as a clothes dryer. The DGX-1 was the most powerful computer Nvidia had ever built—Huang called it a “data center in a box.” It was not a machine intended for general purposes; it was not a machine really intended for anything except training ever-more-powerful AIs. But the DGX-1 could today be listed alongside the ENIAC and the Apple II as one of the most important computers ever built.","[On Nintendo designer Shigeru Miyamoto’s exacting standards:] Miyamoto exercised a fanatical level of control; he once complained about the stitches on Mario’s pants in a US print advertisement.","“There’s a war going on out there in A.I., and Nvidia is the only arms dealer,” one Wall Street analyst said.","[On the energy cost of generative AI:] A standard Google search required about a third of a watt-hour’s worth of electricity. With generative AI enabled, the same Google search required ten times that, which was enough to power a light bulb for about twenty minutes. Ask GPT to write you a five-thousand-word term paper, and you used enough energy to run a microwave for an hour.","[On Nvidia’s February 2024 earnings report:] Nvidia’s conference call began fifteen minutes after the close of trading. It was one of the most listened-to earnings reports in Wall Street history. Colette Kress, Nvidia’s CFO, spoke first. She announced that annual revenues were far better than expected, more than doubling to $60 billion. Not only that, but Nvidia had realized a greater than 70 percent gross margin across all products. (Apple, Wall Street’s favorite money-printing machine, earned a gross margin of 46 percent.) Net income for the year, Kress announced, was just under $30 billion—more than Nvidia had earned in the previous thirty years combined.\n\nOn February 22, in six and a half hours of trading, Nvidia gained $277 billion in market value, adding more than the entire value of the Coca-Cola Company to its market capitalization.","“Here is one narrow way to look at human history,” OpenAI CEO Sam Altman wrote in a September 2024 essay. “After thousands of years of compounding scientific discovery and technological progress, we have figured out how to melt sand, add some impurities, arrange it with astonishing precision at extraordinarily tiny scale into computer chips, run energy through it, and end up with systems capable of creating increasingly capable artificial intelligence. This may turn out to be the most consequential fact about all of history so far.”"]},{"title":"The Not-To-Do List","author":"Rolf Dobelli","color":"#5B3A5E","cover":"covers/the-not-to-do-list.jpg","highlights":["[On why we notice obstacles more than help:] When you’re out on a bike ride, you instantly feel the headwind but barely notice the tailwind. The American psychologist Tom Gilovich and Shai Davidai discussed this “headwinds/tailwinds asymmetry” in 2016 in the Journal of Personality and Social Psychology. The phenomenon is not unique to bike rides; it applies to many aspects of life. The difficulties we face —the hurdles and stumbling blocks we encounter—are far more apparent to us than all the things in life that run smoothly. We get riled up about the bothersome individuals who are always standing in our way.","[On the victim mentality:] Viewing yourself as a victim is soothing, but it also acts like a drug. This mindset makes you feel so much better to begin with, then it quickly gets you hooked. It makes you feel light because it relieves you of all responsibility.\n\nAs soon as you start to feel like a victim, you’ve already lost. Why? Because the victim mentality prevents you from taking control of your life. It disempowers you. Feeling like a victim is a completely unproductive mindset.\n\n[Charlie] Munger, who grew up in the American Midwest during the Great Depression, established an “iron prescription” for himself. You’d be well advised to follow it word for word: “Whenever you think that some situation or some person is ruining your life, it’s actually you who are ruining your life. It’s such a simple idea. Feeling like a victim is a perfectly disastrous way to go through life. If you just take the attitude that however bad it is in any way, it’s always your fault and you just fix it as best you can.”","[On how one mistake can undo a career:] Rajat Gupta was one of the most eminent international managers of his day. From 1973 to 2003, he rose through the ranks from simple business consultant to the top position at McKinsey.\n\nIn 2012, Rajat Gupta was convicted of securities fraud in New York. His involvement in insider trading resulted in a two-year prison sentence and a $5 million fine. But much worse than that: it also ruined his reputation and finished his career.","[On marriage and happiness:] Research tells us that the happiest people are those in a good marriage. Single people are the second happiest group. The worst off are those in a bad marriage.","“It is not that we have a short time to live, but that we waste a lot of it,” the Roman philosopher Seneca wrote some 2,000 years ago.","Consume selectively. Don’t just surf the endless sea of content. “Interesting” is one of the most dangerous words in this context. Yes, we know, everything is interesting! You can most certainly spend a whole afternoon scrolling through neurotic teenagers’ Instagram posts and learn all sorts about human psychology in the process. But the word “interesting” opens the floodgates to the content trap. Banish it from your vocabulary and your brain.\n\nDon’t consume more than you produce. And what you produce doesn’t necessarily have to be content. It can refer to any kind of valuable work.","[On the “inversion” method of thinking:] “On the ceiling of the Sistine Chapel, Adam and God touch fingers. To the uneducated eye it is not clear who is creating whom. We are supposed to assume God’s the one doing the creating, and much of the world thinks so. To anybody who has read the history of the ancient world, it is crystal clear by contrast that, in the words of the title of Selina O’Grady’s book on the subject, Man Created God.” This is the image that British science writer Matt Ridley uses to describe perspective reversal, i.e. the inversion method. Many things in life become clearer when you rotate them 180 degrees."]}];
+
+function coverHTML(b){
+  if(b.cover) return `<img src="${b.cover}" alt="${b.title} by ${b.author}" loading="lazy">`;
+  return `<div class="title-on-cover">${b.title}</div>`;
+}
+
+const shelf = document.getElementById('shelf');
+books.forEach((b, i)=>{
+  const el = document.createElement('button');
+  el.className = 'book';
+  el.setAttribute('aria-label', `${b.title} by ${b.author}`);
+  el.innerHTML = `<div class="cover" style="background:${b.color}">${coverHTML(b)}</div>`;
+  el.addEventListener('click', ()=>openBook(i));
+  shelf.appendChild(el);
+});
+
+const shelfView = document.getElementById('shelfView');
+const detailView = document.getElementById('detailView');
+const tilView = document.getElementById('tilView');
+const essaysListView = document.getElementById('essaysListView');
+const essayDetailView = document.getElementById('essayDetailView');
+const detailCover = document.getElementById('detailCover');
+const navTIL = document.getElementById('navTIL');
+const navBooks = document.getElementById('navBooks');
+const navEssays = document.getElementById('navEssays');
+const navAbout = document.getElementById('navAbout');
+const aboutView = document.getElementById('aboutView');
+const navPrinciples = document.getElementById('navPrinciples');
+const principlesView = document.getElementById('principlesView');
+
+function showView(name){
+  shelfView.classList.toggle('is-hidden', name !== 'shelf');
+  detailView.classList.toggle('is-active', name === 'detail');
+  tilView.classList.toggle('is-active', name === 'til');
+  essaysListView.classList.toggle('is-active', name === 'essaysList');
+  essayDetailView.classList.toggle('is-active', name === 'essayDetail');
+  aboutView.classList.toggle('is-active', name === 'about');
+  principlesView.classList.toggle('is-active', name === 'principles');
+  navTIL.classList.toggle('active', name === 'til');
+  navBooks.classList.toggle('active', name === 'shelf' || name === 'detail');
+  navEssays.classList.toggle('active', name === 'essaysList' || name === 'essayDetail');
+  navAbout.classList.toggle('active', name === 'about');
+  navPrinciples.classList.toggle('active', name === 'principles');
+  window.scrollTo(0,0);
+}
+
+function openBook(i){
+  const b = books[i];
+  detailCover.style.background = b.color;
+  detailCover.innerHTML = coverHTML(b);
+  document.getElementById('detailTitle').textContent = b.title;
+  document.getElementById('detailAuthor').textContent = b.author;
+
+  renderHighlights(b);
+  showView('detail');
+}
+
+document.getElementById('siteName').addEventListener('click', ()=>showView('about'));
+document.getElementById('backBtn').addEventListener('click', ()=>showView('shelf'));
+navTIL.addEventListener('click', ()=>showView('til'));
+navBooks.addEventListener('click', ()=>showView('shelf'));
+navEssays.addEventListener('click', ()=>showView('essaysList'));
+navAbout.addEventListener('click', ()=>showView('about'));
+navPrinciples.addEventListener('click', ()=>showView('principles'));
+document.getElementById('aboutEssaysLink').addEventListener('click', ()=>showView('essaysList'));
+document.getElementById('aboutTILLink').addEventListener('click', ()=>showView('til'));
+
+function renderPrinciples(){
+  document.getElementById('principlesList').innerHTML = principles.map((p, i)=>`
+    <div class="principle-row">
+      <span class="num">${i+1}</span>
+      <div class="p-text">
+        ${p.text.map(t=>`<p>${t}</p>`).join('')}
+        ${p.source ? `<span class="source">${p.source}</span>` : ''}
+      </div>
+    </div>
+  `).join('');
+}
+renderPrinciples();
+
+function renderEssayBlock(block){
+  switch(block.type){
+    case 'p': return `<p>${block.text}</p>`;
+    case 'h2': return `<h2>${block.text}</h2>`;
+    case 'h4': return `<h4>${block.text}</h4>`;
+    case 'blockquote': return `<blockquote>${block.text}</blockquote>`;
+    case 'ul': return `<ul>${block.items.map(it=>`<li>${it}</li>`).join('')}</ul>`;
+    case 'ol': return `<ol>${block.items.map(it=>`<li>${it}</li>`).join('')}</ol>`;
+    case 'pre': return `<pre>${block.text}</pre>`;
+    case 'hr': return `<hr>`;
+    case 'img': return `<figure><img src="${block.src}" alt="${block.alt||''}" loading="lazy"></figure>`;
+    default: return '';
+  }
+}
+
+const essaysGrid = document.getElementById('essaysGrid');
+essays.forEach((e, i)=>{
+  const el = document.createElement('button');
+  el.className = 'essay-card';
+  el.setAttribute('aria-label', e.title);
+  el.innerHTML = `
+    <div class="hero"><img src="${e.hero}" alt="" loading="lazy"></div>
+    <h2>${e.title}</h2>
+    <p class="dek">${e.dek}</p>
+    <p class="date">${e.date}</p>
+  `;
+  el.addEventListener('click', ()=>openEssay(i));
+  essaysGrid.appendChild(el);
+});
+
+function openEssay(i){
+  const e = essays[i];
+  document.getElementById('essayDate').textContent = e.date;
+  document.getElementById('essayTitle').textContent = e.title;
+  document.getElementById('essayDek').textContent = e.dek;
+  document.getElementById('essayBody').innerHTML = e.blocks.map(renderEssayBlock).join('');
+  document.getElementById('essaySource').innerHTML = `Originally published on <a href="${e.sourceUrl}" target="_blank" rel="noopener">Substack</a>.`;
+  showView('essayDetail');
+}
+
+document.getElementById('essayBackBtn').addEventListener('click', ()=>showView('essaysList'));
+
+function formatHighlight(h){
+  const paras = h.trim().split(/\n\s*\n/);
+  return paras.map((para,pi)=>{
+    let text = para.trim().split('\n').join('<br>');
+    if(pi===0) text = text.replace(/^\[([^\]]{3,110}:)\]\s*/, '<span class="hl-ctx">[$1]</span> ');
+    return `<p>${text}</p>`;
+  }).join('');
+}
+
+function renderHighlights(b){
+  const el = document.getElementById('highlights');
+  el.innerHTML = b.highlights.map((h,i)=>`
+    <div class="hl-row">
+      <span class="num">#${i+1}:</span>
+      <div class="hl-text">${formatHighlight(h)}</div>
+    </div>
+  `).join("");
+}
+
+// pre-render book 0 so the detail view isn't empty the first time it's opened
+renderHighlights(books[0]);
+document.getElementById('detailCover').style.background = books[0].color;
+document.getElementById('detailCover').innerHTML = coverHTML(books[0]);
+document.getElementById('detailTitle').textContent = books[0].title;
+document.getElementById('detailAuthor').textContent = books[0].author;
+</script>
+
+</body>
+</html>
