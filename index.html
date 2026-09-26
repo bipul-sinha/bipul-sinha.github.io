@@ -468,8 +468,8 @@
   .daily-random-btn svg{width:17px;height:17px}
 
   @media (max-width:640px){
-    .daily-card{aspect-ratio:3/2}
-    .daily-leaf{padding:9% 11%;background-size:cover}
+    .daily-card{aspect-ratio:1100/724}
+    .daily-leaf{padding:9% 11%;background-size:100% 100%}
     .daily-random-btn{width:34px;height:34px;bottom:-15px}
     .daily-random-btn svg{width:15px;height:15px}
   }
@@ -1552,10 +1552,17 @@ function fillDailyLeaf(el, entry){
   a.style.display = entry.author ? '' : 'none';
 }
 
+const dailyMobileQuery = window.matchMedia('(max-width:640px)');
+function applyDailyBackground(){
+  const file = dailyMobileQuery.matches ? 'book-panel/parchment-mobile.png' : 'book-panel/parchment.png';
+  dailyLeaves.forEach(el => { el.style.backgroundImage = `url('${abs(file)}')`; });
+}
+dailyMobileQuery.addEventListener('change', applyDailyBackground);
+
 function initDailyHighlight(){
   buildDailyPool();
   if(dailyPool.length === 0) return;
-  dailyLeaves.forEach(el => { el.style.backgroundImage = `url('${abs('book-panel/parchment.png')}')`; });
+  applyDailyBackground();
   dailyIdx = pickDailyIndex(-1);
   fillDailyLeaf(dailyLeaves[0], dailyPool[dailyIdx]);
 }
