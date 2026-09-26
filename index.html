@@ -6,7 +6,7 @@
 <title>Bipul Sinha</title>
 <meta name="description" content="Essays, things I learned, books I have read, and principles I try to live by.">
 <style>
-  @import url('https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,400;0,500;0,600;0,700;0,800;1,400;1,500&display=swap');
+  @import url('https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,400;0,500;0,600;0,700;0,800;1,400;1,500&family=Fraunces:ital,opsz,wght@0,9..144,420;0,9..144,600;1,9..144,420&display=swap');
 
   :root{
     --bg:#F7F6F2;
@@ -429,6 +429,51 @@
     .essay-body{font-size:16.5px}
   }
 
+  /* ---------- daily highlight panel ---------- */
+  .daily-stage{position:relative;padding:4px 0 40px}
+  .daily-card{position:relative;width:100%;aspect-ratio:2200/700}
+  .daily-leaf{
+    position:absolute;inset:0;
+    display:flex;flex-direction:column;align-items:center;justify-content:center;text-align:center;
+    padding:7% 15%;
+    background:transparent center/100% 100%;
+    will-change:opacity;
+  }
+  .daily-leaf .daily-quote-mark{
+    font-family:'Fraunces',serif;font-size:clamp(24px,4.6vw,40px);line-height:0.4;color:var(--accent);
+    opacity:0.55;margin-bottom:clamp(3px,1vw,8px);
+  }
+  .daily-leaf .daily-highlight{
+    font-family:'Fraunces',serif;font-style:italic;font-weight:420;
+    font-size:clamp(13.5px,2.2vw,19px);line-height:1.38;text-wrap:balance;color:#2A2113;
+  }
+  .daily-attribution{margin-top:clamp(6px,1.4vw,12px);padding-top:clamp(5px,1vw,9px);border-top:1px solid rgba(58,44,22,0.22)}
+  .daily-attribution .t{font-family:'Fraunces',serif;font-weight:600;font-size:clamp(11px,1.8vw,15px);letter-spacing:0.01em;color:#3A2C16}
+  .daily-attribution .a{font-size:clamp(8.5px,1.3vw,11.5px);color:#8A7550;margin-top:2px;text-transform:uppercase;letter-spacing:0.06em}
+
+  .daily-leaf.leaving{animation:dailyOut .4s ease forwards}
+  .daily-leaf.entering{animation:dailyIn .5s ease forwards}
+  @keyframes dailyOut{from{opacity:1}to{opacity:0}}
+  @keyframes dailyIn{from{opacity:0}to{opacity:1}}
+
+  .daily-random-btn{
+    position:absolute;right:2%;bottom:-18px;z-index:2;
+    width:38px;height:38px;padding:0;border-radius:50%;
+    display:flex;align-items:center;justify-content:center;
+    background:var(--accent);color:#fff;border:2px solid var(--bg);cursor:pointer;
+    box-shadow:0 2px 6px rgba(28,27,24,0.18);
+  }
+  .daily-random-btn:hover{filter:brightness(1.08)}
+  .daily-random-btn:active{filter:brightness(0.95)}
+  .daily-random-btn svg{width:17px;height:17px}
+
+  @media (max-width:640px){
+    .daily-card{aspect-ratio:3/2}
+    .daily-leaf{padding:9% 11%;background-size:cover}
+    .daily-random-btn{width:34px;height:34px;bottom:-15px}
+    .daily-random-btn svg{width:15px;height:15px}
+  }
+
   html{color-scheme:light}
   body{font-size:14px}
   img{max-width:100%}
@@ -454,6 +499,25 @@
     <div class="page-head">
       <h1>Books</h1>
     </div>
+
+    <div class="daily-stage">
+      <div class="daily-card" id="dailyCard">
+        <div class="daily-leaf" id="dailyLeaf0">
+          <div class="daily-quote-mark">&ldquo;</div>
+          <div class="daily-highlight"></div>
+          <div class="daily-attribution"><div class="t"></div><div class="a"></div></div>
+        </div>
+        <div class="daily-leaf" id="dailyLeaf1" style="opacity:0">
+          <div class="daily-quote-mark">&ldquo;</div>
+          <div class="daily-highlight"></div>
+          <div class="daily-attribution"><div class="t"></div><div class="a"></div></div>
+        </div>
+        <button class="daily-random-btn" id="dailyRandomBtn" aria-label="Show another highlight" title="Show another highlight">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M16 3h5v5"/><path d="M4 20L21 3"/><path d="M21 16v5h-5"/><path d="M15 15l6 6"/><path d="M4 4l5 5"/></svg>
+        </button>
+      </div>
+    </div>
+
     <div class="shelf" id="shelf"></div>
   </div>
 
@@ -1455,6 +1519,68 @@ function renderShelf(){
   });
 }
 
+// ---- daily highlight panel (parchment card, above the shelf grid) ----
+let dailyPool = [];
+let dailyIdx = -1;
+let dailyFront = 0;
+const dailyLeaves = [document.getElementById('dailyLeaf0'), document.getElementById('dailyLeaf1')];
+
+function buildDailyPool(){
+  dailyPool = [];
+  books.forEach(b=>{
+    (b.highlights || []).forEach(h=>{
+      if(h.indexOf('\n') === -1 && h.length >= 70 && h.length <= 172){
+        dailyPool.push({ title: b.title, author: b.author, highlight: h });
+      }
+    });
+  });
+}
+
+function pickDailyIndex(exclude){
+  if(dailyPool.length === 0) return -1;
+  if(dailyPool.length === 1) return 0;
+  let i;
+  do { i = Math.floor(Math.random() * dailyPool.length); } while (i === exclude);
+  return i;
+}
+
+function fillDailyLeaf(el, entry){
+  el.querySelector('.daily-highlight').textContent = entry.highlight;
+  el.querySelector('.daily-attribution .t').textContent = entry.title;
+  const a = el.querySelector('.daily-attribution .a');
+  a.textContent = entry.author;
+  a.style.display = entry.author ? '' : 'none';
+}
+
+function initDailyHighlight(){
+  buildDailyPool();
+  if(dailyPool.length === 0) return;
+  dailyLeaves.forEach(el => { el.style.backgroundImage = `url('${abs('book-panel/parchment.png')}')`; });
+  dailyIdx = pickDailyIndex(-1);
+  fillDailyLeaf(dailyLeaves[0], dailyPool[dailyIdx]);
+}
+
+document.getElementById('dailyRandomBtn').addEventListener('click', ()=>{
+  if(dailyPool.length === 0) return;
+  const next = pickDailyIndex(dailyIdx);
+  const front = dailyLeaves[dailyFront];
+  const back = dailyLeaves[1 - dailyFront];
+  fillDailyLeaf(back, dailyPool[next]);
+
+  front.classList.remove('entering'); void front.offsetWidth; front.classList.add('leaving');
+  back.style.opacity = '';
+  back.classList.remove('leaving'); void back.offsetWidth; back.classList.add('entering');
+
+  front.addEventListener('animationend', function done(){
+    front.classList.remove('leaving');
+    front.style.opacity = '0';
+    back.classList.remove('entering');
+    dailyFront = 1 - dailyFront;
+    dailyIdx = next;
+    front.removeEventListener('animationend', done);
+  }, { once:true });
+});
+
 const shelfView = document.getElementById('shelfView');
 const detailView = document.getElementById('detailView');
 const bookmarksView = document.getElementById('bookmarksView');
@@ -1667,6 +1793,7 @@ function renderHighlights(b){
 function initBooks(loadedBooks){
   books = loadedBooks;
   renderShelf();
+  initDailyHighlight();
   routeFromLocation();
 }
 
