@@ -453,6 +453,15 @@
   .daily-attribution .t{font-family:'Fraunces',serif;font-weight:600;font-size:clamp(11px,1.8vw,15px);letter-spacing:0.01em;color:#3A2C16}
   .daily-attribution .a{font-size:clamp(8.5px,1.3vw,11.5px);color:#8A7550;margin-top:2px;text-transform:uppercase;letter-spacing:0.06em}
 
+  .daily-leaf{pointer-events:none}
+  .daily-leaf .daily-link{pointer-events:auto;color:inherit;text-decoration:underline;text-decoration-color:rgba(219,107,38,0.55);text-decoration-thickness:1.5px;text-underline-offset:3px;transition:color .15s,text-decoration-color .15s}
+  .daily-leaf .daily-link:hover{color:var(--accent-ink);text-decoration-color:var(--accent)}
+  .daily-leaf .daily-link .arr{display:inline-block;margin-left:0.3em;transition:transform .15s}
+  .daily-leaf .daily-link:hover .arr{transform:translateX(3px)}
+  .daily-leaf[aria-hidden="true"] .daily-link{pointer-events:none}
+  .hl-row.flash .hl-text{animation:hlFlash 2.6s ease-out;border-radius:6px}
+  @keyframes hlFlash{0%,35%{background:rgba(219,107,38,0.16);box-shadow:0 0 0 10px rgba(219,107,38,0.16)}100%{background:rgba(219,107,38,0);box-shadow:0 0 0 10px rgba(219,107,38,0)}}
+  @media (prefers-reduced-motion:reduce){.hl-row.flash .hl-text{animation-duration:.01s}}
   .daily-leaf.leaving{animation:dailyOut .4s ease forwards}
   .daily-leaf.entering{animation:dailyIn .5s ease forwards}
   @keyframes dailyOut{from{opacity:1}to{opacity:0}}
@@ -528,12 +537,12 @@
 
     <div class="daily-stage">
       <div class="daily-card" id="dailyCard">
-        <div class="daily-leaf" id="dailyLeaf0">
+        <div class="daily-leaf" id="dailyLeaf0" aria-hidden="false">
           <div class="daily-quote-mark">&ldquo;</div>
           <div class="daily-highlight"></div>
           <div class="daily-attribution"><div class="t"></div><div class="a"></div></div>
         </div>
-        <div class="daily-leaf" id="dailyLeaf1" style="opacity:0">
+        <div class="daily-leaf" id="dailyLeaf1" style="opacity:0" aria-hidden="true">
           <div class="daily-quote-mark">&ldquo;</div>
           <div class="daily-highlight"></div>
           <div class="daily-attribution"><div class="t"></div><div class="a"></div></div>
@@ -1618,10 +1627,10 @@ const dailyLeaves = [document.getElementById('dailyLeaf0'), document.getElementB
 
 function buildDailyPool(){
   dailyPool = [];
-  books.forEach(b=>{
-    (b.highlights || []).forEach(h=>{
+  books.forEach((b,bi)=>{
+    (b.highlights || []).forEach((h,hi)=>{
       if(h.indexOf('\n') === -1 && h.length >= 70 && h.length <= 172){
-        dailyPool.push({ title: b.title, author: b.author, highlight: h });
+        dailyPool.push({ title: b.title, author: b.author, highlight: h, book: bi, hl: hi });
       }
     });
   });
@@ -1637,7 +1646,21 @@ function pickDailyIndex(exclude){
 
 function fillDailyLeaf(el, entry){
   el.querySelector('.daily-highlight').textContent = entry.highlight;
-  el.querySelector('.daily-attribution .t').textContent = entry.title;
+  const t = el.querySelector('.daily-attribution .t');
+  t.textContent = '';
+  const link = document.createElement('a');
+  link.className = 'daily-link';
+  link.href = `/highlights/${slugify(entry.title)}`;
+  link.dataset.book = entry.book;
+  link.dataset.hl = entry.hl;
+  link.title = 'See all highlights from this book';
+  link.append(entry.title);
+  const arr = document.createElement('span');
+  arr.className = 'arr';
+  arr.setAttribute('aria-hidden', 'true');
+  arr.textContent = '\u2192';
+  link.append(arr);
+  t.append(link);
   const a = el.querySelector('.daily-attribution .a');
   a.textContent = entry.author;
   a.style.display = entry.author ? '' : 'none';
@@ -1664,6 +1687,8 @@ document.getElementById('dailyRandomBtn').addEventListener('click', ()=>{
   const front = dailyLeaves[dailyFront];
   const back = dailyLeaves[1 - dailyFront];
   fillDailyLeaf(back, dailyPool[next]);
+  back.setAttribute('aria-hidden', 'false');
+  front.setAttribute('aria-hidden', 'true');
 
   front.classList.remove('entering'); void front.offsetWidth; front.classList.add('leaving');
   back.style.opacity = '';
@@ -1677,6 +1702,13 @@ document.getElementById('dailyRandomBtn').addEventListener('click', ()=>{
     dailyIdx = next;
     front.removeEventListener('animationend', done);
   }, { once:true });
+});
+
+document.getElementById('dailyCard').addEventListener('click', ev=>{
+  const a = ev.target.closest('.daily-link');
+  if(!a || ev.metaKey || ev.ctrlKey || ev.shiftKey || ev.button) return;
+  ev.preventDefault();
+  openBook(+a.dataset.book, { focus: +a.dataset.hl });
 });
 
 const shelfView = document.getElementById('shelfView');
@@ -1722,6 +1754,17 @@ function openBook(i, opts){
 
   renderHighlights(b);
   showView('detail');
+  if(typeof opts.focus === 'number'){
+    const row = document.querySelectorAll('#highlights .hl-row')[opts.focus];
+    if(row){
+      requestAnimationFrame(()=>{
+        const calm = window.matchMedia('(prefers-reduced-motion:reduce)').matches;
+        row.scrollIntoView({ block:'center', behavior: calm ? 'auto' : 'smooth' });
+        row.classList.add('flash');
+        setTimeout(()=>row.classList.remove('flash'), 3000);
+      });
+    }
+  }
   document.title = `${b.title} — Bipul Sinha`;
   if(opts.push !== false){
     history.pushState({}, '', `/highlights/${slugify(b.title)}`);
