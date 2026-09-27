@@ -1611,6 +1611,7 @@ function renderShelf(){
   let list = books.map((b, i) => ({ b, i })).filter(({ b }) =>
     (bookFilter.year === 'all' || String(b.year) === String(bookFilter.year)) &&
     (!bookFilter.min || (b.rating || 0) >= bookFilter.min));
+  if(bookFilter.sort === 'default') list.sort((x, y) => (y.b.year || 0) - (x.b.year || 0) || (y.b.rating || 0) - (x.b.rating || 0));
   if(bookFilter.sort === 'rating') list.sort((x, y) => (y.b.rating || 0) - (x.b.rating || 0) || (y.b.year || 0) - (x.b.year || 0));
   if(bookFilter.sort === 'year') list.sort((x, y) => (y.b.year || 0) - (x.b.year || 0) || (y.b.rating || 0) - (x.b.rating || 0));
 
