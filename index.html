@@ -462,6 +462,15 @@
   .hl-row.flash .hl-text{animation:hlFlash 2.6s ease-out;border-radius:6px}
   @keyframes hlFlash{0%,35%{background:rgba(219,107,38,0.16);box-shadow:0 0 0 10px rgba(219,107,38,0.16)}100%{background:rgba(219,107,38,0);box-shadow:0 0 0 10px rgba(219,107,38,0)}}
   @media (prefers-reduced-motion:reduce){.hl-row.flash .hl-text{animation-duration:.01s}}
+  .daily-stage.rain .daily-leaf{background-size:cover;border-radius:6px;overflow:hidden}
+  .daily-stage.rain .daily-leaf::before{content:"";position:absolute;inset:0;background:radial-gradient(ellipse 60% 85% at 50% 50%,rgba(9,28,30,0.55),rgba(9,28,30,0.18) 70%,rgba(9,28,30,0))}
+  .daily-stage.rain .daily-leaf>*{position:relative}
+  .daily-stage.rain .daily-highlight{color:#F6E7CB;text-shadow:0 1px 10px rgba(0,0,0,0.6)}
+  .daily-stage.rain .daily-quote-mark{color:#F39A3D;opacity:.9}
+  .daily-stage.rain .daily-attribution{border-top-color:rgba(246,231,203,0.28)}
+  .daily-stage.rain .daily-attribution .t{color:#F6E7CB}
+  .daily-stage.rain .daily-attribution .a{color:#9DBDB8}
+  .daily-stage.rain .daily-leaf .daily-link:hover{color:#F6C96A}
   .daily-leaf.leaving{animation:dailyOut .4s ease forwards}
   .daily-leaf.entering{animation:dailyIn .5s ease forwards}
   @keyframes dailyOut{from{opacity:1}to{opacity:0}}
@@ -535,7 +544,7 @@
       <h1>Books</h1>
     </div>
 
-    <div class="daily-stage">
+    <div class="daily-stage rain">
       <div class="daily-card" id="dailyCard">
         <div class="daily-leaf" id="dailyLeaf0" aria-hidden="false">
           <div class="daily-quote-mark">&ldquo;</div>
@@ -1668,7 +1677,7 @@ function fillDailyLeaf(el, entry){
 
 const dailyMobileQuery = window.matchMedia('(max-width:640px)');
 function applyDailyBackground(){
-  const file = dailyMobileQuery.matches ? 'book-panel/parchment-mobile.png' : 'book-panel/parchment.png';
+  const file = dailyMobileQuery.matches ? 'book-panel/rain-mobile.jpg' : 'book-panel/rain-desktop.jpg';
   dailyLeaves.forEach(el => { el.style.backgroundImage = `url('${abs(file)}')`; });
 }
 dailyMobileQuery.addEventListener('change', applyDailyBackground);
