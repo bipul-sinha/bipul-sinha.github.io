@@ -4,6 +4,8 @@
     "author": "Kevin Kelly",
     "color": "#3B4A63",
     "cover": "covers/excellent-advice-for-living.jpg",
+    "year": 2025,
+    "rating": 9,
     "highlights": [
       "Being enthusiastic is worth 25 IQ points.",
       "A deadline prevents you from trying to make it perfect, so you have to make it different. Different is better.",
@@ -30,6 +32,8 @@
     "author": "Derek Sivers",
     "color": "#6E6A2E",
     "cover": "covers/hell-yeah-or-no.jpg",
+    "year": 2025,
+    "rating": 8,
     "highlights": [
       "Success comes from doing, not declaring.",
       "I rebel against anything that feels like addiction. When I hear myself saying “I need this,” I want to challenge that dependency and prove my independence.",
@@ -45,6 +49,8 @@
     "author": "Matthew McConaughey",
     "color": "#7A4B2A",
     "cover": "covers/greenlight.jpg",
+    "year": 2025,
+    "rating": 8,
     "highlights": [
       "I am an optimist by nature, and humor has been one of my great teachers. It has helped me deal with pain, loss, and lack of trust. I am not perfect; no, I step in shit all the time and recognize it when I do. I have just learned how to scrape it off my boots and carry on.",
       "I have earned a few scars getting through this rodeo of humanity. I have been good at it, I have been not so good at it, and ultimately, I have found some pleasure in all of it, either way.",
@@ -70,6 +76,8 @@
     "author": "Tim Ferriss",
     "color": "#2F5A63",
     "cover": "covers/the-4-hour-workweek.jpg",
+    "year": 2025,
+    "rating": 9,
     "highlights": [
       "The New Rich (NR) are those who abandon the deferred-life plan and create luxury lifestyles in the present using the currency of the New Rich: time and mobility. This is an art and a science we will refer to as Lifestyle Design (LD).",
       "Learn the rules like a pro, so you can break them like an artist. — Pablo Picasso",
@@ -102,6 +110,8 @@
     "author": "Morgan Housel",
     "color": "#6B2F3E",
     "cover": "covers/the-art-of-spending-money.jpg",
+    "year": 2025,
+    "rating": 9,
     "highlights": [
       "The best use of money is as a tool to leverage who you are, but never to define who you are.",
       "An important question I love is: What have you experienced that I haven’t that makes you believe what you do? And would I believe the same if I experienced what you have?",
@@ -127,6 +137,8 @@
     "author": "Stephen Witt",
     "color": "#7A4B2A",
     "cover": "covers/the-thinking-machine.jpg",
+    "year": 2025,
+    "rating": 8,
     "highlights": [
       "[On Nvidia’s reliance on emulators] \nFollowing the Riva’s launch, Huang invested in emulators and gave up on physical prototypes. “To this day, we are the largest user of emulators in the world,” Huang said. The bias in the semiconductor industry in favor of hard prototypes had seemed reasonable—imagine trying to sell a car that had never undergone a real-world crash test. Prototyping seemed like the practical approach that the “adult in the room” would take.",
       "Desperation, not inspiration, was the mother of victory. Huang encouraged his employees to preserve the mindset they’d adopted during the Riva crunch, asking them to constantly behave as if the company was teetering on the verge of bankruptcy even when it was making massive profits. For years to come, Jensen opened staff presentations with the words “Our company is thirty days from going out of business.” Even today at Nvidia, this sentence remains the corporate mantra.",
@@ -147,6 +159,8 @@
     "author": "Rolf Dobelli",
     "color": "#5B3A5E",
     "cover": "covers/the-not-to-do-list.jpg",
+    "year": 2025,
+    "rating": 7,
     "highlights": [
       "When you’re out on a bike ride, you instantly feel the headwind but barely notice the tailwind. The American psychologist Tom Gilovich and Shai Davidai discussed this “headwinds/tailwinds asymmetry” in 2016 in the Journal of Personality and Social Psychology. The phenomenon is not unique to bike rides; it applies to many aspects of life. The difficulties we face —the hurdles and stumbling blocks we encounter—are far more apparent to us than all the things in life that run smoothly. We get riled up about the bothersome individuals who are always standing in our way.",
       "Viewing yourself as a victim is soothing, but it also acts like a drug. This mindset makes you feel so much better to begin with, then it quickly gets you hooked. It makes you feel light because it relieves you of all responsibility.\n\nAs soon as you start to feel like a victim, you’ve already lost. Why? Because the victim mentality prevents you from taking control of your life. It disempowers you. Feeling like a victim is a completely unproductive mindset.\n\nCharlie Munger, who grew up in the American Midwest during the Great Depression, established an “iron prescription” for himself. You’d be well advised to follow it word for word: “Whenever you think that some situation or some person is ruining your life, it’s actually you who are ruining your life. It’s such a simple idea. Feeling like a victim is a perfectly disastrous way to go through life. If you just take the attitude that however bad it is in any way, it’s always your fault and you just fix it as best you can.”",
@@ -162,6 +176,8 @@
     "author": "Tae Kim",
     "color": "#2E5C45",
     "cover": "covers/the-nvidia-way.jpg",
+    "year": 2025,
+    "rating": 8,
     "highlights": [
       "Undeterred, Rosing (executive at Sun Microsystem) tried again in February. This time, he didn’t try to peel one of them away from the others. He tried to get all three at once. He offered to license Sun’s entire portfolio of patents to their start-up, including all of Priem’s and Malachowsky’s old GX chip designs. In exchange, they would agree to make their new chips compatible with both Sun’s GX graphics and IBM PCs. After hearing Rosing’s pitch, the three men retreated to the parking lot of Sun’s campus to debate the decision. Priem considered all the implications of the proposal and declared it “interesting.” The partnership would give them a large, brand-name customer right off the bat and would protect them from any copyright-infringement claims from their former employer. But the downside was that the agreement would force them to spend less time and resources on the PC market, which was, in their view, where the real opportunity lay. They weren’t even sure whether they could make a single chip work for both the Sun and the PC platforms. They agreed to decline Rosing’s proposal and go it alone.",
       "At the meeting, one of the Kleiner partners fixated on the topic of circuit boards, insisting that Nvidia needed to bring board manufacturing in-house. Nvidia’s plans were to design the graphics chip, have it manufactured by someone else, and then sell the chip to a board partner, who would mount it on a graphics card and sell that card to PC makers. The partner’s insistence made no sense to Malachowsky. “Why would we compete on pennies on a resistor?” he asked. “I mean, we have no special expertise there. We’ll stick to what we’re good at, and if that’s not for you, it’s not for you.”For all their ambition to take over the PC graphics market, Nvidia had to focus its resources on the single best opportunity rather than spread themselves thin chasing all possible ones.",
@@ -189,6 +205,8 @@
     "author": "",
     "color": "#8B3A2E",
     "cover": "covers/the-anxious-generation.jpg",
+    "year": 2025,
+    "rating": 8,
     "highlights": [
       "Figure 1.1. Percent of U.S. teens (ages 12–17) who had at least one major depressive episode in the past year, by self-report based on a symptom checklist.",
       "The first clue is that the rise is concentrated in disorders related to anxiety and depression, which are classed together in the psychiatric category known as internalizing disorders. These are disorders in which a person feels strong distress and experiences the symptoms inwardly. The person with an internalizing disorder feels emotions such as anxiety, fear, sadness, and hopelessness. They ruminate. They often withdraw from social engagement.\n\nExternalizing disorders are those in which a person feels distress and turns the symptoms and responses outward, aimed at other people. These conditions include conduct disorder, difficulty with anger management, and tendencies toward violence and excessive risk-taking.",
@@ -222,6 +240,8 @@
     "author": "Sahil Bloom",
     "color": "#3A5C8B",
     "cover": "covers/the-5-types-of-wealth.jpg",
+    "year": 2025,
+    "rating": 9,
     "highlights": [
       "The arrival fallacy is the false assumption that reaching some achievement or goal will create durable feelings of satisfaction and contentment in our lives. How many times has the thing your younger self dreamed of become the thing you complain about once you’ve gotten it? Never let the quest for more distract you from the beauty of enough.",
       "“Tell your partner you love them every night before falling asleep; someday you’ll find the other side of the bed empty and you’ll wish you could tell them.”",
@@ -255,6 +275,8 @@
     "author": "Charlie Mackesy",
     "color": "#6B4C9A",
     "cover": "covers/the-boy-the-mole-the-fox-and-the-horse.jpg",
+    "year": 2025,
+    "rating": 9,
     "highlights": [
       "\"What do you want to be when you grow up?\"\n\"Kind\" said the boy.",
       "\"Do you have a favorite saying\" asked the boy.\n\"Yes\" said the mole.\n\"What is it?\"\n\"If at first you don't succeed, have some cake.\"\n\"I see, does it work?\"\n\"Every time.\"",
@@ -271,6 +293,8 @@
     "author": "",
     "color": "#2E6B6B",
     "cover": "covers/the-happiness-hypothesis.jpg",
+    "year": 2025,
+    "rating": 8,
     "highlights": [
       "Our minds are divided in four ways.\nFIRST DIVISION: MIND VS. BODY\nSECOND DIVISION: LEFT VS. RIGHT\nTHIRD DIVISION: NEW VS. OLD\nFOURTH DIVISION: CONTROLLED VS. AUTOMATIC",
       "Our intestines are lined by a vast network of more than 100 million neurons; these handle all the computations needed to run the chemical refinery that processes and extracts nutrients from food. This gut brain is like a regional administrative center that handles stuff the head brain does not need to bother with. You might expect, then, that this gut brain takes its orders from the head brain and does as it is told. But the gut brain possesses a high degree of autonomy, and it continues to function well even if the vagus nerve, which connects the two brains together, is severed.",
@@ -313,6 +337,8 @@
     "author": "David Grann",
     "color": "#8B6B2E",
     "cover": "covers/the-wager.jpg",
+    "year": 2025,
+    "rating": 10,
     "highlights": [
       "History's judgement is the ultimate verdict.",
       "We all impose some coherence - some meaning - on the chaotic events of our existence. We rummage through the raw images of our memories, selecting, burnishing, erasing. We emerge as the heroes of our stories, allowing us to live with what we have done - or haven't done.",
@@ -327,6 +353,8 @@
     "author": "James Norbury",
     "color": "#4A3B6B",
     "cover": "covers/big-panda-and-tiny-dragon.jpg",
+    "year": 2025,
+    "rating": 7,
     "highlights": [
       "\"Which is more important,\" asked Big Panda, \"the journey or the destination?\"\n\n\"The company,\" said Tiny Dragon.",
       "\"Nothing is happening,\" said Tiny Dragon.\n\n\"Maybe,\" said Big Panda, \"it's happening underneath first.\"",
@@ -339,6 +367,8 @@
     "author": "Jocko Willink",
     "color": "#6B5A2E",
     "cover": "covers/extreme-ownership.jpg",
+    "year": 2025,
+    "rating": 7,
     "highlights": [
       "On any team, in any organization, all responsibility for success and failure rests with the leader. The leader must own everything in his or her world. There is no one else to blame. The leader must acknowledge mistakes and admit failures, take ownership of them, and develop a plan to win.",
       "Second place, in the instructor’s vernacular, was simply “the first loser.”",
@@ -352,6 +382,8 @@
     "author": "Anthony Pompliano",
     "color": "#7A2E4A",
     "cover": "covers/how-to-live-an-extraordinary-life.jpg",
+    "year": 2025,
+    "rating": 7,
     "highlights": [
       "Carve your ethics in stone, but write your opinions in sand.\n\nEthics are foundational principles that govern how you do things. Never waver on these. When faced with questions of ethics, you should make the same decision every time.\n\nOpinions are different. These are views you form on what you do. Be willing to change these when the facts change.",
       "I recently came across a thought experiment by astrophysicist Neil DeGrasse Tyson in the book, Hidden Genius. Ask yourself this question: If someone tries to sell you crystals that promise to cure all your ailments, what would you do? Believe it outright or reject it immediately? Tyson says those are both intellectually lazy responses. The best defense against sloppy thinking is skepticism, which requires asking probing questions to get to the root of whether there’s supporting proof to back up the claim.",
@@ -371,6 +403,8 @@
     "author": "",
     "color": "#2E4A6B",
     "cover": "covers/apple-in-china.jpg",
+    "year": 2025,
+    "rating": 9,
     "highlights": [
       "Apple’s trajectory toward oblivion was so clear that when Sun CEO Scott McNealy pitched a merger, in late January 1996, he wouldn’t even pay the stock market price. Apple was trading at around $28 a share, but McNealy’s “best offer” was $23—valuing the company at just $2.8 billion. Apple considered the bid ridiculous and insulting. Yet McNealy was correct in his assessment. If anything, he was too generous. In six weeks, Apple shares would slide below $23. Within a year, they’d trade under $15.",
       "The IBM PC wasn’t at all special in how it worked, but rather in how it was put together. IBM had, in 1980, zero revenues in PCs, but by 1982 it had taken 16 percent of the market, outselling Apple two to one. By 1984, IBM had achieved sales of more than $6 billion—nearly triple that of Apple. Big Blue’s strategy hadn’t just worked; the firm had blown Apple out of the water. Unfortunately for IBM’s PC division, the brilliance of the Boca Raton strategy also contained the seeds of its eventual demise. IBM had allowed Microsoft to license its OS to others, and once companies like Compaq and Phoenix Technologies figured out how to “clone” the PC, IBM found itself in a series of furious battles over cost, branding, manufacturing, and logistics. By the early 1990s it was losing out on multiple fronts.",
@@ -403,6 +437,8 @@
     "author": "William Green",
     "color": "#2E5C45",
     "cover": "covers/richer-wiser-happier.jpg",
+    "year": 2025,
+    "rating": 7,
     "highlights": [
       "Buffet: “You don’t have to swing at everything—you can wait for your pitch. The problem when you’re a money manager is that your fans keep yelling, ‘Swing, you bum!’ ”\n\nBlaise Pascal: “All of humanity’s problems stem from man’s inability to sit quietly in a room alone.”\n\nOne technique that he (Chou) uses to distance himself emotionally from the day-to-day drama of the market is to think of himself in the third person instead of the first person. He says it helps that his investment staff consists of a single person: him. “The moment you have people on your team, they’re going to want to act and do things, and then you’re hosed.” In most fields, a hunger for action is a virtue. But as Buffett said at Berkshire’s 1998 annual meeting, “We don’t get paid for activity, just for being right.”",
       "In 2002, Pabrai invested in a Scandinavian shipping firm, Frontline Ltd., after the price for leasing oil tankers collapsed. The stock had plunged to $5.90, but he calculated that Frontline’s liquidation value was more than $11 per share. Leasing prices would eventually rebound, since supply would become constrained. In the meantime, Frontline could survive a cash crunch by selling ships one by one. But the upside potential easily outweighed the downside risk. Pabrai coined a motto that summed up this type of bet: “Heads, I win. Tails, I don’t lose much.”",
@@ -431,6 +467,8 @@
     "author": "Clayton Christensen and others",
     "color": "#8B3A2E",
     "cover": "covers/competing-against-luck.jpg",
+    "year": 2025,
+    "rating": 8,
     "highlights": [
       "If this fast-food company had only focused on how to make its product “better” in a general way— thicker, sweeter, bigger—it would have been focusing on the wrong unit of analysis. You have to understand the job the customer is trying to do in a specific circumstance. If the company simply tried to average all the responses of the dads and the commuters, it would come up with a one-size-fits-none product that doesn’t do either of the jobs well.",
       "We define a “job” as the progress that a person is trying to make in a particular circumstance. This definition of a job is not simply a new way of categorizing customers or their problems. It’s key to understanding why they make the choices they make. The choice of the word “progress” is deliberate. It represents movement toward a goal or aspiration. A job is always a process to make progress, it’s rarely a discrete event.",
@@ -455,6 +493,8 @@
     "author": "",
     "color": "#3A5C8B",
     "cover": "covers/the-righteous-mind.jpg",
+    "year": 2025,
+    "rating": 8,
     "highlights": [
       "How do children come to know right from wrong? Where does morality come from?\n\nThere are two obvious answers to this question: nature or nurture. If you pick nature, then you’re a nativist. You believe that moral knowledge is native in our minds. It comes preloaded, perhaps in our God-inscribed hearts (as the Bible says), or in our evolved moral emotions (as Darwin argued).\n\nBut this is a false choice, and in 1987 moral psychology was mostly focused on a third answer: rationalism, which says that kids figure out morality for themselves. In other words, the understanding of the conservation of volume wasn’t innate, and it wasn’t learned from adults. Kids figure it out for themselves, but only when their minds are ready and they are given the right kinds of experiences.",
       "Kohlberg’s most influential finding was that the most morally advanced kids (according to his scoring technique) were those who had frequent opportunities for role taking—for putting themselves into another person’s shoes and looking at a problem from that person’s perspective. Egalitarian relationships (such as with peers) invite role taking, but hierarchical relationships (such as with teachers and parents) do not.\n\nPiaget and Kohlberg both thought that parents and other authorities were obstacles to moral development. If you want your kids to learn about the physical world, let them play with cups and water; don’t lecture them about the conservation of volume. And if you want your kids to learn about the social world, let them play with other kids and resolve disputes; don’t lecture them about the Ten Commandments.",
@@ -484,6 +524,8 @@
     "author": "",
     "color": "#6B4C9A",
     "cover": "covers/the-shortest-history-of-israel-and-palestine.jpg",
+    "year": 2025,
+    "rating": 10,
     "highlights": [
       "Theodor Herzl, a lawyer and journalist, wrote a book titled The Jewish State, which was published in 1896. He called for the Jews to form a single nation-state like that of France or Germany.\n\nZionism as the belief in “the creation of a home for the Jewish people in Palestine.”\n\nThe Jewish National Fund (JNF) was set up in 1901 to buy land in Palestine. Today, most of the land of Israel is held in trust for the world’s Jews by the JNF. It cannot be sold to non-Jews.",
       "In late 1917, the Ottoman forces in Palestine were defeated by the British, and in December 1917, General Edmund Allenby led his troops into Jerusalem. He promised as little disruption to “lawful business” as possible. However, the First World War was to end four hundred years of Ottoman rule in the Middle East and produce changes that are still felt, by both Arabs and Jews, in what is today Israel and Palestine.\n\nDuring the war, as it attempted to secure its strategic and geopolitical interests, Britain made a series of agreements that conflicted with and contradicted each other. The first of these agreements was made in 1915. It consisted of a series of letters exchanged by Henry McMahon, the British high commissioner in Egypt, and Hussein, the sharif of Mecca and the leader of the Hashemite Dynasty. Hussein was guardian of Mecca and Medina. McMahon knew that Hussein was fearful of the Ottoman government encroaching on his power and he promised Hussein that if the Arabs fought against the Ottoman Army, the British would support “the independence of the Arab countries,” on condition that the Arabs sought British advice about how to establish their government.\n\nMade in secret in 1916, the second agreement is known as the Sykes-Picot Agreement after the British and French politicians who signed it. They looked ahead to the eventual defeat of the Ottoman Empire and decided that the liberated Arab lands would be allocated to distinct French and British spheres of influence. In other words, the “independent” state that had been promised to Hussein (about which the French were kept in the dark) would be overlaid with some degree of European control. Syria, including what is today Lebanon, would go to the French, while the area from the Sinai to Mesopotamia (present- day Iraq) would go to the British. Most of Palestine, which both countries desired, was to be under some sort of international control. \n\nThe third agreement that the British made, and which proved to have the most far-reaching consequences of all, was the Balfour Declaration of November 1917. It took the form of a letter, written by the British Foreign Secretary, Arthur Balfour, to Lord Rothschild, a leading British Jew, in which he expressed support for a national home for the Jews in Palestine. The declaration contained no sense of Palestine as an Arab land. The Arabs, who made up 90 percent of the population, were simply referred to as “non-Jewish communities” whose “civil and religious rights” were to be protected. Many Cabinet members were persuaded that a significant Jewish entity in Palestine would constitute a reliable European ally in what they saw as a backward, corrupt, and volatile Arab world. Thus, support for Zionism was motivated by both wartime and longer-term imperial goals.",
@@ -512,6 +554,8 @@
     "author": "William H. McRaven",
     "color": "#2E6B6B",
     "cover": "covers/the-wisdom-of-the-bullfrog.jpg",
+    "year": 2025,
+    "rating": 8,
     "highlights": [
       "The professors explained how the U.S. military just didn’t understand the best way to win the war in Afghanistan. They wrote, rather condescendingly, that if the military would only build roads, they could connect the villages to the districts.\n\nWell, no kidding! Why didn’t we think of that? Well, we did think of that! It’s just that when people are shooting at you and trying to blow you up—it’s hard to build roads. And that, dear reader, is the nature of leadership as well. Everything in leadership is simple, it’s just that the simplest things are difficult.",
       "The SEAL mantra: The Only Easy Day Was Yesterday",
@@ -525,6 +569,8 @@
     "author": "Dan Wang",
     "color": "#8B6B2E",
     "cover": "covers/breakneck.jpg",
+    "year": 2025,
+    "rating": 9,
     "highlights": [
       "The greatest trick that the Communist Party ever pulled off is masquerading as leftist.",
       "China is an engineering state, which can’t stop itself from building, facing off against America’s lawyerly society, which blocks everything it can.\n\nChina embraced engineering in all its dimensions. Its leaders aren’t only civil or electrical engineers. They are, fundamentally, social engineers.\n\nSometimes, it feels like China’s leadership is made up entirely of hydraulic engineers, who view the economy and society as liquid flows, as if all human activity—from mass production to reproduction— can be directed, restricted, increased, or blocked with the same ease as turning a series of valves.\n\nEngineers often treat social issues as math exercises. Does the country have too many people? Beijing’s solution was to prohibit families from birthing more than one child. Is the novel coronavirus spreading too quickly? Build new hospitals at breathtaking speed, yes, but also confine people to their homes,",
@@ -551,6 +597,8 @@
     "author": "Derek Sivers",
     "color": "#4A3B6B",
     "cover": "covers/useful-not-true.jpg",
+    "year": 2025,
+    "rating": 8,
     "highlights": [
       "Beliefs create emotions. Emotions create actions. Choose a belief for the action it creates. Which belief is right? Wrong question. Which belief leads to the action you need now?",
       "A traveler comes to a river and sees a local woman on the opposite bank. He yells across, “How do I get to the other side of the river?” She yells back, “You are on the other side of the river!”\n\nSee yourself from the other side of the river.",
