@@ -463,7 +463,14 @@
   @keyframes hlFlash{0%,35%{background:rgba(219,107,38,0.16);box-shadow:0 0 0 10px rgba(219,107,38,0.16)}100%{background:rgba(219,107,38,0);box-shadow:0 0 0 10px rgba(219,107,38,0)}}
   @media (prefers-reduced-motion:reduce){.hl-row.flash .hl-text{animation-duration:.01s}}
   .daily-stage.rain .daily-leaf{background-size:cover;border-radius:6px;overflow:hidden}
-  .daily-stage.rain .daily-leaf::before{content:"";position:absolute;inset:0;background:radial-gradient(ellipse 60% 85% at 50% 50%,rgba(9,28,30,0.55),rgba(9,28,30,0.18) 70%,rgba(9,28,30,0))}
+  .daily-stage.rain .daily-card{aspect-ratio:1983/793}
+  .daily-stage.rain .daily-leaf{justify-content:flex-start;padding-top:7%}
+  @media (max-width:640px){
+    .daily-stage.rain .daily-card{aspect-ratio:1100/820}
+    .daily-stage.rain .daily-leaf{padding-top:9%}
+    .daily-stage.rain .daily-leaf::before{background:linear-gradient(to bottom,rgba(6,20,30,0.82),rgba(6,20,30,0.7) 62%,rgba(6,20,30,0.15) 88%,rgba(6,20,30,0))}
+  }
+  .daily-stage.rain .daily-leaf::before{content:"";position:absolute;inset:0;background:radial-gradient(ellipse 55% 45% at 50% 24%,rgba(6,20,30,0.55),rgba(6,20,30,0.15) 70%,rgba(6,20,30,0))}
   .daily-stage.rain .daily-leaf>*{position:relative}
   .daily-stage.rain .daily-highlight{color:#F6E7CB;text-shadow:0 1px 10px rgba(0,0,0,0.6)}
   .daily-stage.rain .daily-quote-mark{color:#F39A3D;opacity:.9}
