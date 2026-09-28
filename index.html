@@ -1644,11 +1644,17 @@ let dailyIdx = -1;
 let dailyFront = 0;
 const dailyLeaves = [document.getElementById('dailyLeaf0'), document.getElementById('dailyLeaf1')];
 
+const dailyMobileQuery = window.matchMedia('(max-width:640px)');
+const DAILY_MIN_LEN = 70;
+const DAILY_MAX_LEN_MOBILE = 210;
+const DAILY_MAX_LEN_DESKTOP = 380;
+
 function buildDailyPool(){
+  const maxLen = dailyMobileQuery.matches ? DAILY_MAX_LEN_MOBILE : DAILY_MAX_LEN_DESKTOP;
   dailyPool = [];
   books.forEach((b,bi)=>{
     (b.highlights || []).forEach((h,hi)=>{
-      if(h.indexOf('\n') === -1 && h.length >= 70 && h.length <= 210){
+      if(h.indexOf('\n') === -1 && h.length >= DAILY_MIN_LEN && h.length <= maxLen){
         dailyPool.push({ title: b.title, author: b.author, highlight: h, book: bi, hl: hi });
       }
     });
@@ -1685,12 +1691,21 @@ function fillDailyLeaf(el, entry){
   a.style.display = entry.author ? '' : 'none';
 }
 
-const dailyMobileQuery = window.matchMedia('(max-width:640px)');
 function applyDailyBackground(){
   const file = dailyMobileQuery.matches ? 'book-panel/rain-mobile.jpg' : 'book-panel/rain-desktop.jpg';
   dailyLeaves.forEach(el => { el.style.backgroundImage = `url('${abs(file)}')`; });
 }
-dailyMobileQuery.addEventListener('change', applyDailyBackground);
+dailyMobileQuery.addEventListener('change', () => {
+  applyDailyBackground();
+  const maxLen = dailyMobileQuery.matches ? DAILY_MAX_LEN_MOBILE : DAILY_MAX_LEN_DESKTOP;
+  buildDailyPool();
+  if(dailyPool.length === 0) return;
+  const current = dailyPool[dailyIdx];
+  if(!current || current.highlight.length > maxLen){
+    dailyIdx = pickDailyIndex(-1);
+    fillDailyLeaf(dailyLeaves[dailyFront], dailyPool[dailyIdx]);
+  }
+});
 
 function initDailyHighlight(){
   buildDailyPool();
