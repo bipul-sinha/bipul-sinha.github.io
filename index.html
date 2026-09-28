@@ -1648,7 +1648,7 @@ function buildDailyPool(){
   dailyPool = [];
   books.forEach((b,bi)=>{
     (b.highlights || []).forEach((h,hi)=>{
-      if(h.indexOf('\n') === -1 && h.length >= 70 && h.length <= 172){
+      if(h.indexOf('\n') === -1 && h.length >= 70 && h.length <= 210){
         dailyPool.push({ title: b.title, author: b.author, highlight: h, book: bi, hl: hi });
       }
     });
