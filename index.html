@@ -1950,7 +1950,11 @@ function openEssay(i, opts){
 document.getElementById('essayBackBtn').addEventListener('click', navClick('essaysList'));
 
 function formatHighlight(h){
-  const paras = h.trim().split(/\n\s*\n/);
+  const trimmed = h.trim();
+  // If highlight is HTML (e.g., <figure>), return it as-is
+  if(trimmed.startsWith('<')) return trimmed;
+
+  const paras = trimmed.split(/\n\s*\n/);
   return paras.map((para,pi)=>{
     let text = para.trim().split('\n').join('<br>');
     if(pi===0) text = text.replace(/^\[([^\]]{3,110}:)\]\s*/, '<span class="hl-ctx">[$1]</span> ');
