@@ -1962,14 +1962,40 @@ function formatHighlight(h){
   }).join('');
 }
 
+// <figure data-after="Paragraph start"> entries are shown inside the preceding text
+// highlight, after the paragraph beginning with that text (end of highlight if none matches).
+const INLINE_FIG = /^<figure data-after="([^"]*)"/;
+
+function formatWithInlineFigures(h, figs){
+  const html = formatHighlight(h);
+  if(!figs.length) return html;
+  const paras = html.split('</p>').slice(0,-1).map(p=>p+'</p>');
+  const tail = [];
+  figs.forEach(f=>{
+    const anchor = f.trim().match(INLINE_FIG)[1];
+    const pi = paras.findIndex(p=>p.replace(/<[^>]+>/g,'').trim().startsWith(anchor));
+    if(pi === -1) tail.push(f); else paras[pi] += f;
+  });
+  return paras.join('') + tail.join('');
+}
+
 function renderHighlights(b){
   const el = document.getElementById('highlights');
-  el.innerHTML = b.highlights.map((h,i)=>`
+  const hl = b.highlights;
+  const isInline = h => INLINE_FIG.test(h.trim());
+  let n = 0;
+  // Inline figures keep an empty hidden row so .hl-row indices still match highlight indices.
+  el.innerHTML = hl.map((h,i)=>{
+    if(isInline(h) && i > 0) return '<div class="hl-row" hidden></div>';
+    const figs = [];
+    for(let j = i+1; j < hl.length && isInline(hl[j]); j++) figs.push(hl[j]);
+    return `
     <div class="hl-row">
-      <span class="num">#${i+1}:</span>
-      <div class="hl-text">${formatHighlight(h)}</div>
+      <span class="num">#${++n}:</span>
+      <div class="hl-text">${formatWithInlineFigures(h, figs)}</div>
     </div>
-  `).join("");
+  `;
+  }).join("");
 }
 
 function initBooks(loadedBooks){
