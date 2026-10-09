@@ -7,8 +7,7 @@
    "cover": "covers/how-to-live.jpg",
    "color": "#8B3A2E",
    "quote": "You don’t see things as they are. You see them as you are. Change yourself and you change the world.",
-   "score": 0.784,
-   "fromHighlight": 16,
+   "score": 0.674,
    "toHighlight": 2
   },
   {
@@ -18,20 +17,8 @@
    "cover": "covers/how-to-live-an-extraordinary-life.jpg",
    "color": "#7A2E4A",
    "quote": "Bad news doesn’t get better with time. One of the biggest mistakes I see people make in life is waiting to communicate when something is wrong.",
-   "score": 0.766,
-   "fromHighlight": 7,
+   "score": 0.668,
    "toHighlight": 6
-  },
-  {
-   "title": "The Book of Elon",
-   "slug": "the-book-of-elon",
-   "author": "Eric Jorgenson",
-   "cover": "covers/the-book-of-elon.jpg",
-   "color": "#7A2E4A",
-   "quote": "You are the magicians of the twenty-first century; don’t let anything hold you back. Imagination is the limit. Go out there and create some magic.",
-   "score": 0.745,
-   "fromHighlight": 8,
-   "toHighlight": 17
   }
  ],
  "Hell Yeah or No": [
@@ -42,8 +29,7 @@
    "cover": "covers/how-to-live.jpg",
    "color": "#8B3A2E",
    "quote": "Whatever scares you, go do it. Then it won’t scare you anymore. Whatever you hate, get to know it. Then you won’t hate it anymore.",
-   "score": 0.806,
-   "fromHighlight": 6,
+   "score": 0.699,
    "toHighlight": 15
   },
   {
@@ -53,8 +39,7 @@
    "cover": "covers/the-4-hour-workweek.jpg",
    "color": "#2F5A63",
    "quote": "Remembering that you are going to die is the best way I know to avoid the trap of thinking you have something to lose. — Steve Jobs",
-   "score": 0.774,
-   "fromHighlight": 6,
+   "score": 0.686,
    "toHighlight": 22
   },
   {
@@ -63,94 +48,13 @@
    "author": "Morgan Housel",
    "cover": "covers/same-as-ever.jpg",
    "color": "#6B4C9A",
-   "quote": "Your happiness depends on your expectations more than anything else. So in a world that tends to get better for most people most of the time, an important life skill is getting the goalpost to stop moving. It’s also one of the hardest.",
-   "score": 0.762,
-   "fromHighlight": 4,
-   "toHighlight": 1
+   "quote": "Patience is often stubbornness in disguise. Long-term thinking can become a crutch for those who are wrong but don’t want to change their mind.",
+   "score": 0.685,
+   "toHighlight": 9
   }
  ],
- "Greenlights": [
-  {
-   "title": "The Art of Spending Money",
-   "slug": "the-art-of-spending-money",
-   "author": "Morgan Housel",
-   "cover": "covers/the-art-of-spending-money.jpg",
-   "color": "#6B2F3E",
-   "quote": "Good memories are the closest thing to living for today while compounding for tomorrow. The anonymous Twitter account FedSpeak once wrote, “The purpose of life is to experience things for which you will later experience nostalgia.”",
-   "score": 0.731,
-   "fromHighlight": 16,
-   "toHighlight": 7
-  },
-  {
-   "title": "Man's search for meaning",
-   "slug": "man-s-search-for-meaning",
-   "author": "Victor Frankl",
-   "cover": "covers/man-s-search-for-meaning.jpg",
-   "color": "#8B3A2E",
-   "quote": "If there is a meaning in life at all, then there must be a meaning in suffering. Suffering is an ineradicable part of life, even as fate and death. Without suffering and death human life cannot be complete.",
-   "score": 0.73,
-   "fromHighlight": 3,
-   "toHighlight": 11
-  },
-  {
-   "title": "How to Live",
-   "slug": "how-to-live",
-   "author": "Derek Sivers",
-   "cover": "covers/how-to-live.jpg",
-   "color": "#8B3A2E",
-   "quote": "When people ask the meaning of life, they’re looking for a story. But there is no story. Life is a billion little moments. They’re not a part of anything.",
-   "score": 0.721,
-   "fromHighlight": 16,
-   "toHighlight": 11
-  }
- ],
+ "Greenlights": [],
  "The 4-Hour Workweek": [
-  {
-   "title": "Hell Yeah or No",
-   "slug": "hell-yeah-or-no",
-   "author": "Derek Sivers",
-   "cover": "covers/hell-yeah-or-no.jpg",
-   "color": "#6E6A2E",
-   "quote": "Sometimes people ask me if there’s one motto or rule of thumb I use most often. This is it: Whatever scares you, go do it. Best of all, once you do something that scared you, you’re not scared of it anymore!",
-   "score": 0.774,
-   "fromHighlight": 22,
-   "toHighlight": 6
-  },
-  {
-   "title": "Diary of CEO",
-   "slug": "diary-of-ceo",
-   "author": "Steven Bartlett",
-   "cover": "covers/diary-of-ceo.jpg",
-   "color": "#6B5A2E",
-   "quote": "‘If you want to increase your success rate, double your failure rate.’",
-   "score": 0.772,
-   "fromHighlight": 17,
-   "toHighlight": 8
-  },
-  {
-   "title": "The most important thing",
-   "slug": "the-most-important-thing",
-   "author": "Howard Marks",
-   "cover": "covers/the-most-important-thing.jpg",
-   "color": "#6B5A2E",
-   "quote": "(Market) Efficiency is not so universal that we should give up on superior performance.",
-   "score": 0.791,
-   "fromHighlight": 10,
-   "toHighlight": 2
-  }
- ],
- "The Art of Spending Money": [
-  {
-   "title": "How to Live an Extraordinary life",
-   "slug": "how-to-live-an-extraordinary-life",
-   "author": "Anthony Pompliano",
-   "cover": "covers/how-to-live-an-extraordinary-life.jpg",
-   "color": "#7A2E4A",
-   "quote": "Life is all about power laws. Relationships, experiences, financial returns. Find the 5% that delivers 95% and ignore the rest.",
-   "score": 0.787,
-   "fromHighlight": 10,
-   "toHighlight": 5
-  },
   {
    "title": "How to get rich",
    "slug": "how-to-get-rich",
@@ -158,20 +62,60 @@
    "cover": "covers/how-to-get-rich.jpg",
    "color": "#3A5C8B",
    "quote": "Quitting is not dishonorable. Quitting when you believe you can still succeed is.",
-   "score": 0.779,
-   "fromHighlight": 10,
+   "score": 0.681,
    "toHighlight": 8
   },
   {
-   "title": "Same as ever",
-   "slug": "same-as-ever",
-   "author": "Morgan Housel",
-   "cover": "covers/same-as-ever.jpg",
-   "color": "#6B4C9A",
-   "quote": "Your happiness depends on your expectations more than anything else. So in a world that tends to get better for most people most of the time, an important life skill is getting the goalpost to stop moving. It’s also one of the hardest.",
-   "score": 0.766,
-   "fromHighlight": 10,
-   "toHighlight": 1
+   "title": "The Art of the Good life",
+   "slug": "the-art-of-the-good-life",
+   "author": "Rolf Dobelli",
+   "cover": "covers/the-art-of-the-good-life.jpg",
+   "color": "#2E5C45",
+   "quote": "It’s much nicer to mull things over than to seize the initiative. Speculation is more agreeable than realization.",
+   "score": 0.674,
+   "toHighlight": 15
+  },
+  {
+   "title": "How to Live",
+   "slug": "how-to-live",
+   "author": "Derek Sivers",
+   "cover": "covers/how-to-live.jpg",
+   "color": "#8B3A2E",
+   "quote": "You don’t see things as they are. You see them as you are. Change yourself and you change the world.",
+   "score": 0.667,
+   "toHighlight": 2
+  }
+ ],
+ "The Art of Spending Money": [
+  {
+   "title": "How to get rich",
+   "slug": "how-to-get-rich",
+   "author": "Felix Dennis",
+   "cover": "covers/how-to-get-rich.jpg",
+   "color": "#3A5C8B",
+   "quote": "If you are young and reading this then I ask you to remember just this: you are richer than anyone older than you, and far richer than those who are much older.",
+   "score": 0.687,
+   "toHighlight": 16
+  },
+  {
+   "title": "The Art of the Good life",
+   "slug": "the-art-of-the-good-life",
+   "author": "Rolf Dobelli",
+   "cover": "covers/the-art-of-the-good-life.jpg",
+   "color": "#2E5C45",
+   "quote": "It’s much nicer to mull things over than to seize the initiative. Speculation is more agreeable than realization.",
+   "score": 0.671,
+   "toHighlight": 15
+  },
+  {
+   "title": "The Happiness Hypothesis",
+   "slug": "the-happiness-hypothesis",
+   "author": "",
+   "cover": "covers/the-happiness-hypothesis.jpg",
+   "color": "#2E6B6B",
+   "quote": "A curious fact about auto-biographical memory called the “memory bump.” When people older than thirty are asked to remember the most important or vivid events of their lives, they are disproportionately likely to recall events that…",
+   "score": 0.669,
+   "toHighlight": 16
   }
  ],
  "The Thinking Machine": [
@@ -181,10 +125,9 @@
    "author": "Tae Kim",
    "cover": "covers/the-nvidia-way.jpg",
    "color": "#2E5C45",
-   "quote": "Jensen saw that Nvidia could stop throwing away parts that failed quality tests as a matter of course. True, these parts were not suitable for the company’s Ferrari-grade chips.",
-   "score": 0.852,
-   "fromHighlight": 2,
-   "toHighlight": 7
+   "quote": "At the meeting, one of the Kleiner partners fixated on the topic of circuit boards, insisting that Nvidia needed to bring board manufacturing in-house.",
+   "score": 0.712,
+   "toHighlight": 1
   },
   {
    "title": "Chip War",
@@ -192,46 +135,12 @@
    "author": "Chris Miller",
    "cover": "covers/chip-war.jpg",
    "color": "#2E5C45",
-   "quote": "Grove’s restructuring of Intel was a textbook case of Silicon Valley capitalism. He recognized that the company’s business model was broken and decided to “disrupt” Intel himself by abandoning the DRAM chips it had been founded to build.",
-   "score": 0.781,
-   "fromHighlight": 2,
-   "toHighlight": 4
-  },
-  {
-   "title": "Crossing the chasm",
-   "slug": "crossing-the-chasm",
-   "author": "Geoffrey Moore",
-   "cover": "covers/crossing-the-chasm.jpg",
-   "color": "#2E6B6B",
-   "quote": "You can succeed with the visionaries, and you can thereby get a reputation for being a high flyer with a hot product, but that is not ultimately where the dollars are.",
-   "score": 0.756,
-   "fromHighlight": 2,
-   "toHighlight": 4
+   "quote": "In 2006, realizing that high-speed parallel computations could be used for purposes besides computer graphics, Nvidia released CUDA, software that lets GPUs be programmed in a standard programming language, without any reference to…",
+   "score": 0.671,
+   "toHighlight": 9
   }
  ],
  "The Not-To-Do List": [
-  {
-   "title": "The 4-Hour Workweek",
-   "slug": "the-4-hour-workweek",
-   "author": "Tim Ferriss",
-   "cover": "covers/the-4-hour-workweek.jpg",
-   "color": "#2F5A63",
-   "quote": "Lifestyle design is based on massive action—output. Increased output necessitates decreased input. Most information is time-consuming, negative, irrelevant to your goals, and outside of your influence.",
-   "score": 0.75,
-   "fromHighlight": 5,
-   "toHighlight": 12
-  },
-  {
-   "title": "How to Live",
-   "slug": "how-to-live",
-   "author": "Derek Sivers",
-   "cover": "covers/how-to-live.jpg",
-   "color": "#8B3A2E",
-   "quote": "The most valuable real estate in the world is the graveyard. There lie millions of half-written books, ideas never launched, and talents never developed. Most people die with everything still inside of them. The way to live is to create.",
-   "score": 0.744,
-   "fromHighlight": 5,
-   "toHighlight": 21
-  },
   {
    "title": "The Happiness Hypothesis",
    "slug": "the-happiness-hypothesis",
@@ -239,8 +148,7 @@
    "cover": "covers/the-happiness-hypothesis.jpg",
    "color": "#2E6B6B",
    "quote": "Trauma and stress are usually bad for people, and Pennebaker thought that self-disclosure—talking with friends or therapists—might help the body at the same time that it helps the mind.",
-   "score": 0.743,
-   "fromHighlight": 1,
+   "score": 0.661,
    "toHighlight": 15
   }
  ],
@@ -252,8 +160,7 @@
    "cover": "covers/the-thinking-machine.jpg",
    "color": "#7A4B2A",
    "quote": "It was [Clayton] Christensen who explained, really for the first time, why the big players like Sun and Silicon Graphics had declined to invest in PC video game hardware—not because they hated gamers but because the margins sucked compared…",
-   "score": 0.852,
-   "fromHighlight": 7,
+   "score": 0.712,
    "toHighlight": 2
   },
   {
@@ -263,8 +170,7 @@
    "cover": "covers/chip-war.jpg",
    "color": "#2E5C45",
    "quote": "In 2006, realizing that high-speed parallel computations could be used for purposes besides computer graphics, Nvidia released CUDA, software that lets GPUs be programmed in a standard programming language, without any reference to…",
-   "score": 0.851,
-   "fromHighlight": 12,
+   "score": 0.699,
    "toHighlight": 9
   },
   {
@@ -273,10 +179,9 @@
    "author": "",
    "cover": "covers/apple-in-china.jpg",
    "color": "#2E4A6B",
-   "quote": "The IBM PC wasn’t at all special in how it worked, but rather in how it was put together. IBM had, in 1980, zero revenues in PCs, but by 1982 it had taken 16 percent of the market, outselling Apple two to one.",
-   "score": 0.837,
-   "fromHighlight": 15,
-   "toHighlight": 0
+   "quote": "In 1999, Foxconn was a company with $1.8 billion of revenue, far smaller than Solectron, SCI, or Flextronics, its US rivals. By 2010, Foxconn revenues were $98 billion, more than those of its five biggest competitors combined.",
+   "score": 0.663,
+   "toHighlight": 6
   }
  ],
  "The Anxious Generation": [
@@ -286,10 +191,19 @@
    "author": "Greg Lukianoff and Jonathan Haidt",
    "cover": "covers/the-coddling-of-american-mind.jpg",
    "color": "#2E5C45",
-   "quote": "There’s an old saying: “Prepare the child for the road, not the road for the child.” But these days, we seem to be doing precisely the opposite: we’re trying to clear away anything that might upset children, not realizing that in doing so,…",
-   "score": 0.844,
-   "fromHighlight": 12,
-   "toHighlight": 1
+   "quote": "What is new today is the premise that students are fragile. Even those who are not fragile themselves often believe that others are in danger and therefore need protection.",
+   "score": 0.701,
+   "toHighlight": 0
+  },
+  {
+   "title": "The Happiness Hypothesis",
+   "slug": "the-happiness-hypothesis",
+   "author": "",
+   "cover": "covers/the-happiness-hypothesis.jpg",
+   "color": "#2E6B6B",
+   "quote": "A curious fact about auto-biographical memory called the “memory bump.” When people older than thirty are asked to remember the most important or vivid events of their lives, they are disproportionately likely to recall events that…",
+   "score": 0.666,
+   "toHighlight": 16
   },
   {
    "title": "Discrimination and Disparities",
@@ -298,81 +212,13 @@
    "cover": "covers/discrimination-and-disparities.jpg",
    "color": "#7A2E4A",
    "quote": "At the heart of the prevailing social vision of our times is the seemingly invincible fallacy that group outcomes in human endeavors would tend to be equal, or at least comparable or random, if there were no biased interventions, on the…",
-   "score": 0.751,
-   "fromHighlight": 8,
+   "score": 0.664,
    "toHighlight": 17
-  },
-  {
-   "title": "Rework",
-   "slug": "rework",
-   "author": "David Hansson and Jason Fried",
-   "cover": "covers/rework.jpg",
-   "color": "#8B6B2E",
-   "quote": "When you stick with your current customers come hell or high water, you wind up cutting yourself off from new ones. Your product or service becomes so tailored to your current customers that it stops appealing to fresh blood.",
-   "score": 0.741,
-   "fromHighlight": 19,
-   "toHighlight": 10
   }
  ],
- "The 5 types of wealth": [
-  {
-   "title": "The 4-Hour Workweek",
-   "slug": "the-4-hour-workweek",
-   "author": "Tim Ferriss",
-   "cover": "covers/the-4-hour-workweek.jpg",
-   "color": "#2F5A63",
-   "quote": "Remembering that you are going to die is the best way I know to avoid the trap of thinking you have something to lose. — Steve Jobs",
-   "score": 0.758,
-   "fromHighlight": 17,
-   "toHighlight": 22
-  },
-  {
-   "title": "Excellent Advice for Living",
-   "slug": "excellent-advice-for-living",
-   "author": "Kevin Kelly",
-   "cover": "covers/excellent-advice-for-living.jpg",
-   "color": "#3B4A63",
-   "quote": "When someone tells you something is wrong, they’re usually right. When they tell you how to fix it they’re usually wrong.",
-   "score": 0.738,
-   "fromHighlight": 12,
-   "toHighlight": 7
-  },
-  {
-   "title": "Crossing the chasm",
-   "slug": "crossing-the-chasm",
-   "author": "Geoffrey Moore",
-   "cover": "covers/crossing-the-chasm.jpg",
-   "color": "#2E6B6B",
-   "quote": "The great benefit of adopting the discipline of profitability at the outset is that you do not have to learn it later on.",
-   "score": 0.765,
-   "fromHighlight": 19,
-   "toHighlight": 19
-  }
- ],
+ "The 5 types of wealth": [],
  "The boy, the mole, the fox and the horse": [],
  "The Happiness Hypothesis": [
-  {
-   "title": "Same as ever",
-   "slug": "same-as-ever",
-   "author": "Morgan Housel",
-   "cover": "covers/same-as-ever.jpg",
-   "color": "#6B4C9A",
-   "quote": "Your happiness depends on your expectations more than anything else. So in a world that tends to get better for most people most of the time, an important life skill is getting the goalpost to stop moving. It’s also one of the hardest.",
-   "score": 0.779,
-   "fromHighlight": 14,
-   "toHighlight": 1
-  },
-  {
-   "title": "An Immense World",
-   "slug": "an-immense-world",
-   "author": "Ed Yong",
-   "cover": "covers/an-immense-world.jpg",
-   "color": "#3A5C8B",
-   "quote": "In thinking about other animals, we are biased by our own senses and by vision in particular.",
-   "score": 0.795,
-   "fromHighlight": 18,
-   "toHighlight": 1
-  },
   {
    "title": "The Righteous Mind",
    "slug": "the-righteous-mind",
@@ -380,9 +226,28 @@
    "cover": "covers/the-righteous-mind.jpg",
    "color": "#3A5C8B",
    "quote": "In The Happiness Hypothesis, I called these two kinds of cognition the rider (controlled processes, including “reasoning-why”) and the elephant (automatic processes, including emotion, intuition, and all forms of “seeing-that”).",
-   "score": 0.793,
-   "fromHighlight": 18,
+   "score": 0.706,
    "toHighlight": 4
+  },
+  {
+   "title": "The Art of the Good life",
+   "slug": "the-art-of-the-good-life",
+   "author": "Rolf Dobelli",
+   "cover": "covers/the-art-of-the-good-life.jpg",
+   "color": "#2E5C45",
+   "quote": "I’d like to introduce you to two people you know very well, although not by name: your experiencing self and your remembering self. The magnitude of these errors is revealed by the following experiment.",
+   "score": 0.688,
+   "toHighlight": 8
+  },
+  {
+   "title": "Discrimination and Disparities",
+   "slug": "discrimination-and-disparities",
+   "author": "Thomas Sowell",
+   "cover": "covers/discrimination-and-disparities.jpg",
+   "color": "#7A2E4A",
+   "quote": "At the heart of the prevailing social vision of our times is the seemingly invincible fallacy that group outcomes in human endeavors would tend to be equal, or at least comparable or random, if there were no biased interventions, on the…",
+   "score": 0.675,
+   "toHighlight": 17
   }
  ],
  "The Wager": [],
@@ -395,20 +260,8 @@
    "cover": "covers/only-the-paranoid-survive.jpg",
    "color": "#2E6B6B",
    "quote": "Senior managers got to where they are by having been good at what they do. And over time they have learned to lead with their strengths.",
-   "score": 0.758,
-   "fromHighlight": 0,
+   "score": 0.662,
    "toHighlight": 7
-  },
-  {
-   "title": "How to get rich",
-   "slug": "how-to-get-rich",
-   "author": "Felix Dennis",
-   "cover": "covers/how-to-get-rich.jpg",
-   "color": "#3A5C8B",
-   "quote": "To become rich you must be an owner. And you must try to own it all. You must strive with every fiber of your being, while recognizing the idiocy of your behavior, to own and retain control of as near to 100 percent of any company as you…",
-   "score": 0.733,
-   "fromHighlight": 0,
-   "toHighlight": 13
   }
  ],
  "How to Live an Extraordinary life": [
@@ -418,35 +271,42 @@
    "author": "Morgan Housel",
    "cover": "covers/same-as-ever.jpg",
    "color": "#6B4C9A",
-   "quote": "Your happiness depends on your expectations more than anything else. So in a world that tends to get better for most people most of the time, an important life skill is getting the goalpost to stop moving. It’s also one of the hardest.",
-   "score": 0.773,
-   "fromHighlight": 2,
-   "toHighlight": 1
+   "quote": "Patience is often stubbornness in disguise. Long-term thinking can become a crutch for those who are wrong but don’t want to change their mind.",
+   "score": 0.687,
+   "toHighlight": 9
   },
   {
-   "title": "The Art of the Good life",
-   "slug": "the-art-of-the-good-life",
-   "author": "Rolf Dobelli",
-   "cover": "covers/the-art-of-the-good-life.jpg",
-   "color": "#2E5C45",
-   "quote": "It’s much nicer to mull things over than to seize the initiative. Speculation is more agreeable than realization.",
-   "score": 0.798,
-   "fromHighlight": 2,
-   "toHighlight": 15
+   "title": "How to Live",
+   "slug": "how-to-live",
+   "author": "Derek Sivers",
+   "cover": "covers/how-to-live.jpg",
+   "color": "#8B3A2E",
+   "quote": "Honesty is an ideal that’s always a little further away. It has no finish line. No matter how honest you are, there’s always more honest.",
+   "score": 0.68,
+   "toHighlight": 20
   },
   {
-   "title": "Excellent Advice for Living",
-   "slug": "excellent-advice-for-living",
-   "author": "Kevin Kelly",
-   "cover": "covers/excellent-advice-for-living.jpg",
-   "color": "#3B4A63",
-   "quote": "When someone tells you something is wrong, they’re usually right. When they tell you how to fix it they’re usually wrong.",
-   "score": 0.766,
-   "fromHighlight": 6,
-   "toHighlight": 7
+   "title": "Rework",
+   "slug": "rework",
+   "author": "David Hansson and Jason Fried",
+   "cover": "covers/rework.jpg",
+   "color": "#8B6B2E",
+   "quote": "“That would never work in the real world.” You hear it all the time when you tell people about a fresh idea. The real world isn’t a place, it’s an excuse. It’s a justification for not trying.",
+   "score": 0.674,
+   "toHighlight": 0
   }
  ],
  "Apple in China": [
+  {
+   "title": "Chip War",
+   "slug": "chip-war",
+   "author": "Chris Miller",
+   "cover": "covers/chip-war.jpg",
+   "color": "#2E5C45",
+   "quote": "Grove’s restructuring of Intel was a textbook case of Silicon Valley capitalism. He recognized that the company’s business model was broken and decided to “disrupt” Intel himself by abandoning the DRAM chips it had been founded to build.",
+   "score": 0.682,
+   "toHighlight": 4
+  },
   {
    "title": "The Nvidia way",
    "slug": "the-nvidia-way",
@@ -454,20 +314,8 @@
    "cover": "covers/the-nvidia-way.jpg",
    "color": "#2E5C45",
    "quote": "IBM made an important strategic error, though. At the time, the company was so confident in its size and distribution might that it didn’t secure exclusivity on Intel’s and Microsoft’s offerings.",
-   "score": 0.837,
-   "fromHighlight": 0,
+   "score": 0.663,
    "toHighlight": 15
-  },
-  {
-   "title": "Chip War",
-   "slug": "chip-war",
-   "author": "Chris Miller",
-   "cover": "covers/chip-war.jpg",
-   "color": "#2E5C45",
-   "quote": "The documents that Edward Snowden leaked in 2013 before fleeing to Russia demonstrated American network-tapping capabilities that surprised even the cyber sleuths in Beijing.",
-   "score": 0.769,
-   "fromHighlight": 3,
-   "toHighlight": 13
   },
   {
    "title": "Breakneck",
@@ -475,10 +323,9 @@
    "author": "Dan Wang",
    "cover": "covers/breakneck.jpg",
    "color": "#8B6B2E",
-   "quote": "We chatted about why the United States was then mired in production difficulties, unable to make much of the personal protective equipment that people wanted.",
-   "score": 0.764,
-   "fromHighlight": 10,
-   "toHighlight": 4
+   "quote": "It became part of the elite consensus that the United States could lose manufacturing. This consensus portrayed union bosses, as well as the handful of heterodox economists, as sentimentalists for resisting offshoring.",
+   "score": 0.661,
+   "toHighlight": 7
   }
  ],
  "Richer, Wiser, Happier": [
@@ -488,35 +335,42 @@
    "author": "Howard Marks",
    "cover": "covers/the-most-important-thing.jpg",
    "color": "#6B5A2E",
-   "quote": "Skepticism and pessimism aren’t synonymous. Skepticism calls for pessimism when optimism is excessive. But it also calls for optimism when pessimism is excessive.",
-   "score": 0.899,
-   "fromHighlight": 7,
-   "toHighlight": 12
+   "quote": "One key question investors have to answer is whether they view the future as knowable or unknowable.",
+   "score": 0.727,
+   "toHighlight": 15
   },
   {
-   "title": "The Book of Elon",
-   "slug": "the-book-of-elon",
-   "author": "Eric Jorgenson",
-   "cover": "covers/the-book-of-elon.jpg",
-   "color": "#7A2E4A",
-   "quote": "The economic pie is not fixed. It has grown dramatically over time. Make sure you’re not operating from a zero-sum mindset, especially without realizing it. It will result in you trying to take things from others, which is not good.",
-   "score": 0.765,
-   "fromHighlight": 11,
-   "toHighlight": 0
+   "title": "How to get rich",
+   "slug": "how-to-get-rich",
+   "author": "Felix Dennis",
+   "cover": "covers/how-to-get-rich.jpg",
+   "color": "#3A5C8B",
+   "quote": "The Upside-Down Pyramid for Getting Rich: 1. Commit or don’t commit. No half-measures. 2. Cut loose from all negative influences. 3. Choose the right mountain. 4. Fear nothing. 5. Start now. 6. Go!",
+   "score": 0.683,
+   "toHighlight": 19
   },
   {
-   "title": "Read Write Own",
-   "slug": "read-write-own",
-   "author": "Chris Dixon",
-   "cover": "covers/read-write-own.jpg",
-   "color": "#8B6B2E",
-   "quote": "One could argue that blockchains, more than other technologies, exacerbate speculative cycles because their key innovation is to enable digital ownership.",
-   "score": 0.786,
-   "fromHighlight": 6,
-   "toHighlight": 7
+   "title": "Crossing the chasm",
+   "slug": "crossing-the-chasm",
+   "author": "Geoffrey Moore",
+   "cover": "covers/crossing-the-chasm.jpg",
+   "color": "#2E6B6B",
+   "quote": "You can succeed with the visionaries, and you can thereby get a reputation for being a high flyer with a hot product, but that is not ultimately where the dollars are.",
+   "score": 0.677,
+   "toHighlight": 4
   }
  ],
  "Competing Against Luck": [
+  {
+   "title": "Crossing the chasm",
+   "slug": "crossing-the-chasm",
+   "author": "Geoffrey Moore",
+   "cover": "covers/crossing-the-chasm.jpg",
+   "color": "#2E6B6B",
+   "quote": "Here is a proven formula for getting all this down into two short sentences. Try it out on your own company and one of its key products.",
+   "score": 0.677,
+   "toHighlight": 15
+  },
   {
    "title": "Rework",
    "slug": "rework",
@@ -524,31 +378,18 @@
    "cover": "covers/rework.jpg",
    "color": "#8B6B2E",
    "quote": "When you let customers outgrow you, you’ll most likely wind up with a product that’s basic—and that’s fine. Small, simple, basic needs are constant. There’s an endless supply of customers who need exactly that.",
-   "score": 0.755,
-   "fromHighlight": 5,
+   "score": 0.668,
    "toHighlight": 11
   },
   {
-   "title": "Working Backwards",
-   "slug": "working-backwards",
-   "author": "Bill Carr, Colin Bryar",
-   "cover": "covers/working-backwards.jpg",
-   "color": "#4A3B6B",
-   "quote": "In the 2016 shareholder letter, even though he wasn’t explicitly talking about two-pizza teams, Jeff suggested that “most decisions should probably be made with somewhere around 70% of the information you wish you had.",
-   "score": 0.782,
-   "fromHighlight": 0,
-   "toHighlight": 1
-  },
-  {
-   "title": "The Book of Elon",
-   "slug": "the-book-of-elon",
-   "author": "Eric Jorgenson",
-   "cover": "covers/the-book-of-elon.jpg",
+   "title": "Million Dollar Weekend",
+   "slug": "million-dollar-weekend",
+   "author": "Noah Kagan",
+   "cover": "covers/million-dollar-weekend.jpg",
    "color": "#7A2E4A",
-   "quote": "The output of any company is the vector sum of the people within it. If we attract the most talented people over time and our direction is correctly aligned, we will prevail.",
-   "score": 0.74,
-   "fromHighlight": 12,
-   "toHighlight": 7
+   "quote": "MVP is an important idea, but it leaves out something crucial: the customers. Who are you actually going to sell your minimum viable product to? And what if they don’t want the minimum?",
+   "score": 0.662,
+   "toHighlight": 4
   }
  ],
  "The Righteous Mind": [
@@ -558,60 +399,33 @@
    "author": "",
    "cover": "covers/the-happiness-hypothesis.jpg",
    "color": "#2E6B6B",
-   "quote": "In The Curse of the Self, the social psychologist Mark Leary points out that many other animals can think, but none, so far as we know, spend much time thinking about themselves.",
-   "score": 0.793,
-   "fromHighlight": 4,
-   "toHighlight": 18
+   "quote": "In the late nineteenth century, one of the founders of sociology, Emile Durkheim, performed a scholarly miracle. He gathered data from across Europe to study the factors that affect the suicide rate.",
+   "score": 0.706,
+   "toHighlight": 11
   },
   {
-   "title": "The Art of the Good life",
-   "slug": "the-art-of-the-good-life",
-   "author": "Rolf Dobelli",
-   "cover": "covers/the-art-of-the-good-life.jpg",
+   "title": "The Coddling of American Mind",
+   "slug": "the-coddling-of-american-mind",
+   "author": "Greg Lukianoff and Jonathan Haidt",
+   "cover": "covers/the-coddling-of-american-mind.jpg",
    "color": "#2E5C45",
-   "quote": "Society cares about cohesion, not about the private interests of a single member. Individuals are dispensable, and quickly perceived as threats to the collective—especially if they hold divergent principles.",
-   "score": 0.76,
-   "fromHighlight": 1,
-   "toHighlight": 12
+   "quote": "It’s a set of approaches in which things are analyzed primarily in terms of power. Groups struggle for power.",
+   "score": 0.693,
+   "toHighlight": 3
   },
   {
-   "title": "Pattern Breakers",
-   "slug": "pattern-breakers",
-   "author": "Mike Maples Jr and Peter Ziebelma",
-   "cover": "covers/pattern-breakers.jpg",
-   "color": "#4A3B6B",
-   "quote": "The third-rate mind is only happy when it is thinking with the majority. A second-rate mind is only happy when it is thinking with the minority. A first-rate mind is only happy when it is thinking. —A. A. Milne, author, Winnie the Pooh",
-   "score": 0.757,
-   "fromHighlight": 5,
-   "toHighlight": 5
+   "title": "Social Justice Fallacies",
+   "slug": "social-justice-fallacies",
+   "author": "Thomas Sowell",
+   "cover": "covers/social-justice-fallacies.jpg",
+   "color": "#6B5A2E",
+   "quote": "In the social justice literature, unmerited advantages tend to be treated as if they are deductions from the well-being of the rest of the population.",
+   "score": 0.697,
+   "toHighlight": 8
   }
  ],
- "The shortest history of Israel and Palestine": [
-  {
-   "title": "Prisoners of Geography",
-   "slug": "prisoners-of-geography",
-   "author": "Tim Marshall",
-   "cover": "covers/prisoners-of-geography.jpg",
-   "color": "#2E4A6B",
-   "quote": "When the Ottoman Empire began to collapse, the British and French had a different idea. In 1916, the British diplomat Colonel Sir Mark Sykes took a grease pencil and drew a crude line across a map of the Middle East.",
-   "score": 0.805,
-   "fromHighlight": 1,
-   "toHighlight": 9
-  }
- ],
- "The Wisdom of the Bullfrog": [
-  {
-   "title": "How to Stop Worrying and Start Living",
-   "slug": "how-to-stop-worrying-and-start-living",
-   "author": "Dale Carnegie",
-   "cover": "covers/how-to-stop-worrying-and-start-living.jpg",
-   "color": "#8B3A2E",
-   "quote": "What, then, was the secret of his success? He stated that it was owing to what he called living in “day-tight compartments.” Shut off the past! Let the dead past bury its dead. . . .",
-   "score": 0.733,
-   "fromHighlight": 1,
-   "toHighlight": 0
-  }
- ],
+ "The shortest history of Israel and Palestine": [],
+ "The Wisdom of the Bullfrog": [],
  "Breakneck": [
   {
    "title": "Apple in China",
@@ -620,31 +434,8 @@
    "cover": "covers/apple-in-china.jpg",
    "color": "#2E4A6B",
    "quote": "In the Western press it was common to misrepresent China’s role as being all about low-value assembly. These studies were based on opening an iPhone and breaking down where the display, chips, and other components came from.",
-   "score": 0.764,
-   "fromHighlight": 4,
+   "score": 0.661,
    "toHighlight": 10
-  },
-  {
-   "title": "Chip War",
-   "slug": "chip-war",
-   "author": "Chris Miller",
-   "cover": "covers/chip-war.jpg",
-   "color": "#2E5C45",
-   "quote": "The documents that Edward Snowden leaked in 2013 before fleeing to Russia demonstrated American network-tapping capabilities that surprised even the cyber sleuths in Beijing.",
-   "score": 0.763,
-   "fromHighlight": 15,
-   "toHighlight": 13
-  },
-  {
-   "title": "The Book of Elon",
-   "slug": "the-book-of-elon",
-   "author": "Eric Jorgenson",
-   "cover": "covers/the-book-of-elon.jpg",
-   "color": "#7A2E4A",
-   "quote": "The economic pie is not fixed. It has grown dramatically over time. Make sure you’re not operating from a zero-sum mindset, especially without realizing it. It will result in you trying to take things from others, which is not good.",
-   "score": 0.73,
-   "fromHighlight": 7,
-   "toHighlight": 0
   }
  ],
  "Useful not true": [
@@ -655,19 +446,7 @@
    "cover": "covers/how-to-live.jpg",
    "color": "#8B3A2E",
    "quote": "When people ask the meaning of life, they’re looking for a story. But there is no story. Life is a billion little moments. They’re not a part of anything.",
-   "score": 0.808,
-   "fromHighlight": 2,
-   "toHighlight": 11
-  },
-  {
-   "title": "Man's search for meaning",
-   "slug": "man-s-search-for-meaning",
-   "author": "Victor Frankl",
-   "cover": "covers/man-s-search-for-meaning.jpg",
-   "color": "#8B3A2E",
-   "quote": "If there is a meaning in life at all, then there must be a meaning in suffering. Suffering is an ineradicable part of life, even as fate and death. Without suffering and death human life cannot be complete.",
-   "score": 0.756,
-   "fromHighlight": 2,
+   "score": 0.671,
    "toHighlight": 11
   },
   {
@@ -676,10 +455,9 @@
    "author": "",
    "cover": "covers/the-happiness-hypothesis.jpg",
    "color": "#2E6B6B",
-   "quote": "The question “What is the meaning of life” might be called the Holy Question, in analogy to the Holy Grail.",
-   "score": 0.728,
-   "fromHighlight": 2,
-   "toHighlight": 19
+   "quote": "What can you do to have a good, happy, fulfilling, and meaningful life? What is the answer to the question of purpose within life?",
+   "score": 0.663,
+   "toHighlight": 21
   }
  ],
  "The most important thing": [
@@ -689,91 +467,19 @@
    "author": "William Green",
    "cover": "covers/richer-wiser-happier.jpg",
    "color": "#2E5C45",
-   "quote": "Howard Marks: “Skepticism calls for pessimism when optimism is excessive. But it also calls for optimism when pessimism is excessive.”",
-   "score": 0.899,
-   "fromHighlight": 12,
-   "toHighlight": 7
+   "quote": "The financial markets are the perfect laboratory for the study of cyclicality because they’re driven by investor psychology, which veers perennially between euphoria and despondency, greed and fear, credulousness and skepticism,…",
+   "score": 0.727,
+   "toHighlight": 6
   },
   {
-   "title": "Diary of CEO",
-   "slug": "diary-of-ceo",
-   "author": "Steven Bartlett",
-   "cover": "covers/diary-of-ceo.jpg",
-   "color": "#6B5A2E",
-   "quote": "Outsized returns often come from betting against conventional wisdom, and conventional wisdom is usually right. Given a 10 per cent chance of a 100 times payoff, you should take that bet every time.",
-   "score": 0.818,
-   "fromHighlight": 13,
-   "toHighlight": 9
-  },
-  {
-   "title": "The 4-Hour Workweek",
-   "slug": "the-4-hour-workweek",
-   "author": "Tim Ferriss",
-   "cover": "covers/the-4-hour-workweek.jpg",
-   "color": "#2F5A63",
-   "quote": "Effectiveness is doing the things that get you closer to your goals. Efficiency is performing a given task (whether important or not) in the most economical manner possible.",
-   "score": 0.791,
-   "fromHighlight": 2,
-   "toHighlight": 10
-  }
- ],
- "The Book of Elon": [
-  {
-   "title": "Elon Musk",
-   "slug": "elon-musk",
-   "author": "Walter Issacson",
-   "cover": "covers/elon-musk.jpg",
-   "color": "#2E4A6B",
-   "quote": "As he stewed about the absurd price the Russians wanted to charge, he employed some first-principles thinking, drilling down to the basic physics of the situation and building up from there.",
-   "score": 0.819,
-   "fromHighlight": 2,
-   "toHighlight": 0
-  },
-  {
-   "title": "Reentry",
-   "slug": "reentry",
-   "author": "Eric Berger",
-   "cover": "covers/reentry.jpg",
-   "color": "#3A5C8B",
-   "quote": "It concerned propellant densification and SpaceX’s need to launch the Falcon 9 rocket soon after fueling the vehicle with super-chilled fuel and oxidizer.",
-   "score": 0.79,
-   "fromHighlight": 10,
-   "toHighlight": 8
-  },
-  {
-   "title": "Social Justice Fallacies",
-   "slug": "social-justice-fallacies",
-   "author": "Thomas Sowell",
-   "cover": "covers/social-justice-fallacies.jpg",
-   "color": "#6B5A2E",
-   "quote": "In the social justice literature, unmerited advantages tend to be treated as if they are deductions from the well-being of the rest of the population.",
-   "score": 0.79,
-   "fromHighlight": 0,
-   "toHighlight": 8
-  }
- ],
- "An Empire of Wealth": [
-  {
-   "title": "Discrimination and Disparities",
-   "slug": "discrimination-and-disparities",
-   "author": "Thomas Sowell",
-   "cover": "covers/discrimination-and-disparities.jpg",
-   "color": "#7A2E4A",
-   "quote": "The most spectacularly successful political doctrine that swept into power in countries around the world in the twentieth century was Marxism, based on the implicit presumption that differences in wealth were due to capitalists growing…",
-   "score": 0.748,
-   "fromHighlight": 11,
-   "toHighlight": 22
-  },
-  {
-   "title": "The Lessons of History",
-   "slug": "the-lessons-of-history",
-   "author": "Will and Ariel Durant",
-   "cover": "covers/the-lessons-of-history.jpg",
-   "color": "#8B3A2E",
-   "quote": "In progressive societies the concentration may reach a point where the strength of number in the many poor rivals the strength of ability in the few rich; then the unstable equilibrium generates a critical situation, which history has…",
-   "score": 0.735,
-   "fromHighlight": 11,
-   "toHighlight": 9
+   "title": "The Art of the Good life",
+   "slug": "the-art-of-the-good-life",
+   "author": "Rolf Dobelli",
+   "cover": "covers/the-art-of-the-good-life.jpg",
+   "color": "#2E5C45",
+   "quote": "It’s much nicer to mull things over than to seize the initiative. Speculation is more agreeable than realization.",
+   "score": 0.692,
+   "toHighlight": 15
   },
   {
    "title": "How to get rich",
@@ -781,10 +487,53 @@
    "author": "Felix Dennis",
    "cover": "covers/how-to-get-rich.jpg",
    "color": "#3A5C8B",
-   "quote": "Never yet have I met a self-made rich man or woman whose family or personal relationships were not plagued by the burden of creating a fortune, even a small fortune.",
-   "score": 0.734,
-   "fromHighlight": 11,
-   "toHighlight": 6
+   "quote": "If you are young and reading this then I ask you to remember just this: you are richer than anyone older than you, and far richer than those who are much older.",
+   "score": 0.683,
+   "toHighlight": 16
+  }
+ ],
+ "The Book of Elon": [
+  {
+   "title": "Rework",
+   "slug": "rework",
+   "author": "David Hansson and Jason Fried",
+   "cover": "covers/rework.jpg",
+   "color": "#8B6B2E",
+   "quote": "“That would never work in the real world.” You hear it all the time when you tell people about a fresh idea. The real world isn’t a place, it’s an excuse. It’s a justification for not trying.",
+   "score": 0.68,
+   "toHighlight": 0
+  },
+  {
+   "title": "How to get rich",
+   "slug": "how-to-get-rich",
+   "author": "Felix Dennis",
+   "cover": "covers/how-to-get-rich.jpg",
+   "color": "#3A5C8B",
+   "quote": "If you wish to be rich, you must grow a carapace. A mental armor. Not so thick as to blind you to well-constructed criticism and advice, especially from those you trust. Nor so thick as to cut you off from friends and family.",
+   "score": 0.674,
+   "toHighlight": 1
+  },
+  {
+   "title": "The Art of the Good life",
+   "slug": "the-art-of-the-good-life",
+   "author": "Rolf Dobelli",
+   "cover": "covers/the-art-of-the-good-life.jpg",
+   "color": "#2E5C45",
+   "quote": "It’s much nicer to mull things over than to seize the initiative. Speculation is more agreeable than realization.",
+   "score": 0.671,
+   "toHighlight": 15
+  }
+ ],
+ "An Empire of Wealth": [
+  {
+   "title": "Social Justice Fallacies",
+   "slug": "social-justice-fallacies",
+   "author": "Thomas Sowell",
+   "cover": "covers/social-justice-fallacies.jpg",
+   "color": "#6B5A2E",
+   "quote": "In the social justice literature, unmerited advantages tend to be treated as if they are deductions from the well-being of the rest of the population.",
+   "score": 0.673,
+   "toHighlight": 8
   }
  ],
  "The Coddling of American Mind": [
@@ -794,10 +543,19 @@
    "author": "",
    "cover": "covers/the-anxious-generation.jpg",
    "color": "#8B3A2E",
-   "quote": "The Australian psychologist Nick Haslam originated the term “concept creep,” which refers to the expansion of psychological concepts in recent decades in two directions: downward (to apply to smaller or more trivial cases) and outward (to…",
-   "score": 0.844,
-   "fromHighlight": 1,
-   "toHighlight": 12
+   "quote": "There is also an important concept called psychological safety, which refers to the shared belief in a group that members won’t be punished or humiliated for speaking up, so people are willing to take risks in sharing ideas and debating…",
+   "score": 0.701,
+   "toHighlight": 13
+  },
+  {
+   "title": "The Righteous Mind",
+   "slug": "the-righteous-mind",
+   "author": "",
+   "cover": "covers/the-righteous-mind.jpg",
+   "color": "#3A5C8B",
+   "quote": "Comments such as these convince me that John Lennon captured a common liberal dream in his haunting song “Imagine.” Imagine if there were no countries, and no religion too.",
+   "score": 0.693,
+   "toHighlight": 14
   },
   {
    "title": "Discrimination and Disparities",
@@ -806,55 +564,20 @@
    "cover": "covers/discrimination-and-disparities.jpg",
    "color": "#7A2E4A",
    "quote": "At the heart of the prevailing social vision of our times is the seemingly invincible fallacy that group outcomes in human endeavors would tend to be equal, or at least comparable or random, if there were no biased interventions, on the…",
-   "score": 0.783,
-   "fromHighlight": 3,
+   "score": 0.689,
    "toHighlight": 17
-  },
-  {
-   "title": "The Art of the Good life",
-   "slug": "the-art-of-the-good-life",
-   "author": "Rolf Dobelli",
-   "cover": "covers/the-art-of-the-good-life.jpg",
-   "color": "#2E5C45",
-   "quote": "Society cares about cohesion, not about the private interests of a single member. Individuals are dispensable, and quickly perceived as threats to the collective—especially if they hold divergent principles.",
-   "score": 0.748,
-   "fromHighlight": 3,
-   "toHighlight": 12
   }
  ],
  "How to Stop Worrying and Start Living": [
-  {
-   "title": "How to get rich",
-   "slug": "how-to-get-rich",
-   "author": "Felix Dennis",
-   "cover": "covers/how-to-get-rich.jpg",
-   "color": "#3A5C8B",
-   "quote": "Until one is committed, there is hesitancy; the chance to draw back; always ineffectiveness concerning all acts of initiative and creation.",
-   "score": 0.777,
-   "fromHighlight": 4,
-   "toHighlight": 2
-  },
-  {
-   "title": "The Book of Elon",
-   "slug": "the-book-of-elon",
-   "author": "Eric Jorgenson",
-   "cover": "covers/the-book-of-elon.jpg",
-   "color": "#7A2E4A",
-   "quote": "There is a great quote from Winston Churchill: “If you’re going through hell, keep going.”",
-   "score": 0.739,
-   "fromHighlight": 3,
-   "toHighlight": 5
-  },
   {
    "title": "The 4-Hour Workweek",
    "slug": "the-4-hour-workweek",
    "author": "Tim Ferriss",
    "cover": "covers/the-4-hour-workweek.jpg",
    "color": "#2F5A63",
-   "quote": "Whenever upset or anxious, ask “why” at least three times and put the answers down on paper. Describing these doubts in writing reduces their impact twofold. First, it’s often the ambiguous nature of self-doubt that hurts most.",
-   "score": 0.765,
-   "fromHighlight": 2,
-   "toHighlight": 20
+   "quote": "Many a false step was made by standing still. — Fortune cookie Action may not always bring happiness, but there is no happiness without action. — Benjamin Disraeli, former British Prime Minister",
+   "score": 0.665,
+   "toHighlight": 2
   }
  ],
  "Reentry": [
@@ -864,10 +587,9 @@
    "author": "Walter Issacson",
    "cover": "covers/elon-musk.jpg",
    "color": "#2E4A6B",
-   "quote": "Whenever one of his engineers cited “a requirement” as a reason for doing something, Musk would grill them: Who made that requirement? And answering “The military” or “The legal department” was not good enough.",
-   "score": 0.803,
-   "fromHighlight": 6,
-   "toHighlight": 1
+   "quote": "By the time Musk got back from the launchpad to the Starbase main building, the video monitor by the front door had been reprogrammed. It read, “Ship+Rocket Stacked T –196h 44m 23s,” and was counting down the seconds.",
+   "score": 0.724,
+   "toHighlight": 9
   },
   {
    "title": "The Book of Elon",
@@ -876,162 +598,57 @@
    "cover": "covers/the-book-of-elon.jpg",
    "color": "#7A2E4A",
    "quote": "At SpaceX, I would tell the team, “We are on a deletion rampage!! Nothing is sacred. We will delete any remotely questionable tubes, sensors, manifolds, etc. tonight.",
-   "score": 0.79,
-   "fromHighlight": 8,
+   "score": 0.665,
    "toHighlight": 10
-  },
-  {
-   "title": "Working Backwards",
-   "slug": "working-backwards",
-   "author": "Bill Carr, Colin Bryar",
-   "cover": "covers/working-backwards.jpg",
-   "color": "#4A3B6B",
-   "quote": "His first action was not a “what” decision, it was a “who” and “how” decision. This is an incredibly important difference. Jeff did not jump straight to focusing on what product to build, which seems like the straightest line from A to B.",
-   "score": 0.732,
-   "fromHighlight": 6,
-   "toHighlight": 6
   }
  ],
  "The Algorithm": [
   {
-   "title": "Material World",
-   "slug": "material-world",
-   "author": "Ed Conway",
-   "cover": "covers/material-world.jpg",
-   "color": "#2E4A6B",
-   "quote": "One I encountered is that part of the explanation for how Tesla rose to greatness is that it chose the right battery shape—or perhaps the wrong shape—at the right time.",
-   "score": 0.767,
-   "fromHighlight": 4,
-   "toHighlight": 8
-  },
-  {
-   "title": "Competing Against Luck",
-   "slug": "competing-against-luck",
-   "author": "Clayton Christensen and others",
-   "cover": "covers/competing-against-luck.jpg",
-   "color": "#8B3A2E",
-   "quote": "It turned out Chevy drivers, historically the budget-conscious segments of GM’s market, were just as likely to purchase OnStar as Cadillac buyers. Those two segments overlapping on the OnStar made no sense to the team.",
-   "score": 0.73,
-   "fromHighlight": 4,
-   "toHighlight": 9
-  },
-  {
-   "title": "The Book of Elon",
-   "slug": "the-book-of-elon",
-   "author": "Eric Jorgenson",
-   "cover": "covers/the-book-of-elon.jpg",
-   "color": "#7A2E4A",
-   "quote": "The biggest epiphany I had building Tesla is what really matters is the machine that builds the machines—the factory.",
-   "score": 0.725,
-   "fromHighlight": 1,
-   "toHighlight": 12
+   "title": "Crossing the chasm",
+   "slug": "crossing-the-chasm",
+   "author": "Geoffrey Moore",
+   "cover": "covers/crossing-the-chasm.jpg",
+   "color": "#2E6B6B",
+   "quote": "You can succeed with the visionaries, and you can thereby get a reputation for being a high flyer with a hot product, but that is not ultimately where the dollars are.",
+   "score": 0.672,
+   "toHighlight": 4
   }
  ],
  "Only the Paranoid survive": [
   {
-   "title": "The Nvidia way",
-   "slug": "the-nvidia-way",
-   "author": "Tae Kim",
-   "cover": "covers/the-nvidia-way.jpg",
-   "color": "#2E5C45",
-   "quote": "IBM made an important strategic error, though. At the time, the company was so confident in its size and distribution might that it didn’t secure exclusivity on Intel’s and Microsoft’s offerings.",
-   "score": 0.774,
-   "fromHighlight": 1,
-   "toHighlight": 15
+   "title": "Crossing the chasm",
+   "slug": "crossing-the-chasm",
+   "author": "Geoffrey Moore",
+   "cover": "covers/crossing-the-chasm.jpg",
+   "color": "#2E6B6B",
+   "quote": "You can succeed with the visionaries, and you can thereby get a reputation for being a high flyer with a hot product, but that is not ultimately where the dollars are.",
+   "score": 0.688,
+   "toHighlight": 4
   },
   {
-   "title": "The Book of Elon",
-   "slug": "the-book-of-elon",
-   "author": "Eric Jorgenson",
-   "cover": "covers/the-book-of-elon.jpg",
-   "color": "#7A2E4A",
-   "quote": "The output of any company is the vector sum of the people within it. If we attract the most talented people over time and our direction is correctly aligned, we will prevail.",
-   "score": 0.73,
-   "fromHighlight": 4,
-   "toHighlight": 7
-  },
-  {
-   "title": "Apple in China",
-   "slug": "apple-in-china",
-   "author": "",
-   "cover": "covers/apple-in-china.jpg",
-   "color": "#2E4A6B",
-   "quote": "In 1999, when Apple and Foxconn started working together closely for the first time, Apple executives saw what Dell saw—but more. Cupertino realized it could take advantage of the conditions in China in very different ways.",
-   "score": 0.76,
-   "fromHighlight": 1,
-   "toHighlight": 3
+   "title": "Extreme Ownership",
+   "slug": "extreme-ownership",
+   "author": "Jocko Willink",
+   "cover": "covers/extreme-ownership.jpg",
+   "color": "#6B5A2E",
+   "quote": "One of the most fundamental and important truths at the heart of Extreme Ownership: there are no bad teams, only bad leaders.",
+   "score": 0.662,
+   "toHighlight": 2
   }
  ],
  "Read Write Own": [
   {
-   "title": "Richer, Wiser, Happier",
-   "slug": "richer-wiser-happier",
-   "author": "William Green",
-   "cover": "covers/richer-wiser-happier.jpg",
-   "color": "#2E5C45",
-   "quote": "The financial markets are the perfect laboratory for the study of cyclicality because they’re driven by investor psychology, which veers perennially between euphoria and despondency, greed and fear, credulousness and skepticism,…",
-   "score": 0.786,
-   "fromHighlight": 7,
-   "toHighlight": 6
-  },
-  {
-   "title": "The most important thing",
-   "slug": "the-most-important-thing",
-   "author": "Howard Marks",
-   "cover": "covers/the-most-important-thing.jpg",
-   "color": "#6B5A2E",
-   "quote": "Every once in a while, an up- or down-leg goes on for a long time and/or to a great extreme and people start to say “this time it’s different.” They cite the changes in geopolitics, institutions, technology or behavior that have rendered…",
-   "score": 0.768,
-   "fromHighlight": 7,
+   "title": "Crossing the chasm",
+   "slug": "crossing-the-chasm",
+   "author": "Geoffrey Moore",
+   "cover": "covers/crossing-the-chasm.jpg",
+   "color": "#2E6B6B",
+   "quote": "Markets as categories are impersonal, abstract things: the smartphone market, the gigabit router market, the office automation market, and so on.",
+   "score": 0.674,
    "toHighlight": 11
-  },
-  {
-   "title": "The Book of Elon",
-   "slug": "the-book-of-elon",
-   "author": "Eric Jorgenson",
-   "cover": "covers/the-book-of-elon.jpg",
-   "color": "#7A2E4A",
-   "quote": "The economic pie is not fixed. It has grown dramatically over time. Make sure you’re not operating from a zero-sum mindset, especially without realizing it. It will result in you trying to take things from others, which is not good.",
-   "score": 0.726,
-   "fromHighlight": 7,
-   "toHighlight": 0
   }
  ],
- "Pattern Breakers": [
-  {
-   "title": "Richer, Wiser, Happier",
-   "slug": "richer-wiser-happier",
-   "author": "William Green",
-   "cover": "covers/richer-wiser-happier.jpg",
-   "color": "#2E5C45",
-   "quote": "Howard Marks: “Skepticism calls for pessimism when optimism is excessive. But it also calls for optimism when pessimism is excessive.”",
-   "score": 0.748,
-   "fromHighlight": 5,
-   "toHighlight": 7
-  },
-  {
-   "title": "The Righteous Mind",
-   "slug": "the-righteous-mind",
-   "author": "",
-   "cover": "covers/the-righteous-mind.jpg",
-   "color": "#3A5C8B",
-   "quote": "Here are four pairs of words. Your job is to look only at the second word in each pair and then categorize it as good or bad: flower–happiness hate–sunshine love–cancer cockroach–lonely It’s absurdly easy, but imagine if I asked you to do…",
-   "score": 0.757,
-   "fromHighlight": 5,
-   "toHighlight": 5
-  },
-  {
-   "title": "Million Dollar Weekend",
-   "slug": "million-dollar-weekend",
-   "author": "Noah Kagan",
-   "cover": "covers/million-dollar-weekend.jpg",
-   "color": "#7A2E4A",
-   "quote": "When I get shot down while validating, I have a simple four-question script that flips the no into new knowledge, new ideas, and maybe even new customers.",
-   "score": 0.756,
-   "fromHighlight": 9,
-   "toHighlight": 8
-  }
- ],
+ "Pattern Breakers": [],
  "The Parasitic mind": [
   {
    "title": "The Coddling of American Mind",
@@ -1039,196 +656,50 @@
    "author": "Greg Lukianoff and Jonathan Haidt",
    "cover": "covers/the-coddling-of-american-mind.jpg",
    "color": "#2E5C45",
-   "quote": "We are not saying there is anything inherently wrong with the increasing number of left-leaning students on campus.",
-   "score": 0.777,
-   "fromHighlight": 2,
+   "quote": "There’s an old saying: “Prepare the child for the road, not the road for the child.” But these days, we seem to be doing precisely the opposite: we’re trying to clear away anything that might upset children, not realizing that in doing so,…",
+   "score": 0.678,
+   "toHighlight": 1
+  },
+  {
+   "title": "The Happiness Hypothesis",
+   "slug": "the-happiness-hypothesis",
+   "author": "",
+   "cover": "covers/the-happiness-hypothesis.jpg",
+   "color": "#2E6B6B",
+   "quote": "In the late nineteenth century, one of the founders of sociology, Emile Durkheim, performed a scholarly miracle. He gathered data from across Europe to study the factors that affect the suicide rate.",
+   "score": 0.669,
+   "toHighlight": 11
+  },
+  {
+   "title": "The Righteous Mind",
+   "slug": "the-righteous-mind",
+   "author": "",
+   "cover": "covers/the-righteous-mind.jpg",
+   "color": "#3A5C8B",
+   "quote": "Why do we have this weird mental architecture? As hominid brains tripled in size over the last 5 million years, developing language and a vastly improved ability to reason, why did we evolve an inner lawyer, rather than an inner judge or…",
+   "score": 0.669,
    "toHighlight": 6
-  },
-  {
-   "title": "Discrimination and Disparities",
-   "slug": "discrimination-and-disparities",
-   "author": "Thomas Sowell",
-   "cover": "covers/discrimination-and-disparities.jpg",
-   "color": "#7A2E4A",
-   "quote": "Two of the monumental catastrophes of the twentieth century—Nazism and Communism—led to the slaughter of millions of human beings by their own governments, in the name of either ridding the world of the burden of “inferior” races or…",
-   "score": 0.754,
-   "fromHighlight": 7,
-   "toHighlight": 4
-  },
-  {
-   "title": "The Lessons of History",
-   "slug": "the-lessons-of-history",
-   "author": "Will and Ariel Durant",
-   "cover": "covers/the-lessons-of-history.jpg",
-   "color": "#8B3A2E",
-   "quote": "The fear of capitalism has compelled socialism to widen freedom, and the fear of socialism has compelled capitalism to increase equality. East is West and West is East, and soon the twain will meet.",
-   "score": 0.724,
-   "fromHighlight": 7,
-   "toHighlight": 10
   }
  ],
  "Million Dollar Weekend": [
   {
-   "title": "Same as ever",
-   "slug": "same-as-ever",
-   "author": "Morgan Housel",
-   "cover": "covers/same-as-ever.jpg",
-   "color": "#6B4C9A",
-   "quote": "Good advice that took me awhile to learn is that everything is sales. Everything is sales. This is usually framed as career advice—no matter what your role in a company is, your ultimate job is to help sales.",
-   "score": 0.766,
-   "fromHighlight": 3,
-   "toHighlight": 8
-  },
-  {
    "title": "Rework",
    "slug": "rework",
    "author": "David Hansson and Jason Fried",
    "cover": "covers/rework.jpg",
    "color": "#8B6B2E",
    "quote": "Anyone who takes a “we’ll figure out how to profit in the future” attitude to business is being ridiculous.",
-   "score": 0.788,
-   "fromHighlight": 4,
+   "score": 0.706,
    "toHighlight": 4
   },
   {
-   "title": "Hell Yeah or No",
-   "slug": "hell-yeah-or-no",
-   "author": "Derek Sivers",
-   "cover": "covers/hell-yeah-or-no.jpg",
-   "color": "#6E6A2E",
-   "quote": "Doubt what you know. Stop the habit of thinking you know it. Require current proof that it’s still true today. Otherwise, let it go. John Cage said, “I can’t understand why people are frightened of new ideas.",
-   "score": 0.753,
-   "fromHighlight": 2,
-   "toHighlight": 3
-  }
- ],
- "Material World": [
-  {
-   "title": "The Book of Elon",
-   "slug": "the-book-of-elon",
-   "author": "Eric Jorgenson",
-   "cover": "covers/the-book-of-elon.jpg",
-   "color": "#7A2E4A",
-   "quote": "The biggest epiphany I had building Tesla is what really matters is the machine that builds the machines—the factory.",
-   "score": 0.777,
-   "fromHighlight": 8,
-   "toHighlight": 12
-  },
-  {
-   "title": "Elon Musk",
-   "slug": "elon-musk",
-   "author": "Walter Issacson",
-   "cover": "covers/elon-musk.jpg",
-   "color": "#2E4A6B",
-   "quote": "The same approach worked even on the smallest details. For example, when the battery packs were completed in Nevada, little plastic caps were put on the prongs that would plug it into the car.",
-   "score": 0.773,
-   "fromHighlight": 8,
-   "toHighlight": 6
-  },
-  {
-   "title": "The Algorithm",
-   "slug": "the-algorithm",
-   "author": "Jon McNeill",
-   "cover": "covers/the-algorithm.jpg",
-   "color": "#6B4C9A",
-   "quote": "A fearsome hurricane named Irma was barreling through the Caribbean. The threat sparked a massive exodus, with nearly 6.8 million Floridians leaving their homes. The result was a massive statewide traffic jam.",
-   "score": 0.767,
-   "fromHighlight": 8,
-   "toHighlight": 4
-  }
- ],
- "Nuclear War": [],
- "How to Live": [
-  {
-   "title": "Useful not true",
-   "slug": "useful-not-true",
-   "author": "Derek Sivers",
-   "cover": "covers/useful-not-true.jpg",
-   "color": "#4A3B6B",
-   "quote": "Beliefs create emotions. Emotions create actions. Choose a belief for the action it creates. Which belief is right? Wrong question. Which belief leads to the action you need now?",
-   "score": 0.816,
-   "fromHighlight": 6,
-   "toHighlight": 0
-  },
-  {
-   "title": "Hell Yeah or No",
-   "slug": "hell-yeah-or-no",
-   "author": "Derek Sivers",
-   "cover": "covers/hell-yeah-or-no.jpg",
-   "color": "#6E6A2E",
-   "quote": "Sometimes people ask me if there’s one motto or rule of thumb I use most often. This is it: Whatever scares you, go do it. Best of all, once you do something that scared you, you’re not scared of it anymore!",
-   "score": 0.806,
-   "fromHighlight": 15,
-   "toHighlight": 6
-  },
-  {
-   "title": "Man's search for meaning",
-   "slug": "man-s-search-for-meaning",
-   "author": "Victor Frankl",
-   "cover": "covers/man-s-search-for-meaning.jpg",
-   "color": "#8B3A2E",
-   "quote": "If there is a meaning in life at all, then there must be a meaning in suffering. Suffering is an ineradicable part of life, even as fate and death. Without suffering and death human life cannot be complete.",
-   "score": 0.804,
-   "fromHighlight": 11,
-   "toHighlight": 11
-  }
- ],
- "How to get rich": [
-  {
-   "title": "The Book of Elon",
-   "slug": "the-book-of-elon",
-   "author": "Eric Jorgenson",
-   "cover": "covers/the-book-of-elon.jpg",
-   "color": "#7A2E4A",
-   "quote": "The economic pie is not fixed. It has grown dramatically over time. Make sure you’re not operating from a zero-sum mindset, especially without realizing it. It will result in you trying to take things from others, which is not good.",
-   "score": 0.768,
-   "fromHighlight": 16,
-   "toHighlight": 0
-  },
-  {
-   "title": "The 4-Hour Workweek",
-   "slug": "the-4-hour-workweek",
-   "author": "Tim Ferriss",
-   "cover": "covers/the-4-hour-workweek.jpg",
-   "color": "#2F5A63",
-   "quote": "Many a false step was made by standing still. — Fortune cookie Action may not always bring happiness, but there is no happiness without action. — Benjamin Disraeli, former British Prime Minister",
-   "score": 0.763,
-   "fromHighlight": 2,
-   "toHighlight": 2
-  },
-  {
-   "title": "Rework",
-   "slug": "rework",
-   "author": "David Hansson and Jason Fried",
-   "cover": "covers/rework.jpg",
-   "color": "#8B6B2E",
-   "quote": "Anyone who takes a “we’ll figure out how to profit in the future” attitude to business is being ridiculous.",
-   "score": 0.784,
-   "fromHighlight": 13,
-   "toHighlight": 4
-  }
- ],
- "Crossing the chasm": [
-  {
-   "title": "The Book of Elon",
-   "slug": "the-book-of-elon",
-   "author": "Eric Jorgenson",
-   "cover": "covers/the-book-of-elon.jpg",
-   "color": "#7A2E4A",
-   "quote": "The output of any company is the vector sum of the people within it. If we attract the most talented people over time and our direction is correctly aligned, we will prevail.",
-   "score": 0.782,
-   "fromHighlight": 4,
-   "toHighlight": 7
-  },
-  {
-   "title": "Rework",
-   "slug": "rework",
-   "author": "David Hansson and Jason Fried",
-   "cover": "covers/rework.jpg",
-   "color": "#8B6B2E",
-   "quote": "Anyone who takes a “we’ll figure out how to profit in the future” attitude to business is being ridiculous.",
-   "score": 0.79,
-   "fromHighlight": 4,
+   "title": "Crossing the chasm",
+   "slug": "crossing-the-chasm",
+   "author": "Geoffrey Moore",
+   "cover": "covers/crossing-the-chasm.jpg",
+   "color": "#2E6B6B",
+   "quote": "You can succeed with the visionaries, and you can thereby get a reputation for being a high flyer with a hot product, but that is not ultimately where the dollars are.",
+   "score": 0.696,
    "toHighlight": 4
   },
   {
@@ -1237,45 +708,130 @@
    "author": "Felix Dennis",
    "cover": "covers/how-to-get-rich.jpg",
    "color": "#3A5C8B",
-   "quote": "New or rapidly developing industries, whether glamorous or not, very often provide more opportunities to get rich than established sectors.",
-   "score": 0.783,
-   "fromHighlight": 19,
-   "toHighlight": 3
+   "quote": "To become rich you must be an owner. And you must try to own it all. You must strive with every fiber of your being, while recognizing the idiocy of your behavior, to own and retain control of as near to 100 percent of any company as you…",
+   "score": 0.691,
+   "toHighlight": 13
+  }
+ ],
+ "Material World": [
+  {
+   "title": "Apple in China",
+   "slug": "apple-in-china",
+   "author": "",
+   "cover": "covers/apple-in-china.jpg",
+   "color": "#2E4A6B",
+   "quote": "In the Western press it was common to misrepresent China’s role as being all about low-value assembly. These studies were based on opening an iPhone and breaking down where the display, chips, and other components came from.",
+   "score": 0.661,
+   "toHighlight": 10
+  }
+ ],
+ "Nuclear War": [],
+ "How to Live": [
+  {
+   "title": "Excellent Advice for Living",
+   "slug": "excellent-advice-for-living",
+   "author": "Kevin Kelly",
+   "cover": "covers/excellent-advice-for-living.jpg",
+   "color": "#3B4A63",
+   "quote": "Don’t define yourself by your opinions because then you can’t change your mind. Define yourself by your values.",
+   "score": 0.674,
+   "toHighlight": 16
+  },
+  {
+   "title": "Hell Yeah or No",
+   "slug": "hell-yeah-or-no",
+   "author": "Derek Sivers",
+   "cover": "covers/hell-yeah-or-no.jpg",
+   "color": "#6E6A2E",
+   "quote": "Sometimes people ask me if there’s one motto or rule of thumb I use most often. This is it: Whatever scares you, go do it. Best of all, once you do something that scared you, you’re not scared of it anymore!",
+   "score": 0.699,
+   "toHighlight": 6
+  },
+  {
+   "title": "The 4-Hour Workweek",
+   "slug": "the-4-hour-workweek",
+   "author": "Tim Ferriss",
+   "cover": "covers/the-4-hour-workweek.jpg",
+   "color": "#2F5A63",
+   "quote": "Remembering that you are going to die is the best way I know to avoid the trap of thinking you have something to lose. — Steve Jobs",
+   "score": 0.667,
+   "toHighlight": 22
+  }
+ ],
+ "How to get rich": [
+  {
+   "title": "The Art of Spending Money",
+   "slug": "the-art-of-spending-money",
+   "author": "Morgan Housel",
+   "cover": "covers/the-art-of-spending-money.jpg",
+   "color": "#6B2F3E",
+   "quote": "[On the highest level of independence] You wake up every morning realizing that you can spend your time doing what you want, with whom you want, for as long as you want. Bosses don’t control your day.",
+   "score": 0.687,
+   "toHighlight": 10
+  },
+  {
+   "title": "Richer, Wiser, Happier",
+   "slug": "richer-wiser-happier",
+   "author": "William Green",
+   "cover": "covers/richer-wiser-happier.jpg",
+   "color": "#2E5C45",
+   "quote": "Second, to achieve resilience, it’s imperative to reduce or eliminate debt, avoid leverage, and beware of excessive expenses, all of which can make us dependent on the kindness of strangers.",
+   "score": 0.683,
+   "toHighlight": 11
+  },
+  {
+   "title": "The Art of the Good life",
+   "slug": "the-art-of-the-good-life",
+   "author": "Rolf Dobelli",
+   "cover": "covers/the-art-of-the-good-life.jpg",
+   "color": "#2E5C45",
+   "quote": "It’s much nicer to mull things over than to seize the initiative. Speculation is more agreeable than realization.",
+   "score": 0.684,
+   "toHighlight": 15
+  }
+ ],
+ "Crossing the chasm": [
+  {
+   "title": "Rework",
+   "slug": "rework",
+   "author": "David Hansson and Jason Fried",
+   "cover": "covers/rework.jpg",
+   "color": "#8B6B2E",
+   "quote": "Anyone who takes a “we’ll figure out how to profit in the future” attitude to business is being ridiculous.",
+   "score": 0.688,
+   "toHighlight": 4
+  },
+  {
+   "title": "The most important thing",
+   "slug": "the-most-important-thing",
+   "author": "Howard Marks",
+   "cover": "covers/the-most-important-thing.jpg",
+   "color": "#6B5A2E",
+   "quote": "Every once in a while, an up- or down-leg goes on for a long time and/or to a great extreme and people start to say “this time it’s different.” They cite the changes in geopolitics, institutions, technology or behavior that have rendered…",
+   "score": 0.682,
+   "toHighlight": 11
+  },
+  {
+   "title": "Million Dollar Weekend",
+   "slug": "million-dollar-weekend",
+   "author": "Noah Kagan",
+   "cover": "covers/million-dollar-weekend.jpg",
+   "color": "#7A2E4A",
+   "quote": "MVP is an important idea, but it leaves out something crucial: the customers. Who are you actually going to sell your minimum viable product to? And what if they don’t want the minimum?",
+   "score": 0.696,
+   "toHighlight": 4
   }
  ],
  "Faraday, Maxwell, and the Electromagnetic Field": [
-  {
-   "title": "The Book of Elon",
-   "slug": "the-book-of-elon",
-   "author": "Eric Jorgenson",
-   "cover": "covers/the-book-of-elon.jpg",
-   "color": "#7A2E4A",
-   "quote": "Another good physics tool is thinking about things “in the limit.” Take a particular idea and imagine scaling it to a very large or very small number. How do things change?",
-   "score": 0.736,
-   "fromHighlight": 10,
-   "toHighlight": 3
-  },
   {
    "title": "A beautiful question",
    "slug": "a-beautiful-question",
    "author": "Frank Wilczek",
    "cover": "covers/a-beautiful-question.jpg",
    "color": "#7A2E4A",
-   "quote": "Study of Maxwell’s equations brought out an essentially new idea that had not really played a big role in science before.",
-   "score": 0.763,
-   "fromHighlight": 10,
-   "toHighlight": 9
-  },
-  {
-   "title": "The Not-To-Do List",
-   "slug": "the-not-to-do-list",
-   "author": "Rolf Dobelli",
-   "cover": "covers/the-not-to-do-list.jpg",
-   "color": "#5B3A5E",
-   "quote": "“On the ceiling of the Sistine Chapel, Adam and God touch fingers. To the uneducated eye it is not clear who is creating whom. We are supposed to assume God’s the one doing the creating, and much of the world thinks so.",
-   "score": 0.726,
-   "fromHighlight": 10,
-   "toHighlight": 6
+   "quote": "Looking back in history, thanks to the finite speed of light, we may see, through their spectra, that the atoms in galaxies a long time ago, and far far away, behave in the same way as the atoms we see on Earth today.",
+   "score": 0.696,
+   "toHighlight": 13
   }
  ],
  "Biological War": [],
@@ -1287,20 +843,8 @@
    "cover": "covers/discrimination-and-disparities.jpg",
    "color": "#7A2E4A",
    "quote": "At the heart of the prevailing social vision of our times is the seemingly invincible fallacy that group outcomes in human endeavors would tend to be equal, or at least comparable or random, if there were no biased interventions, on the…",
-   "score": 0.831,
-   "fromHighlight": 0,
+   "score": 0.731,
    "toHighlight": 17
-  },
-  {
-   "title": "The Book of Elon",
-   "slug": "the-book-of-elon",
-   "author": "Eric Jorgenson",
-   "cover": "covers/the-book-of-elon.jpg",
-   "color": "#7A2E4A",
-   "quote": "The economic pie is not fixed. It has grown dramatically over time. Make sure you’re not operating from a zero-sum mindset, especially without realizing it. It will result in you trying to take things from others, which is not good.",
-   "score": 0.79,
-   "fromHighlight": 8,
-   "toHighlight": 0
   },
   {
    "title": "The Lessons of History",
@@ -1309,9 +853,18 @@
    "cover": "covers/the-lessons-of-history.jpg",
    "color": "#8B3A2E",
    "quote": "In progressive societies the concentration may reach a point where the strength of number in the many poor rivals the strength of ability in the few rich; then the unstable equilibrium generates a critical situation, which history has…",
-   "score": 0.794,
-   "fromHighlight": 8,
+   "score": 0.7,
    "toHighlight": 9
+  },
+  {
+   "title": "The Righteous Mind",
+   "slug": "the-righteous-mind",
+   "author": "",
+   "cover": "covers/the-righteous-mind.jpg",
+   "color": "#3A5C8B",
+   "quote": "Comments such as these convince me that John Lennon captured a common liberal dream in his haunting song “Imagine.” Imagine if there were no countries, and no religion too.",
+   "score": 0.697,
+   "toHighlight": 14
   }
  ],
  "Discrimination and Disparities": [
@@ -1321,81 +874,107 @@
    "author": "Thomas Sowell",
    "cover": "covers/social-justice-fallacies.jpg",
    "color": "#6B5A2E",
-   "quote": "Some social justice advocates may implicitly assume that various groups have similar developed capabilities, so that different outcomes appear puzzling.",
-   "score": 0.831,
-   "fromHighlight": 17,
-   "toHighlight": 0
+   "quote": "In the social justice literature, unmerited advantages tend to be treated as if they are deductions from the well-being of the rest of the population.",
+   "score": 0.731,
+   "toHighlight": 8
   },
   {
-   "title": "The Art of the Good life",
-   "slug": "the-art-of-the-good-life",
-   "author": "Rolf Dobelli",
-   "cover": "covers/the-art-of-the-good-life.jpg",
+   "title": "Poverty, by America",
+   "slug": "poverty-by-america",
+   "author": "Matthew Desmond",
+   "cover": "covers/poverty-by-america.jpg",
+   "color": "#2E6B6B",
+   "quote": "Other studies found no evidence that unemployment benefits were causing workers to stay home, and at the time several European countries were also experiencing labor shortages even though they hadn’t done much to expand unemployment…",
+   "score": 0.69,
+   "toHighlight": 8
+  },
+  {
+   "title": "The Coddling of American Mind",
+   "slug": "the-coddling-of-american-mind",
+   "author": "Greg Lukianoff and Jonathan Haidt",
+   "cover": "covers/the-coddling-of-american-mind.jpg",
    "color": "#2E5C45",
-   "quote": "Society cares about cohesion, not about the private interests of a single member. Individuals are dispensable, and quickly perceived as threats to the collective—especially if they hold divergent principles.",
-   "score": 0.765,
-   "fromHighlight": 17,
-   "toHighlight": 12
-  },
+   "quote": "It’s a set of approaches in which things are analyzed primarily in terms of power. Groups struggle for power.",
+   "score": 0.689,
+   "toHighlight": 3
+  }
+ ],
+ "First steps": [],
+ "Prisoners of Geography": [],
+ "The Art of the Good life": [
   {
-   "title": "The Lessons of History",
-   "slug": "the-lessons-of-history",
-   "author": "Will and Ariel Durant",
-   "cover": "covers/the-lessons-of-history.jpg",
-   "color": "#8B3A2E",
-   "quote": "In progressive societies the concentration may reach a point where the strength of number in the many poor rivals the strength of ability in the few rich; then the unstable equilibrium generates a critical situation, which history has…",
-   "score": 0.793,
-   "fromHighlight": 22,
+   "title": "The most important thing",
+   "slug": "the-most-important-thing",
+   "author": "Howard Marks",
+   "cover": "covers/the-most-important-thing.jpg",
+   "color": "#6B5A2E",
+   "quote": "Rule number one: most things will prove to be cyclical. Rule number two: some of the greatest opportunities for gain and loss come when other people forget rule number one.",
+   "score": 0.692,
    "toHighlight": 9
-  }
- ],
- "First steps": [
-  {
-   "title": "A beautiful question",
-   "slug": "a-beautiful-question",
-   "author": "Frank Wilczek",
-   "cover": "covers/a-beautiful-question.jpg",
-   "color": "#7A2E4A",
-   "quote": "For birds, with their freedom of flight, experience the essential symmetry of three-dimensional space in an intimate way that we do not.",
-   "score": 0.743,
-   "fromHighlight": 0,
-   "toHighlight": 2
-  }
- ],
- "Prisoners of Geography": [
-  {
-   "title": "The shortest history of Israel and Palestine",
-   "slug": "the-shortest-history-of-israel-and-palestine",
-   "author": "",
-   "cover": "covers/the-shortest-history-of-israel-and-palestine.jpg",
-   "color": "#6B4C9A",
-   "quote": "In late 1917, the Ottoman forces in Palestine were defeated by the British, and in December 1917, General Edmund Allenby led his troops into Jerusalem. He promised as little disruption to “lawful business” as possible.",
-   "score": 0.805,
-   "fromHighlight": 9,
-   "toHighlight": 1
   },
+  {
+   "title": "The Happiness Hypothesis",
+   "slug": "the-happiness-hypothesis",
+   "author": "",
+   "cover": "covers/the-happiness-hypothesis.jpg",
+   "color": "#2E6B6B",
+   "quote": "Schwartz and his colleagues find that the paradox mostly applies to people they call “maximizers”—those who habitually try to evaluate all the options, seek out more information, and make the best choice (or “maximize their utility,” as…",
+   "score": 0.688,
+   "toHighlight": 9
+  },
+  {
+   "title": "How to get rich",
+   "slug": "how-to-get-rich",
+   "author": "Felix Dennis",
+   "cover": "covers/how-to-get-rich.jpg",
+   "color": "#3A5C8B",
+   "quote": "If you are young and reading this then I ask you to remember just this: you are richer than anyone older than you, and far richer than those who are much older.",
+   "score": 0.684,
+   "toHighlight": 16
+  }
+ ],
+ "The Lessons of History": [
   {
    "title": "Social Justice Fallacies",
    "slug": "social-justice-fallacies",
    "author": "Thomas Sowell",
    "cover": "covers/social-justice-fallacies.jpg",
    "color": "#6B5A2E",
-   "quote": "The dearth of draft animals and beasts of burden in the Western Hemisphere had wider economic implications.",
-   "score": 0.752,
-   "fromHighlight": 13,
-   "toHighlight": 1
+   "quote": "In the social justice literature, unmerited advantages tend to be treated as if they are deductions from the well-being of the rest of the population.",
+   "score": 0.7,
+   "toHighlight": 8
+  },
+  {
+   "title": "The Righteous Mind",
+   "slug": "the-righteous-mind",
+   "author": "",
+   "cover": "covers/the-righteous-mind.jpg",
+   "color": "#3A5C8B",
+   "quote": "Why do we have this weird mental architecture? As hominid brains tripled in size over the last 5 million years, developing language and a vastly improved ability to reason, why did we evolve an inner lawyer, rather than an inner judge or…",
+   "score": 0.675,
+   "toHighlight": 6
+  },
+  {
+   "title": "Discrimination and Disparities",
+   "slug": "discrimination-and-disparities",
+   "author": "Thomas Sowell",
+   "cover": "covers/discrimination-and-disparities.jpg",
+   "color": "#7A2E4A",
+   "quote": "At the heart of the prevailing social vision of our times is the seemingly invincible fallacy that group outcomes in human endeavors would tend to be equal, or at least comparable or random, if there were no biased interventions, on the…",
+   "score": 0.674,
+   "toHighlight": 17
   }
  ],
- "The Art of the Good life": [
+ "The Body": [],
+ "Same as ever": [
   {
-   "title": "The Body",
-   "slug": "the-body",
-   "author": "Bill Bryson",
-   "cover": "covers/the-body.jpg",
-   "color": "#3A5C8B",
-   "quote": "Altogether, the human brain is estimated to hold something on the order of two hundred exabytes of information, roughly equal to “the entire digital content of today’s world,” according to Nature Neuroscience.",
-   "score": 0.831,
-   "fromHighlight": 9,
+   "title": "How to Live an Extraordinary life",
+   "slug": "how-to-live-an-extraordinary-life",
+   "author": "Anthony Pompliano",
+   "cover": "covers/how-to-live-an-extraordinary-life.jpg",
+   "color": "#7A2E4A",
+   "quote": "Life is all about power laws. Relationships, experiences, financial returns. Find the 5% that delivers 95% and ignore the rest.",
+   "score": 0.687,
    "toHighlight": 5
   },
   {
@@ -1405,219 +984,8 @@
    "cover": "covers/million-dollar-weekend.jpg",
    "color": "#7A2E4A",
    "quote": "Be persistent. I want you to believe that almost every no you get can eventually become a yes. Persistence will reveal that most noes are actually a “not now.”",
-   "score": 0.776,
-   "fromHighlight": 15,
+   "score": 0.684,
    "toHighlight": 2
-  },
-  {
-   "title": "How to Live an Extraordinary life",
-   "slug": "how-to-live-an-extraordinary-life",
-   "author": "Anthony Pompliano",
-   "cover": "covers/how-to-live-an-extraordinary-life.jpg",
-   "color": "#7A2E4A",
-   "quote": "You will stand out in life if you have a bias for action. The world is filled with people who have grand dreams and audacious plans. They talk about all the amazing things they will accomplish one day.",
-   "score": 0.798,
-   "fromHighlight": 15,
-   "toHighlight": 2
-  }
- ],
- "The Lessons of History": [
-  {
-   "title": "The Book of Elon",
-   "slug": "the-book-of-elon",
-   "author": "Eric Jorgenson",
-   "cover": "covers/the-book-of-elon.jpg",
-   "color": "#7A2E4A",
-   "quote": "The economic pie is not fixed. It has grown dramatically over time. Make sure you’re not operating from a zero-sum mindset, especially without realizing it. It will result in you trying to take things from others, which is not good.",
-   "score": 0.767,
-   "fromHighlight": 9,
-   "toHighlight": 0
-  },
-  {
-   "title": "Social Justice Fallacies",
-   "slug": "social-justice-fallacies",
-   "author": "Thomas Sowell",
-   "cover": "covers/social-justice-fallacies.jpg",
-   "color": "#6B5A2E",
-   "quote": "In the social justice literature, unmerited advantages tend to be treated as if they are deductions from the well-being of the rest of the population.",
-   "score": 0.794,
-   "fromHighlight": 9,
-   "toHighlight": 8
-  },
-  {
-   "title": "Discrimination and Disparities",
-   "slug": "discrimination-and-disparities",
-   "author": "Thomas Sowell",
-   "cover": "covers/discrimination-and-disparities.jpg",
-   "color": "#7A2E4A",
-   "quote": "The most spectacularly successful political doctrine that swept into power in countries around the world in the twentieth century was Marxism, based on the implicit presumption that differences in wealth were due to capitalists growing…",
-   "score": 0.793,
-   "fromHighlight": 9,
-   "toHighlight": 22
-  }
- ],
- "The Body": [
-  {
-   "title": "The Art of the Good life",
-   "slug": "the-art-of-the-good-life",
-   "author": "Rolf Dobelli",
-   "cover": "covers/the-art-of-the-good-life.jpg",
-   "color": "#2E5C45",
-   "quote": "The human brain is often compared to a computer. The comparison doesn’t work. Computers store raw data using bits, the smallest unit of information. Brains store not raw but processed data.",
-   "score": 0.831,
-   "fromHighlight": 5,
-   "toHighlight": 9
-  },
-  {
-   "title": "An Immense World",
-   "slug": "an-immense-world",
-   "author": "Ed Yong",
-   "cover": "covers/an-immense-world.jpg",
-   "color": "#3A5C8B",
-   "quote": "Color, then, is fundamentally subjective. There’s nothing inherently “green” about a blade of grass, or the 550-nanometer light that it reflects.",
-   "score": 0.748,
-   "fromHighlight": 4,
-   "toHighlight": 5
-  },
-  {
-   "title": "A beautiful question",
-   "slug": "a-beautiful-question",
-   "author": "Frank Wilczek",
-   "cover": "covers/a-beautiful-question.jpg",
-   "color": "#7A2E4A",
-   "quote": "Looking back in history, thanks to the finite speed of light, we may see, through their spectra, that the atoms in galaxies a long time ago, and far far away, behave in the same way as the atoms we see on Earth today.",
-   "score": 0.737,
-   "fromHighlight": 0,
-   "toHighlight": 13
-  }
- ],
- "Same as ever": [
-  {
-   "title": "Hell Yeah or No",
-   "slug": "hell-yeah-or-no",
-   "author": "Derek Sivers",
-   "cover": "covers/hell-yeah-or-no.jpg",
-   "color": "#6E6A2E",
-   "quote": "Doubt what you know. Stop the habit of thinking you know it. Require current proof that it’s still true today. Otherwise, let it go. John Cage said, “I can’t understand why people are frightened of new ideas.",
-   "score": 0.778,
-   "fromHighlight": 9,
-   "toHighlight": 3
-  },
-  {
-   "title": "How to Live an Extraordinary life",
-   "slug": "how-to-live-an-extraordinary-life",
-   "author": "Anthony Pompliano",
-   "cover": "covers/how-to-live-an-extraordinary-life.jpg",
-   "color": "#7A2E4A",
-   "quote": "Bad news doesn’t get better with time. One of the biggest mistakes I see people make in life is waiting to communicate when something is wrong.",
-   "score": 0.77,
-   "fromHighlight": 9,
-   "toHighlight": 6
-  },
-  {
-   "title": "The most important thing",
-   "slug": "the-most-important-thing",
-   "author": "Howard Marks",
-   "cover": "covers/the-most-important-thing.jpg",
-   "color": "#6B5A2E",
-   "quote": "Old adage: \"It’s difficult to make accurate predictions, especially with regard to the future.” The corollary is also true: predicting the past is a snap.",
-   "score": 0.757,
-   "fromHighlight": 9,
-   "toHighlight": 14
-  }
- ],
- "Poverty, by America": [
-  {
-   "title": "The Book of Elon",
-   "slug": "the-book-of-elon",
-   "author": "Eric Jorgenson",
-   "cover": "covers/the-book-of-elon.jpg",
-   "color": "#7A2E4A",
-   "quote": "The economic pie is not fixed. It has grown dramatically over time. Make sure you’re not operating from a zero-sum mindset, especially without realizing it. It will result in you trying to take things from others, which is not good.",
-   "score": 0.771,
-   "fromHighlight": 10,
-   "toHighlight": 0
-  },
-  {
-   "title": "Social Justice Fallacies",
-   "slug": "social-justice-fallacies",
-   "author": "Thomas Sowell",
-   "cover": "covers/social-justice-fallacies.jpg",
-   "color": "#6B5A2E",
-   "quote": "In the social justice literature, unmerited advantages tend to be treated as if they are deductions from the well-being of the rest of the population.",
-   "score": 0.79,
-   "fromHighlight": 10,
-   "toHighlight": 8
-  },
-  {
-   "title": "The Lessons of History",
-   "slug": "the-lessons-of-history",
-   "author": "Will and Ariel Durant",
-   "cover": "covers/the-lessons-of-history.jpg",
-   "color": "#8B3A2E",
-   "quote": "In progressive societies the concentration may reach a point where the strength of number in the many poor rivals the strength of ability in the few rich; then the unstable equilibrium generates a critical situation, which history has…",
-   "score": 0.777,
-   "fromHighlight": 10,
-   "toHighlight": 9
-  }
- ],
- "Rework": [
-  {
-   "title": "The Book of Elon",
-   "slug": "the-book-of-elon",
-   "author": "Eric Jorgenson",
-   "cover": "covers/the-book-of-elon.jpg",
-   "color": "#7A2E4A",
-   "quote": "Prototypes are easy; production is hard. Production and being cash flow positive is excruciating pain. Product ideas are nearly irrelevant.",
-   "score": 0.772,
-   "fromHighlight": 4,
-   "toHighlight": 4
-  },
-  {
-   "title": "Same as ever",
-   "slug": "same-as-ever",
-   "author": "Morgan Housel",
-   "cover": "covers/same-as-ever.jpg",
-   "color": "#6B4C9A",
-   "quote": "Good advice that took me awhile to learn is that everything is sales. Everything is sales. This is usually framed as career advice—no matter what your role in a company is, your ultimate job is to help sales.",
-   "score": 0.766,
-   "fromHighlight": 4,
-   "toHighlight": 8
-  },
-  {
-   "title": "Crossing the chasm",
-   "slug": "crossing-the-chasm",
-   "author": "Geoffrey Moore",
-   "cover": "covers/crossing-the-chasm.jpg",
-   "color": "#2E6B6B",
-   "quote": "You can succeed with the visionaries, and you can thereby get a reputation for being a high flyer with a hot product, but that is not ultimately where the dollars are.",
-   "score": 0.79,
-   "fromHighlight": 4,
-   "toHighlight": 4
-  }
- ],
- "Working Backwards": [
-  {
-   "title": "Competing Against Luck",
-   "slug": "competing-against-luck",
-   "author": "Clayton Christensen and others",
-   "cover": "covers/competing-against-luck.jpg",
-   "color": "#8B3A2E",
-   "quote": "If this fast-food company had only focused on how to make its product “better” in a general way— thicker, sweeter, bigger—it would have been focusing on the wrong unit of analysis.",
-   "score": 0.782,
-   "fromHighlight": 1,
-   "toHighlight": 0
-  },
-  {
-   "title": "Richer, Wiser, Happier",
-   "slug": "richer-wiser-happier",
-   "author": "William Green",
-   "cover": "covers/richer-wiser-happier.jpg",
-   "color": "#2E5C45",
-   "quote": "But he insists on investing at cheap or fair prices, based on his estimate of their intrinsic value now and in seven years. It’s “an article of faith” that a company’s intrinsic value and its market value will converge over time.",
-   "score": 0.757,
-   "fromHighlight": 1,
-   "toHighlight": 15
   },
   {
    "title": "The Art of the Good life",
@@ -1626,58 +994,129 @@
    "cover": "covers/the-art-of-the-good-life.jpg",
    "color": "#2E5C45",
    "quote": "It’s much nicer to mull things over than to seize the initiative. Speculation is more agreeable than realization.",
-   "score": 0.753,
-   "fromHighlight": 6,
+   "score": 0.678,
    "toHighlight": 15
   }
  ],
- "Diary of CEO": [
+ "Poverty, by America": [
   {
-   "title": "The most important thing",
-   "slug": "the-most-important-thing",
-   "author": "Howard Marks",
-   "cover": "covers/the-most-important-thing.jpg",
+   "title": "Discrimination and Disparities",
+   "slug": "discrimination-and-disparities",
+   "author": "Thomas Sowell",
+   "cover": "covers/discrimination-and-disparities.jpg",
+   "color": "#7A2E4A",
+   "quote": "The most spectacularly successful political doctrine that swept into power in countries around the world in the twentieth century was Marxism, based on the implicit presumption that differences in wealth were due to capitalists growing…",
+   "score": 0.69,
+   "toHighlight": 22
+  },
+  {
+   "title": "Social Justice Fallacies",
+   "slug": "social-justice-fallacies",
+   "author": "Thomas Sowell",
+   "cover": "covers/social-justice-fallacies.jpg",
    "color": "#6B5A2E",
-   "quote": "Investing is the greatest business in the world because you never have to swing. You stand at the plate; the pitcher throws you \"General Motors at 47! U.S. Steel at 39!\" And nobody calls a strike on you.",
-   "score": 0.818,
-   "fromHighlight": 9,
-   "toHighlight": 13
+   "quote": "In the social justice literature, unmerited advantages tend to be treated as if they are deductions from the well-being of the rest of the population.",
+   "score": 0.686,
+   "toHighlight": 8
+  }
+ ],
+ "Rework": [
+  {
+   "title": "Million Dollar Weekend",
+   "slug": "million-dollar-weekend",
+   "author": "Noah Kagan",
+   "cover": "covers/million-dollar-weekend.jpg",
+   "color": "#7A2E4A",
+   "quote": "Be persistent. I want you to believe that almost every no you get can eventually become a yes. Persistence will reveal that most noes are actually a “not now.”",
+   "score": 0.706,
+   "toHighlight": 2
   },
   {
-   "title": "The 4-Hour Workweek",
-   "slug": "the-4-hour-workweek",
-   "author": "Tim Ferriss",
-   "cover": "covers/the-4-hour-workweek.jpg",
-   "color": "#2F5A63",
-   "quote": "Would you like me to give you a formula for success? It’s quite simple, really. Double your rate of failure. — Thomas J. Watson, founder of IBM",
-   "score": 0.772,
-   "fromHighlight": 8,
-   "toHighlight": 17
+   "title": "Crossing the chasm",
+   "slug": "crossing-the-chasm",
+   "author": "Geoffrey Moore",
+   "cover": "covers/crossing-the-chasm.jpg",
+   "color": "#2E6B6B",
+   "quote": "Here is a proven formula for getting all this down into two short sentences. Try it out on your own company and one of its key products.",
+   "score": 0.688,
+   "toHighlight": 15
   },
+  {
+   "title": "How to get rich",
+   "slug": "how-to-get-rich",
+   "author": "Felix Dennis",
+   "cover": "covers/how-to-get-rich.jpg",
+   "color": "#3A5C8B",
+   "quote": "Quitting is not dishonorable. Quitting when you believe you can still succeed is.",
+   "score": 0.681,
+   "toHighlight": 8
+  }
+ ],
+ "Working Backwards": [
+  {
+   "title": "Million Dollar Weekend",
+   "slug": "million-dollar-weekend",
+   "author": "Noah Kagan",
+   "cover": "covers/million-dollar-weekend.jpg",
+   "color": "#7A2E4A",
+   "quote": "The promise of payment is not validation. That’s polite rejection. Getting customers to hand over their dollars makes it real. But you need to get real money, from real people. Everyone’s “interested” until they have to pay.",
+   "score": 0.677,
+   "toHighlight": 7
+  },
+  {
+   "title": "Rework",
+   "slug": "rework",
+   "author": "David Hansson and Jason Fried",
+   "cover": "covers/rework.jpg",
+   "color": "#8B6B2E",
+   "quote": "Anyone who takes a “we’ll figure out how to profit in the future” attitude to business is being ridiculous.",
+   "score": 0.662,
+   "toHighlight": 4
+  },
+  {
+   "title": "Crossing the chasm",
+   "slug": "crossing-the-chasm",
+   "author": "Geoffrey Moore",
+   "cover": "covers/crossing-the-chasm.jpg",
+   "color": "#2E6B6B",
+   "quote": "You can succeed with the visionaries, and you can thereby get a reputation for being a high flyer with a hot product, but that is not ultimately where the dollars are.",
+   "score": 0.661,
+   "toHighlight": 4
+  }
+ ],
+ "Diary of CEO": [
   {
    "title": "The Art of the Good life",
    "slug": "the-art-of-the-good-life",
    "author": "Rolf Dobelli",
    "cover": "covers/the-art-of-the-good-life.jpg",
    "color": "#2E5C45",
-   "quote": "I’d like to introduce you to two people you know very well, although not by name: your experiencing self and your remembering self. The magnitude of these errors is revealed by the following experiment.",
-   "score": 0.797,
-   "fromHighlight": 3,
-   "toHighlight": 8
+   "quote": "It’s much nicer to mull things over than to seize the initiative. Speculation is more agreeable than realization.",
+   "score": 0.671,
+   "toHighlight": 15
+  },
+  {
+   "title": "The most important thing",
+   "slug": "the-most-important-thing",
+   "author": "Howard Marks",
+   "cover": "covers/the-most-important-thing.jpg",
+   "color": "#6B5A2E",
+   "quote": "Rule number one: most things will prove to be cyclical. Rule number two: some of the greatest opportunities for gain and loss come when other people forget rule number one.",
+   "score": 0.67,
+   "toHighlight": 9
+  },
+  {
+   "title": "Same as ever",
+   "slug": "same-as-ever",
+   "author": "Morgan Housel",
+   "cover": "covers/same-as-ever.jpg",
+   "color": "#6B4C9A",
+   "quote": "Patience is often stubbornness in disguise. Long-term thinking can become a crutch for those who are wrong but don’t want to change their mind.",
+   "score": 0.665,
+   "toHighlight": 9
   }
  ],
  "A beautiful question": [
-  {
-   "title": "Material World",
-   "slug": "material-world",
-   "author": "Ed Conway",
-   "cover": "covers/material-world.jpg",
-   "color": "#2E4A6B",
-   "quote": "Silicon is a chemical enigma too. It is at once the basis of the very oldest and the very newest products humankind has learned how to manufacture. It bookends civilisation.",
-   "score": 0.767,
-   "fromHighlight": 13,
-   "toHighlight": 0
-  },
   {
    "title": "Faraday, Maxwell, and the Electromagnetic Field",
    "slug": "faraday-maxwell-and-the-electromagnetic-field",
@@ -1685,34 +1124,21 @@
    "cover": "covers/faraday-maxwell-and-the-electromagnetic-field.jpg",
    "color": "#8B6B2E",
    "quote": "Here was a physical theory expressed solely by its equations, and it brought about a profound change in physicists’ concept of reality. The startlingly new idea was that reality exists on two levels.",
-   "score": 0.763,
-   "fromHighlight": 9,
+   "score": 0.696,
    "toHighlight": 10
   },
   {
-   "title": "Pattern Breakers",
-   "slug": "pattern-breakers",
-   "author": "Mike Maples Jr and Peter Ziebelma",
-   "cover": "covers/pattern-breakers.jpg",
-   "color": "#4A3B6B",
-   "quote": "Insights are important because the presence of a powerful new technology doesn’t guarantee that it will be used to maximum effect. Consider the wheel, which existed for hundreds of years before it was used for transportation.",
-   "score": 0.748,
-   "fromHighlight": 13,
-   "toHighlight": 4
+   "title": "An Immense World",
+   "slug": "an-immense-world",
+   "author": "Ed Yong",
+   "cover": "covers/an-immense-world.jpg",
+   "color": "#3A5C8B",
+   "quote": "I find these connections profound, in a way that makes me think differently about the act of sensing itself.",
+   "score": 0.67,
+   "toHighlight": 7
   }
  ],
  "Elon Musk": [
-  {
-   "title": "The Book of Elon",
-   "slug": "the-book-of-elon",
-   "author": "Eric Jorgenson",
-   "cover": "covers/the-book-of-elon.jpg",
-   "color": "#7A2E4A",
-   "quote": "The normal way we conduct our lives is reasoning by analogy. That means we do something because it’s similar to something else, or what other people are doing. When you think this way, you only get slight iterations.",
-   "score": 0.819,
-   "fromHighlight": 0,
-   "toHighlight": 2
-  },
   {
    "title": "Reentry",
    "slug": "reentry",
@@ -1720,20 +1146,18 @@
    "cover": "covers/reentry.jpg",
    "color": "#3A5C8B",
    "quote": "On one Sunday morning, at 2 or 3 in the morning, Rench and Musk were discussing plans to build a Starship factory. Musk liked what he heard so much that he was ready to start. Right then. “He told me to call the concrete guy,” Rench said.",
-   "score": 0.803,
-   "fromHighlight": 1,
+   "score": 0.724,
    "toHighlight": 6
   },
   {
-   "title": "Material World",
-   "slug": "material-world",
-   "author": "Ed Conway",
-   "cover": "covers/material-world.jpg",
-   "color": "#2E4A6B",
-   "quote": "One I encountered is that part of the explanation for how Tesla rose to greatness is that it chose the right battery shape—or perhaps the wrong shape—at the right time.",
-   "score": 0.773,
-   "fromHighlight": 6,
-   "toHighlight": 8
+   "title": "The Book of Elon",
+   "slug": "the-book-of-elon",
+   "author": "Eric Jorgenson",
+   "cover": "covers/the-book-of-elon.jpg",
+   "color": "#7A2E4A",
+   "quote": "At SpaceX, I would tell the team, “We are on a deletion rampage!! Nothing is sacred. We will delete any remotely questionable tubes, sensors, manifolds, etc. tonight.",
+   "score": 0.676,
+   "toHighlight": 10
   }
  ],
  "Chip War": [
@@ -1743,21 +1167,9 @@
    "author": "Tae Kim",
    "cover": "covers/the-nvidia-way.jpg",
    "color": "#2E5C45",
-   "quote": "The move (making Nvidia's GPU compatible with CUDA) was extremely expensive. Nvidia introduced the NV50, which had been officially rebranded as the G80 for use in its GeForce line of graphics cards, alongside CUDA in November 2006.",
-   "score": 0.851,
-   "fromHighlight": 9,
-   "toHighlight": 12
-  },
-  {
-   "title": "The Thinking Machine",
-   "slug": "the-thinking-machine",
-   "author": "Stephen Witt",
-   "cover": "covers/the-thinking-machine.jpg",
-   "color": "#7A4B2A",
-   "quote": "It was [Clayton] Christensen who explained, really for the first time, why the big players like Sun and Silicon Graphics had declined to invest in PC video game hardware—not because they hated gamers but because the margins sucked compared…",
-   "score": 0.781,
-   "fromHighlight": 4,
-   "toHighlight": 2
+   "quote": "Undeterred, Rosing (executive at Sun Microsystem) tried again in February. This time, he didn’t try to peel one of them away from the others. He tried to get all three at once.",
+   "score": 0.699,
+   "toHighlight": 0
   },
   {
    "title": "Apple in China",
@@ -1766,22 +1178,30 @@
    "cover": "covers/apple-in-china.jpg",
    "color": "#2E4A6B",
    "quote": "In 1999, when Apple and Foxconn started working together closely for the first time, Apple executives saw what Dell saw—but more. Cupertino realized it could take advantage of the conditions in China in very different ways.",
-   "score": 0.769,
-   "fromHighlight": 13,
+   "score": 0.682,
    "toHighlight": 3
+  },
+  {
+   "title": "The Thinking Machine",
+   "slug": "the-thinking-machine",
+   "author": "Stephen Witt",
+   "cover": "covers/the-thinking-machine.jpg",
+   "color": "#7A4B2A",
+   "quote": "[On Nvidia’s reliance on emulators] Following the Riva’s launch, Huang invested in emulators and gave up on physical prototypes. “To this day, we are the largest user of emulators in the world,” Huang said.",
+   "score": 0.671,
+   "toHighlight": 0
   }
  ],
  "Man's search for meaning": [
   {
-   "title": "How to Live",
-   "slug": "how-to-live",
-   "author": "Derek Sivers",
-   "cover": "covers/how-to-live.jpg",
-   "color": "#8B3A2E",
-   "quote": "When people ask the meaning of life, they’re looking for a story. But there is no story. Life is a billion little moments. They’re not a part of anything.",
-   "score": 0.804,
-   "fromHighlight": 11,
-   "toHighlight": 11
+   "title": "The Happiness Hypothesis",
+   "slug": "the-happiness-hypothesis",
+   "author": "",
+   "cover": "covers/the-happiness-hypothesis.jpg",
+   "color": "#2E6B6B",
+   "quote": "Trauma and stress are usually bad for people, and Pennebaker thought that self-disclosure—talking with friends or therapists—might help the body at the same time that it helps the mind.",
+   "score": 0.667,
+   "toHighlight": 15
   },
   {
    "title": "How to get rich",
@@ -1789,56 +1209,21 @@
    "author": "Felix Dennis",
    "cover": "covers/how-to-get-rich.jpg",
    "color": "#3A5C8B",
-   "quote": "Quitting is not dishonorable. Quitting when you believe you can still succeed is.",
-   "score": 0.758,
-   "fromHighlight": 0,
-   "toHighlight": 8
-  },
-  {
-   "title": "The Art of the Good life",
-   "slug": "the-art-of-the-good-life",
-   "author": "Rolf Dobelli",
-   "cover": "covers/the-art-of-the-good-life.jpg",
-   "color": "#2E5C45",
-   "quote": "It’s much nicer to mull things over than to seize the initiative. Speculation is more agreeable than realization.",
-   "score": 0.782,
-   "fromHighlight": 0,
-   "toHighlight": 15
+   "quote": "Until one is committed, there is hesitancy; the chance to draw back; always ineffectiveness concerning all acts of initiative and creation.",
+   "score": 0.664,
+   "toHighlight": 2
   }
  ],
  "An Immense World": [
-  {
-   "title": "The Happiness Hypothesis",
-   "slug": "the-happiness-hypothesis",
-   "author": "",
-   "cover": "covers/the-happiness-hypothesis.jpg",
-   "color": "#2E6B6B",
-   "quote": "In The Curse of the Self, the social psychologist Mark Leary points out that many other animals can think, but none, so far as we know, spend much time thinking about themselves.",
-   "score": 0.795,
-   "fromHighlight": 1,
-   "toHighlight": 18
-  },
   {
    "title": "A beautiful question",
    "slug": "a-beautiful-question",
    "author": "Frank Wilczek",
    "cover": "covers/a-beautiful-question.jpg",
    "color": "#7A2E4A",
-   "quote": "Two obsessions are the hallmarks of Nature’s artistic style: 1. Symmetry—a love of harmony, balance, and proportion 2. Economy—satisfaction in producing an abundance of effects from very limited means",
-   "score": 0.733,
-   "fromHighlight": 7,
-   "toHighlight": 1
-  },
-  {
-   "title": "The Body",
-   "slug": "the-body",
-   "author": "Bill Bryson",
-   "cover": "covers/the-body.jpg",
-   "color": "#3A5C8B",
-   "quote": "The great paradox of the brain is that everything you know about the world is provided to you by an organ that has itself never seen that world. Your brain is you. Everything else is just plumbing and scaffolding.",
-   "score": 0.748,
-   "fromHighlight": 5,
-   "toHighlight": 4
+   "quote": "Both senses are concerned with the information carried to us in vibrations, arriving as waves. Vision is concerned with vibrations of electromagnetic fields, hearing with vibrations of air.",
+   "score": 0.67,
+   "toHighlight": 12
   }
  ]
 }

@@ -2,11 +2,14 @@
 """Precompute "similar highlights" for every book in books.json.
 
 Each highlight is turned into a meaning vector with a small local embedding
-model (BAAI/bge-small-en-v1.5, via fastembed). For each book, every highlight
-is compared with every highlight in every other book; for each other book we
-keep its single closest highlight, then keep the top few books. The result is
-written to related.json, which the site reads at runtime, so visitors' browsers
-never do this work.
+model (BAAI/bge-small-en-v1.5, via fastembed). Two books are scored by how well
+their highlights cover each other, in both directions: for each highlight in
+one book, its closest highlight in the other is found and the closeness is
+averaged, then the same in reverse. Books with few highlights are pulled toward
+the average score. The top few books are kept, each with the quote closest on
+average to the current book's highlights. The result is written to
+related.json, which the site reads at runtime, so visitors' browsers never do
+this work.
 
 Setup (once, outside the repo):
     python3 -m venv ~/.venvs/related
@@ -34,10 +37,11 @@ CACHE_DIR = Path.home() / ".cache" / "bipul-related"
 MODEL = "BAAI/bge-small-en-v1.5"
 
 TOP_BOOKS = 3              # related books shown per book
-MIN_SCORE = 0.72           # cosine similarity below this is not a real match (scores run ~0.66-0.90)
+MIN_SCORE = 0.66           # book-level score below this is not shown (book scores run ~0.57-0.73)
 PREFER_MIN, PREFER_MAX = 70, 260  # readable quote length, in characters
 LONG_PENALTY = 0.03        # ranks over-long or very short quotes lower without excluding them
-QUOTE_MAX = 240            # quotes are clipped to this length in the output
+QUOTE_MAX = 240         # quotes are clipped to this length in the output
+SHRINK_K = 5            # books with fewer highlights are pulled toward the average score
 
 
 def plain(text):
@@ -103,27 +107,43 @@ def main():
     penalty = np.where((lengths < PREFER_MIN) | (lengths > PREFER_MAX), LONG_PENALTY, 0.0)
 
     similarity = vectors @ vectors.T
+    n_books = len(books)
+    book_items = [np.where(owner == bi)[0] for bi in range(n_books)]
+
+    # Book-to-book score: how well each book's highlights are covered by the other book, in both directions.
+    raw = np.full((n_books, n_books), np.nan)
+    for a in range(n_books):
+        if len(book_items[a]) == 0:
+            continue
+        for b in range(n_books):
+            if a == b or len(book_items[b]) == 0:
+                continue
+            block = similarity[np.ix_(book_items[a], book_items[b])]
+            raw[a, b] = (block.max(axis=1).mean() + block.max(axis=0).mean()) / 2
+    prior = np.nanmean(raw)
 
     related = {}
     for bi, book in enumerate(books):
-        mine = np.where(owner == bi)[0]
         picks = []
+        mine = book_items[bi]
         if len(mine):
-            best = []  # (adjusted score, raw score, source index, target index, other book)
-            for other in range(len(books)):
-                if other == bi:
+            scored = []
+            for other in range(n_books):
+                if other == bi or len(book_items[other]) == 0:
                     continue
-                theirs = np.where(owner == other)[0]
-                if len(theirs) == 0:
+                theirs = book_items[other]
+                # Shrink toward the average pair when either book has few highlights.
+                n = min(len(mine), len(theirs))
+                weight = n / (n + SHRINK_K)
+                adjusted = prior + weight * (raw[bi, other] - prior)
+                scored.append((adjusted, raw[bi, other], other, theirs))
+            scored.sort(key=lambda t: t[0], reverse=True)
+            for adjusted, score, other, theirs in scored:
+                if score < MIN_SCORE:
                     continue
-                block = similarity[np.ix_(mine, theirs)] - penalty[theirs][None, :]
-                r, c = np.unravel_index(block.argmax(), block.shape)
-                raw = float(similarity[mine[r], theirs[c]])
-                best.append((float(block[r, c]), raw, mine[r], theirs[c], other))
-            best.sort(reverse=True)
-            for _, raw, src, tgt, other in best:
-                if raw < MIN_SCORE:
-                    continue
+                # Quote = the highlight in the other book closest on average to this book's highlights.
+                closeness = similarity[np.ix_(mine, theirs)].mean(axis=0) - penalty[theirs]
+                tgt = theirs[int(closeness.argmax())]
                 picks.append({
                     "title": books[other]["title"],
                     "slug": re.sub(r"[^a-z0-9]+", "-", books[other]["title"].lower()).strip("-"),
@@ -131,9 +151,8 @@ def main():
                     "cover": books[other].get("cover", ""),
                     "color": books[other].get("color", ""),
                     "quote": clip(items[tgt][2]),
-                    "score": round(raw, 3),
-                    "fromHighlight": int(items[src][1]),  # index in this book's highlights
-                    "toHighlight": int(items[tgt][1]),    # index in the other book's highlights
+                    "score": round(float(score), 3),
+                    "toHighlight": int(items[tgt][1]),
                 })
                 if len(picks) == TOP_BOOKS:
                     break
