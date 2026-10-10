@@ -240,13 +240,13 @@
    "toHighlight": 8
   },
   {
-   "title": "Discrimination and Disparities",
-   "slug": "discrimination-and-disparities",
-   "author": "Thomas Sowell",
-   "cover": "covers/discrimination-and-disparities.jpg",
-   "color": "#7A2E4A",
-   "quote": "At the heart of the prevailing social vision of our times is the seemingly invincible fallacy that group outcomes in human endeavors would tend to be equal, or at least comparable or random, if there were no biased interventions, on the…",
-   "score": 0.675,
+   "title": "The Art of Thinking Clearly",
+   "slug": "the-art-of-thinking-clearly",
+   "author": "Rolf Dobelli",
+   "cover": "covers/the-art-of-thinking-clearly.jpg",
+   "color": "#6B4C9A",
+   "quote": "Whether we like it or not, we are puppets of our emotions. We make complex decisions by consulting our feelings, not our thoughts.",
+   "score": 0.68,
    "toHighlight": 17
   }
  ],
@@ -472,6 +472,16 @@
    "toHighlight": 6
   },
   {
+   "title": "The Art of Thinking Clearly",
+   "slug": "the-art-of-thinking-clearly",
+   "author": "Rolf Dobelli",
+   "cover": "covers/the-art-of-thinking-clearly.jpg",
+   "color": "#6B4C9A",
+   "quote": "The more people competing, the greater the chances are that one of them will repeatedly strike lucky. Perhaps even you.",
+   "score": 0.696,
+   "toHighlight": 11
+  },
+  {
    "title": "The Art of the Good life",
    "slug": "the-art-of-the-good-life",
    "author": "Rolf Dobelli",
@@ -480,16 +490,6 @@
    "quote": "It’s much nicer to mull things over than to seize the initiative. Speculation is more agreeable than realization.",
    "score": 0.692,
    "toHighlight": 15
-  },
-  {
-   "title": "How to get rich",
-   "slug": "how-to-get-rich",
-   "author": "Felix Dennis",
-   "cover": "covers/how-to-get-rich.jpg",
-   "color": "#3A5C8B",
-   "quote": "If you are young and reading this then I ask you to remember just this: you are richer than anyone older than you, and far richer than those who are much older.",
-   "score": 0.683,
-   "toHighlight": 16
   }
  ],
  "The Book of Elon": [
@@ -923,14 +923,14 @@
    "toHighlight": 9
   },
   {
-   "title": "How to get rich",
-   "slug": "how-to-get-rich",
-   "author": "Felix Dennis",
-   "cover": "covers/how-to-get-rich.jpg",
-   "color": "#3A5C8B",
-   "quote": "If you are young and reading this then I ask you to remember just this: you are richer than anyone older than you, and far richer than those who are much older.",
-   "score": 0.684,
-   "toHighlight": 16
+   "title": "The Art of Thinking Clearly",
+   "slug": "the-art-of-thinking-clearly",
+   "author": "Rolf Dobelli",
+   "cover": "covers/the-art-of-thinking-clearly.jpg",
+   "color": "#6B4C9A",
+   "quote": "Although we now value contemplation more highly, outright inaction remains a cardinal sin.",
+   "score": 0.685,
+   "toHighlight": 9
   }
  ],
  "The Lessons of History": [
@@ -1086,6 +1086,16 @@
  ],
  "Diary of CEO": [
   {
+   "title": "The Art of Thinking Clearly",
+   "slug": "the-art-of-thinking-clearly",
+   "author": "Rolf Dobelli",
+   "cover": "covers/the-art-of-thinking-clearly.jpg",
+   "color": "#6B4C9A",
+   "quote": "Although we now value contemplation more highly, outright inaction remains a cardinal sin.",
+   "score": 0.674,
+   "toHighlight": 9
+  },
+  {
    "title": "The Art of the Good life",
    "slug": "the-art-of-the-good-life",
    "author": "Rolf Dobelli",
@@ -1103,16 +1113,6 @@
    "color": "#6B5A2E",
    "quote": "Rule number one: most things will prove to be cyclical. Rule number two: some of the greatest opportunities for gain and loss come when other people forget rule number one.",
    "score": 0.67,
-   "toHighlight": 9
-  },
-  {
-   "title": "Same as ever",
-   "slug": "same-as-ever",
-   "author": "Morgan Housel",
-   "cover": "covers/same-as-ever.jpg",
-   "color": "#6B4C9A",
-   "quote": "Patience is often stubbornness in disguise. Long-term thinking can become a crutch for those who are wrong but don’t want to change their mind.",
-   "score": 0.665,
    "toHighlight": 9
   }
  ],
@@ -1136,6 +1136,16 @@
    "quote": "I find these connections profound, in a way that makes me think differently about the act of sensing itself.",
    "score": 0.67,
    "toHighlight": 7
+  },
+  {
+   "title": "A brief history of black holes",
+   "slug": "a-brief-history-of-black-holes",
+   "author": "Becky Smethurst",
+   "cover": "covers/a-brief-history-of-black-holes.jpg",
+   "color": "#4A3B6B",
+   "quote": "Early philosophers, such as Euclid and Ptolemy, thought that our eyes themselves generated light, which then allowed us to see the world around us.",
+   "score": 0.684,
+   "toHighlight": 4
   }
  ],
  "Elon Musk": [
@@ -1224,6 +1234,73 @@
    "quote": "Both senses are concerned with the information carried to us in vibrations, arriving as waves. Vision is concerned with vibrations of electromagnetic fields, hearing with vibrations of air.",
    "score": 0.67,
    "toHighlight": 12
+  }
+ ],
+ "The Art of Thinking Clearly": [
+  {
+   "title": "The most important thing",
+   "slug": "the-most-important-thing",
+   "author": "Howard Marks",
+   "cover": "covers/the-most-important-thing.jpg",
+   "color": "#6B5A2E",
+   "quote": "Rule number one: most things will prove to be cyclical. Rule number two: some of the greatest opportunities for gain and loss come when other people forget rule number one.",
+   "score": 0.696,
+   "toHighlight": 9
+  },
+  {
+   "title": "The Art of the Good life",
+   "slug": "the-art-of-the-good-life",
+   "author": "Rolf Dobelli",
+   "cover": "covers/the-art-of-the-good-life.jpg",
+   "color": "#2E5C45",
+   "quote": "It’s much nicer to mull things over than to seize the initiative. Speculation is more agreeable than realization.",
+   "score": 0.685,
+   "toHighlight": 15
+  },
+  {
+   "title": "The Happiness Hypothesis",
+   "slug": "the-happiness-hypothesis",
+   "author": "",
+   "cover": "covers/the-happiness-hypothesis.jpg",
+   "color": "#2E6B6B",
+   "quote": "Schwartz and his colleagues find that the paradox mostly applies to people they call “maximizers”—those who habitually try to evaluate all the options, seek out more information, and make the best choice (or “maximize their utility,” as…",
+   "score": 0.68,
+   "toHighlight": 9
+  }
+ ],
+ "The anthology of Balaji": [
+  {
+   "title": "Crossing the chasm",
+   "slug": "crossing-the-chasm",
+   "author": "Geoffrey Moore",
+   "cover": "covers/crossing-the-chasm.jpg",
+   "color": "#2E6B6B",
+   "quote": "You can succeed with the visionaries, and you can thereby get a reputation for being a high flyer with a hot product, but that is not ultimately where the dollars are.",
+   "score": 0.667,
+   "toHighlight": 4
+  },
+  {
+   "title": "Rework",
+   "slug": "rework",
+   "author": "David Hansson and Jason Fried",
+   "cover": "covers/rework.jpg",
+   "color": "#8B6B2E",
+   "quote": "“That would never work in the real world.” You hear it all the time when you tell people about a fresh idea. The real world isn’t a place, it’s an excuse. It’s a justification for not trying.",
+   "score": 0.662,
+   "toHighlight": 0
+  }
+ ],
+ "Creative Selection": [],
+ "A brief history of black holes": [
+  {
+   "title": "A beautiful question",
+   "slug": "a-beautiful-question",
+   "author": "Frank Wilczek",
+   "cover": "covers/a-beautiful-question.jpg",
+   "color": "#7A2E4A",
+   "quote": "The overall impression one gets, looking at the spectrum produced by sunlight, is of a continuous gradation of intensity.",
+   "score": 0.684,
+   "toHighlight": 6
   }
  ]
 }
