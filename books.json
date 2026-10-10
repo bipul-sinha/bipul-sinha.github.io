@@ -1483,7 +1483,7 @@
     "title": "The anthology of Balaji",
     "author": "Eric Jorgensen",
     "color": "#2E6B6B",
-    "cover": "the-anthology-of-balaji.jpg",
+    "cover": "covers/the-anthology-of-balaji.jpg",
     "year": 2023,
     "rating": 10,
     "highlights": [
@@ -1635,7 +1635,7 @@
     "title": "Anything you want",
     "author": "Derek Sivers",
     "color": "#3A5C8B",
-    "cover": "anything-you-want.png",
+    "cover": "covers/anything-you-want.png",
     "year": 2022,
     "rating": 8,
     "highlights": [
@@ -1653,7 +1653,7 @@
     "title": "The Obstacle is the way",
     "author": "Ryan Holliday",
     "color": "#6B4C9A",
-    "cover": "the-obstacle-is-the-way.webp",
+    "cover": "covers/the-obstacle-is-the-way.webp",
     "year": 2022,
     "rating": 8,
     "highlights": [
