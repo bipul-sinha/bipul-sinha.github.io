@@ -715,6 +715,16 @@
  ],
  "Material World": [
   {
+   "title": "How the world really works",
+   "slug": "how-the-world-really-works",
+   "author": "Vaclav Smil",
+   "cover": "covers/how-the-world-really-works.jpg",
+   "color": "#2E4A6B",
+   "quote": "I can offer a defensible ranking that considers their indispensability, ubiquity, and the demand size.",
+   "score": 0.682,
+   "toHighlight": 2
+  },
+  {
    "title": "Apple in China",
    "slug": "apple-in-china",
    "author": "",
@@ -1301,6 +1311,84 @@
    "quote": "The overall impression one gets, looking at the spectrum produced by sunlight, is of a continuous gradation of intensity.",
    "score": 0.684,
    "toHighlight": 6
+  }
+ ],
+ "Caesar's last breath": [],
+ "Eat that frog": [],
+ "How the world really works": [
+  {
+   "title": "Material World",
+   "slug": "material-world",
+   "author": "Ed Conway",
+   "cover": "covers/material-world.jpg",
+   "color": "#2E4A6B",
+   "quote": "Crude oil is, alongside its sister fuel natural gas, the greatest energy force of the past century. If steel is the skeleton of the modern world and concrete its flesh and copper its veins, then oil is the food that sustains us.",
+   "score": 0.682,
+   "toHighlight": 7
+  }
+ ],
+ "Bullish case for Bitcoin": [
+  {
+   "title": "Crossing the chasm",
+   "slug": "crossing-the-chasm",
+   "author": "Geoffrey Moore",
+   "cover": "covers/crossing-the-chasm.jpg",
+   "color": "#2E6B6B",
+   "quote": "You can succeed with the visionaries, and you can thereby get a reputation for being a high flyer with a hot product, but that is not ultimately where the dollars are.",
+   "score": 0.666,
+   "toHighlight": 4
+  },
+  {
+   "title": "The most important thing",
+   "slug": "the-most-important-thing",
+   "author": "Howard Marks",
+   "cover": "covers/the-most-important-thing.jpg",
+   "color": "#6B5A2E",
+   "quote": "The problem is that in bubbles, “attractive” morphs into “attractive at any price.” People often say, “It’s not cheap, but I think it’ll keep going up because of excess liquidity” (or any number of other reasons).",
+   "score": 0.665,
+   "toHighlight": 7
+  },
+  {
+   "title": "Richer, Wiser, Happier",
+   "slug": "richer-wiser-happier",
+   "author": "William Green",
+   "cover": "covers/richer-wiser-happier.jpg",
+   "color": "#2E5C45",
+   "quote": "Any asset, however ugly, can be worth buying if the price is low enough. Indeed, Howard Marks believes that “buying cheap” is the single most reliable route to investment riches—and that overpaying is the greatest risk.",
+   "score": 0.662,
+   "toHighlight": 5
+  }
+ ],
+ "How to win friends and influence people": [
+  {
+   "title": "Million Dollar Weekend",
+   "slug": "million-dollar-weekend",
+   "author": "Noah Kagan",
+   "cover": "covers/million-dollar-weekend.jpg",
+   "color": "#7A2E4A",
+   "quote": "Be persistent. I want you to believe that almost every no you get can eventually become a yes. Persistence will reveal that most noes are actually a “not now.”",
+   "score": 0.671,
+   "toHighlight": 2
+  },
+  {
+   "title": "How to get rich",
+   "slug": "how-to-get-rich",
+   "author": "Felix Dennis",
+   "cover": "covers/how-to-get-rich.jpg",
+   "color": "#3A5C8B",
+   "quote": "Quitting is not dishonorable. Quitting when you believe you can still succeed is.",
+   "score": 0.665,
+   "toHighlight": 8
+  },
+  {
+   "title": "The Happiness Hypothesis",
+   "slug": "the-happiness-hypothesis",
+   "author": "",
+   "cover": "covers/the-happiness-hypothesis.jpg",
+   "color": "#2E6B6B",
+   "quote": "Ambiguity abets the illusion. For many traits, such as leadership, there are so many ways to define it that one is free to pick the criterion that will most flatter oneself. If I’m confident, I can define leadership as confidence.",
+   "score": 0.66,
+   "toHighlight": 3
   }
  ]
 }
