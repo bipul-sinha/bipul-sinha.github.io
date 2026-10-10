@@ -19,6 +19,16 @@
    "quote": "Bad news doesn’t get better with time. One of the biggest mistakes I see people make in life is waiting to communicate when something is wrong.",
    "score": 0.668,
    "toHighlight": 6
+  },
+  {
+   "title": "The Obstacle is the way",
+   "slug": "the-obstacle-is-the-way",
+   "author": "Ryan Holliday",
+   "cover": "",
+   "color": "#6B4C9A",
+   "quote": "After you’ve distinguished between the things that are up to you and the things that aren’t (ta eph’hemin, ta ouk eph’hemin), and the break comes down to something you don’t control . . . you’ve got only one option: acceptance.",
+   "score": 0.661,
+   "toHighlight": 7
   }
  ],
  "Hell Yeah or No": [
@@ -33,6 +43,16 @@
    "toHighlight": 15
   },
   {
+   "title": "Ego is the enemy",
+   "slug": "ego-is-the-enemy",
+   "author": "Ryan Holliday",
+   "cover": "covers/ego-is-the-enemy.jpg",
+   "color": "#2E6B6B",
+   "quote": "If you don’t know how much you need, the default easily becomes: more. Ego rejects trade-offs. Why compromise? Ego wants it all.",
+   "score": 0.691,
+   "toHighlight": 11
+  },
+  {
    "title": "The 4-Hour Workweek",
    "slug": "the-4-hour-workweek",
    "author": "Tim Ferriss",
@@ -41,16 +61,6 @@
    "quote": "Remembering that you are going to die is the best way I know to avoid the trap of thinking you have something to lose. — Steve Jobs",
    "score": 0.686,
    "toHighlight": 22
-  },
-  {
-   "title": "Same as ever",
-   "slug": "same-as-ever",
-   "author": "Morgan Housel",
-   "cover": "covers/same-as-ever.jpg",
-   "color": "#6B4C9A",
-   "quote": "Patience is often stubbornness in disguise. Long-term thinking can become a crutch for those who are wrong but don’t want to change their mind.",
-   "score": 0.685,
-   "toHighlight": 9
   }
  ],
  "Greenlights": [],
@@ -276,24 +286,24 @@
    "toHighlight": 9
   },
   {
-   "title": "How to Live",
-   "slug": "how-to-live",
-   "author": "Derek Sivers",
-   "cover": "covers/how-to-live.jpg",
-   "color": "#8B3A2E",
-   "quote": "Honesty is an ideal that’s always a little further away. It has no finish line. No matter how honest you are, there’s always more honest.",
-   "score": 0.68,
-   "toHighlight": 20
+   "title": "The Obstacle is the way",
+   "slug": "the-obstacle-is-the-way",
+   "author": "Ryan Holliday",
+   "cover": "",
+   "color": "#6B4C9A",
+   "quote": "For all species other than us humans, things just are what they are. Our problem is that we’re always trying to figure out what things mean—why things are the way they are. As though the why matters.",
+   "score": 0.684,
+   "toHighlight": 4
   },
   {
-   "title": "Rework",
-   "slug": "rework",
-   "author": "David Hansson and Jason Fried",
-   "cover": "covers/rework.jpg",
-   "color": "#8B6B2E",
-   "quote": "“That would never work in the real world.” You hear it all the time when you tell people about a fresh idea. The real world isn’t a place, it’s an excuse. It’s a justification for not trying.",
-   "score": 0.674,
-   "toHighlight": 0
+   "title": "Ego is the enemy",
+   "slug": "ego-is-the-enemy",
+   "author": "Ryan Holliday",
+   "cover": "covers/ego-is-the-enemy.jpg",
+   "color": "#2E6B6B",
+   "quote": "We don’t like thinking that someone is better than us. Or that we have a lot left to learn. We want to be done. We want to be ready. We’re busy and overburdened.",
+   "score": 0.68,
+   "toHighlight": 4
   }
  ],
  "Apple in China": [
@@ -439,6 +449,16 @@
   }
  ],
  "Useful not true": [
+  {
+   "title": "The Obstacle is the way",
+   "slug": "the-obstacle-is-the-way",
+   "author": "Ryan Holliday",
+   "cover": "",
+   "color": "#6B4C9A",
+   "quote": "For all species other than us humans, things just are what they are. Our problem is that we’re always trying to figure out what things mean—why things are the way they are. As though the why matters.",
+   "score": 0.68,
+   "toHighlight": 4
+  },
   {
    "title": "How to Live",
    "slug": "how-to-live",
@@ -738,6 +758,16 @@
  "Nuclear War": [],
  "How to Live": [
   {
+   "title": "The Obstacle is the way",
+   "slug": "the-obstacle-is-the-way",
+   "author": "Ryan Holliday",
+   "cover": "",
+   "color": "#6B4C9A",
+   "quote": "After you’ve distinguished between the things that are up to you and the things that aren’t (ta eph’hemin, ta ouk eph’hemin), and the break comes down to something you don’t control . . . you’ve got only one option: acceptance.",
+   "score": 0.688,
+   "toHighlight": 7
+  },
+  {
    "title": "Excellent Advice for Living",
    "slug": "excellent-advice-for-living",
    "author": "Kevin Kelly",
@@ -756,16 +786,6 @@
    "quote": "Sometimes people ask me if there’s one motto or rule of thumb I use most often. This is it: Whatever scares you, go do it. Best of all, once you do something that scared you, you’re not scared of it anymore!",
    "score": 0.699,
    "toHighlight": 6
-  },
-  {
-   "title": "The 4-Hour Workweek",
-   "slug": "the-4-hour-workweek",
-   "author": "Tim Ferriss",
-   "cover": "covers/the-4-hour-workweek.jpg",
-   "color": "#2F5A63",
-   "quote": "Remembering that you are going to die is the best way I know to avoid the trap of thinking you have something to lose. — Steve Jobs",
-   "score": 0.667,
-   "toHighlight": 22
   }
  ],
  "How to get rich": [
@@ -1232,6 +1252,16 @@
    "quote": "Until one is committed, there is hesitancy; the chance to draw back; always ineffectiveness concerning all acts of initiative and creation.",
    "score": 0.664,
    "toHighlight": 2
+  },
+  {
+   "title": "The Obstacle is the way",
+   "slug": "the-obstacle-is-the-way",
+   "author": "Ryan Holliday",
+   "cover": "",
+   "color": "#6B4C9A",
+   "quote": "After you’ve distinguished between the things that are up to you and the things that aren’t (ta eph’hemin, ta ouk eph’hemin), and the break comes down to something you don’t control . . . you’ve got only one option: acceptance.",
+   "score": 0.663,
+   "toHighlight": 7
   }
  ],
  "An Immense World": [
@@ -1371,6 +1401,16 @@
    "toHighlight": 2
   },
   {
+   "title": "Ego is the enemy",
+   "slug": "ego-is-the-enemy",
+   "author": "Ryan Holliday",
+   "cover": "covers/ego-is-the-enemy.jpg",
+   "color": "#2E6B6B",
+   "quote": "“You can’t build a reputation on what you’re going to do,” was how Henry Ford put. Our ego wants the ideas and the fact that we aspire to do something about them to be enough.",
+   "score": 0.665,
+   "toHighlight": 9
+  },
+  {
    "title": "How to get rich",
    "slug": "how-to-get-rich",
    "author": "Felix Dennis",
@@ -1379,7 +1419,73 @@
    "quote": "Quitting is not dishonorable. Quitting when you believe you can still succeed is.",
    "score": 0.665,
    "toHighlight": 8
+  }
+ ],
+ "Anything you want": [
+  {
+   "title": "Rework",
+   "slug": "rework",
+   "author": "David Hansson and Jason Fried",
+   "cover": "covers/rework.jpg",
+   "color": "#8B6B2E",
+   "quote": "Anyone who takes a “we’ll figure out how to profit in the future” attitude to business is being ridiculous.",
+   "score": 0.693,
+   "toHighlight": 4
   },
+  {
+   "title": "Million Dollar Weekend",
+   "slug": "million-dollar-weekend",
+   "author": "Noah Kagan",
+   "cover": "covers/million-dollar-weekend.jpg",
+   "color": "#7A2E4A",
+   "quote": "The promise of payment is not validation. That’s polite rejection. Getting customers to hand over their dollars makes it real. But you need to get real money, from real people. Everyone’s “interested” until they have to pay.",
+   "score": 0.683,
+   "toHighlight": 7
+  },
+  {
+   "title": "How to get rich",
+   "slug": "how-to-get-rich",
+   "author": "Felix Dennis",
+   "cover": "covers/how-to-get-rich.jpg",
+   "color": "#3A5C8B",
+   "quote": "To become rich you must be an owner. And you must try to own it all. You must strive with every fiber of your being, while recognizing the idiocy of your behavior, to own and retain control of as near to 100 percent of any company as you…",
+   "score": 0.661,
+   "toHighlight": 13
+  }
+ ],
+ "The Obstacle is the way": [
+  {
+   "title": "The Happiness Hypothesis",
+   "slug": "the-happiness-hypothesis",
+   "author": "",
+   "cover": "covers/the-happiness-hypothesis.jpg",
+   "color": "#2E6B6B",
+   "quote": "Most of the life goals that people pursue at the level of “characteristic adaptations” can be sorted—as the psychologist Robert Emmons has found—into four categories: work and achievement, relationships and intimacy, religion and…",
+   "score": 0.697,
+   "toHighlight": 14
+  },
+  {
+   "title": "Ego is the enemy",
+   "slug": "ego-is-the-enemy",
+   "author": "Ryan Holliday",
+   "cover": "covers/ego-is-the-enemy.jpg",
+   "color": "#2E6B6B",
+   "quote": "If you don’t know how much you need, the default easily becomes: more. Ego rejects trade-offs. Why compromise? Ego wants it all.",
+   "score": 0.689,
+   "toHighlight": 11
+  },
+  {
+   "title": "How to Live",
+   "slug": "how-to-live",
+   "author": "Derek Sivers",
+   "cover": "covers/how-to-live.jpg",
+   "color": "#8B3A2E",
+   "quote": "Pain’s power relies on surprise. If you expect it, it’s weaker. If you choose it, it’s gone. Pain is coming anyway. Don’t get a shield. Get a saddle. Tame it.",
+   "score": 0.688,
+   "toHighlight": 10
+  }
+ ],
+ "Ego is the enemy": [
   {
    "title": "The Happiness Hypothesis",
    "slug": "the-happiness-hypothesis",
@@ -1387,8 +1493,28 @@
    "cover": "covers/the-happiness-hypothesis.jpg",
    "color": "#2E6B6B",
    "quote": "Ambiguity abets the illusion. For many traits, such as leadership, there are so many ways to define it that one is free to pick the criterion that will most flatter oneself. If I’m confident, I can define leadership as confidence.",
-   "score": 0.66,
+   "score": 0.683,
    "toHighlight": 3
+  },
+  {
+   "title": "How to get rich",
+   "slug": "how-to-get-rich",
+   "author": "Felix Dennis",
+   "cover": "covers/how-to-get-rich.jpg",
+   "color": "#3A5C8B",
+   "quote": "Quitting is not dishonorable. Quitting when you believe you can still succeed is.",
+   "score": 0.682,
+   "toHighlight": 8
+  },
+  {
+   "title": "The Obstacle is the way",
+   "slug": "the-obstacle-is-the-way",
+   "author": "Ryan Holliday",
+   "cover": "",
+   "color": "#6B4C9A",
+   "quote": "After you’ve distinguished between the things that are up to you and the things that aren’t (ta eph’hemin, ta ouk eph’hemin), and the break comes down to something you don’t control . . . you’ve got only one option: acceptance.",
+   "score": 0.689,
+   "toHighlight": 7
   }
  ]
 }
