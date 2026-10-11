@@ -66,6 +66,16 @@
  "Greenlights": [],
  "The 4-Hour Workweek": [
   {
+   "title": "Daily stoic",
+   "slug": "daily-stoic",
+   "author": "Ryan Holliday",
+   "cover": "",
+   "color": "#3A5C8B",
+   "quote": "The point is not to wish for these adversities, but for the virtue that makes adversities bearable. We’d be crazy to want to face difficulty in life. But we’d be equally crazy to pretend that it isn’t going to happen.",
+   "score": 0.687,
+   "toHighlight": 12
+  },
+  {
    "title": "How to get rich",
    "slug": "how-to-get-rich",
    "author": "Felix Dennis",
@@ -84,16 +94,6 @@
    "quote": "You need to try to do the impossible, to anticipate the unexpected. And when the unexpected happens, you should double your efforts to make order from the disorder it creates in your life.",
    "score": 0.679,
    "toHighlight": 1
-  },
-  {
-   "title": "The Art of the Good life",
-   "slug": "the-art-of-the-good-life",
-   "author": "Rolf Dobelli",
-   "cover": "covers/the-art-of-the-good-life.jpg",
-   "color": "#2E5C45",
-   "quote": "It’s much nicer to mull things over than to seize the initiative. Speculation is more agreeable than realization.",
-   "score": 0.674,
-   "toHighlight": 15
   }
  ],
  "The Art of Spending Money": [
@@ -108,6 +108,16 @@
    "toHighlight": 16
   },
   {
+   "title": "Daily stoic",
+   "slug": "daily-stoic",
+   "author": "Ryan Holliday",
+   "cover": "",
+   "color": "#3A5C8B",
+   "quote": "The point is not to wish for these adversities, but for the virtue that makes adversities bearable. We’d be crazy to want to face difficulty in life. But we’d be equally crazy to pretend that it isn’t going to happen.",
+   "score": 0.673,
+   "toHighlight": 12
+  },
+  {
    "title": "The Art of the Good life",
    "slug": "the-art-of-the-good-life",
    "author": "Rolf Dobelli",
@@ -116,16 +126,6 @@
    "quote": "It’s much nicer to mull things over than to seize the initiative. Speculation is more agreeable than realization.",
    "score": 0.671,
    "toHighlight": 15
-  },
-  {
-   "title": "The Happiness Hypothesis",
-   "slug": "the-happiness-hypothesis",
-   "author": "",
-   "cover": "covers/the-happiness-hypothesis.jpg",
-   "color": "#2E6B6B",
-   "quote": "A curious fact about auto-biographical memory called the “memory bump.” When people older than thirty are asked to remember the most important or vivid events of their lives, they are disproportionately likely to recall events that…",
-   "score": 0.669,
-   "toHighlight": 16
   }
  ],
  "The Thinking Machine": [
@@ -151,6 +151,16 @@
   }
  ],
  "The Not-To-Do List": [
+  {
+   "title": "Daily stoic",
+   "slug": "daily-stoic",
+   "author": "Ryan Holliday",
+   "cover": "",
+   "color": "#3A5C8B",
+   "quote": "According to Anthony de Mello, “there is one thing and only one thing that causes unhappiness. The name of that thing is Attachment.” Our attachments are what make it so hard to accept change. Once we have them, we don’t want to let go.",
+   "score": 0.667,
+   "toHighlight": 27
+  },
   {
    "title": "The Happiness Hypothesis",
    "slug": "the-happiness-hypothesis",
@@ -240,6 +250,16 @@
    "toHighlight": 4
   },
   {
+   "title": "Daily stoic",
+   "slug": "daily-stoic",
+   "author": "Ryan Holliday",
+   "cover": "",
+   "color": "#3A5C8B",
+   "quote": "The point is not to wish for these adversities, but for the virtue that makes adversities bearable. We’d be crazy to want to face difficulty in life. But we’d be equally crazy to pretend that it isn’t going to happen.",
+   "score": 0.696,
+   "toHighlight": 12
+  },
+  {
    "title": "The Art of the Good life",
    "slug": "the-art-of-the-good-life",
    "author": "Rolf Dobelli",
@@ -248,16 +268,6 @@
    "quote": "I’d like to introduce you to two people you know very well, although not by name: your experiencing self and your remembering self. The magnitude of these errors is revealed by the following experiment.",
    "score": 0.688,
    "toHighlight": 8
-  },
-  {
-   "title": "The Art of Thinking Clearly",
-   "slug": "the-art-of-thinking-clearly",
-   "author": "Rolf Dobelli",
-   "cover": "covers/the-art-of-thinking-clearly.jpg",
-   "color": "#6B4C9A",
-   "quote": "Whether we like it or not, we are puppets of our emotions. We make complex decisions by consulting our feelings, not our thoughts.",
-   "score": 0.68,
-   "toHighlight": 17
   }
  ],
  "The Wager": [],
@@ -296,6 +306,16 @@
    "toHighlight": 9
   },
   {
+   "title": "Daily stoic",
+   "slug": "daily-stoic",
+   "author": "Ryan Holliday",
+   "cover": "",
+   "color": "#3A5C8B",
+   "quote": "The point is not to wish for these adversities, but for the virtue that makes adversities bearable. We’d be crazy to want to face difficulty in life. But we’d be equally crazy to pretend that it isn’t going to happen.",
+   "score": 0.682,
+   "toHighlight": 12
+  },
+  {
    "title": "The Obstacle is the way",
    "slug": "the-obstacle-is-the-way",
    "author": "Ryan Holliday",
@@ -303,16 +323,6 @@
    "color": "#6B4C9A",
    "quote": "For all species other than us humans, things just are what they are. Our problem is that we’re always trying to figure out what things mean—why things are the way they are. As though the why matters.",
    "score": 0.684,
-   "toHighlight": 4
-  },
-  {
-   "title": "Ego is the enemy",
-   "slug": "ego-is-the-enemy",
-   "author": "Ryan Holliday",
-   "cover": "covers/ego-is-the-enemy.jpg",
-   "color": "#2E6B6B",
-   "quote": "We don’t like thinking that someone is better than us. Or that we have a lot left to learn. We want to be done. We want to be ready. We’re busy and overburdened.",
-   "score": 0.68,
    "toHighlight": 4
   }
  ],
@@ -600,6 +610,16 @@
  ],
  "How to Stop Worrying and Start Living": [
   {
+   "title": "Daily stoic",
+   "slug": "daily-stoic",
+   "author": "Ryan Holliday",
+   "cover": "",
+   "color": "#3A5C8B",
+   "quote": "The point is not to wish for these adversities, but for the virtue that makes adversities bearable. We’d be crazy to want to face difficulty in life. But we’d be equally crazy to pretend that it isn’t going to happen.",
+   "score": 0.681,
+   "toHighlight": 12
+  },
+  {
    "title": "The 4-Hour Workweek",
    "slug": "the-4-hour-workweek",
    "author": "Tim Ferriss",
@@ -788,6 +808,16 @@
  "Nuclear War": [],
  "How to Live": [
   {
+   "title": "Daily stoic",
+   "slug": "daily-stoic",
+   "author": "Ryan Holliday",
+   "cover": "",
+   "color": "#3A5C8B",
+   "quote": "The point is not to wish for these adversities, but for the virtue that makes adversities bearable. We’d be crazy to want to face difficulty in life. But we’d be equally crazy to pretend that it isn’t going to happen.",
+   "score": 0.678,
+   "toHighlight": 12
+  },
+  {
    "title": "The Obstacle is the way",
    "slug": "the-obstacle-is-the-way",
    "author": "Ryan Holliday",
@@ -806,19 +836,19 @@
    "quote": "Don’t define yourself by your opinions because then you can’t change your mind. Define yourself by your values.",
    "score": 0.674,
    "toHighlight": 16
-  },
-  {
-   "title": "Hell Yeah or No",
-   "slug": "hell-yeah-or-no",
-   "author": "Derek Sivers",
-   "cover": "covers/hell-yeah-or-no.jpg",
-   "color": "#6E6A2E",
-   "quote": "Sometimes people ask me if there’s one motto or rule of thumb I use most often. This is it: Whatever scares you, go do it. Best of all, once you do something that scared you, you’re not scared of it anymore!",
-   "score": 0.699,
-   "toHighlight": 6
   }
  ],
  "How to get rich": [
+  {
+   "title": "Daily stoic",
+   "slug": "daily-stoic",
+   "author": "Ryan Holliday",
+   "cover": "",
+   "color": "#3A5C8B",
+   "quote": "There are two ways to be wealthy—to get everything you want or to want everything you have. Which is easier right here and right now? The same goes for freedom. If you chafe and fight and struggle for more, you will never be free.",
+   "score": 0.697,
+   "toHighlight": 13
+  },
   {
    "title": "The Art of Spending Money",
    "slug": "the-art-of-spending-money",
@@ -838,16 +868,6 @@
    "quote": "Second, to achieve resilience, it’s imperative to reduce or eliminate debt, avoid leverage, and beware of excessive expenses, all of which can make us dependent on the kindness of strangers.",
    "score": 0.683,
    "toHighlight": 11
-  },
-  {
-   "title": "The Art of the Good life",
-   "slug": "the-art-of-the-good-life",
-   "author": "Rolf Dobelli",
-   "cover": "covers/the-art-of-the-good-life.jpg",
-   "color": "#2E5C45",
-   "quote": "It’s much nicer to mull things over than to seize the initiative. Speculation is more agreeable than realization.",
-   "score": 0.684,
-   "toHighlight": 15
   }
  ],
  "Crossing the chasm": [
@@ -1284,6 +1304,16 @@
  ],
  "Man's search for meaning": [
   {
+   "title": "Daily stoic",
+   "slug": "daily-stoic",
+   "author": "Ryan Holliday",
+   "cover": "",
+   "color": "#3A5C8B",
+   "quote": "The point is not to wish for these adversities, but for the virtue that makes adversities bearable. We’d be crazy to want to face difficulty in life. But we’d be equally crazy to pretend that it isn’t going to happen.",
+   "score": 0.678,
+   "toHighlight": 12
+  },
+  {
    "title": "The Happiness Hypothesis",
    "slug": "the-happiness-hypothesis",
    "author": "",
@@ -1302,16 +1332,6 @@
    "quote": "Until one is committed, there is hesitancy; the chance to draw back; always ineffectiveness concerning all acts of initiative and creation.",
    "score": 0.664,
    "toHighlight": 2
-  },
-  {
-   "title": "The Obstacle is the way",
-   "slug": "the-obstacle-is-the-way",
-   "author": "Ryan Holliday",
-   "cover": "covers/the-obstacle-is-the-way.webp",
-   "color": "#6B4C9A",
-   "quote": "After you’ve distinguished between the things that are up to you and the things that aren’t (ta eph’hemin, ta ouk eph’hemin), and the break comes down to something you don’t control . . . you’ve got only one option: acceptance.",
-   "score": 0.663,
-   "toHighlight": 7
   }
  ],
  "An Immense World": [
@@ -1451,6 +1471,16 @@
  ],
  "How to win friends and influence people": [
   {
+   "title": "Daily stoic",
+   "slug": "daily-stoic",
+   "author": "Ryan Holliday",
+   "cover": "",
+   "color": "#3A5C8B",
+   "quote": "The point is not to wish for these adversities, but for the virtue that makes adversities bearable. We’d be crazy to want to face difficulty in life. But we’d be equally crazy to pretend that it isn’t going to happen.",
+   "score": 0.67,
+   "toHighlight": 12
+  },
+  {
    "title": "Million Dollar Weekend",
    "slug": "million-dollar-weekend",
    "author": "Noah Kagan",
@@ -1469,16 +1499,6 @@
    "quote": "“You can’t build a reputation on what you’re going to do,” was how Henry Ford put. Our ego wants the ideas and the fact that we aspire to do something about them to be enough.",
    "score": 0.665,
    "toHighlight": 9
-  },
-  {
-   "title": "How to get rich",
-   "slug": "how-to-get-rich",
-   "author": "Felix Dennis",
-   "cover": "covers/how-to-get-rich.jpg",
-   "color": "#3A5C8B",
-   "quote": "Quitting is not dishonorable. Quitting when you believe you can still succeed is.",
-   "score": 0.665,
-   "toHighlight": 8
   }
  ],
  "Anything you want": [
@@ -1515,6 +1535,16 @@
  ],
  "The Obstacle is the way": [
   {
+   "title": "Daily stoic",
+   "slug": "daily-stoic",
+   "author": "Ryan Holliday",
+   "cover": "",
+   "color": "#3A5C8B",
+   "quote": "The point is not to wish for these adversities, but for the virtue that makes adversities bearable. We’d be crazy to want to face difficulty in life. But we’d be equally crazy to pretend that it isn’t going to happen.",
+   "score": 0.7,
+   "toHighlight": 12
+  },
+  {
    "title": "The Happiness Hypothesis",
    "slug": "the-happiness-hypothesis",
    "author": "",
@@ -1533,16 +1563,6 @@
    "quote": "If you don’t know how much you need, the default easily becomes: more. Ego rejects trade-offs. Why compromise? Ego wants it all.",
    "score": 0.689,
    "toHighlight": 11
-  },
-  {
-   "title": "How to Live",
-   "slug": "how-to-live",
-   "author": "Derek Sivers",
-   "cover": "covers/how-to-live.jpg",
-   "color": "#8B3A2E",
-   "quote": "Pain’s power relies on surprise. If you expect it, it’s weaker. If you choose it, it’s gone. Pain is coming anyway. Don’t get a shield. Get a saddle. Tame it.",
-   "score": 0.688,
-   "toHighlight": 10
   }
  ],
  "Ego is the enemy": [
@@ -1698,5 +1718,37 @@
   }
  ],
  "Numbers don't lie": [],
- "Liquid rules": []
+ "Liquid rules": [],
+ "Daily stoic": [
+  {
+   "title": "The Happiness Hypothesis",
+   "slug": "the-happiness-hypothesis",
+   "author": "",
+   "cover": "covers/the-happiness-hypothesis.jpg",
+   "color": "#2E6B6B",
+   "quote": "Human beings, however, take adaptation to cognitive extremes. We don’t just habituate, we recalibrate. We create for ourselves a world of targets, and each time we hit one we replace it with another.",
+   "score": 0.696,
+   "toHighlight": 7
+  },
+  {
+   "title": "How to get rich",
+   "slug": "how-to-get-rich",
+   "author": "Felix Dennis",
+   "cover": "covers/how-to-get-rich.jpg",
+   "color": "#3A5C8B",
+   "quote": "Quitting is not dishonorable. Quitting when you believe you can still succeed is.",
+   "score": 0.697,
+   "toHighlight": 8
+  },
+  {
+   "title": "The 4-Hour Workweek",
+   "slug": "the-4-hour-workweek",
+   "author": "Tim Ferriss",
+   "cover": "covers/the-4-hour-workweek.jpg",
+   "color": "#2F5A63",
+   "quote": "Remembering that you are going to die is the best way I know to avoid the trap of thinking you have something to lose. — Steve Jobs",
+   "score": 0.687,
+   "toHighlight": 22
+  }
+ ]
 }
