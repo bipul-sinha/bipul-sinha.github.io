@@ -591,25 +591,6 @@
     .year-jump{gap:6px}
   }
 
-  /* Bottom sheet: slides up on phones, centred card on wider screens */
-  .sheet-scrim{position:fixed;inset:0;background:rgba(28,27,24,0.35);opacity:0;pointer-events:none;transition:opacity .25s ease;z-index:90}
-  .sheet-scrim.open{opacity:1;pointer-events:auto}
-  .sheet{position:fixed;left:0;right:0;bottom:0;background:var(--surface);border-radius:20px 20px 0 0;padding:10px 20px calc(24px + env(safe-area-inset-bottom));box-shadow:0 -10px 30px rgba(0,0,0,0.12);transform:translateY(102%);visibility:hidden;transition:transform .3s cubic-bezier(.2,.8,.2,1),visibility .3s;z-index:91;max-height:80vh;overflow:auto}
-  .sheet.open{transform:translateY(0);visibility:visible}
-  .sheet-grab{width:38px;height:5px;border-radius:3px;background:var(--line);margin:0 auto 14px}
-  .sheet-body{display:flex;gap:16px;align-items:flex-start}
-  .sheet-cover{width:96px;flex:none}
-  .sheet-t{font-family:'Fraunces',serif;font-weight:600;font-size:20px;line-height:1.2}
-  .sheet-a{font-size:13.5px;color:var(--muted);margin-top:4px}
-  .sheet-sub{font-size:12.5px;color:var(--muted);margin-top:8px}
-  .sheet-go{display:block;width:100%;margin-top:20px;background:var(--accent);color:#fff;border:none;padding:14px;border-radius:12px;font:inherit;font-weight:600;font-size:15px;cursor:pointer}
-  .sheet-go:hover{background:var(--accent-ink)}
-  .sheet-close{display:block;margin:12px auto 0;background:none;border:none;color:var(--muted);font:inherit;font-size:14px;cursor:pointer;padding:6px}
-  @media (min-width:640px){
-    .sheet{left:50%;right:auto;bottom:50%;width:min(520px,calc(100% - 40px));border-radius:16px;padding:22px 26px;transform:translate(-50%,calc(50% + 40px));opacity:0}
-    .sheet.open{transform:translate(-50%,50%);opacity:1}
-    .sheet-grab{display:none}
-  }
 
   html{color-scheme:light}
   body{font-size:14px}
@@ -661,21 +642,6 @@
     </div>
     <div class="timeline" id="timeline"></div>
 
-    <div class="sheet-scrim" id="sheetScrim"></div>
-    <div class="sheet" id="sheet" role="dialog" aria-modal="true" aria-labelledby="sheetTitle" aria-hidden="true">
-      <div class="sheet-grab"></div>
-      <div class="sheet-body">
-        <div class="cover sheet-cover" id="sheetCover"></div>
-        <div class="sheet-meta">
-          <div class="sheet-t" id="sheetTitle"></div>
-          <div class="sheet-a" id="sheetAuthor"></div>
-          <div id="sheetStars"></div>
-          <div class="sheet-sub" id="sheetSub"></div>
-        </div>
-      </div>
-      <button class="sheet-go" id="sheetGo" type="button">Read highlights &rarr;</button>
-      <button class="sheet-close" id="sheetClose" type="button">Close</button>
-    </div>
   </div>
 
   <!-- ============ DETAIL VIEW ============ -->
@@ -1767,7 +1733,7 @@ function renderShelf(){
 
 timeline.addEventListener('click', ev => {
   const item = ev.target.closest('.tl-item');
-  if(item) openSheet(Number(item.dataset.i));
+  if(item) openBook(Number(item.dataset.i));
   if(ev.target.id === 'clearFilters'){
     bookFilter.min = 0; bookFilter.sort = 'rating';
     renderFilterBar(); renderShelf();
@@ -1783,34 +1749,6 @@ yearJump.addEventListener('click', ev => {
   const calm = window.matchMedia('(prefers-reduced-motion:reduce)').matches;
   target.scrollIntoView({ behavior: calm ? 'auto' : 'smooth', block: 'start' });
 });
-
-// Bottom sheet preview. "Read highlights" opens the book's own page.
-const sheet = document.getElementById('sheet');
-const sheetScrim = document.getElementById('sheetScrim');
-let sheetIndex = null;
-function openSheet(i){
-  const b = books[i];
-  sheetIndex = i;
-  document.getElementById('sheetCover').style.background = b.color;
-  document.getElementById('sheetCover').innerHTML = coverHTML(b);
-  document.getElementById('sheetTitle').textContent = b.title;
-  document.getElementById('sheetAuthor').textContent = b.author || '';
-  document.getElementById('sheetStars').innerHTML = b.rating ? starsHTML(b.rating, 9) : '';
-  const hl = (b.highlights || []).length;
-  document.getElementById('sheetSub').textContent =
-    [b.rating ? `${b.rating}/10` : '', b.year ? `read in ${b.year}` : '', `${hl} highlights`].filter(Boolean).join(' · ');
-  sheet.classList.add('open'); sheet.setAttribute('aria-hidden', 'false');
-  sheetScrim.classList.add('open');
-  document.getElementById('sheetGo').focus();
-}
-function closeSheet(){
-  sheet.classList.remove('open'); sheet.setAttribute('aria-hidden', 'true');
-  sheetScrim.classList.remove('open');
-}
-document.getElementById('sheetGo').addEventListener('click', () => { const i = sheetIndex; closeSheet(); openBook(i); });
-document.getElementById('sheetClose').addEventListener('click', closeSheet);
-sheetScrim.addEventListener('click', closeSheet);
-document.addEventListener('keydown', ev => { if(ev.key === 'Escape') closeSheet(); });
 
 // ---- daily highlight panel (parchment card, above the shelf grid) ----
 let dailyPool = [];
