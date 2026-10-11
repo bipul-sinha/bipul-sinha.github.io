@@ -4,7 +4,8 @@
 For each book, looks up the best matching volume on the Google Books API and
 downloads its largest available cover image. A new image only replaces the
 existing cover when it is taller, so a miss never makes a cover worse.
-Books whose cover already came from Google Books are skipped.
+Books whose cover came from Google Books or was supplied by hand
+(cover_source 'manual') are skipped.
 
 Google Books has a daily query quota. When it runs out, the script stops and
 records where it got to, so re-running it later continues from there.
@@ -80,7 +81,7 @@ def main():
     books = json.load(open(DATA, encoding='utf-8'))
     replaced = skipped = missed = 0
     for i, book in enumerate(books):
-        if book.get('cover_source') == 'google':
+        if book.get('cover_source') in ('google', 'manual'):
             skipped += 1
             continue
         try:

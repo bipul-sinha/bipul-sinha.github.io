@@ -1080,7 +1080,8 @@
   "rating": 10,
   "color": "#2F5A63",
   "highlights": [],
-  "cover": "covers/fiction/1984.jpg"
+  "cover": "covers/fiction/1984.jpg",
+  "cover_source": "manual"
  },
  {
   "kind": "fiction",
@@ -1090,7 +1091,8 @@
   "rating": 10,
   "color": "#3F5E7A",
   "highlights": [],
-  "cover": "covers/fiction/to-kill-a-mockingbird.jpg"
+  "cover": "covers/fiction/to-kill-a-mockingbird.jpg",
+  "cover_source": "manual"
  },
  {
   "kind": "fiction",
@@ -1100,7 +1102,8 @@
   "rating": 9,
   "color": "#6E6A2E",
   "highlights": [],
-  "cover": "covers/fiction/the-spy-who-came-in-from-the-cold.jpg"
+  "cover": "covers/fiction/the-spy-who-came-in-from-the-cold.jpg",
+  "cover_source": "manual"
  },
  {
   "kind": "fiction",
@@ -1110,7 +1113,8 @@
   "rating": 9,
   "color": "#3B4A63",
   "highlights": [],
-  "cover": "covers/fiction/the-deceiver.jpg"
+  "cover": "covers/fiction/the-deceiver.jpg",
+  "cover_source": "manual"
  },
  {
   "kind": "fiction",
@@ -1119,7 +1123,9 @@
   "year": 2026,
   "rating": 9,
   "color": "#6B2F3E",
-  "highlights": []
+  "highlights": [],
+  "cover": "covers/fiction/last-man-standing-hunger.jpg",
+  "cover_source": "manual"
  },
  {
   "kind": "fiction",
@@ -1129,7 +1135,8 @@
   "rating": 9,
   "color": "#3B4A63",
   "highlights": [],
-  "cover": "covers/fiction/casino-royale.jpg"
+  "cover": "covers/fiction/casino-royale.jpg",
+  "cover_source": "manual"
  },
  {
   "kind": "fiction",
@@ -1138,7 +1145,9 @@
   "year": 2026,
   "rating": 9,
   "color": "#2E5C45",
-  "highlights": []
+  "highlights": [],
+  "cover": "covers/fiction/the-eye-of-the-needle.jpg",
+  "cover_source": "manual"
  },
  {
   "kind": "fiction",
@@ -1168,7 +1177,8 @@
   "rating": 8,
   "color": "#7A4B2A",
   "highlights": [],
-  "cover": "covers/fiction/the-9-wrong-answers.jpg"
+  "cover": "covers/fiction/the-9-wrong-answers.jpg",
+  "cover_source": "manual"
  },
  {
   "kind": "fiction",
@@ -1177,7 +1187,9 @@
   "year": 2026,
   "rating": 8,
   "color": "#3F5E7A",
-  "highlights": []
+  "highlights": [],
+  "cover": "covers/fiction/journey-to-the-moon.jpg",
+  "cover_source": "manual"
  },
  {
   "kind": "fiction",
@@ -1197,7 +1209,8 @@
   "rating": 8,
   "color": "#6E6A2E",
   "highlights": [],
-  "cover": "covers/fiction/the-valley-of-fear.jpg"
+  "cover": "covers/fiction/the-valley-of-fear.jpg",
+  "cover_source": "manual"
  },
  {
   "kind": "fiction",
@@ -1217,7 +1230,8 @@
   "rating": 7,
   "color": "#8A4B4B",
   "highlights": [],
-  "cover": "covers/fiction/the-hobbit.jpg"
+  "cover": "covers/fiction/the-hobbit.jpg",
+  "cover_source": "manual"
  },
  {
   "kind": "fiction",
@@ -1226,7 +1240,9 @@
   "year": 2026,
   "rating": 7,
   "color": "#2F5A63",
-  "highlights": []
+  "highlights": [],
+  "cover": "covers/fiction/the-architecture-of-murder.jpg",
+  "cover_source": "manual"
  },
  {
   "kind": "fiction",
@@ -1235,7 +1251,9 @@
   "year": 2026,
   "rating": 8,
   "color": "#2E5C45",
-  "highlights": []
+  "highlights": [],
+  "cover": "covers/fiction/last-man-standing-cordyceps.jpg",
+  "cover_source": "manual"
  },
  {
   "kind": "fiction",
@@ -1244,7 +1262,9 @@
   "year": 2026,
   "rating": 9,
   "color": "#2F5A63",
-  "highlights": []
+  "highlights": [],
+  "cover": "covers/fiction/last-man-standing-vaccine.jpg",
+  "cover_source": "manual"
  },
  {
   "kind": "fiction",
@@ -1254,7 +1274,8 @@
   "rating": 9,
   "color": "#3F5E7A",
   "highlights": [],
-  "cover": "covers/fiction/the-great-gatsby.jpg"
+  "cover": "covers/fiction/the-great-gatsby.jpg",
+  "cover_source": "manual"
  },
  {
   "kind": "fiction",
