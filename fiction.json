@@ -431,7 +431,8 @@
   "rating": 10,
   "color": "#2E5C45",
   "highlights": [],
-  "cover": "covers/fiction/death-in-the-house-of-rain.jpg"
+  "cover": "covers/fiction/death-in-the-house-of-rain.jpg",
+  "cover_source": "manual"
  },
  {
   "kind": "fiction",
@@ -491,7 +492,8 @@
   "rating": 6,
   "color": "#5C6B3A",
   "highlights": [],
-  "cover": "covers/fiction/the-third-bullet.jpg"
+  "cover": "covers/fiction/the-third-bullet.jpg",
+  "cover_source": "manual"
  },
  {
   "kind": "fiction",
@@ -510,7 +512,9 @@
   "year": 2022,
   "rating": 6,
   "color": "#2E5C45",
-  "highlights": []
+  "highlights": [],
+  "cover": "covers/fiction/phantom-lady.jpg",
+  "cover_source": "manual"
  },
  {
   "kind": "fiction",
@@ -519,7 +523,9 @@
   "year": 2022,
   "rating": 6,
   "color": "#3B4A63",
-  "highlights": []
+  "highlights": [],
+  "cover": "covers/fiction/decagon-house-murders.jpg",
+  "cover_source": "manual"
  },
  {
   "kind": "fiction",
@@ -528,7 +534,9 @@
   "year": 2022,
   "rating": 6,
   "color": "#2F5A63",
-  "highlights": []
+  "highlights": [],
+  "cover": "covers/fiction/the-inugami-curse.jpg",
+  "cover_source": "manual"
  },
  {
   "kind": "fiction",
@@ -547,7 +555,9 @@
   "year": 2022,
   "rating": 9,
   "color": "#7A4B2A",
-  "highlights": []
+  "highlights": [],
+  "cover": "covers/fiction/the-red-locked-room.jpg",
+  "cover_source": "manual"
  },
  {
   "kind": "fiction",
@@ -556,7 +566,9 @@
   "year": 2022,
   "rating": 9,
   "color": "#5B3A5E",
-  "highlights": []
+  "highlights": [],
+  "cover": "covers/fiction/death-among-the-undead.jpg",
+  "cover_source": "manual"
  },
  {
   "kind": "fiction",
@@ -565,7 +577,9 @@
   "year": 2022,
   "rating": 9,
   "color": "#5B3A5E",
-  "highlights": []
+  "highlights": [],
+  "cover": "covers/fiction/the-tokyo-zodiac-murders.jpg",
+  "cover_source": "manual"
  },
  {
   "kind": "fiction",
