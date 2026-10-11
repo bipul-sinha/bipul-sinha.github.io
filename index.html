@@ -576,6 +576,8 @@
   .tl-item:hover .cover{transform:translateY(-4px)}
   .tl-item:active .cover{transform:scale(.97)}
   .tl-item:focus-visible{outline:2px solid var(--accent);outline-offset:3px;border-radius:3px}
+  .tl-item--static{cursor:default;text-align:left;font:inherit;color:inherit}
+  .tl-item--static:hover .cover,.tl-item--static:active .cover{transform:none}
   .tl-stars{margin-top:8px}
   @media (max-width:860px){
     .tl-year{grid-template-columns:1fr;gap:14px}
@@ -595,6 +597,14 @@
   html{color-scheme:light}
   body{font-size:14px}
   img{max-width:100%}
+  /* Non-fiction / Fiction toggle in the filter bar */
+  .seg{display:inline-flex;background:#EEECE6;border-radius:999px;padding:3px;margin-right:4px}
+  .seg-btn{font:inherit;font-size:13px;color:var(--muted);background:none;border:none;border-radius:999px;padding:6px 14px;cursor:pointer;white-space:nowrap}
+  .seg-btn:hover{color:var(--ink)}
+  .seg-btn[aria-pressed="true"]{background:var(--surface);color:var(--ink);box-shadow:0 1px 2px rgba(0,0,0,.08);font-weight:600}
+  .seg-btn .n{font-size:12px;color:var(--faint);margin-left:4px}
+  .seg-btn[aria-pressed="true"] .n{color:var(--accent)}
+  .seg-btn:focus-visible{outline:2px solid var(--accent);outline-offset:2px}
 </style>
 </head>
 <body>
@@ -1657,16 +1667,30 @@ function bookMetaHTML(b){
 const bookFilter = { min:0, sort:'rating' };
 const filterBar = document.getElementById('filterBar');
 
+function kindToggleHTML(){
+  const counts = { nonfiction: 0, fiction: 0 };
+  books.forEach(b => counts[kindOf(b)]++);
+  const btn = (k, label) => `<button class="seg-btn" type="button" data-kind="${k}" aria-pressed="${shelfKind === k}">${label}<span class="n">${counts[k]}</span></button>`;
+  return `<div class="seg" role="group" aria-label="Book type">${btn('nonfiction', 'Non-fiction')}${btn('fiction', 'Fiction')}</div>`;
+}
+
 function renderFilterBar(){
   const hasRatings = books.some(b => b.rating);
   if(!hasRatings){ filterBar.hidden = true; return; }
   filterBar.hidden = false;
   const chip = (v, label) => `<button class="fchip" data-v="${v}" aria-pressed="${String(bookFilter.min) === String(v)}">${label}</button>`;
-  filterBar.innerHTML = `<div class="fgrp"><span class="flab">Rating</span>${chip(0, 'All')}${[9, 8, 7].map(n => chip(n, n + '+')).join('')}</div>` +
+  filterBar.innerHTML = `${kindToggleHTML()}<div class="fgrp"><span class="flab">Rating</span>${chip(0, 'All')}${[9, 8, 7].map(n => chip(n, n + '+')).join('')}</div>` +
     `<div class="fright"><span class="fcount" id="fCount"></span><select class="fsort" id="fSort" aria-label="Sort books"><option value="rating">Top rated first</option><option value="title">A–Z</option></select></div>`;
   document.getElementById('fSort').value = bookFilter.sort;
 }
 filterBar.addEventListener('click', ev => {
+  const kind = ev.target.closest('.seg-btn');
+  if(kind){
+    if(kind.dataset.kind === shelfKind) return;
+    shelfKind = kind.dataset.kind;
+    renderFilterBar(); renderShelf();
+    return;
+  }
   const btn = ev.target.closest('.fchip');
   if(!btn) return;
   bookFilter.min = +btn.dataset.v;
@@ -1690,8 +1714,12 @@ function measureSticky(){
 }
 window.addEventListener('resize', measureSticky);
 
+let shelfKind = 'nonfiction';
+const kindOf = b => b.kind === 'fiction' ? 'fiction' : 'nonfiction';
+const inShelf = b => kindOf(b) === shelfKind;
+
 function renderShelf(){
-  const list = books.map((b, i) => ({ b, i })).filter(({ b }) => !bookFilter.min || (b.rating || 0) >= bookFilter.min);
+  const list = books.map((b, i) => ({ b, i })).filter(({ b }) => inShelf(b) && (!bookFilter.min || (b.rating || 0) >= bookFilter.min));
   const byYear = new Map();
   list.forEach(x => {
     const y = x.b.year || 'Unknown';
@@ -1699,7 +1727,7 @@ function renderShelf(){
     byYear.get(y).push(x);
   });
   const years = [...byYear.keys()].sort((x, y) => x === 'Unknown' ? 1 : y === 'Unknown' ? -1 : y - x);
-  const allYears = [...new Set(books.map(b => b.year).filter(Boolean))].sort((a, b) => b - a);
+  const allYears = [...new Set(books.filter(inShelf).map(b => b.year).filter(Boolean))].sort((a, b) => b - a);
   const sortList = arr => [...arr].sort((x, y) => bookFilter.sort === 'title'
     ? x.b.title.localeCompare(y.b.title)
     : (y.b.rating || 0) - (x.b.rating || 0) || x.b.title.localeCompare(y.b.title));
@@ -1715,13 +1743,18 @@ function renderShelf(){
     return `<section class="tl-year" id="tl-${y}">
       <div class="tl-head">
         <div class="tl-yr">${y}</div>
-        <div class="tl-sum"><b>${items.length}</b> ${items.length === 1 ? 'book' : 'books'} · avg <b>${avg.toFixed(1)}</b>/10 · <b>${highlights}</b> highlights</div>
+        <div class="tl-sum"><b>${items.length}</b> ${items.length === 1 ? 'book' : 'books'} · avg <b>${avg.toFixed(1)}</b>/10${highlights ? ` · <b>${highlights}</b> highlights` : ''}</div>
       </div>
       <div class="tl-covers">${sortList(items).map(({ b, i }) => `
-        <button class="tl-item" type="button" data-i="${i}" aria-label="${b.title} by ${b.author}${b.rating ? ', ' + b.rating + ' out of 10' : ''}">
+        ${kindOf(b) === 'fiction'
+          ? `<div class="tl-item tl-item--static" title="${b.title} by ${b.author}">
           <div class="cover" style="background:${b.color}">${coverHTML(b)}</div>
           ${b.rating ? `<div class="tl-stars">${starsHTML(b.rating, 7)}</div>` : ''}
-        </button>`).join('')}
+        </div>`
+          : `<button class="tl-item" type="button" data-i="${i}" aria-label="${b.title} by ${b.author}${b.rating ? ', ' + b.rating + ' out of 10' : ''}">
+          <div class="cover" style="background:${b.color}">${coverHTML(b)}</div>
+          ${b.rating ? `<div class="tl-stars">${starsHTML(b.rating, 7)}</div>` : ''}
+        </button>`}`).join('')}
       </div>
     </section>`;
   }).join('') : `<div class="shelf-empty">No books match these filters.<br><button id="clearFilters">Clear filters</button></div>`;
@@ -1765,6 +1798,7 @@ function buildDailyPool(){
   const maxLen = dailyMobileQuery.matches ? DAILY_MAX_LEN_MOBILE : DAILY_MAX_LEN_DESKTOP;
   dailyPool = [];
   books.forEach((b,bi)=>{
+    if(kindOf(b) === 'fiction') return;
     (b.highlights || []).forEach((h,hi)=>{
       if(h.indexOf('\n') === -1 && h.length >= DAILY_MIN_LEN && h.length <= maxLen){
         dailyPool.push({ title: b.title, author: b.author, highlight: h, book: bi, hl: hi });
@@ -1900,6 +1934,7 @@ function openBook(i, opts){
     : '';
 
   renderHighlights(b);
+  document.getElementById('highlights').hidden = !(b.highlights || []).length;
   renderSimilar(b.title);
   showView('detail');
   if(typeof opts.focus === 'number'){
@@ -1915,7 +1950,7 @@ function openBook(i, opts){
   }
   document.title = `${b.title} — Bipul Sinha`;
   if(opts.push !== false){
-    history.pushState({}, '', `/highlights/${slugify(b.title)}`);
+    history.pushState({}, '', `/${kindOf(b) === 'fiction' ? 'fiction' : 'highlights'}/${slugify(b.title)}`);
   }
 }
 
@@ -1966,7 +2001,7 @@ function openBookmarkCard(slug, opts){
 function routeFromLocation(){
   const path = location.pathname;
   let m;
-  if((m = path.match(/^\/highlights\/([^/]+)\/?$/))){
+  if((m = path.match(/^\/(?:highlights|fiction)\/([^/]+)\/?$/))){
     const i = books.findIndex(b => slugify(b.title) === m[1]);
     if(i !== -1){ openBook(i, {push: false}); return; }
   }
@@ -2135,15 +2170,18 @@ function renderSimilar(title){
     </a>`).join('');
 }
 
-function initBooks(loadedBooks){
-  books = loadedBooks;
+function initBooks(loadedBooks, fictionBooks){
+  books = [...loadedBooks, ...fictionBooks];
   renderFilterBar();
   renderShelf();
   initDailyHighlight();
   routeFromLocation();
 }
 
-fetch('/books.json', { cache: 'no-cache' }).then(r => r.json()).then(initBooks).catch(err => console.error('Failed to load books.json', err));
+Promise.all([
+  fetch('/books.json', { cache: 'no-cache' }).then(r => r.json()),
+  fetch('/fiction.json', { cache: 'no-cache' }).then(r => r.ok ? r.json() : []).catch(() => [])
+]).then(([nonfiction, fiction]) => initBooks(nonfiction, fiction)).catch(err => console.error('Failed to load books.json', err));
 
 // Loaded separately so a missing related.json only hides the section.
 fetch('/related.json', { cache: 'no-cache' })
