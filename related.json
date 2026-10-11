@@ -24,7 +24,7 @@
    "title": "The Obstacle is the way",
    "slug": "the-obstacle-is-the-way",
    "author": "Ryan Holliday",
-   "cover": "",
+   "cover": "covers/the-obstacle-is-the-way.webp",
    "color": "#6B4C9A",
    "quote": "After you’ve distinguished between the things that are up to you and the things that aren’t (ta eph’hemin, ta ouk eph’hemin), and the break comes down to something you don’t control . . . you’ve got only one option: acceptance.",
    "score": 0.661,
@@ -76,6 +76,16 @@
    "toHighlight": 8
   },
   {
+   "title": "High Output Management",
+   "slug": "high-output-management",
+   "author": "Andy Grove",
+   "cover": "covers/high-output-management.jpg",
+   "color": "#6B5A2E",
+   "quote": "You need to try to do the impossible, to anticipate the unexpected. And when the unexpected happens, you should double your efforts to make order from the disorder it creates in your life.",
+   "score": 0.679,
+   "toHighlight": 1
+  },
+  {
    "title": "The Art of the Good life",
    "slug": "the-art-of-the-good-life",
    "author": "Rolf Dobelli",
@@ -84,16 +94,6 @@
    "quote": "It’s much nicer to mull things over than to seize the initiative. Speculation is more agreeable than realization.",
    "score": 0.674,
    "toHighlight": 15
-  },
-  {
-   "title": "How to Live",
-   "slug": "how-to-live",
-   "author": "Derek Sivers",
-   "cover": "covers/how-to-live.jpg",
-   "color": "#8B3A2E",
-   "quote": "You don’t see things as they are. You see them as you are. Change yourself and you change the world.",
-   "score": 0.667,
-   "toHighlight": 2
   }
  ],
  "The Art of Spending Money": [
@@ -264,6 +264,16 @@
  "Big Panda and Tiny Dragon": [],
  "Extreme Ownership": [
   {
+   "title": "High Output Management",
+   "slug": "high-output-management",
+   "author": "Andy Grove",
+   "cover": "covers/high-output-management.jpg",
+   "color": "#6B5A2E",
+   "quote": "As a means to obtain this leverage, a manager must understand, as Andy writes: “When a person is not doing his job, there can only be two reasons for it.",
+   "score": 0.669,
+   "toHighlight": 4
+  },
+  {
    "title": "Only the Paranoid survive",
    "slug": "only-the-paranoid-survive",
    "author": "Andy Grove",
@@ -289,7 +299,7 @@
    "title": "The Obstacle is the way",
    "slug": "the-obstacle-is-the-way",
    "author": "Ryan Holliday",
-   "cover": "",
+   "cover": "covers/the-obstacle-is-the-way.webp",
    "color": "#6B4C9A",
    "quote": "For all species other than us humans, things just are what they are. Our problem is that we’re always trying to figure out what things mean—why things are the way they are. As though the why matters.",
    "score": 0.684,
@@ -392,14 +402,14 @@
    "toHighlight": 11
   },
   {
-   "title": "Million Dollar Weekend",
-   "slug": "million-dollar-weekend",
-   "author": "Noah Kagan",
-   "cover": "covers/million-dollar-weekend.jpg",
-   "color": "#7A2E4A",
-   "quote": "MVP is an important idea, but it leaves out something crucial: the customers. Who are you actually going to sell your minimum viable product to? And what if they don’t want the minimum?",
-   "score": 0.662,
-   "toHighlight": 4
+   "title": "Build",
+   "slug": "build",
+   "author": "Tony Fadell",
+   "cover": "covers/build.jpg",
+   "color": "#8B6B2E",
+   "quote": "There is a different model that aligns short-term business goals without neglecting long-term customer relationships. It’s based on vested commissions.",
+   "score": 0.669,
+   "toHighlight": 12
   }
  ],
  "The Righteous Mind": [
@@ -453,7 +463,7 @@
    "title": "The Obstacle is the way",
    "slug": "the-obstacle-is-the-way",
    "author": "Ryan Holliday",
-   "cover": "",
+   "cover": "covers/the-obstacle-is-the-way.webp",
    "color": "#6B4C9A",
    "quote": "For all species other than us humans, things just are what they are. Our problem is that we’re always trying to figure out what things mean—why things are the way they are. As though the why matters.",
    "score": 0.68,
@@ -632,9 +642,29 @@
    "quote": "You can succeed with the visionaries, and you can thereby get a reputation for being a high flyer with a hot product, but that is not ultimately where the dollars are.",
    "score": 0.672,
    "toHighlight": 4
+  },
+  {
+   "title": "Build",
+   "slug": "build",
+   "author": "Tony Fadell",
+   "cover": "covers/build.jpg",
+   "color": "#8B6B2E",
+   "quote": "Soon our testers reported in: It went fine. Everything’s up and running! But it took about an hour to install. We winced. Crap. An hour was way too long. So we dug into the reports—what was taking so long? What were we missing?",
+   "score": 0.663,
+   "toHighlight": 6
   }
  ],
  "Only the Paranoid survive": [
+  {
+   "title": "High Output Management",
+   "slug": "high-output-management",
+   "author": "Andy Grove",
+   "cover": "covers/high-output-management.jpg",
+   "color": "#6B5A2E",
+   "quote": "As we founded, organized, and managed Intel, we found that all our employees “produce” in some sense—some make chips, others prepare bills, while still others create software designs or advertising copy.",
+   "score": 0.688,
+   "toHighlight": 2
+  },
   {
    "title": "Crossing the chasm",
    "slug": "crossing-the-chasm",
@@ -646,14 +676,14 @@
    "toHighlight": 4
   },
   {
-   "title": "Extreme Ownership",
-   "slug": "extreme-ownership",
-   "author": "Jocko Willink",
-   "cover": "covers/extreme-ownership.jpg",
-   "color": "#6B5A2E",
-   "quote": "One of the most fundamental and important truths at the heart of Extreme Ownership: there are no bad teams, only bad leaders.",
+   "title": "Build",
+   "slug": "build",
+   "author": "Tony Fadell",
+   "cover": "covers/build.jpg",
+   "color": "#8B6B2E",
+   "quote": "Not everyone on the team agreed with me. In those moments it’s your responsibility as a manager or a leader to explain that this isn’t a democracy, that this is an opinion-driven decision and you’re not going to reach the right choice by…",
    "score": 0.662,
-   "toHighlight": 2
+   "toHighlight": 0
   }
  ],
  "Read Write Own": [
@@ -723,14 +753,14 @@
    "toHighlight": 4
   },
   {
-   "title": "How to get rich",
-   "slug": "how-to-get-rich",
-   "author": "Felix Dennis",
-   "cover": "covers/how-to-get-rich.jpg",
-   "color": "#3A5C8B",
-   "quote": "To become rich you must be an owner. And you must try to own it all. You must strive with every fiber of your being, while recognizing the idiocy of your behavior, to own and retain control of as near to 100 percent of any company as you…",
-   "score": 0.691,
-   "toHighlight": 13
+   "title": "Build",
+   "slug": "build",
+   "author": "Tony Fadell",
+   "cover": "covers/build.jpg",
+   "color": "#8B6B2E",
+   "quote": "Not everyone on the team agreed with me. In those moments it’s your responsibility as a manager or a leader to explain that this isn’t a democracy, that this is an opinion-driven decision and you’re not going to reach the right choice by…",
+   "score": 0.693,
+   "toHighlight": 0
   }
  ],
  "Material World": [
@@ -761,7 +791,7 @@
    "title": "The Obstacle is the way",
    "slug": "the-obstacle-is-the-way",
    "author": "Ryan Holliday",
-   "cover": "",
+   "cover": "covers/the-obstacle-is-the-way.webp",
    "color": "#6B4C9A",
    "quote": "After you’ve distinguished between the things that are up to you and the things that aren’t (ta eph’hemin, ta ouk eph’hemin), and the break comes down to something you don’t control . . . you’ve got only one option: acceptance.",
    "score": 0.688,
@@ -853,6 +883,26 @@
   }
  ],
  "Faraday, Maxwell, and the Electromagnetic Field": [
+  {
+   "title": "Empires of Light",
+   "slug": "empires-of-light",
+   "author": "Jill Jonnes",
+   "cover": "covers/empires-of-light.jpg",
+   "color": "#4A3B6B",
+   "quote": "When Faraday activated the battery to electrify the first coil, he looked hopefully for signs of life in the second coil but saw none.",
+   "score": 0.744,
+   "toHighlight": 4
+  },
+  {
+   "title": "Fundamentals",
+   "slug": "fundamentals",
+   "author": "Frank Wilczek",
+   "cover": "covers/fundamentals.jpg",
+   "color": "#7A2E4A",
+   "quote": "The basic rules for electromagnetic interactions, starting with Coulomb’s law for electric forces and culminating in Maxwell’s equations, were deduced from experiments with human-sized objects.",
+   "score": 0.706,
+   "toHighlight": 7
+  },
   {
    "title": "A beautiful question",
    "slug": "a-beautiful-question",
@@ -1072,14 +1122,14 @@
    "toHighlight": 15
   },
   {
-   "title": "How to get rich",
-   "slug": "how-to-get-rich",
-   "author": "Felix Dennis",
-   "cover": "covers/how-to-get-rich.jpg",
-   "color": "#3A5C8B",
-   "quote": "Quitting is not dishonorable. Quitting when you believe you can still succeed is.",
-   "score": 0.681,
-   "toHighlight": 8
+   "title": "Build",
+   "slug": "build",
+   "author": "Tony Fadell",
+   "cover": "covers/build.jpg",
+   "color": "#8B6B2E",
+   "quote": "Not everyone on the team agreed with me. In those moments it’s your responsibility as a manager or a leader to explain that this isn’t a democracy, that this is an opinion-driven decision and you’re not going to reach the right choice by…",
+   "score": 0.689,
+   "toHighlight": 0
   }
  ],
  "Working Backwards": [
@@ -1094,6 +1144,16 @@
    "toHighlight": 7
   },
   {
+   "title": "Build",
+   "slug": "build",
+   "author": "Tony Fadell",
+   "cover": "covers/build.jpg",
+   "color": "#8B6B2E",
+   "quote": "Soon our testers reported in: It went fine. Everything’s up and running! But it took about an hour to install. We winced. Crap. An hour was way too long. So we dug into the reports—what was taking so long? What were we missing?",
+   "score": 0.662,
+   "toHighlight": 6
+  },
+  {
    "title": "Rework",
    "slug": "rework",
    "author": "David Hansson and Jason Fried",
@@ -1101,16 +1161,6 @@
    "color": "#8B6B2E",
    "quote": "Anyone who takes a “we’ll figure out how to profit in the future” attitude to business is being ridiculous.",
    "score": 0.662,
-   "toHighlight": 4
-  },
-  {
-   "title": "Crossing the chasm",
-   "slug": "crossing-the-chasm",
-   "author": "Geoffrey Moore",
-   "cover": "covers/crossing-the-chasm.jpg",
-   "color": "#2E6B6B",
-   "quote": "You can succeed with the visionaries, and you can thereby get a reputation for being a high flyer with a hot product, but that is not ultimately where the dollars are.",
-   "score": 0.661,
    "toHighlight": 4
   }
  ],
@@ -1148,6 +1198,16 @@
  ],
  "A beautiful question": [
   {
+   "title": "Fundamentals",
+   "slug": "fundamentals",
+   "author": "Frank Wilczek",
+   "cover": "covers/fundamentals.jpg",
+   "color": "#7A2E4A",
+   "quote": "By convention sweet is sweet, bitter is bitter, hot is hot, cold is cold, color is color; but in truth there are only atoms and the void. —Democritus, fragment (c. 400 BC) Democritus’s declaration is deeply challenging.",
+   "score": 0.707,
+   "toHighlight": 5
+  },
+  {
    "title": "Faraday, Maxwell, and the Electromagnetic Field",
    "slug": "faraday-maxwell-and-the-electromagnetic-field",
    "author": "Nancy Forbes and Basil Mahon",
@@ -1166,16 +1226,6 @@
    "quote": "I find these connections profound, in a way that makes me think differently about the act of sensing itself.",
    "score": 0.67,
    "toHighlight": 7
-  },
-  {
-   "title": "A brief history of black holes",
-   "slug": "a-brief-history-of-black-holes",
-   "author": "Becky Smethurst",
-   "cover": "covers/a-brief-history-of-black-holes.jpg",
-   "color": "#4A3B6B",
-   "quote": "Early philosophers, such as Euclid and Ptolemy, thought that our eyes themselves generated light, which then allowed us to see the world around us.",
-   "score": 0.684,
-   "toHighlight": 4
   }
  ],
  "Elon Musk": [
@@ -1257,7 +1307,7 @@
    "title": "The Obstacle is the way",
    "slug": "the-obstacle-is-the-way",
    "author": "Ryan Holliday",
-   "cover": "",
+   "cover": "covers/the-obstacle-is-the-way.webp",
    "color": "#6B4C9A",
    "quote": "After you’ve distinguished between the things that are up to you and the things that aren’t (ta eph’hemin, ta ouk eph’hemin), and the break comes down to something you don’t control . . . you’ve got only one option: acceptance.",
    "score": 0.663,
@@ -1274,6 +1324,16 @@
    "quote": "Both senses are concerned with the information carried to us in vibrations, arriving as waves. Vision is concerned with vibrations of electromagnetic fields, hearing with vibrations of air.",
    "score": 0.67,
    "toHighlight": 12
+  },
+  {
+   "title": "Fundamentals",
+   "slug": "fundamentals",
+   "author": "Frank Wilczek",
+   "cover": "covers/fundamentals.jpg",
+   "color": "#7A2E4A",
+   "quote": "Vision is our main portal to the external world, considering both how much information it gathers and how much of our brain—anywhere from 20 percent to 50 percent, depending on how you count*—is devoted to processing that information.",
+   "score": 0.669,
+   "toHighlight": 9
   }
  ],
  "The Art of Thinking Clearly": [
@@ -1510,11 +1570,132 @@
    "title": "The Obstacle is the way",
    "slug": "the-obstacle-is-the-way",
    "author": "Ryan Holliday",
-   "cover": "",
+   "cover": "covers/the-obstacle-is-the-way.webp",
    "color": "#6B4C9A",
    "quote": "After you’ve distinguished between the things that are up to you and the things that aren’t (ta eph’hemin, ta ouk eph’hemin), and the break comes down to something you don’t control . . . you’ve got only one option: acceptance.",
    "score": 0.689,
    "toHighlight": 7
   }
- ]
+ ],
+ "Build": [
+  {
+   "title": "Rework",
+   "slug": "rework",
+   "author": "David Hansson and Jason Fried",
+   "cover": "covers/rework.jpg",
+   "color": "#8B6B2E",
+   "quote": "Anyone who takes a “we’ll figure out how to profit in the future” attitude to business is being ridiculous.",
+   "score": 0.689,
+   "toHighlight": 4
+  },
+  {
+   "title": "Million Dollar Weekend",
+   "slug": "million-dollar-weekend",
+   "author": "Noah Kagan",
+   "cover": "covers/million-dollar-weekend.jpg",
+   "color": "#7A2E4A",
+   "quote": "MVP is an important idea, but it leaves out something crucial: the customers. Who are you actually going to sell your minimum viable product to? And what if they don’t want the minimum?",
+   "score": 0.693,
+   "toHighlight": 4
+  },
+  {
+   "title": "Crossing the chasm",
+   "slug": "crossing-the-chasm",
+   "author": "Geoffrey Moore",
+   "cover": "covers/crossing-the-chasm.jpg",
+   "color": "#2E6B6B",
+   "quote": "You can succeed with the visionaries, and you can thereby get a reputation for being a high flyer with a hot product, but that is not ultimately where the dollars are.",
+   "score": 0.681,
+   "toHighlight": 4
+  }
+ ],
+ "Empires of Light": [
+  {
+   "title": "Faraday, Maxwell, and the Electromagnetic Field",
+   "slug": "faraday-maxwell-and-the-electromagnetic-field",
+   "author": "Nancy Forbes and Basil Mahon",
+   "cover": "covers/faraday-maxwell-and-the-electromagnetic-field.jpg",
+   "color": "#8B6B2E",
+   "quote": "Before 1800, all man-made electricity was static. The discovery of continuous currents came as a complete surprise and was in the best tradition of scientific serendipity.",
+   "score": 0.744,
+   "toHighlight": 0
+  }
+ ],
+ "High Output Management": [
+  {
+   "title": "The 4-Hour Workweek",
+   "slug": "the-4-hour-workweek",
+   "author": "Tim Ferriss",
+   "cover": "covers/the-4-hour-workweek.jpg",
+   "color": "#2F5A63",
+   "quote": "Principle number one is to refine rules and processes before adding people. Using people to leverage a refined process multiplies production; using people as a solution to a poor process multiplies problems.",
+   "score": 0.679,
+   "toHighlight": 14
+  },
+  {
+   "title": "Crossing the chasm",
+   "slug": "crossing-the-chasm",
+   "author": "Geoffrey Moore",
+   "cover": "covers/crossing-the-chasm.jpg",
+   "color": "#2E6B6B",
+   "quote": "The great benefit of adopting the discipline of profitability at the outset is that you do not have to learn it later on.",
+   "score": 0.667,
+   "toHighlight": 19
+  },
+  {
+   "title": "Only the Paranoid survive",
+   "slug": "only-the-paranoid-survive",
+   "author": "Andy Grove",
+   "cover": "covers/only-the-paranoid-survive.jpg",
+   "color": "#2E6B6B",
+   "quote": "Senior managers got to where they are by having been good at what they do. And over time they have learned to lead with their strengths.",
+   "score": 0.688,
+   "toHighlight": 7
+  }
+ ],
+ "Fundamentals": [
+  {
+   "title": "A beautiful question",
+   "slug": "a-beautiful-question",
+   "author": "Frank Wilczek",
+   "cover": "covers/a-beautiful-question.jpg",
+   "color": "#7A2E4A",
+   "quote": "Looking back in history, thanks to the finite speed of light, we may see, through their spectra, that the atoms in galaxies a long time ago, and far far away, behave in the same way as the atoms we see on Earth today.",
+   "score": 0.707,
+   "toHighlight": 13
+  },
+  {
+   "title": "Faraday, Maxwell, and the Electromagnetic Field",
+   "slug": "faraday-maxwell-and-the-electromagnetic-field",
+   "author": "Nancy Forbes and Basil Mahon",
+   "cover": "covers/faraday-maxwell-and-the-electromagnetic-field.jpg",
+   "color": "#8B6B2E",
+   "quote": "Here was a physical theory expressed solely by its equations, and it brought about a profound change in physicists’ concept of reality. The startlingly new idea was that reality exists on two levels.",
+   "score": 0.706,
+   "toHighlight": 10
+  },
+  {
+   "title": "An Immense World",
+   "slug": "an-immense-world",
+   "author": "Ed Wong",
+   "cover": "covers/an-immense-world.jpg",
+   "color": "#3A5C8B",
+   "quote": "I find these connections profound, in a way that makes me think differently about the act of sensing itself.",
+   "score": 0.669,
+   "toHighlight": 7
+  }
+ ],
+ "What is life": [
+  {
+   "title": "Fundamentals",
+   "slug": "fundamentals",
+   "author": "Frank Wilczek",
+   "cover": "covers/fundamentals.jpg",
+   "color": "#7A2E4A",
+   "quote": "By convention sweet is sweet, bitter is bitter, hot is hot, cold is cold, color is color; but in truth there are only atoms and the void. —Democritus, fragment (c. 400 BC) Democritus’s declaration is deeply challenging.",
+   "score": 0.667,
+   "toHighlight": 5
+  }
+ ],
+ "Numbers don't lie": []
 }
