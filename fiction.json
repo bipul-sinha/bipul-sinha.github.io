@@ -769,7 +769,8 @@
   "rating": 10,
   "color": "#7A4B2A",
   "highlights": [],
-  "cover": "covers/fiction/the-importance-of-being-earnest.jpg"
+  "cover": "covers/fiction/the-importance-of-being-earnest.jpg",
+  "cover_source": "manual"
  },
  {
   "kind": "fiction",
@@ -779,7 +780,8 @@
   "rating": 10,
   "color": "#6B2F3E",
   "highlights": [],
-  "cover": "covers/fiction/everyone-on-this-train-is-a-suspect.jpg"
+  "cover": "covers/fiction/everyone-on-this-train-is-a-suspect.jpg",
+  "cover_source": "manual"
  },
  {
   "kind": "fiction",
@@ -818,7 +820,9 @@
   "year": 2024,
   "rating": 9,
   "color": "#7A4B2A",
-  "highlights": []
+  "highlights": [],
+  "cover": "covers/fiction/rosemary-s-baby.jpg",
+  "cover_source": "manual"
  },
  {
   "kind": "fiction",
@@ -847,7 +851,9 @@
   "year": 2024,
   "rating": 9,
   "color": "#6E6A2E",
-  "highlights": []
+  "highlights": [],
+  "cover": "covers/fiction/the-killing-of-polly-carter.jpg",
+  "cover_source": "manual"
  },
  {
   "kind": "fiction",
@@ -867,7 +873,8 @@
   "rating": 9,
   "color": "#2F5A63",
   "highlights": [],
-  "cover": "covers/fiction/the-andromeda-strain.jpg"
+  "cover": "covers/fiction/the-andromeda-strain.jpg",
+  "cover_source": "manual"
  },
  {
   "kind": "fiction",
@@ -897,7 +904,8 @@
   "rating": 8,
   "color": "#2E5C45",
   "highlights": [],
-  "cover": "covers/fiction/a-meditation-on-murder.jpg"
+  "cover": "covers/fiction/a-meditation-on-murder.jpg",
+  "cover_source": "manual"
  },
  {
   "kind": "fiction",
@@ -906,7 +914,9 @@
   "year": 2024,
   "rating": 8,
   "color": "#7A4B2A",
-  "highlights": []
+  "highlights": [],
+  "cover": "covers/fiction/the-mystery-of-treefall-manor.jpg",
+  "cover_source": "manual"
  },
  {
   "kind": "fiction",
@@ -936,7 +946,8 @@
   "rating": 8,
   "color": "#2F5A63",
   "highlights": [],
-  "cover": "covers/fiction/relic.jpg"
+  "cover": "covers/fiction/relic.jpg",
+  "cover_source": "manual"
  },
  {
   "kind": "fiction",
@@ -955,7 +966,9 @@
   "year": 2024,
   "rating": 7,
   "color": "#2F5A63",
-  "highlights": []
+  "highlights": [],
+  "cover": "covers/fiction/the-forbidden-house.jpg",
+  "cover_source": "manual"
  },
  {
   "kind": "fiction",
@@ -994,7 +1007,9 @@
   "year": 2024,
   "rating": 7,
   "color": "#3B4A63",
-  "highlights": []
+  "highlights": [],
+  "cover": "covers/fiction/sun-sea-and-murder.jpg",
+  "cover_source": "manual"
  },
  {
   "kind": "fiction",
@@ -1003,7 +1018,9 @@
   "year": 2024,
   "rating": 7,
   "color": "#2F5A63",
-  "highlights": []
+  "highlights": [],
+  "cover": "covers/fiction/the-case-of-the-solid-key.jpg",
+  "cover_source": "manual"
  },
  {
   "kind": "fiction",
@@ -1022,7 +1039,9 @@
   "year": 2024,
   "rating": 7,
   "color": "#2F5A63",
-  "highlights": []
+  "highlights": [],
+  "cover": "covers/fiction/the-riddle-of-the-ravens.jpg",
+  "cover_source": "manual"
  },
  {
   "kind": "fiction",
@@ -1051,7 +1070,9 @@
   "year": 2024,
   "rating": 6,
   "color": "#2E5C45",
-  "highlights": []
+  "highlights": [],
+  "cover": "covers/fiction/cabaret-macabre.jpg",
+  "cover_source": "manual"
  },
  {
   "kind": "fiction",
@@ -1060,7 +1081,9 @@
   "year": 2024,
   "rating": 6,
   "color": "#3F5E7A",
-  "highlights": []
+  "highlights": [],
+  "cover": "covers/fiction/a-gentleman-s-murder.jpg",
+  "cover_source": "manual"
  },
  {
   "kind": "fiction",
