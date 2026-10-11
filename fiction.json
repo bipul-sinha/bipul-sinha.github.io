@@ -636,7 +636,8 @@
   "rating": 8,
   "color": "#6B2F3E",
   "highlights": [],
-  "cover": "covers/fiction/a-kiss-before-dying.jpg"
+  "cover": "covers/fiction/a-kiss-before-dying.jpg",
+  "cover_source": "manual"
  },
  {
   "kind": "fiction",
@@ -645,7 +646,9 @@
   "year": 2023,
   "rating": 8,
   "color": "#3F5E7A",
-  "highlights": []
+  "highlights": [],
+  "cover": "covers/fiction/murder-in-the-crooked-house.jpg",
+  "cover_source": "manual"
  },
  {
   "kind": "fiction",
@@ -654,7 +657,9 @@
   "year": 2023,
   "rating": 8,
   "color": "#6E6A2E",
-  "highlights": []
+  "highlights": [],
+  "cover": "covers/fiction/the-3-body-problem.jpg",
+  "cover_source": "manual"
  },
  {
   "kind": "fiction",
@@ -806,7 +811,9 @@
   "year": 2023,
   "rating": 2,
   "color": "#5B3A5E",
-  "highlights": []
+  "highlights": [],
+  "cover": "covers/fiction/scarab-murder-case.jpg",
+  "cover_source": "manual"
  },
  {
   "kind": "fiction",
