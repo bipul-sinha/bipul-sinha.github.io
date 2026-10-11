@@ -26,7 +26,9 @@
   "year": 2020,
   "rating": 10,
   "color": "#6E6A2E",
-  "highlights": []
+  "highlights": [],
+  "cover": "covers/fiction/come-to-paddington-fair.jpg",
+  "cover_source": "manual"
  },
  {
   "kind": "fiction",
@@ -56,7 +58,8 @@
   "rating": 8,
   "color": "#6E6A2E",
   "highlights": [],
-  "cover": "covers/fiction/the-problem-of-the-wire-cage.jpg"
+  "cover": "covers/fiction/the-problem-of-the-wire-cage.jpg",
+  "cover_source": "manual"
  },
  {
   "kind": "fiction",
@@ -65,7 +68,9 @@
   "year": 2020,
   "rating": 8,
   "color": "#5B3A5E",
-  "highlights": []
+  "highlights": [],
+  "cover": "covers/fiction/the-seventh-hypothesis.jpg",
+  "cover_source": "manual"
  },
  {
   "kind": "fiction",
@@ -74,7 +79,9 @@
   "year": 2020,
   "rating": 8,
   "color": "#6E6A2E",
-  "highlights": []
+  "highlights": [],
+  "cover": "covers/fiction/the-demon-of-dartmoor.jpg",
+  "cover_source": "manual"
  },
  {
   "kind": "fiction",
@@ -104,7 +111,8 @@
   "rating": 6,
   "color": "#5B3A5E",
   "highlights": [],
-  "cover": "covers/fiction/crooked-house.jpg"
+  "cover": "covers/fiction/crooked-house.jpg",
+  "cover_source": "manual"
  },
  {
   "kind": "fiction",
@@ -134,7 +142,8 @@
   "rating": 6,
   "color": "#3B4A63",
   "highlights": [],
-  "cover": "covers/fiction/death-invites-you.jpg"
+  "cover": "covers/fiction/death-invites-you.jpg",
+  "cover_source": "manual"
  },
  {
   "kind": "fiction",
@@ -143,7 +152,9 @@
   "year": 2020,
   "rating": 6,
   "color": "#7A4B2A",
-  "highlights": []
+  "highlights": [],
+  "cover": "covers/fiction/the-tiger-s-head.jpg",
+  "cover_source": "manual"
  },
  {
   "kind": "fiction",
@@ -153,7 +164,8 @@
   "rating": 6,
   "color": "#2F5A63",
   "highlights": [],
-  "cover": "covers/fiction/tour-de-force.jpg"
+  "cover": "covers/fiction/tour-de-force.jpg",
+  "cover_source": "manual"
  },
  {
   "kind": "fiction",
@@ -163,7 +175,8 @@
   "rating": 6,
   "color": "#5C6B3A",
   "highlights": [],
-  "cover": "covers/fiction/the-burning-court.jpg"
+  "cover": "covers/fiction/the-burning-court.jpg",
+  "cover_source": "manual"
  },
  {
   "kind": "fiction",
@@ -182,7 +195,9 @@
   "year": 2020,
   "rating": 6,
   "color": "#7A4B2A",
-  "highlights": []
+  "highlights": [],
+  "cover": "covers/fiction/cat-of-many-tails.jpg",
+  "cover_source": "manual"
  },
  {
   "kind": "fiction",
@@ -192,7 +207,8 @@
   "rating": 6,
   "color": "#7A4B2A",
   "highlights": [],
-  "cover": "covers/fiction/the-footprints-of-satan.jpg"
+  "cover": "covers/fiction/the-footprints-of-satan.jpg",
+  "cover_source": "manual"
  },
  {
   "kind": "fiction",
@@ -201,7 +217,9 @@
   "year": 2020,
   "rating": 4,
   "color": "#6B2F3E",
-  "highlights": []
+  "highlights": [],
+  "cover": "covers/fiction/nine-times-nine.jpg",
+  "cover_source": "manual"
  },
  {
   "kind": "fiction",
