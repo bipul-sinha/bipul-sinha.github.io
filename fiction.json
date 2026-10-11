@@ -1295,7 +1295,8 @@
   "rating": 10,
   "color": "#2F5A63",
   "highlights": [],
-  "cover": "covers/fiction/pride-and-prejudice.jpg"
+  "cover": "covers/fiction/pride-and-prejudice.jpg",
+  "cover_source": "manual"
  },
  {
   "kind": "fiction",
@@ -1305,7 +1306,8 @@
   "rating": 10,
   "color": "#5B3A5E",
   "highlights": [],
-  "cover": "covers/fiction/day-by-day-armageddon.jpg"
+  "cover": "covers/fiction/day-by-day-armageddon.jpg",
+  "cover_source": "manual"
  },
  {
   "kind": "fiction",
@@ -1335,7 +1337,8 @@
   "rating": 9,
   "color": "#2E5C45",
   "highlights": [],
-  "cover": "covers/fiction/the-fourth-protocol.jpg"
+  "cover": "covers/fiction/the-fourth-protocol.jpg",
+  "cover_source": "manual"
  },
  {
   "kind": "fiction",
@@ -1375,7 +1378,8 @@
   "rating": 9,
   "color": "#7A4B2A",
   "highlights": [],
-  "cover": "covers/fiction/the-negotiator.jpg"
+  "cover": "covers/fiction/the-negotiator.jpg",
+  "cover_source": "manual"
  },
  {
   "kind": "fiction",
@@ -1404,7 +1408,9 @@
   "year": 2025,
   "rating": 8,
   "color": "#7A4B2A",
-  "highlights": []
+  "highlights": [],
+  "cover": "covers/fiction/labyrinth-house-murder.jpg",
+  "cover_source": "manual"
  },
  {
   "kind": "fiction",
@@ -1414,7 +1420,8 @@
   "rating": 8,
   "color": "#6B2F3E",
   "highlights": [],
-  "cover": "covers/fiction/the-secret-of-secrets.jpg"
+  "cover": "covers/fiction/the-secret-of-secrets.jpg",
+  "cover_source": "manual"
  },
  {
   "kind": "fiction",
@@ -1424,7 +1431,8 @@
   "rating": 8,
   "color": "#5C6B3A",
   "highlights": [],
-  "cover": "covers/fiction/no-comeback.jpg"
+  "cover": "covers/fiction/no-comeback.jpg",
+  "cover_source": "manual"
  },
  {
   "kind": "fiction",
@@ -1434,7 +1442,8 @@
   "rating": 8,
   "color": "#2F5A63",
   "highlights": [],
-  "cover": "covers/fiction/sphere.jpg"
+  "cover": "covers/fiction/sphere.jpg",
+  "cover_source": "manual"
  },
  {
   "kind": "fiction",
@@ -1443,7 +1452,9 @@
   "year": 2025,
   "rating": 8,
   "color": "#8A4B4B",
-  "highlights": []
+  "highlights": [],
+  "cover": "covers/fiction/the-templar-legacy.jpg",
+  "cover_source": "manual"
  },
  {
   "kind": "fiction",
@@ -1462,7 +1473,9 @@
   "year": 2025,
   "rating": 7,
   "color": "#8A4B4B",
-  "highlights": []
+  "highlights": [],
+  "cover": "covers/fiction/the-indian-rope-trick-and-other-mysteries.jpg",
+  "cover_source": "manual"
  },
  {
   "kind": "fiction",
@@ -1481,6 +1494,8 @@
   "year": 2025,
   "rating": 7,
   "color": "#2F5A63",
-  "highlights": []
+  "highlights": [],
+  "cover": "covers/fiction/it-s-about-impossible-crime.jpg",
+  "cover_source": "manual"
  }
 ]
