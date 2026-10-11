@@ -672,6 +672,16 @@
    "quote": "Soon our testers reported in: It went fine. Everything’s up and running! But it took about an hour to install. We winced. Crap. An hour was way too long. So we dug into the reports—what was taking so long? What were we missing?",
    "score": 0.663,
    "toHighlight": 6
+  },
+  {
+   "title": "Superpumped",
+   "slug": "superpumped",
+   "author": "Mike Isaac",
+   "cover": "covers/superpumped.jpg",
+   "color": "#2E6B6B",
+   "quote": "“We knew that Lyft was going to raise a ton of money,” Kalanick once admitted on the record, bragging about his desire to cripple his competitor.",
+   "score": 0.666,
+   "toHighlight": 2
   }
  ],
  "Only the Paranoid survive": [
@@ -1761,6 +1771,18 @@
    "quote": "Time is the drummer to which change marches. Time is what clocks measure, and everything that changes is a clock.",
    "score": 0.661,
    "toHighlight": 0
+  }
+ ],
+ "Superpumped": [
+  {
+   "title": "The Algorithm",
+   "slug": "the-algorithm",
+   "author": "Jon McNeill",
+   "cover": "covers/the-algorithm.jpg",
+   "color": "#6B4C9A",
+   "quote": "From Tesla’s perspective, insurance had the potential to deliver almost as much revenue every year (around $1,500) as the profit we made on selling the car once ($1,500–$2,000).",
+   "score": 0.666,
+   "toHighlight": 7
   }
  ]
 }
