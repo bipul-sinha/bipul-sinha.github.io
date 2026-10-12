@@ -1725,14 +1725,14 @@
    "toHighlight": 1
   },
   {
-   "title": "Crossing the chasm",
-   "slug": "crossing-the-chasm",
-   "author": "Geoffrey Moore",
-   "cover": "covers/crossing-the-chasm.jpg",
-   "color": "#2E6B6B",
-   "quote": "The great benefit of adopting the discipline of profitability at the outset is that you do not have to learn it later on.",
-   "score": 0.667,
-   "toHighlight": 19
+   "title": "Getting to Yes",
+   "slug": "getting-to-yes",
+   "author": "Roger Fisher , William L. Ury",
+   "cover": "covers/getting-to-yes.jpg",
+   "color": "#6B5A2E",
+   "quote": "Don’t deduce their intentions from your fears. People tend to assume that whatever they fear, the other side intends to do. Don’t blame them for your problem. It is tempting to hold the other side responsible for your problem.",
+   "score": 0.669,
+   "toHighlight": 2
   }
  ],
  "Fundamentals": [
@@ -1899,6 +1899,38 @@
    "quote": "Principle number one is to refine rules and processes before adding people. Using people to leverage a refined process multiplies production; using people as a solution to a poor process multiplies problems.",
    "score": 0.674,
    "toHighlight": 14
+  }
+ ],
+ "Getting to Yes": [
+  {
+   "title": "The Happiness Hypothesis",
+   "slug": "the-happiness-hypothesis",
+   "author": "",
+   "cover": "covers/the-happiness-hypothesis.jpg",
+   "color": "#2E6B6B",
+   "quote": "George Loewenstein and his colleagues at Carnegie Mellon found a way to study the process by giving pairs of research subjects a real legal case to read (about a motorcycle accident in Texas), assigning one subject to play the defendant…",
+   "score": 0.693,
+   "toHighlight": 4
+  },
+  {
+   "title": "The Art of Thinking Clearly",
+   "slug": "the-art-of-thinking-clearly",
+   "author": "Rolf Dobelli",
+   "cover": "covers/the-art-of-thinking-clearly.jpg",
+   "color": "#6B4C9A",
+   "quote": "Because we are so confident of our beliefs, we experience three reactions when someone fails to share our views. Response 1: Assumption of ignorance. The other party clearly lacks the necessary information.",
+   "score": 0.678,
+   "toHighlight": 18
+  },
+  {
+   "title": "The Coddling of American Mind",
+   "slug": "the-coddling-of-american-mind",
+   "author": "Greg Lukianoff and Jonathan Haidt",
+   "cover": "covers/the-coddling-of-american-mind.jpg",
+   "color": "#2E5C45",
+   "quote": "If you want to motivate people to support a new policy or join a movement in the name of justice, you need to activate in them a clear perception, or intuition, that someone didn’t get what he or she deserved (distributive injustice) or…",
+   "score": 0.683,
+   "toHighlight": 9
   }
  ]
 }
