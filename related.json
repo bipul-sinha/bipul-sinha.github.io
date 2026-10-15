@@ -1497,6 +1497,16 @@
    "quote": "Crude oil is, alongside its sister fuel natural gas, the greatest energy force of the past century. If steel is the skeleton of the modern world and concrete its flesh and copper its veins, then oil is the food that sustains us.",
    "score": 0.682,
    "toHighlight": 7
+  },
+  {
+   "title": "How to avoid a climate disaster",
+   "slug": "how-to-avoid-a-climate-disaster",
+   "author": "Bill Gates",
+   "cover": "covers/how-to-avoid-a-climate-disaster.jpg",
+   "color": "#7A2E4A",
+   "quote": "It’s rare that you can boil the solution for such a complex subject down into a single sentence.",
+   "score": 0.66,
+   "toHighlight": 17
   }
  ],
  "Bullish case for Bitcoin": [
@@ -1931,6 +1941,18 @@
    "quote": "If you want to motivate people to support a new policy or join a movement in the name of justice, you need to activate in them a clear perception, or intuition, that someone didn’t get what he or she deserved (distributive injustice) or…",
    "score": 0.683,
    "toHighlight": 9
+  }
+ ],
+ "How to avoid a climate disaster": [
+  {
+   "title": "How the world really works",
+   "slug": "how-the-world-really-works",
+   "author": "Vaclav Smil",
+   "cover": "covers/how-the-world-really-works.jpg",
+   "color": "#2E4A6B",
+   "quote": "The daily adult per capita intake averages almost 1 kilogram of O2. For the global population, that translates to an annual intake of about 2.7 billion tons of oxygen a year, an utterly insignificant fraction (0.00023 percent) of the…",
+   "score": 0.66,
+   "toHighlight": 5
   }
  ]
 }
