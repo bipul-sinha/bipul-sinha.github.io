@@ -737,14 +737,14 @@
    "toHighlight": 4
   },
   {
-   "title": "Build",
-   "slug": "build",
-   "author": "Tony Fadell",
-   "cover": "covers/build.jpg",
-   "color": "#8B6B2E",
-   "quote": "Not everyone on the team agreed with me. In those moments it’s your responsibility as a manager or a leader to explain that this isn’t a democracy, that this is an opinion-driven decision and you’re not going to reach the right choice by…",
-   "score": 0.662,
-   "toHighlight": 0
+   "title": "No rules rules",
+   "slug": "no-rules-rules",
+   "author": "Erin Meyer and Reed Hastings",
+   "cover": "covers/no-rules-rules.jpg",
+   "color": "#2E4A6B",
+   "quote": "If you’re serious about talent density, you have to get in the habit of doing something a lot harder: firing a good employee when you think you can get a great one.",
+   "score": 0.678,
+   "toHighlight": 15
   }
  ],
  "Read Write Own": [
@@ -1205,6 +1205,16 @@
    "toHighlight": 7
   },
   {
+   "title": "No rules rules",
+   "slug": "no-rules-rules",
+   "author": "Erin Meyer and Reed Hastings",
+   "cover": "covers/no-rules-rules.jpg",
+   "color": "#2E4A6B",
+   "quote": "Once or twice a year, at our product meetings, I ask all of our managers to complete a simple form outlining their bets from the last few years, divided into three categories: bets that went well, bets that didn’t go well, and open bets.",
+   "score": 0.672,
+   "toHighlight": 14
+  },
+  {
    "title": "Build",
    "slug": "build",
    "author": "Tony Fadell",
@@ -1213,16 +1223,6 @@
    "quote": "Soon our testers reported in: It went fine. Everything’s up and running! But it took about an hour to install. We winced. Crap. An hour was way too long. So we dug into the reports—what was taking so long? What were we missing?",
    "score": 0.662,
    "toHighlight": 6
-  },
-  {
-   "title": "Rework",
-   "slug": "rework",
-   "author": "David Hansson and Jason Fried",
-   "cover": "covers/rework.jpg",
-   "color": "#8B6B2E",
-   "quote": "Anyone who takes a “we’ll figure out how to profit in the future” attitude to business is being ridiculous.",
-   "score": 0.662,
-   "toHighlight": 4
   }
  ],
  "Diary of CEO": [
@@ -1735,14 +1735,14 @@
    "toHighlight": 1
   },
   {
-   "title": "Getting to Yes",
-   "slug": "getting-to-yes",
-   "author": "Roger Fisher , William L. Ury",
-   "cover": "covers/getting-to-yes.jpg",
-   "color": "#6B5A2E",
-   "quote": "Don’t deduce their intentions from your fears. People tend to assume that whatever they fear, the other side intends to do. Don’t blame them for your problem. It is tempting to hold the other side responsible for your problem.",
-   "score": 0.669,
-   "toHighlight": 2
+   "title": "No rules rules",
+   "slug": "no-rules-rules",
+   "author": "Erin Meyer and Reed Hastings",
+   "cover": "covers/no-rules-rules.jpg",
+   "color": "#2E4A6B",
+   "quote": "If you’re serious about talent density, you have to get in the habit of doing something a lot harder: firing a good employee when you think you can get a great one.",
+   "score": 0.678,
+   "toHighlight": 15
   }
  ],
  "Fundamentals": [
@@ -1953,6 +1953,38 @@
    "quote": "The daily adult per capita intake averages almost 1 kilogram of O2. For the global population, that translates to an annual intake of about 2.7 billion tons of oxygen a year, an utterly insignificant fraction (0.00023 percent) of the…",
    "score": 0.66,
    "toHighlight": 5
+  }
+ ],
+ "No rules rules": [
+  {
+   "title": "Rework",
+   "slug": "rework",
+   "author": "David Hansson and Jason Fried",
+   "cover": "covers/rework.jpg",
+   "color": "#8B6B2E",
+   "quote": "Anyone who takes a “we’ll figure out how to profit in the future” attitude to business is being ridiculous.",
+   "score": 0.682,
+   "toHighlight": 4
+  },
+  {
+   "title": "High Output Management",
+   "slug": "high-output-management",
+   "author": "Andy Grove",
+   "cover": "covers/high-output-management.jpg",
+   "color": "#6B5A2E",
+   "quote": "“CEOs always act on leading indicators of good news, but only act on lagging indicators of bad news.” “In order to build anything great, you have to be an optimist, because by definition you are trying to do something that most people…",
+   "score": 0.678,
+   "toHighlight": 5
+  },
+  {
+   "title": "Crossing the chasm",
+   "slug": "crossing-the-chasm",
+   "author": "Geoffrey Moore",
+   "cover": "covers/crossing-the-chasm.jpg",
+   "color": "#2E6B6B",
+   "quote": "You can succeed with the visionaries, and you can thereby get a reputation for being a high flyer with a hot product, but that is not ultimately where the dollars are.",
+   "score": 0.678,
+   "toHighlight": 4
   }
  ]
 }
