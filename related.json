@@ -1106,7 +1106,18 @@
    "toHighlight": 17
   }
  ],
- "The Body": [],
+ "The Body": [
+  {
+   "title": "The song of the cell",
+   "slug": "the-song-of-the-cell",
+   "author": "Siddharth Mukherjee",
+   "cover": "",
+   "color": "#6B4C9A",
+   "quote": "And blood? It is a conglomerate of organs, a system of systems. It has built training camps for its armies (lymph nodes), highways and alleys to move its cells (blood vessels).",
+   "score": 0.665,
+   "toHighlight": 6
+  }
+ ],
  "Same as ever": [
   {
    "title": "The almanack of Naval Ravikant",
@@ -1779,6 +1790,16 @@
  ],
  "What is life": [
   {
+   "title": "The song of the cell",
+   "slug": "the-song-of-the-cell",
+   "author": "Siddharth Mukherjee",
+   "cover": "",
+   "color": "#6B4C9A",
+   "quote": "Every cell on Earth—which is to say every unit of every living being—belongs to one of three entirely distinctive domains, or branches, of living organisms. The first branch comprises bacteria.",
+   "score": 0.7,
+   "toHighlight": 1
+  },
+  {
    "title": "Fundamentals",
    "slug": "fundamentals",
    "author": "Frank Wilczek",
@@ -2009,7 +2030,49 @@
    "quote": "If you eat a doughnut, for example, the body has to decide what to do with the calories in that doughnut. At the risk of oversimplifying a bit, the carbohydrate from our doughnut has two possible fates.",
    "score": 0.71,
    "toHighlight": 3
+  },
+  {
+   "title": "The song of the cell",
+   "slug": "the-song-of-the-cell",
+   "author": "Siddharth Mukherjee",
+   "cover": "",
+   "color": "#6B4C9A",
+   "quote": "The liver, pancreas, brain, and kidney are four of the principal organs of homeostasis. The pancreatic beta cells control metabolic homeostasis through the hormone insulin.",
+   "score": 0.674,
+   "toHighlight": 13
   }
  ],
- "The Metaverse": []
+ "The Metaverse": [],
+ "The song of the cell": [
+  {
+   "title": "What is life",
+   "slug": "what-is-life",
+   "author": "Paul Nurse",
+   "cover": "covers/what-is-life.jpg",
+   "color": "#2E4A6B",
+   "quote": "Living systems are often less efficient and rationally constructed than control circuits designed intelligently by human beings, another reason why analogies between biology and computing can only go so far.",
+   "score": 0.7,
+   "toHighlight": 4
+  },
+  {
+   "title": "Why we get sick",
+   "slug": "why-we-get-sick",
+   "author": "Benjamin Bikman",
+   "cover": "covers/why-we-get-sick.jpg",
+   "color": "#8B3A2E",
+   "quote": "Though it’s called “low density,” LDL cholesterol actually comes in various sizes and densities.",
+   "score": 0.674,
+   "toHighlight": 1
+  },
+  {
+   "title": "The Body",
+   "slug": "the-body",
+   "author": "Bill Bryson",
+   "cover": "covers/the-body.jpg",
+   "color": "#3A5C8B",
+   "quote": "Altogether the liver takes part in some five hundred metabolic processes. It is essentially the body’s laboratory. Right now, about a quarter of all your blood is in your liver.",
+   "score": 0.665,
+   "toHighlight": 9
+  }
+ ]
 }
