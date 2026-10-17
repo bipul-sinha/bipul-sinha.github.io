@@ -2010,6 +2010,16 @@
  ],
  "Outlive": [
   {
+   "title": "Metabolical",
+   "slug": "metabolical",
+   "author": "Robert Lustig",
+   "cover": "covers/metabolical.jpg",
+   "color": "#2E6B6B",
+   "quote": "All you need to know are two precepts, six words total: 1) protect the liver, 2) feed the gut. Those foods that satisfy both precepts are healthy; those that do neither are poison, and those that do one or the other are bad (but less bad)",
+   "score": 0.72,
+   "toHighlight": 0
+  },
+  {
    "title": "Why we get sick",
    "slug": "why-we-get-sick",
    "author": "Benjamin Bikman",
@@ -2021,6 +2031,16 @@
   }
  ],
  "Why we get sick": [
+  {
+   "title": "Metabolical",
+   "slug": "metabolical",
+   "author": "Robert Lustig",
+   "cover": "covers/metabolical.jpg",
+   "color": "#2E6B6B",
+   "quote": "Look at HDL. If it’s over 60, it almost doesn’t matter what the other fractions are, as this is a sign of good cardiovascular health.",
+   "score": 0.728,
+   "toHighlight": 10
+  },
   {
    "title": "Outlive",
    "slug": "outlive",
@@ -2073,6 +2093,28 @@
    "quote": "Altogether the liver takes part in some five hundred metabolic processes. It is essentially the body’s laboratory. Right now, about a quarter of all your blood is in your liver.",
    "score": 0.665,
    "toHighlight": 9
+  }
+ ],
+ "Metabolical": [
+  {
+   "title": "Outlive",
+   "slug": "outlive",
+   "author": "Peter Attia",
+   "cover": "covers/outlive.jpg",
+   "color": "#2E5C45",
+   "quote": "If you eat a doughnut, for example, the body has to decide what to do with the calories in that doughnut. At the risk of oversimplifying a bit, the carbohydrate from our doughnut has two possible fates.",
+   "score": 0.72,
+   "toHighlight": 3
+  },
+  {
+   "title": "Why we get sick",
+   "slug": "why-we-get-sick",
+   "author": "Benjamin Bikman",
+   "cover": "covers/why-we-get-sick.jpg",
+   "color": "#8B3A2E",
+   "quote": "Unfortunately, the liver has very limited options for metabolizing fructose and alcohol; much of what isn’t used for energy production is converted to fat.",
+   "score": 0.728,
+   "toHighlight": 8
   }
  ]
 }
