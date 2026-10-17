@@ -413,6 +413,16 @@
  ],
  "Competing Against Luck": [
   {
+   "title": "Understanding Michael Porter",
+   "slug": "understanding-michael-porter",
+   "author": "Joan Magretta",
+   "cover": "covers/understanding-michael-porter.jpg",
+   "color": "#6B5A2E",
+   "quote": "Porter offers a more nuanced and complex view of what actually happens when companies compete to be the best.",
+   "score": 0.69,
+   "toHighlight": 4
+  },
+  {
    "title": "Crossing the chasm",
    "slug": "crossing-the-chasm",
    "author": "Geoffrey Moore",
@@ -431,16 +441,6 @@
    "quote": "When you let customers outgrow you, you’ll most likely wind up with a product that’s basic—and that’s fine. Small, simple, basic needs are constant. There’s an endless supply of customers who need exactly that.",
    "score": 0.668,
    "toHighlight": 11
-  },
-  {
-   "title": "Build",
-   "slug": "build",
-   "author": "Tony Fadell",
-   "cover": "covers/build.jpg",
-   "color": "#8B6B2E",
-   "quote": "There is a different model that aligns short-term business goals without neglecting long-term customer relationships. It’s based on vested commissions.",
-   "score": 0.669,
-   "toHighlight": 12
   }
  ],
  "The Righteous Mind": [
@@ -717,6 +717,16 @@
  ],
  "Only the Paranoid survive": [
   {
+   "title": "Understanding Michael Porter",
+   "slug": "understanding-michael-porter",
+   "author": "Joan Magretta",
+   "cover": "covers/understanding-michael-porter.jpg",
+   "color": "#6B5A2E",
+   "quote": "Some practical implications 1. Vying to be the best is an intuitive but self-destructive approach to competition. 2. There is no honor in size or growth if those are profitless. Competition is about profits, not market share. 3.",
+   "score": 0.7,
+   "toHighlight": 19
+  },
+  {
    "title": "High Output Management",
    "slug": "high-output-management",
    "author": "Andy Grove",
@@ -735,16 +745,6 @@
    "quote": "You can succeed with the visionaries, and you can thereby get a reputation for being a high flyer with a hot product, but that is not ultimately where the dollars are.",
    "score": 0.688,
    "toHighlight": 4
-  },
-  {
-   "title": "No rules rules",
-   "slug": "no-rules-rules",
-   "author": "Erin Meyer and Reed Hastings",
-   "cover": "covers/no-rules-rules.jpg",
-   "color": "#2E4A6B",
-   "quote": "If you’re serious about talent density, you have to get in the habit of doing something a lot harder: firing a good employee when you think you can get a great one.",
-   "score": 0.678,
-   "toHighlight": 15
   }
  ],
  "Read Write Own": [
@@ -913,6 +913,16 @@
  ],
  "Crossing the chasm": [
   {
+   "title": "Understanding Michael Porter",
+   "slug": "understanding-michael-porter",
+   "author": "Joan Magretta",
+   "cover": "covers/understanding-michael-porter.jpg",
+   "color": "#6B5A2E",
+   "quote": "Some practical implications 1. Vying to be the best is an intuitive but self-destructive approach to competition. 2. There is no honor in size or growth if those are profitless. Competition is about profits, not market share. 3.",
+   "score": 0.712,
+   "toHighlight": 19
+  },
+  {
    "title": "Rework",
    "slug": "rework",
    "author": "David Hansson and Jason Fried",
@@ -931,16 +941,6 @@
    "quote": "Every once in a while, an up- or down-leg goes on for a long time and/or to a great extreme and people start to say “this time it’s different.” They cite the changes in geopolitics, institutions, technology or behavior that have rendered…",
    "score": 0.682,
    "toHighlight": 11
-  },
-  {
-   "title": "Million Dollar Weekend",
-   "slug": "million-dollar-weekend",
-   "author": "Noah Kagan",
-   "cover": "covers/million-dollar-weekend.jpg",
-   "color": "#7A2E4A",
-   "quote": "MVP is an important idea, but it leaves out something crucial: the customers. Who are you actually going to sell your minimum viable product to? And what if they don’t want the minimum?",
-   "score": 0.696,
-   "toHighlight": 4
   }
  ],
  "Faraday, Maxwell, and the Electromagnetic Field": [
@@ -2230,6 +2230,38 @@
    "quote": "Though it’s called “low density,” LDL cholesterol actually comes in various sizes and densities.",
    "score": 0.727,
    "toHighlight": 1
+  }
+ ],
+ "Understanding Michael Porter": [
+  {
+   "title": "Crossing the chasm",
+   "slug": "crossing-the-chasm",
+   "author": "Geoffrey Moore",
+   "cover": "covers/crossing-the-chasm.jpg",
+   "color": "#2E6B6B",
+   "quote": "The great benefit of adopting the discipline of profitability at the outset is that you do not have to learn it later on.",
+   "score": 0.712,
+   "toHighlight": 19
+  },
+  {
+   "title": "Competing Against Luck",
+   "slug": "competing-against-luck",
+   "author": "Clayton Christensen and others",
+   "cover": "covers/competing-against-luck.jpg",
+   "color": "#8B3A2E",
+   "quote": "When a company builds strong customer relationships, it becomes tempting to sell them more products, since the added cost is low and the profit is tempting.",
+   "score": 0.69,
+   "toHighlight": 12
+  },
+  {
+   "title": "The most important thing",
+   "slug": "the-most-important-thing",
+   "author": "Howard Marks",
+   "cover": "covers/the-most-important-thing.jpg",
+   "color": "#6B5A2E",
+   "quote": "Investing is the greatest business in the world because you never have to swing. You stand at the plate; the pitcher throws you \"General Motors at 47! U.S. Steel at 39!\" And nobody calls a strike on you.",
+   "score": 0.683,
+   "toHighlight": 13
   }
  ]
 }
