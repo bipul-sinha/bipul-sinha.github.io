@@ -497,9 +497,9 @@
   @media (max-width:640px){
     .daily-stage.rain .daily-card{aspect-ratio:1100/820}
     .daily-stage.rain .daily-leaf{padding-top:9%}
-    .daily-stage.rain .daily-leaf::before{background:linear-gradient(to bottom,rgba(6,20,30,0.82),rgba(6,20,30,0.7) 62%,rgba(6,20,30,0.15) 88%,rgba(6,20,30,0))}
+    .daily-stage.rain .daily-leaf::before{background:linear-gradient(to bottom,rgba(6,20,30,0.9),rgba(6,20,30,0.82) 62%,rgba(6,20,30,0.4) 88%,rgba(6,20,30,0.1))}
   }
-  .daily-stage.rain .daily-leaf::before{content:"";position:absolute;inset:0;background:radial-gradient(ellipse 55% 45% at 50% 24%,rgba(6,20,30,0.55),rgba(6,20,30,0.15) 70%,rgba(6,20,30,0))}
+  .daily-stage.rain .daily-leaf::before{content:"";position:absolute;inset:0;background:radial-gradient(ellipse 60% 50% at 50% 26%,rgba(6,20,30,0.7),rgba(6,20,30,0.35) 70%,rgba(6,20,30,0.1))}
   .daily-stage.rain .daily-leaf>*{position:relative}
   .daily-stage.rain .daily-highlight{color:#F6E7CB;text-shadow:0 1px 10px rgba(0,0,0,0.6)}
   .daily-stage.rain .daily-quote-mark{color:#7DD3CF;opacity:.9}
@@ -1837,9 +1837,31 @@ function fillDailyLeaf(el, entry){
   a.style.display = entry.author ? '' : 'none';
 }
 
+// Banner pool: the original rain scene plus the landmark banners. One is picked per page load.
+const DAILY_BANNERS = [
+  { desktop: 'book-panel/rain-desktop.jpg', mobile: 'book-panel/rain-mobile.jpg' },
+  ...Array.from({ length: 10 }, (_, i) => {
+    const f = `book-panel/banners/banner-${String(i + 1).padStart(2, '0')}.jpg`;
+    return { desktop: f, mobile: f };
+  })
+];
+let dailyBannerIdx = Math.floor(Math.random() * DAILY_BANNERS.length);
+
+function bannerFile(i){
+  const b = DAILY_BANNERS[i];
+  return abs(dailyMobileQuery.matches ? b.mobile : b.desktop);
+}
+
+function pickBannerIndex(exclude){
+  if(DAILY_BANNERS.length === 1) return 0;
+  let i;
+  do { i = Math.floor(Math.random() * DAILY_BANNERS.length); } while (i === exclude);
+  return i;
+}
+
 function applyDailyBackground(){
-  const file = dailyMobileQuery.matches ? 'book-panel/rain-mobile.jpg' : 'book-panel/rain-desktop.jpg';
-  dailyLeaves.forEach(el => { el.style.backgroundImage = `url('${abs(file)}')`; });
+  const file = bannerFile(dailyBannerIdx);
+  dailyLeaves.forEach(el => { el.style.backgroundImage = `url('${file}')`; });
 }
 dailyMobileQuery.addEventListener('change', () => {
   applyDailyBackground();
@@ -1866,6 +1888,11 @@ document.getElementById('dailyRandomBtn').addEventListener('click', ()=>{
   const next = pickDailyIndex(dailyIdx);
   const front = dailyLeaves[dailyFront];
   const back = dailyLeaves[1 - dailyFront];
+  // New highlight also gets a new banner, set on the incoming leaf before it fades in
+  dailyBannerIdx = pickBannerIndex(dailyBannerIdx);
+  const nextFile = bannerFile(dailyBannerIdx);
+  new Image().src = nextFile; // warm the cache so the fade doesn't show an empty leaf
+  back.style.backgroundImage = `url('${nextFile}')`;
   fillDailyLeaf(back, dailyPool[next]);
   back.setAttribute('aria-hidden', 'false');
   front.setAttribute('aria-hidden', 'true');
