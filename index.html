@@ -127,14 +127,9 @@
   .hl-row:last-child{padding-bottom:0}
   .hl-row .num{
     display:inline-block;font-family:'Rubik',sans-serif;font-weight:800;
-    font-size:22px;letter-spacing:-0.01em;color:var(--accent);
-    font-variant-numeric:tabular-nums;
+    font-size:28px;letter-spacing:-0.01em;color:var(--accent);
+    margin-bottom:12px;
   }
-  .hl-row .hl-top{display:flex;align-items:center;gap:10px;margin-bottom:12px}
-  .hl-row .perma{display:inline-grid;place-items:center;width:28px;height:28px;border-radius:7px;color:var(--faint);text-decoration:none;opacity:.7;transition:color .15s,opacity .15s,background .15s}
-  .hl-row .perma:hover{color:var(--accent);opacity:1;background:rgba(20,94,102,0.1)}
-  .hl-row .perma:focus-visible{outline:2px solid var(--accent);outline-offset:2px}
-  .hl-row .perma svg{width:16px;height:16px}
   .hl-row .hl-text p{
     margin:0 0 14px;font-family:'Google Sans Flex','Google Sans','Rubik',sans-serif;font-weight:400;
     font-size:16.5px;line-height:1.7;color:var(--ink);text-align:left;
@@ -146,21 +141,6 @@
   .hl-row .hl-text figure[data-after]{margin:22px 0}
   .hl-row .hl-text figure[data-after] img{width:100%}
   .hl-row .hl-text figcaption{font-family:'Rubik',sans-serif;font-style:normal;font-size:13px;color:var(--muted);line-height:1.5}
-
-  /* Number matrix above a book's highlights; only for books with 11 or more numbered highlights */
-  .hl-matrix{max-width:640px;margin-top:26px;padding:18px 0 20px;border-top:1px solid var(--line);border-bottom:1px solid var(--line)}
-  .hl-matrix[hidden]{display:none}
-  .hl-matrix-h{display:flex;justify-content:space-between;align-items:baseline;gap:12px;margin:0 0 12px;font-size:12px;letter-spacing:.1em;text-transform:uppercase;color:var(--muted);font-weight:500}
-  .hl-matrix-h span:last-child{letter-spacing:0;text-transform:none;font-variant-numeric:tabular-nums}
-  .hl-matrix-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(38px,1fr));gap:6px}
-  .hl-matrix-grid a{aspect-ratio:1;display:grid;place-items:center;border:1px solid var(--line);border-radius:7px;background:var(--surface);text-decoration:none;font-size:13.5px;font-weight:500;font-variant-numeric:tabular-nums;color:var(--muted);transition:background .15s,color .15s,border-color .15s}
-  .hl-matrix-grid a:hover{color:var(--ink);border-color:var(--accent)}
-  .hl-matrix-grid a.is-here{background:var(--accent);border-color:var(--accent);color:var(--surface);font-weight:600}
-  .hl-matrix-grid a:focus-visible{outline:2px solid var(--accent);outline-offset:2px}
-  @media (max-width:520px){
-    .hl-matrix-grid{grid-template-columns:repeat(auto-fill,minmax(32px,1fr));gap:5px}
-    .hl-matrix-grid a{font-size:12.5px;border-radius:6px}
-  }
 
   /* Similar highlights — shown at the bottom of a book's highlights (data from related.json) */
   .similar{max-width:1040px;margin:0 0 80px;padding-top:44px;border-top:1px solid var(--line)}
@@ -689,8 +669,6 @@
         <div class="book-stats" id="detailStats"></div>
       </div>
     </div>
-
-    <nav class="hl-matrix" id="hlMatrix" aria-label="Jump to a highlight" hidden></nav>
 
     <div class="highlights" id="highlights"></div>
 
@@ -1971,54 +1949,6 @@ function showView(name){
   window.scrollTo(0,0);
 }
 
-// ---- highlight links and the number matrix ----
-const LINK_ICON_SVG = '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M10 13a5 5 0 0 0 7.07 0l3-3a5 5 0 0 0-7.07-7.07l-1.5 1.5"/><path d="M14 11a5 5 0 0 0-7.07 0l-3 3a5 5 0 0 0 7.07 7.07l1.5-1.5"/></svg>';
-const MATRIX_MIN = 11;
-let matrixObserver = null;
-
-function goToHighlight(n){
-  const row = document.getElementById(`hl-${n}`);
-  if(!row) return;
-  const calm = window.matchMedia('(prefers-reduced-motion:reduce)').matches;
-  row.scrollIntoView({ block:'center', behavior: calm ? 'auto' : 'smooth' });
-  row.classList.remove('flash');
-  void row.offsetWidth; // restart the flash if it is already running
-  row.classList.add('flash');
-  setTimeout(()=>row.classList.remove('flash'), 3000);
-}
-
-function renderMatrix(b){
-  const nav = document.getElementById('hlMatrix');
-  const count = (b.highlights || []).filter(h => !INLINE_FIG.test(h.trim())).length;
-  if(matrixObserver){ matrixObserver.disconnect(); matrixObserver = null; }
-  nav.hidden = count < MATRIX_MIN;
-  if(nav.hidden){ nav.innerHTML = ''; return; }
-  nav.innerHTML = `
-    <div class="hl-matrix-h"><span>Jump to highlight</span><span id="hlMatrixWhere">#1 of ${count}</span></div>
-    <div class="hl-matrix-grid">${Array.from({length: count}, (_, i) =>
-      `<a href="#hl-${i+1}" data-n="${i+1}" aria-label="Highlight ${i+1}">${i+1}</a>`).join('')}</div>`;
-  const buttons = [...nav.querySelectorAll('a')];
-  matrixObserver = new IntersectionObserver(entries => {
-    entries.forEach(e => {
-      if(!e.isIntersecting) return;
-      const n = Number(e.target.dataset.n);
-      buttons.forEach(a => a.classList.toggle('is-here', Number(a.dataset.n) === n));
-      document.getElementById('hlMatrixWhere').textContent = `#${n} of ${count}`;
-    });
-  }, { rootMargin: '-35% 0px -55% 0px' });
-  document.querySelectorAll('#highlights .hl-row[data-n]').forEach(r => matrixObserver.observe(r));
-}
-
-// Matrix squares and link icons both use #hl-N hrefs: scroll in place and keep the hash for sharing
-document.getElementById('detailView').addEventListener('click', e => {
-  const a = e.target.closest('a[href^="#hl-"]');
-  if(!a) return;
-  e.preventDefault();
-  const n = Number(a.getAttribute('href').slice(4));
-  goToHighlight(n);
-  history.replaceState(history.state, '', `${location.pathname}#hl-${n}`);
-});
-
 function openBook(i, opts){
   opts = opts || {};
   const b = books[i];
@@ -2031,14 +1961,8 @@ function openBook(i, opts){
     : '';
 
   renderHighlights(b);
-  renderMatrix(b);
   document.getElementById('highlights').hidden = !(b.highlights || []).length;
   renderSimilar(b.title);
-  // A shared #hl-N link lands on that highlight once the book has rendered
-  const hashRow = location.hash.match(/^#hl-(\d+)$/);
-  if(typeof opts.focus !== 'number' && hashRow){
-    requestAnimationFrame(() => goToHighlight(Number(hashRow[1])));
-  }
   showView('detail');
   if(typeof opts.focus === 'number'){
     const row = document.querySelectorAll('#highlights .hl-row')[opts.focus];
@@ -2241,10 +2165,9 @@ function renderHighlights(b){
     if(isInline(h) && i > 0) return '<div class="hl-row" hidden></div>';
     const figs = [];
     for(let j = i+1; j < hl.length && isInline(hl[j]); j++) figs.push(hl[j]);
-    const num = ++n;
     return `
-    <div class="hl-row" id="hl-${num}" data-n="${num}">
-      <div class="hl-top"><span class="num">#${num}</span><a class="perma" href="#hl-${num}" aria-label="Link to highlight ${num}" title="Link to this highlight">${LINK_ICON_SVG}</a></div>
+    <div class="hl-row">
+      <span class="num">#${++n}:</span>
       <div class="hl-text">${formatWithInlineFigures(h, figs)}</div>
     </div>
   `;
