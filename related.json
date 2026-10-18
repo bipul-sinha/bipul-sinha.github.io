@@ -685,6 +685,16 @@
  ],
  "The Algorithm": [
   {
+   "title": "The Cold Start problem",
+   "slug": "the-cold-start-problem",
+   "author": "Andrew Chen",
+   "cover": "covers/the-cold-start-problem.jpg",
+   "color": "#2E4A6B",
+   "quote": "Uber’s competitive efforts worked for a long time—but stalled in later years. The company’s systematic approach vanquished Sidecar, Hailo, Flywheel, and a slew of smaller players.",
+   "score": 0.678,
+   "toHighlight": 25
+  },
+  {
    "title": "Crossing the chasm",
    "slug": "crossing-the-chasm",
    "author": "Geoffrey Moore",
@@ -703,16 +713,6 @@
    "quote": "Soon our testers reported in: It went fine. Everything’s up and running! But it took about an hour to install. We winced. Crap. An hour was way too long. So we dug into the reports—what was taking so long? What were we missing?",
    "score": 0.663,
    "toHighlight": 6
-  },
-  {
-   "title": "Superpumped",
-   "slug": "superpumped",
-   "author": "Mike Isaac",
-   "cover": "covers/superpumped.jpg",
-   "color": "#2E6B6B",
-   "quote": "“We knew that Lyft was going to raise a ton of money,” Kalanick once admitted on the record, bragging about his desire to cripple his competitor.",
-   "score": 0.666,
-   "toHighlight": 2
   }
  ],
  "Only the Paranoid survive": [
@@ -1909,6 +1909,16 @@
  ],
  "Superpumped": [
   {
+   "title": "The Cold Start problem",
+   "slug": "the-cold-start-problem",
+   "author": "Andrew Chen",
+   "cover": "covers/the-cold-start-problem.jpg",
+   "color": "#2E4A6B",
+   "quote": "There was a sophisticated effort to tag drivers as dual appers. Some of these efforts were just manual—Uber employees who took trips would just ask if the drivers drove for other services, and they could mark them manually in a special UI…",
+   "score": 0.677,
+   "toHighlight": 24
+  },
+  {
    "title": "The Algorithm",
    "slug": "the-algorithm",
    "author": "Jon McNeill",
@@ -2123,7 +2133,18 @@
    "toHighlight": 3
   }
  ],
- "The Metaverse": [],
+ "The Metaverse": [
+  {
+   "title": "The Cold Start problem",
+   "slug": "the-cold-start-problem",
+   "author": "Andrew Chen",
+   "cover": "covers/the-cold-start-problem.jpg",
+   "color": "#2E4A6B",
+   "quote": "I think of it as network saturation, not just market saturation. Here’s how I define this term: the 100th connection for any given participant is likely less impactful than the first few, and as the network gets more dense over time, its…",
+   "score": 0.668,
+   "toHighlight": 19
+  }
+ ],
  "The song of the cell": [
   {
    "title": "What is life",
@@ -2314,6 +2335,38 @@
    "quote": "Every once in a while, an up- or down-leg goes on for a long time and/or to a great extreme and people start to say “this time it’s different.” They cite the changes in geopolitics, institutions, technology or behavior that have rendered…",
    "score": 0.692,
    "toHighlight": 11
+  }
+ ],
+ "The Cold Start problem": [
+  {
+   "title": "Understanding Michael Porter",
+   "slug": "understanding-michael-porter",
+   "author": "Joan Magretta",
+   "cover": "covers/understanding-michael-porter.jpg",
+   "color": "#6B5A2E",
+   "quote": "Trade-offs make choices about what not to do as important as choices of what to do. Deciding which needs to serve and which products to offer is absolutely key to developing a strategy.",
+   "score": 0.677,
+   "toHighlight": 15
+  },
+  {
+   "title": "The innovator's solution",
+   "slug": "the-innovator-s-solution",
+   "author": "Clay Christensen",
+   "cover": "covers/the-innovator-s-solution.jpg",
+   "color": "#7A2E4A",
+   "quote": "An idea that is disruptive to one business may be sustaining to another. Given the stark odds that favor the incumbents in the sustaining race but entrants in disruptive ones, we recommend a strict rule: If your idea for a product or…",
+   "score": 0.68,
+   "toHighlight": 2
+  },
+  {
+   "title": "Crossing the chasm",
+   "slug": "crossing-the-chasm",
+   "author": "Geoffrey Moore",
+   "cover": "covers/crossing-the-chasm.jpg",
+   "color": "#2E6B6B",
+   "quote": "You can succeed with the visionaries, and you can thereby get a reputation for being a high flyer with a hot product, but that is not ultimately where the dollars are.",
+   "score": 0.677,
+   "toHighlight": 4
   }
  ]
 }
