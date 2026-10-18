@@ -1953,7 +1953,9 @@ function showView(name){
   navAbout.classList.toggle('active', name === 'about');
   navPrinciples.classList.toggle('active', name === 'principles');
   if(name === 'shelf' && typeof measureSticky === 'function') measureSticky();
-  window.scrollTo(0,0);
+  // Instant, not smooth: html has scroll-behavior:smooth, which would animate the
+  // reset from wherever the shelf was scrolled and make the new view appear mid-page.
+  window.scrollTo({ top: 0, behavior: 'instant' });
 }
 
 function openBook(i, opts){
