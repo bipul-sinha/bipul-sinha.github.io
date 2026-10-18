@@ -359,6 +359,16 @@
    "toHighlight": 4
   },
   {
+   "title": "The innovator's solution",
+   "slug": "the-innovator-s-solution",
+   "author": "Clay Christensen",
+   "cover": "covers/the-innovator-s-solution.jpg",
+   "color": "#7A2E4A",
+   "quote": "It is important never to conclude that an industry such as disk drives or DRAMs is inherently unprofitable, whereas others such as microprocessors or semiconductor manufacturing equipment are inherently profitable.",
+   "score": 0.667,
+   "toHighlight": 9
+  },
+  {
    "title": "The Nvidia way",
    "slug": "the-nvidia-way",
    "author": "Tae Kim",
@@ -367,16 +377,6 @@
    "quote": "IBM made an important strategic error, though. At the time, the company was so confident in its size and distribution might that it didn’t secure exclusivity on Intel’s and Microsoft’s offerings.",
    "score": 0.663,
    "toHighlight": 15
-  },
-  {
-   "title": "Breakneck",
-   "slug": "breakneck",
-   "author": "Dan Wang",
-   "cover": "covers/breakneck.jpg",
-   "color": "#8B6B2E",
-   "quote": "It became part of the elite consensus that the United States could lose manufacturing. This consensus portrayed union bosses, as well as the handful of heterodox economists, as sentimentalists for resisting offshoring.",
-   "score": 0.661,
-   "toHighlight": 7
   }
  ],
  "Richer, Wiser, Happier": [
@@ -423,6 +423,16 @@
    "toHighlight": 4
   },
   {
+   "title": "The innovator's solution",
+   "slug": "the-innovator-s-solution",
+   "author": "Clay Christensen",
+   "cover": "covers/the-innovator-s-solution.jpg",
+   "color": "#7A2E4A",
+   "quote": "Brands are most valuable when they are created at the stages of the value-added chain where things aren’t yet good enough.",
+   "score": 0.683,
+   "toHighlight": 10
+  },
+  {
    "title": "Crossing the chasm",
    "slug": "crossing-the-chasm",
    "author": "Geoffrey Moore",
@@ -431,16 +441,6 @@
    "quote": "Here is a proven formula for getting all this down into two short sentences. Try it out on your own company and one of its key products.",
    "score": 0.677,
    "toHighlight": 15
-  },
-  {
-   "title": "Rework",
-   "slug": "rework",
-   "author": "David Hansson and Jason Fried",
-   "cover": "covers/rework.jpg",
-   "color": "#8B6B2E",
-   "quote": "When you let customers outgrow you, you’ll most likely wind up with a product that’s basic—and that’s fine. Small, simple, basic needs are constant. There’s an endless supply of customers who need exactly that.",
-   "score": 0.668,
-   "toHighlight": 11
   }
  ],
  "The Righteous Mind": [
@@ -565,6 +565,16 @@
    "toHighlight": 0
   },
   {
+   "title": "The innovator's solution",
+   "slug": "the-innovator-s-solution",
+   "author": "Clay Christensen",
+   "cover": "covers/the-innovator-s-solution.jpg",
+   "color": "#7A2E4A",
+   "quote": "Disruption and commoditization can be seen as two sides of the same coin. A company that finds itself in a more-than-good-enough circumstance simply can’t win: Either disruption will steal its markets, or commoditization will steal its…",
+   "score": 0.679,
+   "toHighlight": 8
+  },
+  {
    "title": "The almanack of Naval Ravikant",
    "slug": "the-almanack-of-naval-ravikant",
    "author": "Eric Jorgenson",
@@ -573,16 +583,6 @@
    "quote": "Here’s a hot tip: There is no legacy. There’s nothing to leave. We’re all going to be gone. Our children will be gone. Our works will be dust. Our civilizations will be dust. Our planet will be dust. Our solar system will be dust.",
    "score": 0.676,
    "toHighlight": 16
-  },
-  {
-   "title": "How to get rich",
-   "slug": "how-to-get-rich",
-   "author": "Felix Dennis",
-   "cover": "covers/how-to-get-rich.jpg",
-   "color": "#3A5C8B",
-   "quote": "If you wish to be rich, you must grow a carapace. A mental armor. Not so thick as to blind you to well-constructed criticism and advice, especially from those you trust. Nor so thick as to cut you off from friends and family.",
-   "score": 0.674,
-   "toHighlight": 1
   }
  ],
  "An Empire of Wealth": [
@@ -717,6 +717,16 @@
  ],
  "Only the Paranoid survive": [
   {
+   "title": "The innovator's solution",
+   "slug": "the-innovator-s-solution",
+   "author": "Clay Christensen",
+   "cover": "covers/the-innovator-s-solution.jpg",
+   "color": "#7A2E4A",
+   "quote": "Disruption has a paralyzing effect on industry leaders. With resource allocation processes designed and perfected to support sustaining innovations, they are constitutionally unable to respond.",
+   "score": 0.708,
+   "toHighlight": 0
+  },
+  {
    "title": "Understanding Michael Porter",
    "slug": "understanding-michael-porter",
    "author": "Joan Magretta",
@@ -735,19 +745,19 @@
    "quote": "As we founded, organized, and managed Intel, we found that all our employees “produce” in some sense—some make chips, others prepare bills, while still others create software designs or advertising copy.",
    "score": 0.688,
    "toHighlight": 2
-  },
-  {
-   "title": "Crossing the chasm",
-   "slug": "crossing-the-chasm",
-   "author": "Geoffrey Moore",
-   "cover": "covers/crossing-the-chasm.jpg",
-   "color": "#2E6B6B",
-   "quote": "You can succeed with the visionaries, and you can thereby get a reputation for being a high flyer with a hot product, but that is not ultimately where the dollars are.",
-   "score": 0.688,
-   "toHighlight": 4
   }
  ],
  "Read Write Own": [
+  {
+   "title": "The innovator's solution",
+   "slug": "the-innovator-s-solution",
+   "author": "Clay Christensen",
+   "cover": "covers/the-innovator-s-solution.jpg",
+   "color": "#7A2E4A",
+   "quote": "Disruption and commoditization can be seen as two sides of the same coin. A company that finds itself in a more-than-good-enough circumstance simply can’t win: Either disruption will steal its markets, or commoditization will steal its…",
+   "score": 0.678,
+   "toHighlight": 8
+  },
   {
    "title": "Crossing the chasm",
    "slug": "crossing-the-chasm",
@@ -913,6 +923,16 @@
  ],
  "Crossing the chasm": [
   {
+   "title": "The innovator's solution",
+   "slug": "the-innovator-s-solution",
+   "author": "Clay Christensen",
+   "cover": "covers/the-innovator-s-solution.jpg",
+   "color": "#7A2E4A",
+   "quote": "It is the habit of large, established companies to ramp up expenses ahead of revenues, because in a world of deliberate strategy and sustaining innovation, these are safe bets.",
+   "score": 0.72,
+   "toHighlight": 17
+  },
+  {
    "title": "Understanding Michael Porter",
    "slug": "understanding-michael-porter",
    "author": "Joan Magretta",
@@ -931,16 +951,6 @@
    "quote": "Anyone who takes a “we’ll figure out how to profit in the future” attitude to business is being ridiculous.",
    "score": 0.688,
    "toHighlight": 4
-  },
-  {
-   "title": "The most important thing",
-   "slug": "the-most-important-thing",
-   "author": "Howard Marks",
-   "cover": "covers/the-most-important-thing.jpg",
-   "color": "#6B5A2E",
-   "quote": "Every once in a while, an up- or down-leg goes on for a long time and/or to a great extreme and people start to say “this time it’s different.” They cite the changes in geopolitics, institutions, technology or behavior that have rendered…",
-   "score": 0.682,
-   "toHighlight": 11
   }
  ],
  "Faraday, Maxwell, and the Electromagnetic Field": [
@@ -1473,6 +1483,16 @@
    "toHighlight": 4
   },
   {
+   "title": "The innovator's solution",
+   "slug": "the-innovator-s-solution",
+   "author": "Clay Christensen",
+   "cover": "covers/the-innovator-s-solution.jpg",
+   "color": "#7A2E4A",
+   "quote": "Disruption and commoditization can be seen as two sides of the same coin. A company that finds itself in a more-than-good-enough circumstance simply can’t win: Either disruption will steal its markets, or commoditization will steal its…",
+   "score": 0.662,
+   "toHighlight": 8
+  },
+  {
    "title": "Rework",
    "slug": "rework",
    "author": "David Hansson and Jason Fried",
@@ -1543,6 +1563,16 @@
  ],
  "Bullish case for Bitcoin": [
   {
+   "title": "The innovator's solution",
+   "slug": "the-innovator-s-solution",
+   "author": "Clay Christensen",
+   "cover": "covers/the-innovator-s-solution.jpg",
+   "color": "#7A2E4A",
+   "quote": "One of the most exciting insights from our research about commoditization is that whenever it is at work somewhere in a value chain, a reciprocal process of de-commoditization is at work somewhere else in the value chain.",
+   "score": 0.667,
+   "toHighlight": 7
+  },
+  {
    "title": "Crossing the chasm",
    "slug": "crossing-the-chasm",
    "author": "Geoffrey Moore",
@@ -1561,16 +1591,6 @@
    "quote": "The problem is that in bubbles, “attractive” morphs into “attractive at any price.” People often say, “It’s not cheap, but I think it’ll keep going up because of excess liquidity” (or any number of other reasons).",
    "score": 0.665,
    "toHighlight": 7
-  },
-  {
-   "title": "Richer, Wiser, Happier",
-   "slug": "richer-wiser-happier",
-   "author": "William Green",
-   "cover": "covers/richer-wiser-happier.jpg",
-   "color": "#2E5C45",
-   "quote": "Any asset, however ugly, can be worth buying if the price is low enough. Indeed, Howard Marks believes that “buying cheap” is the single most reliable route to investment riches—and that overpaying is the greatest risk.",
-   "score": 0.662,
-   "toHighlight": 5
   }
  ],
  "How to win friends and influence people": [
@@ -1747,6 +1767,16 @@
  ],
  "High Output Management": [
   {
+   "title": "The innovator's solution",
+   "slug": "the-innovator-s-solution",
+   "author": "Clay Christensen",
+   "cover": "covers/the-innovator-s-solution.jpg",
+   "color": "#7A2E4A",
+   "quote": "It is the habit of large, established companies to ramp up expenses ahead of revenues, because in a world of deliberate strategy and sustaining innovation, these are safe bets.",
+   "score": 0.682,
+   "toHighlight": 17
+  },
+  {
    "title": "The 4-Hour Workweek",
    "slug": "the-4-hour-workweek",
    "author": "Tim Ferriss",
@@ -1765,16 +1795,6 @@
    "quote": "There are three broad classes of leverage: (1) One form of leverage is labor—other humans working for you. It is the oldest form of leverage, and actually not a great one in the modern world.",
    "score": 0.677,
    "toHighlight": 1
-  },
-  {
-   "title": "No rules rules",
-   "slug": "no-rules-rules",
-   "author": "Erin Meyer and Reed Hastings",
-   "cover": "covers/no-rules-rules.jpg",
-   "color": "#2E4A6B",
-   "quote": "If you’re serious about talent density, you have to get in the habit of doing something a lot harder: firing a good employee when you think you can get a great one.",
-   "score": 0.678,
-   "toHighlight": 15
   }
  ],
  "Fundamentals": [
@@ -2234,6 +2254,16 @@
  ],
  "Understanding Michael Porter": [
   {
+   "title": "The innovator's solution",
+   "slug": "the-innovator-s-solution",
+   "author": "Clay Christensen",
+   "cover": "covers/the-innovator-s-solution.jpg",
+   "color": "#7A2E4A",
+   "quote": "Disruption has a paralyzing effect on industry leaders. With resource allocation processes designed and perfected to support sustaining innovations, they are constitutionally unable to respond.",
+   "score": 0.734,
+   "toHighlight": 0
+  },
+  {
    "title": "Crossing the chasm",
    "slug": "crossing-the-chasm",
    "author": "Geoffrey Moore",
@@ -2252,6 +2282,28 @@
    "quote": "When a company builds strong customer relationships, it becomes tempting to sell them more products, since the added cost is low and the profit is tempting.",
    "score": 0.69,
    "toHighlight": 12
+  }
+ ],
+ "The innovator's solution": [
+  {
+   "title": "Understanding Michael Porter",
+   "slug": "understanding-michael-porter",
+   "author": "Joan Magretta",
+   "cover": "covers/understanding-michael-porter.jpg",
+   "color": "#6B5A2E",
+   "quote": "Some practical implications 1. Vying to be the best is an intuitive but self-destructive approach to competition. 2. There is no honor in size or growth if those are profitless. Competition is about profits, not market share. 3.",
+   "score": 0.734,
+   "toHighlight": 19
+  },
+  {
+   "title": "Crossing the chasm",
+   "slug": "crossing-the-chasm",
+   "author": "Geoffrey Moore",
+   "cover": "covers/crossing-the-chasm.jpg",
+   "color": "#2E6B6B",
+   "quote": "You can succeed with the visionaries, and you can thereby get a reputation for being a high flyer with a hot product, but that is not ultimately where the dollars are.",
+   "score": 0.72,
+   "toHighlight": 4
   },
   {
    "title": "The most important thing",
@@ -2259,9 +2311,9 @@
    "author": "Howard Marks",
    "cover": "covers/the-most-important-thing.jpg",
    "color": "#6B5A2E",
-   "quote": "Investing is the greatest business in the world because you never have to swing. You stand at the plate; the pitcher throws you \"General Motors at 47! U.S. Steel at 39!\" And nobody calls a strike on you.",
-   "score": 0.683,
-   "toHighlight": 13
+   "quote": "Every once in a while, an up- or down-leg goes on for a long time and/or to a great extreme and people start to say “this time it’s different.” They cite the changes in geopolitics, institutions, technology or behavior that have rendered…",
+   "score": 0.692,
+   "toHighlight": 11
   }
  ]
 }
