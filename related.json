@@ -1831,6 +1831,16 @@
  ],
  "What is life": [
   {
+   "title": "The Selfish Gene",
+   "slug": "the-selfish-gene",
+   "author": "Richard Dawkins",
+   "cover": "covers/the-selfish-gene.jpg",
+   "color": "#2E5C45",
+   "quote": "What, after all, is so special about genes? The answer is that they are replicators. The laws of physics are supposed to be true all over the accessible universe.",
+   "score": 0.732,
+   "toHighlight": 16
+  },
+  {
    "title": "The song of the cell",
    "slug": "the-song-of-the-cell",
    "author": "Siddharth Mukherjee",
@@ -1849,16 +1859,6 @@
    "quote": "An analogy to DNA is useful. The true power of DNA is not the products it constructs (hearts, livers, brains) but the process it enables (evolution).",
    "score": 0.694,
    "toHighlight": 15
-  },
-  {
-   "title": "Fundamentals",
-   "slug": "fundamentals",
-   "author": "Frank Wilczek",
-   "cover": "covers/fundamentals.jpg",
-   "color": "#7A2E4A",
-   "quote": "By convention sweet is sweet, bitter is bitter, hot is hot, cold is cold, color is color; but in truth there are only atoms and the void. —Democritus, fragment (c. 400 BC) Democritus’s declaration is deeply challenging.",
-   "score": 0.667,
-   "toHighlight": 5
   }
  ],
  "Numbers don't lie": [],
@@ -2167,14 +2167,14 @@
    "toHighlight": 0
   },
   {
-   "title": "Why we get sick",
-   "slug": "why-we-get-sick",
-   "author": "Benjamin Bikman",
-   "cover": "covers/why-we-get-sick.jpg",
-   "color": "#8B3A2E",
-   "quote": "Though it’s called “low density,” LDL cholesterol actually comes in various sizes and densities.",
+   "title": "The Selfish Gene",
+   "slug": "the-selfish-gene",
+   "author": "Richard Dawkins",
+   "cover": "covers/the-selfish-gene.jpg",
+   "color": "#2E5C45",
+   "quote": "First then, why did genes gang up in cells? Why did those ancient replicators give up the cavalier freedom of the primeval soup and take to swarming in huge colonies? Why do they cooperate?",
    "score": 0.674,
-   "toHighlight": 1
+   "toHighlight": 23
   }
  ],
  "Metabolical": [
@@ -2211,6 +2211,16 @@
  ],
  "A brief history of intelligence": [
   {
+   "title": "The Selfish Gene",
+   "slug": "the-selfish-gene",
+   "author": "Richard Dawkins",
+   "cover": "covers/the-selfish-gene.jpg",
+   "color": "#2E5C45",
+   "quote": "I am trying to build up the idea that animal behaviour, altruistic or selfish, is under the control of genes in only an indirect, but still very powerful, sense.",
+   "score": 0.703,
+   "toHighlight": 7
+  },
+  {
    "title": "The Righteous Mind",
    "slug": "the-righteous-mind",
    "author": "",
@@ -2229,16 +2239,6 @@
    "quote": "It is one of Cajal’s legacies that he never performed a single experiment in cell biology—or at least an experiment in the traditional sense. To see his drawings of neurons is to realize how much can be learned by just seeing.",
    "score": 0.68,
    "toHighlight": 9
-  },
-  {
-   "title": "An Immense World",
-   "slug": "an-immense-world",
-   "author": "Ed Wong",
-   "cover": "covers/an-immense-world.jpg",
-   "color": "#3A5C8B",
-   "quote": "In thinking about other animals, we are biased by our own senses and by vision in particular.",
-   "score": 0.678,
-   "toHighlight": 1
   }
  ],
  "Good Energy": [
@@ -2367,6 +2367,38 @@
    "quote": "You can succeed with the visionaries, and you can thereby get a reputation for being a high flyer with a hot product, but that is not ultimately where the dollars are.",
    "score": 0.677,
    "toHighlight": 4
+  }
+ ],
+ "The Selfish Gene": [
+  {
+   "title": "A brief history of intelligence",
+   "slug": "a-brief-history-of-intelligence",
+   "author": "Max Bennett",
+   "cover": "covers/a-brief-history-of-intelligence.jpg",
+   "color": "#8B6B2E",
+   "quote": "An analogy to DNA is useful. The true power of DNA is not the products it constructs (hearts, livers, brains) but the process it enables (evolution).",
+   "score": 0.703,
+   "toHighlight": 15
+  },
+  {
+   "title": "What is life",
+   "slug": "what-is-life",
+   "author": "Paul Nurse",
+   "cover": "covers/what-is-life.jpg",
+   "color": "#2E4A6B",
+   "quote": "Living systems are often less efficient and rationally constructed than control circuits designed intelligently by human beings, another reason why analogies between biology and computing can only go so far.",
+   "score": 0.732,
+   "toHighlight": 4
+  },
+  {
+   "title": "The song of the cell",
+   "slug": "the-song-of-the-cell",
+   "author": "Siddharth Mukherjee",
+   "cover": "",
+   "color": "#6B4C9A",
+   "quote": "Every cell on Earth—which is to say every unit of every living being—belongs to one of three entirely distinctive domains, or branches, of living organisms. The first branch comprises bacteria.",
+   "score": 0.674,
+   "toHighlight": 1
   }
  ]
 }
