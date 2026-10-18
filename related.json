@@ -998,6 +998,16 @@
    "toHighlight": 17
   },
   {
+   "title": "Economic Facts and Fallacies",
+   "slug": "economic-facts-and-fallacies",
+   "author": "Thomas Sowell",
+   "cover": "covers/economic-facts-and-fallacies.jpg",
+   "color": "#8B3A2E",
+   "quote": "The thesis of Imperialism was that industrial capitalist nations had surplus capital, which would drive down the rate of profit over time in accordance with Marxist theory, unless it were exported to the nonindustrial poorer nations of the…",
+   "score": 0.724,
+   "toHighlight": 20
+  },
+  {
    "title": "The Lessons of History",
    "slug": "the-lessons-of-history",
    "author": "Will and Ariel Durant",
@@ -1006,19 +1016,19 @@
    "quote": "In progressive societies the concentration may reach a point where the strength of number in the many poor rivals the strength of ability in the few rich; then the unstable equilibrium generates a critical situation, which history has…",
    "score": 0.7,
    "toHighlight": 9
-  },
-  {
-   "title": "The Righteous Mind",
-   "slug": "the-righteous-mind",
-   "author": "",
-   "cover": "covers/the-righteous-mind.jpg",
-   "color": "#3A5C8B",
-   "quote": "Comments such as these convince me that John Lennon captured a common liberal dream in his haunting song “Imagine.” Imagine if there were no countries, and no religion too.",
-   "score": 0.697,
-   "toHighlight": 14
   }
  ],
  "Discrimination and Disparities": [
+  {
+   "title": "Economic Facts and Fallacies",
+   "slug": "economic-facts-and-fallacies",
+   "author": "Thomas Sowell",
+   "cover": "covers/economic-facts-and-fallacies.jpg",
+   "color": "#8B3A2E",
+   "quote": "Perhaps the biggest fallacy in discussions of Third World countries is the implicit assumption that there is something intellectually baffling or morally wrong about the fact that different nations have different per capita incomes.",
+   "score": 0.752,
+   "toHighlight": 23
+  },
   {
    "title": "Social Justice Fallacies",
    "slug": "social-justice-fallacies",
@@ -1038,16 +1048,6 @@
    "quote": "Other studies found no evidence that unemployment benefits were causing workers to stay home, and at the time several European countries were also experiencing labor shortages even though they hadn’t done much to expand unemployment…",
    "score": 0.69,
    "toHighlight": 8
-  },
-  {
-   "title": "The Coddling of American Mind",
-   "slug": "the-coddling-of-american-mind",
-   "author": "Greg Lukianoff and Jonathan Haidt",
-   "cover": "covers/the-coddling-of-american-mind.jpg",
-   "color": "#2E5C45",
-   "quote": "It’s a set of approaches in which things are analyzed primarily in terms of power. Groups struggle for power.",
-   "score": 0.689,
-   "toHighlight": 3
   }
  ],
  "First steps": [
@@ -1172,6 +1172,16 @@
   }
  ],
  "Poverty, by America": [
+  {
+   "title": "Economic Facts and Fallacies",
+   "slug": "economic-facts-and-fallacies",
+   "author": "Thomas Sowell",
+   "cover": "covers/economic-facts-and-fallacies.jpg",
+   "color": "#8B3A2E",
+   "quote": "Increased real income per person enables more people to live in their own separate dwelling units, instead of with parents, roommates, or strangers in a rooming house.",
+   "score": 0.696,
+   "toHighlight": 7
+  },
   {
    "title": "Discrimination and Disparities",
    "slug": "discrimination-and-disparities",
@@ -2399,6 +2409,38 @@
    "quote": "Every cell on Earth—which is to say every unit of every living being—belongs to one of three entirely distinctive domains, or branches, of living organisms. The first branch comprises bacteria.",
    "score": 0.674,
    "toHighlight": 1
+  }
+ ],
+ "Economic Facts and Fallacies": [
+  {
+   "title": "Discrimination and Disparities",
+   "slug": "discrimination-and-disparities",
+   "author": "Thomas Sowell",
+   "cover": "covers/discrimination-and-disparities.jpg",
+   "color": "#7A2E4A",
+   "quote": "Household income data, for example, are often used to indicate the magnitude of economic disparities in a society.",
+   "score": 0.752,
+   "toHighlight": 11
+  },
+  {
+   "title": "Social Justice Fallacies",
+   "slug": "social-justice-fallacies",
+   "author": "Thomas Sowell",
+   "cover": "covers/social-justice-fallacies.jpg",
+   "color": "#6B5A2E",
+   "quote": "In the social justice literature, unmerited advantages tend to be treated as if they are deductions from the well-being of the rest of the population.",
+   "score": 0.724,
+   "toHighlight": 8
+  },
+  {
+   "title": "Poverty, by America",
+   "slug": "poverty-by-america",
+   "author": "Matthew Desmond",
+   "cover": "covers/poverty-by-america.jpg",
+   "color": "#2E6B6B",
+   "quote": "But the mid-century economist John Kenneth Galbraith popularized the predicament in his 1958 book, The Affluent Society. Galbraith did not spill much ink (or any ink, really) on the issue of exploitation.",
+   "score": 0.696,
+   "toHighlight": 10
   }
  ]
 }
