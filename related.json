@@ -148,6 +148,16 @@
    "quote": "In 2006, realizing that high-speed parallel computations could be used for purposes besides computer graphics, Nvidia released CUDA, software that lets GPUs be programmed in a standard programming language, without any reference to…",
    "score": 0.671,
    "toHighlight": 9
+  },
+  {
+   "title": "7 Powers",
+   "slug": "7-powers",
+   "author": "Hamilton Helmer",
+   "cover": "covers/7-powers.jpg",
+   "color": "#6B4C9A",
+   "quote": "As a value investor, I consider Warren Buffett one of my heroes. I previously mentioned his insight that good managers can rarely reverse the course of a bad business, i.e. one without Power.",
+   "score": 0.66,
+   "toHighlight": 17
   }
  ],
  "The Not-To-Do List": [
@@ -359,6 +369,16 @@
    "toHighlight": 4
   },
   {
+   "title": "7 Powers",
+   "slug": "7-powers",
+   "author": "Hamilton Helmer",
+   "cover": "covers/7-powers.jpg",
+   "color": "#6B4C9A",
+   "quote": "But IBM got the strategy wrong. By outsourcing the OS and permitting Microsoft to sell it to others, IBM squandered their opportunity for the kind of network economy home run that had powered their mainframe juggernaut, System 360.",
+   "score": 0.674,
+   "toHighlight": 0
+  },
+  {
    "title": "The innovator's solution",
    "slug": "the-innovator-s-solution",
    "author": "Clay Christensen",
@@ -367,16 +387,6 @@
    "quote": "It is important never to conclude that an industry such as disk drives or DRAMs is inherently unprofitable, whereas others such as microprocessors or semiconductor manufacturing equipment are inherently profitable.",
    "score": 0.667,
    "toHighlight": 9
-  },
-  {
-   "title": "The Nvidia way",
-   "slug": "the-nvidia-way",
-   "author": "Tae Kim",
-   "cover": "covers/the-nvidia-way.jpg",
-   "color": "#2E5C45",
-   "quote": "IBM made an important strategic error, though. At the time, the company was so confident in its size and distribution might that it didn’t secure exclusivity on Intel’s and Microsoft’s offerings.",
-   "score": 0.663,
-   "toHighlight": 15
   }
  ],
  "Richer, Wiser, Happier": [
@@ -737,14 +747,14 @@
    "toHighlight": 19
   },
   {
-   "title": "High Output Management",
-   "slug": "high-output-management",
-   "author": "Andy Grove",
-   "cover": "covers/high-output-management.jpg",
-   "color": "#6B5A2E",
-   "quote": "As we founded, organized, and managed Intel, we found that all our employees “produce” in some sense—some make chips, others prepare bills, while still others create software designs or advertising copy.",
-   "score": 0.688,
-   "toHighlight": 2
+   "title": "7 Powers",
+   "slug": "7-powers",
+   "author": "Hamilton Helmer",
+   "cover": "covers/7-powers.jpg",
+   "color": "#6B4C9A",
+   "quote": "Strategy can be usefully separated into two topics: 1. Statics—i.e. “Being There”: For example, what makes Intel’s microprocessor business so durably valuable? 2. Dynamics—i.e.",
+   "score": 0.694,
+   "toHighlight": 1
   }
  ],
  "Read Write Own": [
@@ -767,6 +777,16 @@
    "quote": "Markets as categories are impersonal, abstract things: the smartphone market, the gigabit router market, the office automation market, and so on.",
    "score": 0.674,
    "toHighlight": 11
+  },
+  {
+   "title": "7 Powers",
+   "slug": "7-powers",
+   "author": "Hamilton Helmer",
+   "cover": "covers/7-powers.jpg",
+   "color": "#6B4C9A",
+   "quote": "But IBM got the strategy wrong. By outsourcing the OS and permitting Microsoft to sell it to others, IBM squandered their opportunity for the kind of network economy home run that had powered their mainframe juggernaut, System 360.",
+   "score": 0.672,
+   "toHighlight": 0
   }
  ],
  "Pattern Breakers": [],
@@ -943,14 +963,14 @@
    "toHighlight": 19
   },
   {
-   "title": "Rework",
-   "slug": "rework",
-   "author": "David Hansson and Jason Fried",
-   "cover": "covers/rework.jpg",
-   "color": "#8B6B2E",
-   "quote": "Anyone who takes a “we’ll figure out how to profit in the future” attitude to business is being ridiculous.",
-   "score": 0.688,
-   "toHighlight": 4
+   "title": "7 Powers",
+   "slug": "7-powers",
+   "author": "Hamilton Helmer",
+   "cover": "covers/7-powers.jpg",
+   "color": "#6B4C9A",
+   "quote": "Cornered resource: 1. Idiosyncratic. If a firm repeatedly acquires coveted assets at attractive terms, then the proper strategy question is, “Why are they able to do this?” For example, if one discovered that Exxon was able to persistently…",
+   "score": 0.702,
+   "toHighlight": 10
   }
  ],
  "Faraday, Maxwell, and the Electromagnetic Field": [
@@ -2059,6 +2079,16 @@
    "toHighlight": 4
   },
   {
+   "title": "7 Powers",
+   "slug": "7-powers",
+   "author": "Hamilton Helmer",
+   "cover": "covers/7-powers.jpg",
+   "color": "#6B4C9A",
+   "quote": "So if you want to develop Power, your first step is invention: breakthrough products, engaging brands, innovative business models. The first step, yes, but it can’t be the last step.",
+   "score": 0.68,
+   "toHighlight": 13
+  },
+  {
    "title": "High Output Management",
    "slug": "high-output-management",
    "author": "Andy Grove",
@@ -2067,16 +2097,6 @@
    "quote": "“CEOs always act on leading indicators of good news, but only act on lagging indicators of bad news.” “In order to build anything great, you have to be an optimist, because by definition you are trying to do something that most people…",
    "score": 0.678,
    "toHighlight": 5
-  },
-  {
-   "title": "Crossing the chasm",
-   "slug": "crossing-the-chasm",
-   "author": "Geoffrey Moore",
-   "cover": "covers/crossing-the-chasm.jpg",
-   "color": "#2E6B6B",
-   "quote": "You can succeed with the visionaries, and you can thereby get a reputation for being a high flyer with a hot product, but that is not ultimately where the dollars are.",
-   "score": 0.678,
-   "toHighlight": 4
   }
  ],
  "Outlive": [
@@ -2305,14 +2325,14 @@
    "toHighlight": 19
   },
   {
-   "title": "Competing Against Luck",
-   "slug": "competing-against-luck",
-   "author": "Clayton Christensen and others",
-   "cover": "covers/competing-against-luck.jpg",
-   "color": "#8B3A2E",
-   "quote": "When a company builds strong customer relationships, it becomes tempting to sell them more products, since the added cost is low and the profit is tempting.",
-   "score": 0.69,
-   "toHighlight": 12
+   "title": "7 Powers",
+   "slug": "7-powers",
+   "author": "Hamilton Helmer",
+   "cover": "covers/7-powers.jpg",
+   "color": "#6B4C9A",
+   "quote": "Cornered resource: 1. Idiosyncratic. If a firm repeatedly acquires coveted assets at attractive terms, then the proper strategy question is, “Why are they able to do this?” For example, if one discovered that Exxon was able to persistently…",
+   "score": 0.704,
+   "toHighlight": 10
   }
  ],
  "The innovator's solution": [
@@ -2327,6 +2347,16 @@
    "toHighlight": 19
   },
   {
+   "title": "7 Powers",
+   "slug": "7-powers",
+   "author": "Hamilton Helmer",
+   "cover": "covers/7-powers.jpg",
+   "color": "#6B4C9A",
+   "quote": "Power: the set of conditions creating the potential for persistent differential returns. Strategy: a route to continuing Power in significant markets.",
+   "score": 0.723,
+   "toHighlight": 2
+  },
+  {
    "title": "Crossing the chasm",
    "slug": "crossing-the-chasm",
    "author": "Geoffrey Moore",
@@ -2335,16 +2365,6 @@
    "quote": "You can succeed with the visionaries, and you can thereby get a reputation for being a high flyer with a hot product, but that is not ultimately where the dollars are.",
    "score": 0.72,
    "toHighlight": 4
-  },
-  {
-   "title": "The most important thing",
-   "slug": "the-most-important-thing",
-   "author": "Howard Marks",
-   "cover": "covers/the-most-important-thing.jpg",
-   "color": "#6B5A2E",
-   "quote": "Every once in a while, an up- or down-leg goes on for a long time and/or to a great extreme and people start to say “this time it’s different.” They cite the changes in geopolitics, institutions, technology or behavior that have rendered…",
-   "score": 0.692,
-   "toHighlight": 11
   }
  ],
  "The Cold Start problem": [
@@ -2454,5 +2474,38 @@
    "score": 0.66,
    "toHighlight": 4
   }
- ]
+ ],
+ "7 Powers": [
+  {
+   "title": "The innovator's solution",
+   "slug": "the-innovator-s-solution",
+   "author": "Clay Christensen",
+   "cover": "covers/the-innovator-s-solution.jpg",
+   "color": "#7A2E4A",
+   "quote": "It is the habit of large, established companies to ramp up expenses ahead of revenues, because in a world of deliberate strategy and sustaining innovation, these are safe bets.",
+   "score": 0.723,
+   "toHighlight": 17
+  },
+  {
+   "title": "Understanding Michael Porter",
+   "slug": "understanding-michael-porter",
+   "author": "Joan Magretta",
+   "cover": "covers/understanding-michael-porter.jpg",
+   "color": "#6B5A2E",
+   "quote": "Some practical implications 1. Vying to be the best is an intuitive but self-destructive approach to competition. 2. There is no honor in size or growth if those are profitless. Competition is about profits, not market share. 3.",
+   "score": 0.704,
+   "toHighlight": 19
+  },
+  {
+   "title": "Crossing the chasm",
+   "slug": "crossing-the-chasm",
+   "author": "Geoffrey Moore",
+   "cover": "covers/crossing-the-chasm.jpg",
+   "color": "#2E6B6B",
+   "quote": "You can succeed with the visionaries, and you can thereby get a reputation for being a high flyer with a hot product, but that is not ultimately where the dollars are.",
+   "score": 0.702,
+   "toHighlight": 4
+  }
+ ],
+ "The design of everyday things": []
 }
