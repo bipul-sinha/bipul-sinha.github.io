@@ -2442,5 +2442,17 @@
    "score": 0.696,
    "toHighlight": 10
   }
+ ],
+ "Billion dollar lessons": [
+  {
+   "title": "Crossing the chasm",
+   "slug": "crossing-the-chasm",
+   "author": "Geoffrey Moore",
+   "cover": "covers/crossing-the-chasm.jpg",
+   "color": "#2E6B6B",
+   "quote": "You can succeed with the visionaries, and you can thereby get a reputation for being a high flyer with a hot product, but that is not ultimately where the dollars are.",
+   "score": 0.66,
+   "toHighlight": 4
+  }
  ]
 }
