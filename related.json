@@ -2507,5 +2507,37 @@
    "toHighlight": 4
   }
  ],
- "The design of everyday things": []
+ "The design of everyday things": [],
+ "Inspired": [
+  {
+   "title": "Crossing the chasm",
+   "slug": "crossing-the-chasm",
+   "author": "Geoffrey Moore",
+   "cover": "covers/crossing-the-chasm.jpg",
+   "color": "#2E6B6B",
+   "quote": "Here is a proven formula for getting all this down into two short sentences. Try it out on your own company and one of its key products.",
+   "score": 0.704,
+   "toHighlight": 15
+  },
+  {
+   "title": "Million Dollar Weekend",
+   "slug": "million-dollar-weekend",
+   "author": "Noah Kagan",
+   "cover": "covers/million-dollar-weekend.jpg",
+   "color": "#7A2E4A",
+   "quote": "MVP is an important idea, but it leaves out something crucial: the customers. Who are you actually going to sell your minimum viable product to? And what if they don’t want the minimum?",
+   "score": 0.69,
+   "toHighlight": 4
+  },
+  {
+   "title": "Understanding Michael Porter",
+   "slug": "understanding-michael-porter",
+   "author": "Joan Magretta",
+   "cover": "covers/understanding-michael-porter.jpg",
+   "color": "#6B5A2E",
+   "quote": "Trade-offs make choices about what not to do as important as choices of what to do. Deciding which needs to serve and which products to offer is absolutely key to developing a strategy.",
+   "score": 0.685,
+   "toHighlight": 15
+  }
+ ]
 }
