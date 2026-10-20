@@ -2625,7 +2625,7 @@
     "title": "The 5 Dysfunctions of a Team",
     "author": "Patrick Lencioni",
     "color": "#5A5C7E",
-    "cover": "",
+    "cover": "covers/the-5-dysfunctions-of-a-team.jpg",
     "year": 2023,
     "rating": 7,
     "highlights": []
@@ -2634,7 +2634,7 @@
     "title": "Nudge",
     "author": "Richard Thaler, Cass Sunstein",
     "color": "#8B7355",
-    "cover": "",
+    "cover": "covers/nudge.jpg",
     "year": 2022,
     "rating": 6,
     "highlights": []
@@ -2661,7 +2661,7 @@
     "title": "The NFT Handbook",
     "author": "Campbell R. Harvey, Ashlee Ebersole, Greg Pendleton, Tyrone Ross",
     "color": "#7A6B3B",
-    "cover": "",
+    "cover": "covers/the-nft-handbook.jpg",
     "year": 2022,
     "rating": 4,
     "highlights": []
