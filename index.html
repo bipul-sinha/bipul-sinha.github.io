@@ -1752,16 +1752,19 @@ function renderShelf(){
         <div class="tl-yr">${y}</div>
         <div class="tl-sum"><b>${items.length}</b> ${items.length === 1 ? 'book' : 'books'} · avg <b>${avg.toFixed(1)}</b>/10${highlights ? ` · <b>${highlights}</b> highlights` : ''}</div>
       </div>
-      <div class="tl-covers">${sortList(items).map(({ b, i }) => `
-        ${kindOf(b) === 'fiction'
-          ? `<div class="tl-item tl-item--static" title="${b.title} by ${b.author}">
+      <div class="tl-covers">${sortList(items).map(({ b, i }) => {
+        const hasHighlights = b.highlights && b.highlights.length > 0;
+        const isClickable = kindOf(b) !== 'fiction' && hasHighlights;
+        return isClickable
+          ? `<button class="tl-item" type="button" data-i="${i}" aria-label="${b.title} by ${b.author}${b.rating ? ', ' + b.rating + ' out of 10' : ''}">
           <div class="cover" style="background:${b.color}">${coverHTML(b)}</div>
           ${b.rating ? `<div class="tl-stars">${starsHTML(b.rating, 7)}</div>` : ''}
-        </div>`
-          : `<button class="tl-item" type="button" data-i="${i}" aria-label="${b.title} by ${b.author}${b.rating ? ', ' + b.rating + ' out of 10' : ''}">
+        </button>`
+          : `<div class="tl-item tl-item--static" title="${b.title} by ${b.author}">
           <div class="cover" style="background:${b.color}">${coverHTML(b)}</div>
           ${b.rating ? `<div class="tl-stars">${starsHTML(b.rating, 7)}</div>` : ''}
-        </button>`}`).join('')}
+        </div>`;
+      }).join('')}
       </div>
     </section>`;
   }).join('') : `<div class="shelf-empty">No books match these filters.<br><button id="clearFilters">Clear filters</button></div>`;
