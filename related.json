@@ -553,14 +553,14 @@
    "toHighlight": 11
   },
   {
-   "title": "The Art of the Good life",
-   "slug": "the-art-of-the-good-life",
-   "author": "Rolf Dobelli",
-   "cover": "covers/the-art-of-the-good-life.jpg",
-   "color": "#2E5C45",
-   "quote": "It’s much nicer to mull things over than to seize the initiative. Speculation is more agreeable than realization.",
-   "score": 0.692,
-   "toHighlight": 15
+   "title": "Broken Money",
+   "slug": "broken-money",
+   "author": "Lyn Alden",
+   "cover": "covers/broken-money.jpg",
+   "color": "#4A3B6B",
+   "quote": "When money in a society maintains its value well over time, there is an incentive to hold wealth in it.",
+   "score": 0.695,
+   "toHighlight": 11
   }
  ],
  "The Book of Elon": [
@@ -596,6 +596,16 @@
   }
  ],
  "An Empire of Wealth": [
+  {
+   "title": "Broken Money",
+   "slug": "broken-money",
+   "author": "Lyn Alden",
+   "cover": "covers/broken-money.jpg",
+   "color": "#4A3B6B",
+   "quote": "Some economists such as Saifedean Ammous have argued that from a monetary perspective, World War I never really ended once it began in 1914.",
+   "score": 0.668,
+   "toHighlight": 8
+  },
   {
    "title": "Social Justice Fallacies",
    "slug": "social-justice-fallacies",
@@ -1593,6 +1603,16 @@
  ],
  "Bullish case for Bitcoin": [
   {
+   "title": "Broken Money",
+   "slug": "broken-money",
+   "author": "Lyn Alden",
+   "cover": "covers/broken-money.jpg",
+   "color": "#4A3B6B",
+   "quote": "This becomes especially true if a jurisdiction treats the harder money like property and taxes each transaction, while enforcing legal tender for the weaker money, which most jurisdictions do.",
+   "score": 0.735,
+   "toHighlight": 18
+  },
+  {
    "title": "The innovator's solution",
    "slug": "the-innovator-s-solution",
    "author": "Clay Christensen",
@@ -1611,16 +1631,6 @@
    "quote": "You can succeed with the visionaries, and you can thereby get a reputation for being a high flyer with a hot product, but that is not ultimately where the dollars are.",
    "score": 0.666,
    "toHighlight": 4
-  },
-  {
-   "title": "The most important thing",
-   "slug": "the-most-important-thing",
-   "author": "Howard Marks",
-   "cover": "covers/the-most-important-thing.jpg",
-   "color": "#6B5A2E",
-   "quote": "The problem is that in bubbles, “attractive” morphs into “attractive at any price.” People often say, “It’s not cheap, but I think it’ll keep going up because of excess liquidity” (or any number of other reasons).",
-   "score": 0.665,
-   "toHighlight": 7
   }
  ],
  "How to win friends and influence people": [
@@ -2539,5 +2549,38 @@
    "score": 0.685,
    "toHighlight": 15
   }
- ]
+ ],
+ "Broken Money": [
+  {
+   "title": "The most important thing",
+   "slug": "the-most-important-thing",
+   "author": "Howard Marks",
+   "cover": "covers/the-most-important-thing.jpg",
+   "color": "#6B5A2E",
+   "quote": "Every once in a while, an up- or down-leg goes on for a long time and/or to a great extreme and people start to say “this time it’s different.” They cite the changes in geopolitics, institutions, technology or behavior that have rendered…",
+   "score": 0.695,
+   "toHighlight": 11
+  },
+  {
+   "title": "Economic Facts and Fallacies",
+   "slug": "economic-facts-and-fallacies",
+   "author": "Thomas Sowell",
+   "cover": "covers/economic-facts-and-fallacies.jpg",
+   "color": "#8B3A2E",
+   "quote": "Another inflationary bias to the consumer price index is that it counts only those things that most people are likely to buy.",
+   "score": 0.681,
+   "toHighlight": 8
+  },
+  {
+   "title": "Bullish case for Bitcoin",
+   "slug": "bullish-case-for-bitcoin",
+   "author": "Vijay Boyapati",
+   "cover": "covers/bullish-case-for-bitcoin.jpg",
+   "color": "#2E5C45",
+   "quote": "The specious root of the criticism of Bitcoin’s “high” transaction fees is the belief that Bitcoin should be a payment system first and a store of value later.",
+   "score": 0.735,
+   "toHighlight": 4
+  }
+ ],
+ "The logician and the engineer": []
 }
