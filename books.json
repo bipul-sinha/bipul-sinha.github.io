@@ -2160,7 +2160,7 @@
     "title": "The song of the cell",
     "author": "Siddharth Mukherjee",
     "color": "#6B4C9A",
-    "cover": "",
+    "cover": "covers/the-song-of-the-cell.jpg",
     "year": 2022,
     "rating": 8,
     "highlights": [
@@ -2625,7 +2625,7 @@
     "title": "The 5 Dysfunctions of a Team",
     "author": "Patrick Lencioni",
     "color": "#5A5C7E",
-    "cover": "covers/the-5-dysfunctions-of-a-team.jpg",
+    "cover": "",
     "year": 2023,
     "rating": 7,
     "highlights": []
@@ -2634,7 +2634,7 @@
     "title": "Nudge",
     "author": "Richard Thaler, Cass Sunstein",
     "color": "#8B7355",
-    "cover": "covers/nudge.jpg",
+    "cover": "",
     "year": 2022,
     "rating": 6,
     "highlights": []
@@ -2643,7 +2643,7 @@
     "title": "Nine Algorithms That Changed the Future",
     "author": "John MacCormick",
     "color": "#4A7C7E",
-    "cover": "covers/nine-algorithms-that-changed-the-future.jpg",
+    "cover": "",
     "year": 2022,
     "rating": 6,
     "highlights": []
@@ -2652,7 +2652,7 @@
     "title": "How to DeFi: Advanced",
     "author": "Darren Lau, Sam A. McPherson, Raynold Tan",
     "color": "#6B4A5A",
-    "cover": "covers/how-to-defi-advanced.jpg",
+    "cover": "",
     "year": 2022,
     "rating": 6,
     "highlights": []
@@ -2661,7 +2661,7 @@
     "title": "The NFT Handbook",
     "author": "Campbell R. Harvey, Ashlee Ebersole, Greg Pendleton, Tyrone Ross",
     "color": "#7A6B3B",
-    "cover": "covers/the-nft-handbook.jpg",
+    "cover": "",
     "year": 2022,
     "rating": 4,
     "highlights": []
@@ -2670,7 +2670,7 @@
     "title": "How to DeFi: Beginner",
     "author": "Darren Lau, Sam A. McPherson, Raynold Tan",
     "color": "#3B5A6B",
-    "cover": "covers/how-to-defi-beginner.jpg",
+    "cover": "",
     "year": 2022,
     "rating": 8,
     "highlights": []
