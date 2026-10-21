@@ -701,6 +701,16 @@
    "quote": "At SpaceX, I would tell the team, “We are on a deletion rampage!! Nothing is sacred. We will delete any remotely questionable tubes, sensors, manifolds, etc. tonight.",
    "score": 0.665,
    "toHighlight": 10
+  },
+  {
+   "title": "Liftoff",
+   "slug": "liftoff",
+   "author": "Eric Berger",
+   "cover": "covers/liftoff.jpg",
+   "color": "#7A2E4A",
+   "quote": "Prior to landing along the Florida coast, SpaceX had experimented extensively with putting boosters down on an automated drone ship stationed offshore in the Atlantic Ocean, downrange from the launch site. This is simple physics.",
+   "score": 0.695,
+   "toHighlight": 2
   }
  ],
  "The Algorithm": [
@@ -2582,5 +2592,17 @@
    "toHighlight": 4
   }
  ],
- "The logician and the engineer": []
+ "The logician and the engineer": [],
+ "Liftoff": [
+  {
+   "title": "Reentry",
+   "slug": "reentry",
+   "author": "Eric Berger",
+   "cover": "covers/reentry.jpg",
+   "color": "#3A5C8B",
+   "quote": "On one Sunday morning, at 2 or 3 in the morning, Rench and Musk were discussing plans to build a Starship factory. Musk liked what he heard so much that he was ready to start. Right then. “He told me to call the concrete guy,” Rench said.",
+   "score": 0.695,
+   "toHighlight": 6
+  }
+ ]
 }

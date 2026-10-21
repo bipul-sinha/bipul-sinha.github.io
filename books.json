@@ -2620,5 +2620,18 @@
       "With these three kinds of logic gates one can construct any combinatorial circuit. In actual practice, the three different gate types are not generally present; in the interest of standardization and economy, one finds that all combinatorial logic is built either from just not-AND gates or from just not-Inclusive-OR gates (the NAND or the NOR, respectively).",
       "Imagine that you are sending a stream of bits through a channel and that every one of them is the same. That is, you are sending either all 1s or all 0s. Suppose you do this at, say, 1,000,000 bits/second. Shannon argued that the information rate would nevertheless still be zero! That’s because you always know, before you even receive it, what the next bit will be: the same as the last bit. Shannon argued that to transmit information there must be uncertainty in what each new bit will be."
     ]
+  },
+  {
+    "title": "Liftoff",
+    "author": "Eric Berger",
+    "color": "#7A2E4A",
+    "cover": "covers/liftoff.jpg",
+    "year": 2022,
+    "rating": 7,
+    "highlights": [
+      "Musk therefore came into his job interview with Altan prepared. About halfway through, Musk told Altan, “So I heard you don’t want to move to L.A., and one of the reasons is that your wife works for Google. Well, I just talked to Larry, and they’re going to transfer your wife down to L.A. So what are you going to do now?” To solve this problem, Musk had called his friend Larry Page, the cofounder of Google. Altan sat in stunned silence for a moment. But then he replied, given all of that, he supposed he would come work for SpaceX. The next day Searles went into her job at Google, and her manager said the oddest thing had just happened. Larry Page had called to say she could now work from the company’s Los Angeles office if she wanted.",
+      "He also shared his basic philosophy of Gradatim ferociter, Latin for “Step-by-step, ferociously.”",
+      "Prior to landing along the Florida coast, SpaceX had experimented extensively with putting boosters down on an automated drone ship stationed offshore in the Atlantic Ocean, downrange from the launch site. This is simple physics. Shortly after a rocket takes off, it leans forward, gradually moving from a vertical position with respect to the ground into a horizontal posture, setting up for an orbital insertion. The net effect of this is that by the time it separates from the second stage, the first stage is happily zooming away from the launch site at a very high speed. This is not good if you want the booster back. To return the rocket all the way to a landing site in Florida requires a long burn of the first-stage engines, and this takes a lot of fuel. Any fuel used during the return trip cannot be used ascending, so this represents a huge penalty to the mass a rocket can send into orbit. One solution to this is sending a boat hundreds of miles offshore, to catch the rocket downrange.\n\nToday it is normal for SpaceX to launch rockets, catch them on land and at sea, and fly them again a couple of months later. In fewer than three years, the paradigm has shifted entirely. Whereas it once seemed novel to reuse a rocket, now it seems almost wasteful to throw them away. The company’s competitors initially scoffed at the notion of launching a rocket vertically, landing it vertically, and then flying again within a few months. Now they’re scrambling to catch up."
+    ]
   }
 ]
