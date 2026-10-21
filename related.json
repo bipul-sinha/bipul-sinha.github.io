@@ -2441,14 +2441,14 @@
    "toHighlight": 4
   },
   {
-   "title": "The song of the cell",
-   "slug": "the-song-of-the-cell",
-   "author": "Siddharth Mukherjee",
-   "cover": "covers/the-song-of-the-cell.jpg",
-   "color": "#6B4C9A",
-   "quote": "Every cell on Earth—which is to say every unit of every living being—belongs to one of three entirely distinctive domains, or branches, of living organisms. The first branch comprises bacteria.",
-   "score": 0.674,
-   "toHighlight": 1
+   "title": "Codebreakers",
+   "slug": "codebreakers",
+   "author": "Walter Issacson",
+   "cover": "",
+   "color": "#2E4A6B",
+   "quote": "Huntington’s is a rare dominant disease; even one copy of the mutation spells doom. Symptoms usually arise only after a person’s childbearing years, so its victims often have children before they know they have the genetic disease.",
+   "score": 0.703,
+   "toHighlight": 9
   }
  ],
  "Economic Facts and Fallacies": [
@@ -2603,6 +2603,38 @@
    "quote": "On one Sunday morning, at 2 or 3 in the morning, Rench and Musk were discussing plans to build a Starship factory. Musk liked what he heard so much that he was ready to start. Right then. “He told me to call the concrete guy,” Rench said.",
    "score": 0.695,
    "toHighlight": 6
+  }
+ ],
+ "Codebreakers": [
+  {
+   "title": "The Selfish Gene",
+   "slug": "the-selfish-gene",
+   "author": "Richard Dawkins",
+   "cover": "covers/the-selfish-gene.jpg",
+   "color": "#2E5C45",
+   "quote": "Individuals are not stable things, they are fleeting. Chromosomes too are shuffled into oblivion, like hands of cards soon after they are dealt. But the cards themselves survive the shuffling. The cards are the genes.",
+   "score": 0.703,
+   "toHighlight": 4
+  },
+  {
+   "title": "What is life",
+   "slug": "what-is-life",
+   "author": "Paul Nurse",
+   "cover": "covers/what-is-life.jpg",
+   "color": "#2E4A6B",
+   "quote": "Living systems are often less efficient and rationally constructed than control circuits designed intelligently by human beings, another reason why analogies between biology and computing can only go so far.",
+   "score": 0.686,
+   "toHighlight": 4
+  },
+  {
+   "title": "A brief history of intelligence",
+   "slug": "a-brief-history-of-intelligence",
+   "author": "Max Bennett",
+   "cover": "covers/a-brief-history-of-intelligence.jpg",
+   "color": "#8B6B2E",
+   "quote": "An analogy to DNA is useful. The true power of DNA is not the products it constructs (hearts, livers, brains) but the process it enables (evolution).",
+   "score": 0.67,
+   "toHighlight": 15
   }
  ]
 }
