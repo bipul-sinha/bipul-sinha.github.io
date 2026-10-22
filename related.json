@@ -1891,6 +1891,16 @@
    "toHighlight": 16
   },
   {
+   "title": "The Gene",
+   "slug": "the-gene",
+   "author": "Siddharth Mukherjee",
+   "cover": "",
+   "color": "#2E5C45",
+   "quote": "The quantum theorist Erwin Schrödinger audaciously attempted to describe the molecular nature of the gene based on purely theoretical principles (a lecture later published as the book What Is Life?).",
+   "score": 0.714,
+   "toHighlight": 6
+  },
+  {
    "title": "The song of the cell",
    "slug": "the-song-of-the-cell",
    "author": "Siddharth Mukherjee",
@@ -1899,16 +1909,6 @@
    "quote": "Every cell on Earth—which is to say every unit of every living being—belongs to one of three entirely distinctive domains, or branches, of living organisms. The first branch comprises bacteria.",
    "score": 0.7,
    "toHighlight": 1
-  },
-  {
-   "title": "A brief history of intelligence",
-   "slug": "a-brief-history-of-intelligence",
-   "author": "Max Bennett",
-   "cover": "covers/a-brief-history-of-intelligence.jpg",
-   "color": "#8B6B2E",
-   "quote": "An analogy to DNA is useful. The true power of DNA is not the products it constructs (hearts, livers, brains) but the process it enables (evolution).",
-   "score": 0.694,
-   "toHighlight": 15
   }
  ],
  "Numbers don't lie": [],
@@ -2197,6 +2197,16 @@
  ],
  "The song of the cell": [
   {
+   "title": "The Gene",
+   "slug": "the-gene",
+   "author": "Siddharth Mukherjee",
+   "cover": "",
+   "color": "#2E5C45",
+   "quote": "In 1869, a Berlin medical student, Paul Langerhans, had looked through a microscope at the pancreas, a fragile leaf of tissue tucked under the stomach, and discovered minute islands of distinct-looking cells studded across it.",
+   "score": 0.712,
+   "toHighlight": 12
+  },
+  {
    "title": "What is life",
    "slug": "what-is-life",
    "author": "Paul Nurse",
@@ -2215,16 +2225,6 @@
    "quote": "Bilaterians are the only animals that have brains. This is not a coincidence. The first brain and the bilaterian body share the same initial evolutionary purpose: They enable animals to navigate by steering. Steering was breakthrough #1.",
    "score": 0.68,
    "toHighlight": 0
-  },
-  {
-   "title": "The Selfish Gene",
-   "slug": "the-selfish-gene",
-   "author": "Richard Dawkins",
-   "cover": "covers/the-selfish-gene.jpg",
-   "color": "#2E5C45",
-   "quote": "First then, why did genes gang up in cells? Why did those ancient replicators give up the cavalier freedom of the primeval soup and take to swarming in huge colonies? Why do they cooperate?",
-   "score": 0.674,
-   "toHighlight": 23
   }
  ],
  "Metabolical": [
@@ -2271,6 +2271,16 @@
    "toHighlight": 7
   },
   {
+   "title": "The Gene",
+   "slug": "the-gene",
+   "author": "Siddharth Mukherjee",
+   "cover": "",
+   "color": "#2E5C45",
+   "quote": "In 1990, writing about the Human Genome Project, the worm geneticist John Sulston wondered about the philosophical quandary raised by an intelligent organism that has “learned to read its own instructions.” But an infinitely deeper…",
+   "score": 0.7,
+   "toHighlight": 19
+  },
+  {
    "title": "The Righteous Mind",
    "slug": "the-righteous-mind",
    "author": "",
@@ -2279,16 +2289,6 @@
    "quote": "In The Happiness Hypothesis, I called these two kinds of cognition the rider (controlled processes, including “reasoning-why”) and the elephant (automatic processes, including emotion, intuition, and all forms of “seeing-that”).",
    "score": 0.68,
    "toHighlight": 4
-  },
-  {
-   "title": "The song of the cell",
-   "slug": "the-song-of-the-cell",
-   "author": "Siddharth Mukherjee",
-   "cover": "covers/the-song-of-the-cell.jpg",
-   "color": "#6B4C9A",
-   "quote": "It is one of Cajal’s legacies that he never performed a single experiment in cell biology—or at least an experiment in the traditional sense. To see his drawings of neurons is to realize how much can be learned by just seeing.",
-   "score": 0.68,
-   "toHighlight": 9
   }
  ],
  "Good Energy": [
@@ -2421,6 +2421,16 @@
  ],
  "The Selfish Gene": [
   {
+   "title": "The Gene",
+   "slug": "the-gene",
+   "author": "Siddharth Mukherjee",
+   "cover": "",
+   "color": "#2E5C45",
+   "quote": "In 1990, writing about the Human Genome Project, the worm geneticist John Sulston wondered about the philosophical quandary raised by an intelligent organism that has “learned to read its own instructions.” But an infinitely deeper…",
+   "score": 0.718,
+   "toHighlight": 19
+  },
+  {
    "title": "A brief history of intelligence",
    "slug": "a-brief-history-of-intelligence",
    "author": "Max Bennett",
@@ -2439,16 +2449,6 @@
    "quote": "Living systems are often less efficient and rationally constructed than control circuits designed intelligently by human beings, another reason why analogies between biology and computing can only go so far.",
    "score": 0.732,
    "toHighlight": 4
-  },
-  {
-   "title": "Codebreakers",
-   "slug": "codebreakers",
-   "author": "Walter Issacson",
-   "cover": "covers/codebreakers.jpg",
-   "color": "#2E4A6B",
-   "quote": "Huntington’s is a rare dominant disease; even one copy of the mutation spells doom. Symptoms usually arise only after a person’s childbearing years, so its victims often have children before they know they have the genetic disease.",
-   "score": 0.703,
-   "toHighlight": 9
   }
  ],
  "Economic Facts and Fallacies": [
@@ -2607,6 +2607,16 @@
  ],
  "Codebreakers": [
   {
+   "title": "The Gene",
+   "slug": "the-gene",
+   "author": "Siddharth Mukherjee",
+   "cover": "",
+   "color": "#2E5C45",
+   "quote": "In 1990, writing about the Human Genome Project, the worm geneticist John Sulston wondered about the philosophical quandary raised by an intelligent organism that has “learned to read its own instructions.” But an infinitely deeper…",
+   "score": 0.722,
+   "toHighlight": 19
+  },
+  {
    "title": "The Selfish Gene",
    "slug": "the-selfish-gene",
    "author": "Richard Dawkins",
@@ -2625,16 +2635,38 @@
    "quote": "Living systems are often less efficient and rationally constructed than control circuits designed intelligently by human beings, another reason why analogies between biology and computing can only go so far.",
    "score": 0.686,
    "toHighlight": 4
+  }
+ ],
+ "The Gene": [
+  {
+   "title": "The Selfish Gene",
+   "slug": "the-selfish-gene",
+   "author": "Richard Dawkins",
+   "cover": "covers/the-selfish-gene.jpg",
+   "color": "#2E5C45",
+   "quote": "Individuals are not stable things, they are fleeting. Chromosomes too are shuffled into oblivion, like hands of cards soon after they are dealt. But the cards themselves survive the shuffling. The cards are the genes.",
+   "score": 0.718,
+   "toHighlight": 4
   },
   {
-   "title": "A brief history of intelligence",
-   "slug": "a-brief-history-of-intelligence",
-   "author": "Max Bennett",
-   "cover": "covers/a-brief-history-of-intelligence.jpg",
-   "color": "#8B6B2E",
-   "quote": "An analogy to DNA is useful. The true power of DNA is not the products it constructs (hearts, livers, brains) but the process it enables (evolution).",
-   "score": 0.67,
-   "toHighlight": 15
+   "title": "Codebreakers",
+   "slug": "codebreakers",
+   "author": "Walter Issacson",
+   "cover": "covers/codebreakers.jpg",
+   "color": "#2E4A6B",
+   "quote": "As I surveyed the scene with all of its natural variety, I pondered how this promise of CRISPR might also be its peril.",
+   "score": 0.722,
+   "toHighlight": 13
+  },
+  {
+   "title": "The song of the cell",
+   "slug": "the-song-of-the-cell",
+   "author": "Siddharth Mukherjee",
+   "cover": "covers/the-song-of-the-cell.jpg",
+   "color": "#6B4C9A",
+   "quote": "A gene carries the code; a cell deciphers that code. A cell thus transforms information into form; genetic code into proteins.",
+   "score": 0.712,
+   "toHighlight": 0
   }
  ]
 }
