@@ -2045,6 +2045,16 @@
  ],
  "Getting to Yes": [
   {
+   "title": "Negotiation Genius",
+   "slug": "negotiation-genius",
+   "author": "Deepak Malhotra",
+   "cover": "covers/negotiation-genius.jpg",
+   "color": "#8B3A2E",
+   "quote": "Even the most self-interested negotiators must rely on others to satisfy their own interests. Remember: to take what is there, you must work with the other side to make what is there.",
+   "score": 0.732,
+   "toHighlight": 7
+  },
+  {
    "title": "The Happiness Hypothesis",
    "slug": "the-happiness-hypothesis",
    "author": "",
@@ -2063,16 +2073,6 @@
    "quote": "Because we are so confident of our beliefs, we experience three reactions when someone fails to share our views. Response 1: Assumption of ignorance. The other party clearly lacks the necessary information.",
    "score": 0.678,
    "toHighlight": 18
-  },
-  {
-   "title": "The Coddling of American Mind",
-   "slug": "the-coddling-of-american-mind",
-   "author": "Greg Lukianoff and Jonathan Haidt",
-   "cover": "covers/the-coddling-of-american-mind.jpg",
-   "color": "#2E5C45",
-   "quote": "If you want to motivate people to support a new policy or join a movement in the name of justice, you need to activate in them a clear perception, or intuition, that someone didn’t get what he or she deserved (distributive injustice) or…",
-   "score": 0.683,
-   "toHighlight": 9
   }
  ],
  "How to avoid a climate disaster": [
@@ -2088,6 +2088,16 @@
   }
  ],
  "No rules rules": [
+  {
+   "title": "Negotiation Genius",
+   "slug": "negotiation-genius",
+   "author": "Deepak Malhotra",
+   "cover": "covers/negotiation-genius.jpg",
+   "color": "#8B3A2E",
+   "quote": "We stated that one way to obtain better outcomes is to have high aspirations; those who set aggressive targets tend to capture more value.",
+   "score": 0.684,
+   "toHighlight": 4
+  },
   {
    "title": "Rework",
    "slug": "rework",
@@ -2107,16 +2117,6 @@
    "quote": "So if you want to develop Power, your first step is invention: breakthrough products, engaging brands, innovative business models. The first step, yes, but it can’t be the last step.",
    "score": 0.68,
    "toHighlight": 13
-  },
-  {
-   "title": "High Output Management",
-   "slug": "high-output-management",
-   "author": "Andy Grove",
-   "cover": "covers/high-output-management.jpg",
-   "color": "#6B5A2E",
-   "quote": "“CEOs always act on leading indicators of good news, but only act on lagging indicators of bad news.” “In order to build anything great, you have to be an optimist, because by definition you are trying to do something that most people…",
-   "score": 0.678,
-   "toHighlight": 5
   }
  ],
  "Outlive": [
@@ -2667,6 +2667,38 @@
    "quote": "A gene carries the code; a cell deciphers that code. A cell thus transforms information into form; genetic code into proteins.",
    "score": 0.712,
    "toHighlight": 0
+  }
+ ],
+ "Negotiation Genius": [
+  {
+   "title": "Getting to Yes",
+   "slug": "getting-to-yes",
+   "author": "Roger Fisher , William L. Ury",
+   "cover": "covers/getting-to-yes.jpg",
+   "color": "#6B5A2E",
+   "quote": "Yet all too often negotiators end up like the proverbial children who quarreled over an orange.",
+   "score": 0.732,
+   "toHighlight": 7
+  },
+  {
+   "title": "Understanding Michael Porter",
+   "slug": "understanding-michael-porter",
+   "author": "Joan Magretta",
+   "cover": "covers/understanding-michael-porter.jpg",
+   "color": "#6B5A2E",
+   "quote": "Trade-offs make choices about what not to do as important as choices of what to do. Deciding which needs to serve and which products to offer is absolutely key to developing a strategy.",
+   "score": 0.695,
+   "toHighlight": 15
+  },
+  {
+   "title": "Crossing the chasm",
+   "slug": "crossing-the-chasm",
+   "author": "Geoffrey Moore",
+   "cover": "covers/crossing-the-chasm.jpg",
+   "color": "#2E6B6B",
+   "quote": "Wouldn’t it have been better in both cases to have included extra value statements for a bigger effect? The answer here is an emphatic no. Indeed, this is just what defeats most positioning efforts.",
+   "score": 0.686,
+   "toHighlight": 16
   }
  ]
 }
