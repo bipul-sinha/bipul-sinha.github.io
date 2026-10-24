@@ -118,14 +118,14 @@
    "toHighlight": 16
   },
   {
-   "title": "Daily stoic",
-   "slug": "daily-stoic",
-   "author": "Ryan Holliday",
-   "cover": "covers/daily-stoic.jpg",
-   "color": "#3A5C8B",
-   "quote": "The point is not to wish for these adversities, but for the virtue that makes adversities bearable. We’d be crazy to want to face difficulty in life. But we’d be equally crazy to pretend that it isn’t going to happen.",
-   "score": 0.673,
-   "toHighlight": 12
+   "title": "The Psychology of Money",
+   "slug": "the-psychology-of-money",
+   "author": "Morgan Housel",
+   "cover": "covers/the-psychology-of-money.jpg",
+   "color": "#2E6B6B",
+   "quote": "Modern capitalism is a pro at two things: generating wealth and generating envy. Perhaps they go hand in hand; wanting to surpass your peers can be the fuel of hard work. But life isn’t any fun without a sense of enough.",
+   "score": 0.695,
+   "toHighlight": 5
   }
  ],
  "The Thinking Machine": [
@@ -236,6 +236,16 @@
    "toHighlight": 0
   },
   {
+   "title": "No Filter",
+   "slug": "no-filter",
+   "author": "Sarah Frier",
+   "cover": "covers/no-filter.jpg",
+   "color": "#6B4C9A",
+   "quote": "Krieger did build a re-share button but never released it to the public. The founders thought it would violate the expectations you had when you followed someone.",
+   "score": 0.669,
+   "toHighlight": 3
+  },
+  {
    "title": "The Happiness Hypothesis",
    "slug": "the-happiness-hypothesis",
    "author": "",
@@ -244,16 +254,6 @@
    "quote": "A curious fact about auto-biographical memory called the “memory bump.” When people older than thirty are asked to remember the most important or vivid events of their lives, they are disproportionately likely to recall events that…",
    "score": 0.666,
    "toHighlight": 16
-  },
-  {
-   "title": "Discrimination and Disparities",
-   "slug": "discrimination-and-disparities",
-   "author": "Thomas Sowell",
-   "cover": "covers/discrimination-and-disparities.jpg",
-   "color": "#7A2E4A",
-   "quote": "At the heart of the prevailing social vision of our times is the seemingly invincible fallacy that group outcomes in human endeavors would tend to be equal, or at least comparable or random, if there were no biased interventions, on the…",
-   "score": 0.664,
-   "toHighlight": 17
   }
  ],
  "The 5 types of wealth": [
@@ -357,14 +357,14 @@
    "toHighlight": 9
   },
   {
-   "title": "Daily stoic",
-   "slug": "daily-stoic",
-   "author": "Ryan Holliday",
-   "cover": "covers/daily-stoic.jpg",
-   "color": "#3A5C8B",
-   "quote": "The point is not to wish for these adversities, but for the virtue that makes adversities bearable. We’d be crazy to want to face difficulty in life. But we’d be equally crazy to pretend that it isn’t going to happen.",
-   "score": 0.682,
-   "toHighlight": 12
+   "title": "The Psychology of Money",
+   "slug": "the-psychology-of-money",
+   "author": "Morgan Housel",
+   "cover": "covers/the-psychology-of-money.jpg",
+   "color": "#2E6B6B",
+   "quote": "Bill Gates once said, “Success is a lousy teacher. It seduces smart people into thinking they can’t lose.” Failure can be a lousy teacher, because it seduces smart people into thinking their decisions were terrible when sometimes they just…",
+   "score": 0.683,
+   "toHighlight": 2
   }
  ],
  "Apple in China": [
@@ -411,6 +411,16 @@
    "toHighlight": 15
   },
   {
+   "title": "The Psychology of Money",
+   "slug": "the-psychology-of-money",
+   "author": "Morgan Housel",
+   "cover": "covers/the-psychology-of-money.jpg",
+   "color": "#2E6B6B",
+   "quote": "An idea exists in finance that seems innocent but has done incalculable damage. It’s the notion that assets have one rational price in a world where investors have different goals and time horizons.",
+   "score": 0.705,
+   "toHighlight": 11
+  },
+  {
    "title": "How to get rich",
    "slug": "how-to-get-rich",
    "author": "Felix Dennis",
@@ -419,16 +429,6 @@
    "quote": "The Upside-Down Pyramid for Getting Rich: 1. Commit or don’t commit. No half-measures. 2. Cut loose from all negative influences. 3. Choose the right mountain. 4. Fear nothing. 5. Start now. 6. Go!",
    "score": 0.683,
    "toHighlight": 19
-  },
-  {
-   "title": "Crossing the chasm",
-   "slug": "crossing-the-chasm",
-   "author": "Geoffrey Moore",
-   "cover": "covers/crossing-the-chasm.jpg",
-   "color": "#2E6B6B",
-   "quote": "You can succeed with the visionaries, and you can thereby get a reputation for being a high flyer with a hot product, but that is not ultimately where the dollars are.",
-   "score": 0.677,
-   "toHighlight": 4
   }
  ],
  "Competing Against Luck": [
@@ -553,6 +553,16 @@
    "toHighlight": 6
   },
   {
+   "title": "The Psychology of Money",
+   "slug": "the-psychology-of-money",
+   "author": "Morgan Housel",
+   "cover": "covers/the-psychology-of-money.jpg",
+   "color": "#2E6B6B",
+   "quote": "An idea exists in finance that seems innocent but has done incalculable damage. It’s the notion that assets have one rational price in a world where investors have different goals and time horizons.",
+   "score": 0.725,
+   "toHighlight": 11
+  },
+  {
    "title": "The Art of Thinking Clearly",
    "slug": "the-art-of-thinking-clearly",
    "author": "Rolf Dobelli",
@@ -560,16 +570,6 @@
    "color": "#6B4C9A",
    "quote": "The more people competing, the greater the chances are that one of them will repeatedly strike lucky. Perhaps even you.",
    "score": 0.696,
-   "toHighlight": 11
-  },
-  {
-   "title": "Broken Money",
-   "slug": "broken-money",
-   "author": "Lyn Alden",
-   "cover": "covers/broken-money.jpg",
-   "color": "#4A3B6B",
-   "quote": "When money in a society maintains its value well over time, there is an incentive to hold wealth in it.",
-   "score": 0.695,
    "toHighlight": 11
   }
  ],
@@ -961,14 +961,14 @@
    "toHighlight": 13
   },
   {
-   "title": "The Art of Spending Money",
-   "slug": "the-art-of-spending-money",
+   "title": "The Psychology of Money",
+   "slug": "the-psychology-of-money",
    "author": "Morgan Housel",
-   "cover": "covers/the-art-of-spending-money.jpg",
-   "color": "#6B2F3E",
-   "quote": "[On the highest level of independence] You wake up every morning realizing that you can spend your time doing what you want, with whom you want, for as long as you want. Bosses don’t control your day.",
-   "score": 0.687,
-   "toHighlight": 10
+   "cover": "covers/the-psychology-of-money.jpg",
+   "color": "#2E6B6B",
+   "quote": "The hardest financial skill is getting the goalpost to stop moving. If expectations rise with results there is no logic in striving for more because you’ll feel the same after putting in extra effort.",
+   "score": 0.705,
+   "toHighlight": 4
   }
  ],
  "Crossing the chasm": [
@@ -1135,14 +1135,14 @@
    "toHighlight": 9
   },
   {
-   "title": "The Happiness Hypothesis",
-   "slug": "the-happiness-hypothesis",
-   "author": "",
-   "cover": "covers/the-happiness-hypothesis.jpg",
+   "title": "The Psychology of Money",
+   "slug": "the-psychology-of-money",
+   "author": "Morgan Housel",
+   "cover": "covers/the-psychology-of-money.jpg",
    "color": "#2E6B6B",
-   "quote": "Schwartz and his colleagues find that the paradox mostly applies to people they call “maximizers”—those who habitually try to evaluate all the options, seek out more information, and make the best choice (or “maximize their utility,” as…",
-   "score": 0.688,
-   "toHighlight": 9
+   "quote": "An idea exists in finance that seems innocent but has done incalculable damage. It’s the notion that assets have one rational price in a world where investors have different goals and time horizons.",
+   "score": 0.699,
+   "toHighlight": 11
   }
  ],
  "The Lessons of History": [
@@ -1201,6 +1201,16 @@
    "toHighlight": 11
   },
   {
+   "title": "The Psychology of Money",
+   "slug": "the-psychology-of-money",
+   "author": "Morgan Housel",
+   "cover": "covers/the-psychology-of-money.jpg",
+   "color": "#2E6B6B",
+   "quote": "An idea exists in finance that seems innocent but has done incalculable damage. It’s the notion that assets have one rational price in a world where investors have different goals and time horizons.",
+   "score": 0.698,
+   "toHighlight": 11
+  },
+  {
    "title": "How to Live an Extraordinary life",
    "slug": "how-to-live-an-extraordinary-life",
    "author": "Anthony Pompliano",
@@ -1209,16 +1219,6 @@
    "quote": "Life is all about power laws. Relationships, experiences, financial returns. Find the 5% that delivers 95% and ignore the rest.",
    "score": 0.687,
    "toHighlight": 5
-  },
-  {
-   "title": "Million Dollar Weekend",
-   "slug": "million-dollar-weekend",
-   "author": "Noah Kagan",
-   "cover": "covers/million-dollar-weekend.jpg",
-   "color": "#7A2E4A",
-   "quote": "Be persistent. I want you to believe that almost every no you get can eventually become a yes. Persistence will reveal that most noes are actually a “not now.”",
-   "score": 0.684,
-   "toHighlight": 2
   }
  ],
  "Poverty, by America": [
@@ -2399,6 +2399,16 @@
  ],
  "The Cold Start problem": [
   {
+   "title": "No Filter",
+   "slug": "no-filter",
+   "author": "Sarah Frier",
+   "cover": "covers/no-filter.jpg",
+   "color": "#6B4C9A",
+   "quote": "Krieger did build a re-share button but never released it to the public. The founders thought it would violate the expectations you had when you followed someone.",
+   "score": 0.69,
+   "toHighlight": 3
+  },
+  {
    "title": "Understanding Michael Porter",
    "slug": "understanding-michael-porter",
    "author": "Joan Magretta",
@@ -2417,16 +2427,6 @@
    "quote": "An idea that is disruptive to one business may be sustaining to another. Given the stark odds that favor the incumbents in the sustaining race but entrants in disruptive ones, we recommend a strict rule: If your idea for a product or…",
    "score": 0.68,
    "toHighlight": 2
-  },
-  {
-   "title": "Crossing the chasm",
-   "slug": "crossing-the-chasm",
-   "author": "Geoffrey Moore",
-   "cover": "covers/crossing-the-chasm.jpg",
-   "color": "#2E6B6B",
-   "quote": "You can succeed with the visionaries, and you can thereby get a reputation for being a high flyer with a hot product, but that is not ultimately where the dollars are.",
-   "score": 0.677,
-   "toHighlight": 4
   }
  ],
  "The Selfish Gene": [
@@ -2741,6 +2741,60 @@
    "quote": "Senior managers got to where they are by having been good at what they do. And over time they have learned to lead with their strengths.",
    "score": 0.692,
    "toHighlight": 7
+  }
+ ],
+ "No Filter": [
+  {
+   "title": "The Cold Start problem",
+   "slug": "the-cold-start-problem",
+   "author": "Andrew Chen",
+   "cover": "covers/the-cold-start-problem.jpg",
+   "color": "#2E4A6B",
+   "quote": "Every network, if it starts with a focused atomic network, has a concept like “netiquette.” There’s a shared context in the early years of what you should and shouldn’t do within a network—a culture.",
+   "score": 0.69,
+   "toHighlight": 22
+  },
+  {
+   "title": "The Anxious Generation",
+   "slug": "the-anxious-generation",
+   "author": "",
+   "cover": "covers/the-anxious-generation.jpg",
+   "color": "#8B3A2E",
+   "quote": "In an attention economy, there’s only so much attention and the advertising business model always wants more. So, it becomes a race to the bottom of the brainstem. . . . It starts small.",
+   "score": 0.669,
+   "toHighlight": 19
+  }
+ ],
+ "The Psychology of Money": [
+  {
+   "title": "The most important thing",
+   "slug": "the-most-important-thing",
+   "author": "Howard Marks",
+   "cover": "covers/the-most-important-thing.jpg",
+   "color": "#6B5A2E",
+   "quote": "Once in a while we experience periods when everything goes well and riskier investments deliver the higher returns they seem to promise.",
+   "score": 0.725,
+   "toHighlight": 0
+  },
+  {
+   "title": "How to get rich",
+   "slug": "how-to-get-rich",
+   "author": "Felix Dennis",
+   "cover": "covers/how-to-get-rich.jpg",
+   "color": "#3A5C8B",
+   "quote": "If you wish to be rich, you must grow a carapace. A mental armor. Not so thick as to blind you to well-constructed criticism and advice, especially from those you trust. Nor so thick as to cut you off from friends and family.",
+   "score": 0.705,
+   "toHighlight": 1
+  },
+  {
+   "title": "Richer, Wiser, Happier",
+   "slug": "richer-wiser-happier",
+   "author": "William Green",
+   "cover": "covers/richer-wiser-happier.jpg",
+   "color": "#2E5C45",
+   "quote": "The financial markets are the perfect laboratory for the study of cyclicality because they’re driven by investor psychology, which veers perennially between euphoria and despondency, greed and fear, credulousness and skepticism,…",
+   "score": 0.705,
+   "toHighlight": 6
   }
  ]
 }
