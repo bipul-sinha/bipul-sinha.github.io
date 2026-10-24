@@ -305,6 +305,16 @@
  "Big Panda and Tiny Dragon": [],
  "Extreme Ownership": [
   {
+   "title": "The Making of a Manager",
+   "slug": "the-making-of-a-manager",
+   "author": "Julie Zhuo",
+   "cover": "covers/the-making-of-a-manager.jpg",
+   "color": "#3A5C8B",
+   "quote": "If you have five people on your team, four of whom are doing well and one who isn’t, you may feel like you should focus most of your time and energy on the struggling report because you want to “fix” the problem.",
+   "score": 0.698,
+   "toHighlight": 5
+  },
+  {
    "title": "High Output Management",
    "slug": "high-output-management",
    "author": "Andy Grove",
@@ -1297,14 +1307,14 @@
    "toHighlight": 14
   },
   {
-   "title": "Build",
-   "slug": "build",
-   "author": "Tony Fadell",
-   "cover": "covers/build.jpg",
-   "color": "#8B6B2E",
-   "quote": "Soon our testers reported in: It went fine. Everything’s up and running! But it took about an hour to install. We winced. Crap. An hour was way too long. So we dug into the reports—what was taking so long? What were we missing?",
-   "score": 0.662,
-   "toHighlight": 6
+   "title": "The Making of a Manager",
+   "slug": "the-making-of-a-manager",
+   "author": "Julie Zhuo",
+   "cover": "covers/the-making-of-a-manager.jpg",
+   "color": "#3A5C8B",
+   "quote": "Six years ago, I switched my reporting to a different manager, Chris Cox, Facebook’s chief product officer. One of the earliest conversations I remember us having is when I asked him how he evaluates the job of a manager.",
+   "score": 0.663,
+   "toHighlight": 0
   }
  ],
  "Diary of CEO": [
@@ -1697,14 +1707,14 @@
    "toHighlight": 7
   },
   {
-   "title": "How to get rich",
-   "slug": "how-to-get-rich",
-   "author": "Felix Dennis",
-   "cover": "covers/how-to-get-rich.jpg",
+   "title": "The Making of a Manager",
+   "slug": "the-making-of-a-manager",
+   "author": "Julie Zhuo",
+   "cover": "covers/the-making-of-a-manager.jpg",
    "color": "#3A5C8B",
-   "quote": "To become rich you must be an owner. And you must try to own it all. You must strive with every fiber of your being, while recognizing the idiocy of your behavior, to own and retain control of as near to 100 percent of any company as you…",
-   "score": 0.661,
-   "toHighlight": 13
+   "quote": "Once, as I was describing the philosophy of always looking to put yourself out of a job, a report asked me: “Okay, but if you did delegate everything to others, doesn’t that mean you become overhead?",
+   "score": 0.662,
+   "toHighlight": 11
   }
  ],
  "The Obstacle is the way": [
@@ -1817,6 +1827,16 @@
  ],
  "High Output Management": [
   {
+   "title": "The Making of a Manager",
+   "slug": "the-making-of-a-manager",
+   "author": "Julie Zhuo",
+   "cover": "covers/the-making-of-a-manager.jpg",
+   "color": "#3A5C8B",
+   "quote": "My own observations are similar, and I’ve come to think of the multitude of tasks that fill up a manager’s day as sorting neatly into three buckets: purpose, people, and process.",
+   "score": 0.701,
+   "toHighlight": 1
+  },
+  {
    "title": "The innovator's solution",
    "slug": "the-innovator-s-solution",
    "author": "Clay Christensen",
@@ -1835,16 +1855,6 @@
    "quote": "Principle number one is to refine rules and processes before adding people. Using people to leverage a refined process multiplies production; using people as a solution to a poor process multiplies problems.",
    "score": 0.679,
    "toHighlight": 14
-  },
-  {
-   "title": "The almanack of Naval Ravikant",
-   "slug": "the-almanack-of-naval-ravikant",
-   "author": "Eric Jorgenson",
-   "cover": "covers/the-almanack-of-naval-ravikant.jpg",
-   "color": "#8B6B2E",
-   "quote": "There are three broad classes of leverage: (1) One form of leverage is labor—other humans working for you. It is the oldest form of leverage, and actually not a great one in the modern world.",
-   "score": 0.677,
-   "toHighlight": 1
   }
  ],
  "Fundamentals": [
@@ -2089,6 +2099,16 @@
  ],
  "No rules rules": [
   {
+   "title": "The Making of a Manager",
+   "slug": "the-making-of-a-manager",
+   "author": "Julie Zhuo",
+   "cover": "covers/the-making-of-a-manager.jpg",
+   "color": "#3A5C8B",
+   "quote": "Former General Electric CEO Jack Welch argues that protecting low performers only increases the damage when, inevitably, a manager is forced to let them go.",
+   "score": 0.724,
+   "toHighlight": 6
+  },
+  {
    "title": "Negotiation Genius",
    "slug": "negotiation-genius",
    "author": "Deepak Malhotra",
@@ -2107,16 +2127,6 @@
    "quote": "Anyone who takes a “we’ll figure out how to profit in the future” attitude to business is being ridiculous.",
    "score": 0.682,
    "toHighlight": 4
-  },
-  {
-   "title": "7 Powers",
-   "slug": "7-powers",
-   "author": "Hamilton Helmer",
-   "cover": "covers/7-powers.jpg",
-   "color": "#6B4C9A",
-   "quote": "So if you want to develop Power, your first step is invention: breakthrough products, engaging brands, innovative business models. The first step, yes, but it can’t be the last step.",
-   "score": 0.68,
-   "toHighlight": 13
   }
  ],
  "Outlive": [
@@ -2699,6 +2709,38 @@
    "quote": "Wouldn’t it have been better in both cases to have included extra value statements for a bigger effect? The answer here is an emphatic no. Indeed, this is just what defeats most positioning efforts.",
    "score": 0.686,
    "toHighlight": 16
+  }
+ ],
+ "The Making of a Manager": [
+  {
+   "title": "No rules rules",
+   "slug": "no-rules-rules",
+   "author": "Erin Meyer and Reed Hastings",
+   "cover": "covers/no-rules-rules.jpg",
+   "color": "#2E4A6B",
+   "quote": "If you’re serious about talent density, you have to get in the habit of doing something a lot harder: firing a good employee when you think you can get a great one.",
+   "score": 0.724,
+   "toHighlight": 15
+  },
+  {
+   "title": "High Output Management",
+   "slug": "high-output-management",
+   "author": "Andy Grove",
+   "cover": "covers/high-output-management.jpg",
+   "color": "#6B5A2E",
+   "quote": "As a means to obtain this leverage, a manager must understand, as Andy writes: “When a person is not doing his job, there can only be two reasons for it.",
+   "score": 0.701,
+   "toHighlight": 4
+  },
+  {
+   "title": "Only the Paranoid survive",
+   "slug": "only-the-paranoid-survive",
+   "author": "Andy Grove",
+   "cover": "covers/only-the-paranoid-survive.jpg",
+   "color": "#2E6B6B",
+   "quote": "Senior managers got to where they are by having been good at what they do. And over time they have learned to lead with their strengths.",
+   "score": 0.692,
+   "toHighlight": 7
   }
  ]
 }
