@@ -2828,5 +2828,17 @@
    "score": 0.694,
    "toHighlight": 15
   }
+ ],
+ "Stuff Matters": [
+  {
+   "title": "A beautiful question",
+   "slug": "a-beautiful-question",
+   "author": "Frank Wilczek",
+   "cover": "covers/a-beautiful-question.jpg",
+   "color": "#7A2E4A",
+   "quote": "Looking back in history, thanks to the finite speed of light, we may see, through their spectra, that the atoms in galaxies a long time ago, and far far away, behave in the same way as the atoms we see on Earth today.",
+   "score": 0.661,
+   "toHighlight": 13
+  }
  ]
 }
