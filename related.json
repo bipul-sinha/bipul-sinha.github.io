@@ -1633,6 +1633,16 @@
    "toHighlight": 18
   },
   {
+   "title": "Global Payments: And the Fintech Innovations Changing the Industry",
+   "slug": "global-payments-and-the-fintech-innovations-changing-the-industry",
+   "author": "Carol Benson",
+   "cover": "covers/global-payments-and-the-fintech-innovations-changing-the-industry.jpg",
+   "color": "#7A2E4A",
+   "quote": "Should payments systems be viewed as infrastructure, or as a competitive marketplace? Some regulators are beginning to talk about payments systems as public goods, akin to national highway systems or the internet’s DNS.",
+   "score": 0.678,
+   "toHighlight": 5
+  },
+  {
    "title": "The innovator's solution",
    "slug": "the-innovator-s-solution",
    "author": "Clay Christensen",
@@ -1641,16 +1651,6 @@
    "quote": "One of the most exciting insights from our research about commoditization is that whenever it is at work somewhere in a value chain, a reciprocal process of de-commoditization is at work somewhere else in the value chain.",
    "score": 0.667,
    "toHighlight": 7
-  },
-  {
-   "title": "Crossing the chasm",
-   "slug": "crossing-the-chasm",
-   "author": "Geoffrey Moore",
-   "cover": "covers/crossing-the-chasm.jpg",
-   "color": "#2E6B6B",
-   "quote": "You can succeed with the visionaries, and you can thereby get a reputation for being a high flyer with a hot product, but that is not ultimately where the dollars are.",
-   "score": 0.666,
-   "toHighlight": 4
   }
  ],
  "How to win friends and influence people": [
@@ -2841,5 +2841,27 @@
    "toHighlight": 13
   }
  ],
- "Humble Pi": []
+ "Humble Pi": [],
+ "Global Payments: And the Fintech Innovations Changing the Industry": [
+  {
+   "title": "Broken Money",
+   "slug": "broken-money",
+   "author": "Lyn Alden",
+   "cover": "covers/broken-money.jpg",
+   "color": "#4A3B6B",
+   "quote": "This becomes especially true if a jurisdiction treats the harder money like property and taxes each transaction, while enforcing legal tender for the weaker money, which most jurisdictions do.",
+   "score": 0.686,
+   "toHighlight": 18
+  },
+  {
+   "title": "Bullish case for Bitcoin",
+   "slug": "bullish-case-for-bitcoin",
+   "author": "Vijay Boyapati",
+   "cover": "covers/bullish-case-for-bitcoin.jpg",
+   "color": "#2E5C45",
+   "quote": "The specious root of the criticism of Bitcoin’s “high” transaction fees is the belief that Bitcoin should be a payment system first and a store of value later.",
+   "score": 0.678,
+   "toHighlight": 4
+  }
+ ]
 }
