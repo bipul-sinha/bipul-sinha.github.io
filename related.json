@@ -1115,6 +1115,16 @@
  "Prisoners of Geography": [],
  "The Art of the Good life": [
   {
+   "title": "Decisive",
+   "slug": "decisive",
+   "author": "Chip Heath and Dan Heath",
+   "cover": "covers/decisive.jpg",
+   "color": "#8B6B2E",
+   "quote": "Kahneman says that we are quick to jump to conclusions because we give too much weight to the information that’s right in front of us, while failing to consider the information that’s just offstage.",
+   "score": 0.694,
+   "toHighlight": 0
+  },
+  {
    "title": "The almanack of Naval Ravikant",
    "slug": "the-almanack-of-naval-ravikant",
    "author": "Eric Jorgenson",
@@ -1133,16 +1143,6 @@
    "quote": "Rule number one: most things will prove to be cyclical. Rule number two: some of the greatest opportunities for gain and loss come when other people forget rule number one.",
    "score": 0.692,
    "toHighlight": 9
-  },
-  {
-   "title": "The Psychology of Money",
-   "slug": "the-psychology-of-money",
-   "author": "Morgan Housel",
-   "cover": "covers/the-psychology-of-money.jpg",
-   "color": "#2E6B6B",
-   "quote": "An idea exists in finance that seems innocent but has done incalculable damage. It’s the notion that assets have one rational price in a world where investors have different goals and time horizons.",
-   "score": 0.699,
-   "toHighlight": 11
   }
  ],
  "The Lessons of History": [
@@ -1287,6 +1287,16 @@
  ],
  "Working Backwards": [
   {
+   "title": "Decisive",
+   "slug": "decisive",
+   "author": "Chip Heath and Dan Heath",
+   "cover": "covers/decisive.jpg",
+   "color": "#8B6B2E",
+   "quote": "He and his colleagues designed a study to test whether consumers spontaneously considered opportunity costs.",
+   "score": 0.678,
+   "toHighlight": 8
+  },
+  {
    "title": "Million Dollar Weekend",
    "slug": "million-dollar-weekend",
    "author": "Noah Kagan",
@@ -1305,16 +1315,6 @@
    "quote": "Once or twice a year, at our product meetings, I ask all of our managers to complete a simple form outlining their bets from the last few years, divided into three categories: bets that went well, bets that didn’t go well, and open bets.",
    "score": 0.672,
    "toHighlight": 14
-  },
-  {
-   "title": "The Making of a Manager",
-   "slug": "the-making-of-a-manager",
-   "author": "Julie Zhuo",
-   "cover": "covers/the-making-of-a-manager.jpg",
-   "color": "#3A5C8B",
-   "quote": "Six years ago, I switched my reporting to a different manager, Chris Cox, Facebook’s chief product officer. One of the earliest conversations I remember us having is when I asked him how he evaluates the job of a manager.",
-   "score": 0.663,
-   "toHighlight": 0
   }
  ],
  "Diary of CEO": [
@@ -1501,6 +1501,16 @@
  ],
  "The Art of Thinking Clearly": [
   {
+   "title": "Decisive",
+   "slug": "decisive",
+   "author": "Chip Heath and Dan Heath",
+   "cover": "covers/decisive.jpg",
+   "color": "#8B6B2E",
+   "quote": "Kahneman says that we are quick to jump to conclusions because we give too much weight to the information that’s right in front of us, while failing to consider the information that’s just offstage.",
+   "score": 0.689,
+   "toHighlight": 0
+  },
+  {
    "title": "The most important thing",
    "slug": "the-most-important-thing",
    "author": "Howard Marks",
@@ -1519,16 +1529,6 @@
    "quote": "What you want in life is to be in control of your time. You want to get into a leveraged job where you control your own time and you’re tracked on the outputs.",
    "score": 0.679,
    "toHighlight": 2
-  },
-  {
-   "title": "The Art of the Good life",
-   "slug": "the-art-of-the-good-life",
-   "author": "Rolf Dobelli",
-   "cover": "covers/the-art-of-the-good-life.jpg",
-   "color": "#2E5C45",
-   "quote": "It’s much nicer to mull things over than to seize the initiative. Speculation is more agreeable than realization.",
-   "score": 0.685,
-   "toHighlight": 15
   }
  ],
  "The anthology of Balaji": [
@@ -1837,6 +1837,16 @@
    "toHighlight": 1
   },
   {
+   "title": "Decisive",
+   "slug": "decisive",
+   "author": "Chip Heath and Dan Heath",
+   "cover": "covers/decisive.jpg",
+   "color": "#8B6B2E",
+   "quote": "Success emerges from the quality of the decisions we make and the quantity of luck we receive. We can’t control luck. But we can control the way we make choices.",
+   "score": 0.687,
+   "toHighlight": 25
+  },
+  {
    "title": "The innovator's solution",
    "slug": "the-innovator-s-solution",
    "author": "Clay Christensen",
@@ -1845,16 +1855,6 @@
    "quote": "It is the habit of large, established companies to ramp up expenses ahead of revenues, because in a world of deliberate strategy and sustaining innovation, these are safe bets.",
    "score": 0.682,
    "toHighlight": 17
-  },
-  {
-   "title": "The 4-Hour Workweek",
-   "slug": "the-4-hour-workweek",
-   "author": "Tim Ferriss",
-   "cover": "covers/the-4-hour-workweek.jpg",
-   "color": "#2F5A63",
-   "quote": "Principle number one is to refine rules and processes before adding people. Using people to leverage a refined process multiplies production; using people as a solution to a poor process multiplies problems.",
-   "score": 0.679,
-   "toHighlight": 14
   }
  ],
  "Fundamentals": [
@@ -2043,14 +2043,14 @@
    "toHighlight": 14
   },
   {
-   "title": "The 4-Hour Workweek",
-   "slug": "the-4-hour-workweek",
-   "author": "Tim Ferriss",
-   "cover": "covers/the-4-hour-workweek.jpg",
-   "color": "#2F5A63",
-   "quote": "Principle number one is to refine rules and processes before adding people. Using people to leverage a refined process multiplies production; using people as a solution to a poor process multiplies problems.",
-   "score": 0.674,
-   "toHighlight": 14
+   "title": "Decisive",
+   "slug": "decisive",
+   "author": "Chip Heath and Dan Heath",
+   "cover": "covers/decisive.jpg",
+   "color": "#8B6B2E",
+   "quote": "Our normal habit in life is to develop a quick belief about a situation and then seek out information that bolsters our belief. And that problematic habit, called the “confirmation bias,” is the second villain of decision making.",
+   "score": 0.676,
+   "toHighlight": 4
   }
  ],
  "Getting to Yes": [
@@ -2075,14 +2075,14 @@
    "toHighlight": 4
   },
   {
-   "title": "The Art of Thinking Clearly",
-   "slug": "the-art-of-thinking-clearly",
-   "author": "Rolf Dobelli",
-   "cover": "covers/the-art-of-thinking-clearly.jpg",
-   "color": "#6B4C9A",
-   "quote": "Because we are so confident of our beliefs, we experience three reactions when someone fails to share our views. Response 1: Assumption of ignorance. The other party clearly lacks the necessary information.",
-   "score": 0.678,
-   "toHighlight": 18
+   "title": "Decisive",
+   "slug": "decisive",
+   "author": "Chip Heath and Dan Heath",
+   "cover": "covers/decisive.jpg",
+   "color": "#8B6B2E",
+   "quote": "When life offers us a “this or that” choice, we should have the gall to ask whether the right answer might be “both.” Push for “this AND that” rather than “this OR that.”",
+   "score": 0.685,
+   "toHighlight": 13
   }
  ],
  "How to avoid a climate disaster": [
@@ -2109,6 +2109,16 @@
    "toHighlight": 6
   },
   {
+   "title": "Decisive",
+   "slug": "decisive",
+   "author": "Chip Heath and Dan Heath",
+   "cover": "covers/decisive.jpg",
+   "color": "#8B6B2E",
+   "quote": "Sometimes we think we’re gathering information when we’re actually fishing for support. Take the tradition of calling people’s references when you want to hire them.",
+   "score": 0.684,
+   "toHighlight": 17
+  },
+  {
    "title": "Negotiation Genius",
    "slug": "negotiation-genius",
    "author": "Deepak Malhotra",
@@ -2116,16 +2126,6 @@
    "color": "#8B3A2E",
    "quote": "We stated that one way to obtain better outcomes is to have high aspirations; those who set aggressive targets tend to capture more value.",
    "score": 0.684,
-   "toHighlight": 4
-  },
-  {
-   "title": "Rework",
-   "slug": "rework",
-   "author": "David Hansson and Jason Fried",
-   "cover": "covers/rework.jpg",
-   "color": "#8B6B2E",
-   "quote": "Anyone who takes a “we’ll figure out how to profit in the future” attitude to business is being ridiculous.",
-   "score": 0.682,
    "toHighlight": 4
   }
  ],
@@ -2701,14 +2701,14 @@
    "toHighlight": 15
   },
   {
-   "title": "Crossing the chasm",
-   "slug": "crossing-the-chasm",
-   "author": "Geoffrey Moore",
-   "cover": "covers/crossing-the-chasm.jpg",
-   "color": "#2E6B6B",
-   "quote": "Wouldn’t it have been better in both cases to have included extra value statements for a bigger effect? The answer here is an emphatic no. Indeed, this is just what defeats most positioning efforts.",
-   "score": 0.686,
-   "toHighlight": 16
+   "title": "Decisive",
+   "slug": "decisive",
+   "author": "Chip Heath and Dan Heath",
+   "cover": "covers/decisive.jpg",
+   "color": "#8B6B2E",
+   "quote": "Nutt found that “whether or not” decisions failed 52% of the time over the long term, versus only 32% of the decisions with two or more alternatives. Why do “whether or not” decisions fail more often?",
+   "score": 0.693,
+   "toHighlight": 7
   }
  ],
  "The Making of a Manager": [
@@ -2733,14 +2733,14 @@
    "toHighlight": 4
   },
   {
-   "title": "Only the Paranoid survive",
-   "slug": "only-the-paranoid-survive",
-   "author": "Andy Grove",
-   "cover": "covers/only-the-paranoid-survive.jpg",
-   "color": "#2E6B6B",
-   "quote": "Senior managers got to where they are by having been good at what they do. And over time they have learned to lead with their strengths.",
-   "score": 0.692,
-   "toHighlight": 7
+   "title": "Decisive",
+   "slug": "decisive",
+   "author": "Chip Heath and Dan Heath",
+   "cover": "covers/decisive.jpg",
+   "color": "#8B6B2E",
+   "quote": "Sometimes we think we’re gathering information when we’re actually fishing for support. Take the tradition of calling people’s references when you want to hire them.",
+   "score": 0.687,
+   "toHighlight": 17
   }
  ],
  "No Filter": [
@@ -2795,6 +2795,38 @@
    "quote": "The financial markets are the perfect laboratory for the study of cyclicality because they’re driven by investor psychology, which veers perennially between euphoria and despondency, greed and fear, credulousness and skepticism,…",
    "score": 0.705,
    "toHighlight": 6
+  }
+ ],
+ "Decisive": [
+  {
+   "title": "Negotiation Genius",
+   "slug": "negotiation-genius",
+   "author": "Deepak Malhotra",
+   "cover": "covers/negotiation-genius.jpg",
+   "color": "#8B3A2E",
+   "quote": "In a study conducted by decision researchers Daylian Cain, Don Moore, and George Loewenstein, participants playing the role of “adviser” were (in some cases) required to tell a participant playing the role of “client” that he had a vested…",
+   "score": 0.693,
+   "toHighlight": 17
+  },
+  {
+   "title": "The Art of Thinking Clearly",
+   "slug": "the-art-of-thinking-clearly",
+   "author": "Rolf Dobelli",
+   "cover": "covers/the-art-of-thinking-clearly.jpg",
+   "color": "#6B4C9A",
+   "quote": "Whether we like it or not, we are puppets of our emotions. We make complex decisions by consulting our feelings, not our thoughts.",
+   "score": 0.689,
+   "toHighlight": 17
+  },
+  {
+   "title": "The Art of the Good life",
+   "slug": "the-art-of-the-good-life",
+   "author": "Rolf Dobelli",
+   "cover": "covers/the-art-of-the-good-life.jpg",
+   "color": "#2E5C45",
+   "quote": "It’s much nicer to mull things over than to seize the initiative. Speculation is more agreeable than realization.",
+   "score": 0.694,
+   "toHighlight": 15
   }
  ]
 }
