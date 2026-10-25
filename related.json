@@ -864,6 +864,16 @@
    "toHighlight": 4
   },
   {
+   "title": "Never split the difference",
+   "slug": "never-split-the-difference",
+   "author": "Chris Voss",
+   "cover": "covers/never-split-the-difference.jpg",
+   "color": "#2E4A6B",
+   "quote": "Though the intensity may differ from person to person, you can be sure that everyone you meet is driven by two primal urges: the need to feel safe and secure, and the need to feel in control.",
+   "score": 0.696,
+   "toHighlight": 10
+  },
+  {
    "title": "Crossing the chasm",
    "slug": "crossing-the-chasm",
    "author": "Geoffrey Moore",
@@ -872,16 +882,6 @@
    "quote": "You can succeed with the visionaries, and you can thereby get a reputation for being a high flyer with a hot product, but that is not ultimately where the dollars are.",
    "score": 0.696,
    "toHighlight": 4
-  },
-  {
-   "title": "Build",
-   "slug": "build",
-   "author": "Tony Fadell",
-   "cover": "covers/build.jpg",
-   "color": "#8B6B2E",
-   "quote": "Not everyone on the team agreed with me. In those moments it’s your responsibility as a manager or a leader to explain that this isn’t a democracy, that this is an opinion-driven decision and you’re not going to reach the right choice by…",
-   "score": 0.693,
-   "toHighlight": 0
   }
  ],
  "Material World": [
@@ -1655,6 +1655,16 @@
  ],
  "How to win friends and influence people": [
   {
+   "title": "Never split the difference",
+   "slug": "never-split-the-difference",
+   "author": "Chris Voss",
+   "cover": "covers/never-split-the-difference.jpg",
+   "color": "#2E4A6B",
+   "quote": "People always make more effort to implement a solution when they think it’s theirs. That is simply human nature. That’s why negotiation is often called “the art of letting someone else have your way.”",
+   "score": 0.677,
+   "toHighlight": 17
+  },
+  {
    "title": "Daily stoic",
    "slug": "daily-stoic",
    "author": "Ryan Holliday",
@@ -1673,16 +1683,6 @@
    "quote": "Everyone starts out innocent. Everyone is corrupted. Wisdom is the discarding of vices and the return to virtue, by way of knowledge.",
    "score": 0.667,
    "toHighlight": 27
-  },
-  {
-   "title": "Million Dollar Weekend",
-   "slug": "million-dollar-weekend",
-   "author": "Noah Kagan",
-   "cover": "covers/million-dollar-weekend.jpg",
-   "color": "#7A2E4A",
-   "quote": "Be persistent. I want you to believe that almost every no you get can eventually become a yes. Persistence will reveal that most noes are actually a “not now.”",
-   "score": 0.671,
-   "toHighlight": 2
   }
  ],
  "Anything you want": [
@@ -2055,6 +2055,16 @@
  ],
  "Getting to Yes": [
   {
+   "title": "Never split the difference",
+   "slug": "never-split-the-difference",
+   "author": "Chris Voss",
+   "cover": "covers/never-split-the-difference.jpg",
+   "color": "#2E4A6B",
+   "quote": "People always make more effort to implement a solution when they think it’s theirs. That is simply human nature. That’s why negotiation is often called “the art of letting someone else have your way.”",
+   "score": 0.736,
+   "toHighlight": 17
+  },
+  {
    "title": "Negotiation Genius",
    "slug": "negotiation-genius",
    "author": "Deepak Malhotra",
@@ -2073,16 +2083,6 @@
    "quote": "George Loewenstein and his colleagues at Carnegie Mellon found a way to study the process by giving pairs of research subjects a real legal case to read (about a motorcycle accident in Texas), assigning one subject to play the defendant…",
    "score": 0.693,
    "toHighlight": 4
-  },
-  {
-   "title": "Decisive",
-   "slug": "decisive",
-   "author": "Chip Heath and Dan Heath",
-   "cover": "covers/decisive.jpg",
-   "color": "#8B6B2E",
-   "quote": "When life offers us a “this or that” choice, we should have the gall to ask whether the right answer might be “both.” Push for “this AND that” rather than “this OR that.”",
-   "score": 0.685,
-   "toHighlight": 13
   }
  ],
  "How to avoid a climate disaster": [
@@ -2691,6 +2691,16 @@
    "toHighlight": 7
   },
   {
+   "title": "Never split the difference",
+   "slug": "never-split-the-difference",
+   "author": "Chris Voss",
+   "cover": "covers/never-split-the-difference.jpg",
+   "color": "#2E4A6B",
+   "quote": "People always make more effort to implement a solution when they think it’s theirs. That is simply human nature. That’s why negotiation is often called “the art of letting someone else have your way.”",
+   "score": 0.727,
+   "toHighlight": 17
+  },
+  {
    "title": "Understanding Michael Porter",
    "slug": "understanding-michael-porter",
    "author": "Joan Magretta",
@@ -2699,16 +2709,6 @@
    "quote": "Trade-offs make choices about what not to do as important as choices of what to do. Deciding which needs to serve and which products to offer is absolutely key to developing a strategy.",
    "score": 0.695,
    "toHighlight": 15
-  },
-  {
-   "title": "Decisive",
-   "slug": "decisive",
-   "author": "Chip Heath and Dan Heath",
-   "cover": "covers/decisive.jpg",
-   "color": "#8B6B2E",
-   "quote": "Nutt found that “whether or not” decisions failed 52% of the time over the long term, versus only 32% of the decisions with two or more alternatives. Why do “whether or not” decisions fail more often?",
-   "score": 0.693,
-   "toHighlight": 7
   }
  ],
  "The Making of a Manager": [
@@ -2862,6 +2862,38 @@
    "quote": "The specious root of the criticism of Bitcoin’s “high” transaction fees is the belief that Bitcoin should be a payment system first and a store of value later.",
    "score": 0.678,
    "toHighlight": 4
+  }
+ ],
+ "Never split the difference": [
+  {
+   "title": "Getting to Yes",
+   "slug": "getting-to-yes",
+   "author": "Roger Fisher , William L. Ury",
+   "cover": "covers/getting-to-yes.jpg",
+   "color": "#6B5A2E",
+   "quote": "In many negotiations, each side explains and condemns at great length the motivations and intentions of the other side.",
+   "score": 0.736,
+   "toHighlight": 4
+  },
+  {
+   "title": "Negotiation Genius",
+   "slug": "negotiation-genius",
+   "author": "Deepak Malhotra",
+   "cover": "covers/negotiation-genius.jpg",
+   "color": "#8B3A2E",
+   "quote": "Even the most self-interested negotiators must rely on others to satisfy their own interests. Remember: to take what is there, you must work with the other side to make what is there.",
+   "score": 0.727,
+   "toHighlight": 7
+  },
+  {
+   "title": "Decisive",
+   "slug": "decisive",
+   "author": "Chip Heath and Dan Heath",
+   "cover": "covers/decisive.jpg",
+   "color": "#8B6B2E",
+   "quote": "Sometimes we think we’re gathering information when we’re actually fishing for support. Take the tradition of calling people’s references when you want to hire them.",
+   "score": 0.683,
+   "toHighlight": 17
   }
  ]
 }
