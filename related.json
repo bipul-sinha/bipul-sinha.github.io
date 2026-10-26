@@ -789,6 +789,16 @@
  ],
  "Read Write Own": [
   {
+   "title": "The Infinite Machine",
+   "slug": "the-infinite-machine",
+   "author": "Camil Russo",
+   "cover": "covers/the-infinite-machine.jpg",
+   "color": "#2E5C45",
+   "quote": "Then in 2001, BitTorrent was released, doing to movies and larger files what Napster had done with music. They arguably brought peer-to-peer (P2P) applications into the mainstream.",
+   "score": 0.68,
+   "toHighlight": 1
+  },
+  {
    "title": "The innovator's solution",
    "slug": "the-innovator-s-solution",
    "author": "Clay Christensen",
@@ -807,16 +817,6 @@
    "quote": "Markets as categories are impersonal, abstract things: the smartphone market, the gigabit router market, the office automation market, and so on.",
    "score": 0.674,
    "toHighlight": 11
-  },
-  {
-   "title": "7 Powers",
-   "slug": "7-powers",
-   "author": "Hamilton Helmer",
-   "cover": "covers/7-powers.jpg",
-   "color": "#6B4C9A",
-   "quote": "But IBM got the strategy wrong. By outsourcing the OS and permitting Microsoft to sell it to others, IBM squandered their opportunity for the kind of network economy home run that had powered their mainframe juggernaut, System 360.",
-   "score": 0.672,
-   "toHighlight": 0
   }
  ],
  "Pattern Breakers": [],
@@ -1643,13 +1643,13 @@
    "toHighlight": 5
   },
   {
-   "title": "The innovator's solution",
-   "slug": "the-innovator-s-solution",
-   "author": "Clay Christensen",
-   "cover": "covers/the-innovator-s-solution.jpg",
-   "color": "#7A2E4A",
-   "quote": "One of the most exciting insights from our research about commoditization is that whenever it is at work somewhere in a value chain, a reciprocal process of de-commoditization is at work somewhere else in the value chain.",
-   "score": 0.667,
+   "title": "The Infinite Machine",
+   "slug": "the-infinite-machine",
+   "author": "Camil Russo",
+   "cover": "covers/the-infinite-machine.jpg",
+   "color": "#2E5C45",
+   "quote": "The legality of Ethereum’s Genesis Sale would be a matter of debate for years to come.",
+   "score": 0.668,
    "toHighlight": 7
   }
  ],
@@ -2894,6 +2894,38 @@
    "quote": "Sometimes we think we’re gathering information when we’re actually fishing for support. Take the tradition of calling people’s references when you want to hire them.",
    "score": 0.683,
    "toHighlight": 17
+  }
+ ],
+ "The Infinite Machine": [
+  {
+   "title": "Broken Money",
+   "slug": "broken-money",
+   "author": "Lyn Alden",
+   "cover": "covers/broken-money.jpg",
+   "color": "#4A3B6B",
+   "quote": "This becomes especially true if a jurisdiction treats the harder money like property and taxes each transaction, while enforcing legal tender for the weaker money, which most jurisdictions do.",
+   "score": 0.681,
+   "toHighlight": 18
+  },
+  {
+   "title": "Read Write Own",
+   "slug": "read-write-own",
+   "author": "Chris Dixon",
+   "cover": "covers/read-write-own.jpg",
+   "color": "#8B6B2E",
+   "quote": "One could argue that blockchains, more than other technologies, exacerbate speculative cycles because their key innovation is to enable digital ownership.",
+   "score": 0.68,
+   "toHighlight": 7
+  },
+  {
+   "title": "Bullish case for Bitcoin",
+   "slug": "bullish-case-for-bitcoin",
+   "author": "Vijay Boyapati",
+   "cover": "covers/bullish-case-for-bitcoin.jpg",
+   "color": "#2E5C45",
+   "quote": "The specious root of the criticism of Bitcoin’s “high” transaction fees is the belief that Bitcoin should be a payment system first and a store of value later.",
+   "score": 0.668,
+   "toHighlight": 4
   }
  ]
 }
