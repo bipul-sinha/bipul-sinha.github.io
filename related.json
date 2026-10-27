@@ -2195,6 +2195,16 @@
  ],
  "The Metaverse": [
   {
+   "title": "How the Internet Happened",
+   "slug": "how-the-internet-happened",
+   "author": "Brian McCullough",
+   "cover": "covers/how-the-internet-happened.jpg",
+   "color": "#3A5C8B",
+   "quote": "Furthermore, lots of people inside and outside of Netscape were already seeing what Marc Andreessen had seen: the browser could be a software platform capable of supplanting traditional operating systems like Windows.",
+   "score": 0.669,
+   "toHighlight": 4
+  },
+  {
    "title": "The Cold Start problem",
    "slug": "the-cold-start-problem",
    "author": "Andrew Chen",
@@ -2409,6 +2419,16 @@
    "toHighlight": 3
   },
   {
+   "title": "How the Internet Happened",
+   "slug": "how-the-internet-happened",
+   "author": "Brian McCullough",
+   "cover": "covers/how-the-internet-happened.jpg",
+   "color": "#3A5C8B",
+   "quote": "But there was an even deeper philosophical problem to solve. With magazine, radio, television, even billboard advertising, the ad merely made an “impression” on the audience. It was a passive thing.",
+   "score": 0.682,
+   "toHighlight": 6
+  },
+  {
    "title": "Understanding Michael Porter",
    "slug": "understanding-michael-porter",
    "author": "Joan Magretta",
@@ -2417,16 +2437,6 @@
    "quote": "Trade-offs make choices about what not to do as important as choices of what to do. Deciding which needs to serve and which products to offer is absolutely key to developing a strategy.",
    "score": 0.677,
    "toHighlight": 15
-  },
-  {
-   "title": "The innovator's solution",
-   "slug": "the-innovator-s-solution",
-   "author": "Clay Christensen",
-   "cover": "covers/the-innovator-s-solution.jpg",
-   "color": "#7A2E4A",
-   "quote": "An idea that is disruptive to one business may be sustaining to another. Given the stark odds that favor the incumbents in the sustaining race but entrants in disruptive ones, we recommend a strict rule: If your idea for a product or…",
-   "score": 0.68,
-   "toHighlight": 2
   }
  ],
  "The Selfish Gene": [
@@ -2763,6 +2773,16 @@
    "quote": "In an attention economy, there’s only so much attention and the advertising business model always wants more. So, it becomes a race to the bottom of the brainstem. . . . It starts small.",
    "score": 0.669,
    "toHighlight": 19
+  },
+  {
+   "title": "How the Internet Happened",
+   "slug": "how-the-internet-happened",
+   "author": "Brian McCullough",
+   "cover": "covers/how-the-internet-happened.jpg",
+   "color": "#3A5C8B",
+   "quote": "But there was an even deeper philosophical problem to solve. With magazine, radio, television, even billboard advertising, the ad merely made an “impression” on the audience. It was a passive thing.",
+   "score": 0.663,
+   "toHighlight": 6
   }
  ],
  "The Psychology of Money": [
@@ -2928,5 +2948,37 @@
    "toHighlight": 4
   }
  ],
- "Introduction to Networking: How the Internet Works": []
+ "Introduction to Networking: How the Internet Works": [],
+ "How the Internet Happened": [
+  {
+   "title": "The Cold Start problem",
+   "slug": "the-cold-start-problem",
+   "author": "Andrew Chen",
+   "cover": "covers/the-cold-start-problem.jpg",
+   "color": "#2E4A6B",
+   "quote": "Zoom didn’t have more features per se, but in fact had the most important feature of all: the “it works” feature.",
+   "score": 0.682,
+   "toHighlight": 6
+  },
+  {
+   "title": "The Metaverse",
+   "slug": "the-metaverse",
+   "author": "Matthew Ball",
+   "cover": "covers/the-metaverse.jpg",
+   "color": "#3A5C8B",
+   "quote": "First, humans seek out digital models that most closely represent the world as they experience it—richly detailed, mixing audio and video, and with a sense of being “live” rather than static or outdated.",
+   "score": 0.669,
+   "toHighlight": 0
+  },
+  {
+   "title": "No Filter",
+   "slug": "no-filter",
+   "author": "Sarah Frier",
+   "cover": "covers/no-filter.jpg",
+   "color": "#6B4C9A",
+   "quote": "Krieger did build a re-share button but never released it to the public. The founders thought it would violate the expectations you had when you followed someone.",
+   "score": 0.663,
+   "toHighlight": 3
+  }
+ ]
 }
