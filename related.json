@@ -607,6 +607,16 @@
  ],
  "An Empire of Wealth": [
   {
+   "title": "Bitcoin Standard",
+   "slug": "bitcoin-standard",
+   "author": "Saifedean Ammous",
+   "cover": "covers/bitcoin-standard.jpg",
+   "color": "#2E6B6B",
+   "quote": "With the simple suspension of gold redeemability, governments' war efforts were no longer limited to the money that they had in their own treasuries, but extended virtually to the entire wealth of the population.",
+   "score": 0.678,
+   "toHighlight": 8
+  },
+  {
    "title": "Broken Money",
    "slug": "broken-money",
    "author": "Lyn Alden",
@@ -885,6 +895,16 @@
   }
  ],
  "Material World": [
+  {
+   "title": "Bitcoin Standard",
+   "slug": "bitcoin-standard",
+   "author": "Saifedean Ammous",
+   "cover": "covers/bitcoin-standard.jpg",
+   "color": "#2E6B6B",
+   "quote": "Aggry beads were used as money for centuries in western Africa. What is known is that they were precious in an area where glassmaking technology was expensive and not very common, giving them a high stock‐to‐flow ratio, making them salable…",
+   "score": 0.671,
+   "toHighlight": 2
+  },
   {
    "title": "How the world really works",
    "slug": "how-the-world-really-works",
@@ -1643,6 +1663,16 @@
    "toHighlight": 18
   },
   {
+   "title": "Bitcoin Standard",
+   "slug": "bitcoin-standard",
+   "author": "Saifedean Ammous",
+   "cover": "covers/bitcoin-standard.jpg",
+   "color": "#2E6B6B",
+   "quote": "The creation of the monetary medium is not an activity that is productive to society, as any supply of money is sufficient for any economy of any size.",
+   "score": 0.729,
+   "toHighlight": 10
+  },
+  {
    "title": "Global Payments: And the Fintech Innovations Changing the Industry",
    "slug": "global-payments-and-the-fintech-innovations-changing-the-industry",
    "author": "Carol Benson",
@@ -1651,16 +1681,6 @@
    "quote": "Should payments systems be viewed as infrastructure, or as a competitive marketplace? Some regulators are beginning to talk about payments systems as public goods, akin to national highway systems or the internet’s DNS.",
    "score": 0.678,
    "toHighlight": 5
-  },
-  {
-   "title": "The Infinite Machine",
-   "slug": "the-infinite-machine",
-   "author": "Camil Russo",
-   "cover": "covers/the-infinite-machine.jpg",
-   "color": "#2E5C45",
-   "quote": "The legality of Ethereum’s Genesis Sale would be a matter of debate for years to come.",
-   "score": 0.668,
-   "toHighlight": 7
   }
  ],
  "How to win friends and influence people": [
@@ -2592,6 +2612,16 @@
  ],
  "Broken Money": [
   {
+   "title": "Bitcoin Standard",
+   "slug": "bitcoin-standard",
+   "author": "Saifedean Ammous",
+   "cover": "covers/bitcoin-standard.jpg",
+   "color": "#2E6B6B",
+   "quote": "The creation of the monetary medium is not an activity that is productive to society, as any supply of money is sufficient for any economy of any size.",
+   "score": 0.766,
+   "toHighlight": 10
+  },
+  {
    "title": "The most important thing",
    "slug": "the-most-important-thing",
    "author": "Howard Marks",
@@ -2610,16 +2640,6 @@
    "quote": "Another inflationary bias to the consumer price index is that it counts only those things that most people are likely to buy.",
    "score": 0.681,
    "toHighlight": 8
-  },
-  {
-   "title": "Bullish case for Bitcoin",
-   "slug": "bullish-case-for-bitcoin",
-   "author": "Vijay Boyapati",
-   "cover": "covers/bullish-case-for-bitcoin.jpg",
-   "color": "#2E5C45",
-   "quote": "The specious root of the criticism of Bitcoin’s “high” transaction fees is the belief that Bitcoin should be a payment system first and a store of value later.",
-   "score": 0.735,
-   "toHighlight": 4
   }
  ],
  "The logician and the engineer": [],
@@ -3021,6 +3041,38 @@
    "quote": "Many a false step was made by standing still. — Fortune cookie Action may not always bring happiness, but there is no happiness without action. — Benjamin Disraeli, former British Prime Minister",
    "score": 0.694,
    "toHighlight": 2
+  }
+ ],
+ "Bitcoin Standard": [
+  {
+   "title": "Broken Money",
+   "slug": "broken-money",
+   "author": "Lyn Alden",
+   "cover": "covers/broken-money.jpg",
+   "color": "#4A3B6B",
+   "quote": "According to Gresham’s law, if people have a good money and a bad money with a fixed exchange rate between them (or other frictions such as capital gains taxes placed on the good money), they will usually want to spend the bad money and…",
+   "score": 0.766,
+   "toHighlight": 17
+  },
+  {
+   "title": "The most important thing",
+   "slug": "the-most-important-thing",
+   "author": "Howard Marks",
+   "cover": "covers/the-most-important-thing.jpg",
+   "color": "#6B5A2E",
+   "quote": "Every once in a while, an up- or down-leg goes on for a long time and/or to a great extreme and people start to say “this time it’s different.” They cite the changes in geopolitics, institutions, technology or behavior that have rendered…",
+   "score": 0.696,
+   "toHighlight": 11
+  },
+  {
+   "title": "Economic Facts and Fallacies",
+   "slug": "economic-facts-and-fallacies",
+   "author": "Thomas Sowell",
+   "cover": "covers/economic-facts-and-fallacies.jpg",
+   "color": "#8B3A2E",
+   "quote": "Another inflationary bias to the consumer price index is that it counts only those things that most people are likely to buy.",
+   "score": 0.683,
+   "toHighlight": 8
   }
  ]
 }
