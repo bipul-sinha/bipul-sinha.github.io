@@ -1574,5 +1574,16 @@
   "highlights": [],
   "cover": "covers/fiction/it-s-about-impossible-crime.jpg",
   "cover_source": "manual"
+ },
+ {
+  "kind": "fiction",
+  "title": "Still Life with Crows",
+  "author": "Preston and Child",
+  "year": 2026,
+  "rating": 8,
+  "color": "#4A3B5C",
+  "highlights": [],
+  "cover": "covers/fiction/still-life-with-crows.jpg",
+  "cover_source": "manual"
  }
 ]
