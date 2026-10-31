@@ -916,14 +916,14 @@
    "toHighlight": 2
   },
   {
-   "title": "Apple in China",
-   "slug": "apple-in-china",
-   "author": "",
-   "cover": "covers/apple-in-china.jpg",
-   "color": "#2E4A6B",
-   "quote": "In the Western press it was common to misrepresent China’s role as being all about low-value assembly. These studies were based on opening an iPhone and breaking down where the display, chips, and other components came from.",
-   "score": 0.661,
-   "toHighlight": 10
+   "title": "Guns, Germs and Steel",
+   "slug": "guns-germs-and-steel",
+   "author": "Jared Diamond",
+   "cover": "covers/guns-germs-and-steel.jpg",
+   "color": "#4A3B6B",
+   "quote": "While wheels are very useful in modern industrial societies, that has not been so in some other societies. Ancient Native Mexicans invented wheeled vehicles with axles for use as toys, but not for transport.",
+   "score": 0.665,
+   "toHighlight": 16
   }
  ],
  "Nuclear War": [],
@@ -1130,9 +1130,30 @@
    "quote": "The evolution of spatial maps in the minds of early vertebrates marked numerous firsts. It was the first time in the billion-year history of life that an organism could recognize where it was.",
    "score": 0.68,
    "toHighlight": 7
+  },
+  {
+   "title": "Guns, Germs and Steel",
+   "slug": "guns-germs-and-steel",
+   "author": "Jared Diamond",
+   "cover": "covers/guns-germs-and-steel.jpg",
+   "color": "#4A3B6B",
+   "quote": "Human history at last took off around 50,000 years ago, at the time of what I have termed our Great Leap Forward.",
+   "score": 0.672,
+   "toHighlight": 0
   }
  ],
- "Prisoners of Geography": [],
+ "Prisoners of Geography": [
+  {
+   "title": "Guns, Germs and Steel",
+   "slug": "guns-germs-and-steel",
+   "author": "Jared Diamond",
+   "cover": "covers/guns-germs-and-steel.jpg",
+   "color": "#4A3B6B",
+   "quote": "Pizarro's capture of Atahuallpa illustrates the set of proximate factors that resulted in Europeans’ colonizing the New World instead of Native Americans’ colonizing Europe.",
+   "score": 0.673,
+   "toHighlight": 2
+  }
+ ],
  "The Art of the Good life": [
   {
    "title": "Decisive",
@@ -2331,14 +2352,14 @@
    "toHighlight": 19
   },
   {
-   "title": "The Righteous Mind",
-   "slug": "the-righteous-mind",
-   "author": "",
-   "cover": "covers/the-righteous-mind.jpg",
-   "color": "#3A5C8B",
-   "quote": "In The Happiness Hypothesis, I called these two kinds of cognition the rider (controlled processes, including “reasoning-why”) and the elephant (automatic processes, including emotion, intuition, and all forms of “seeing-that”).",
-   "score": 0.68,
-   "toHighlight": 4
+   "title": "Guns, Germs and Steel",
+   "slug": "guns-germs-and-steel",
+   "author": "Jared Diamond",
+   "cover": "covers/guns-germs-and-steel.jpg",
+   "color": "#4A3B6B",
+   "quote": "Human history at last took off around 50,000 years ago, at the time of what I have termed our Great Leap Forward.",
+   "score": 0.678,
+   "toHighlight": 0
   }
  ],
  "Good Energy": [
@@ -3105,6 +3126,38 @@
    "quote": "If you’re serious about talent density, you have to get in the habit of doing something a lot harder: firing a good employee when you think you can get a great one.",
    "score": 0.705,
    "toHighlight": 15
+  }
+ ],
+ "Guns, Germs and Steel": [
+  {
+   "title": "A brief history of intelligence",
+   "slug": "a-brief-history-of-intelligence",
+   "author": "Max Bennett",
+   "cover": "covers/a-brief-history-of-intelligence.jpg",
+   "color": "#8B6B2E",
+   "quote": "Steering, reinforcing, simulating, and mentalizing were adaptations that clearly benefited any individual organisms in which they began to emerge, and thus the evolutionary machinations by which they propagated are straightforward.",
+   "score": 0.678,
+   "toHighlight": 17
+  },
+  {
+   "title": "Economic Facts and Fallacies",
+   "slug": "economic-facts-and-fallacies",
+   "author": "Thomas Sowell",
+   "cover": "covers/economic-facts-and-fallacies.jpg",
+   "color": "#8B3A2E",
+   "quote": "Geographic accessibility to the advances of the rest of the world seems to have had more effect on economic development than the possession of rich natural resources. Knowledge is, after all, what makes something a natural resource.",
+   "score": 0.67,
+   "toHighlight": 17
+  },
+  {
+   "title": "Prisoners of Geography",
+   "slug": "prisoners-of-geography",
+   "author": "Tim Marshall",
+   "cover": "covers/prisoners-of-geography.jpg",
+   "color": "#2E4A6B",
+   "quote": "The limitations of Latin America’s geography were compounded right from the beginning in the formation of its nation states.",
+   "score": 0.673,
+   "toHighlight": 13
   }
  ]
 }
