@@ -315,6 +315,16 @@
    "toHighlight": 5
   },
   {
+   "title": "Radical Candor",
+   "slug": "radical-candor",
+   "author": "Kim Scott",
+   "cover": "covers/radical-candor.jpg",
+   "color": "#8B6B2E",
+   "quote": "In many ways, your job as the boss is to set and uphold a quality bar. That can feel harsh in the short term, but in the long run the only thing that is meaner is lowering the bar.",
+   "score": 0.689,
+   "toHighlight": 13
+  },
+  {
    "title": "High Output Management",
    "slug": "high-output-management",
    "author": "Andy Grove",
@@ -323,16 +333,6 @@
    "quote": "As a means to obtain this leverage, a manager must understand, as Andy writes: “When a person is not doing his job, there can only be two reasons for it.",
    "score": 0.669,
    "toHighlight": 4
-  },
-  {
-   "title": "Only the Paranoid survive",
-   "slug": "only-the-paranoid-survive",
-   "author": "Andy Grove",
-   "cover": "covers/only-the-paranoid-survive.jpg",
-   "color": "#2E6B6B",
-   "quote": "Senior managers got to where they are by having been good at what they do. And over time they have learned to lead with their strengths.",
-   "score": 0.662,
-   "toHighlight": 7
   }
  ],
  "How to Live an Extraordinary life": [
@@ -1685,6 +1685,16 @@
  ],
  "How to win friends and influence people": [
   {
+   "title": "Radical Candor",
+   "slug": "radical-candor",
+   "author": "Kim Scott",
+   "cover": "covers/radical-candor.jpg",
+   "color": "#8B6B2E",
+   "quote": "The first dimension is about being more than “just professional.” It’s about giving a damn, sharing more than just your work self, and encouraging everyone who reports to you to do the same.",
+   "score": 0.683,
+   "toHighlight": 3
+  },
+  {
    "title": "Never split the difference",
    "slug": "never-split-the-difference",
    "author": "Chris Voss",
@@ -1703,16 +1713,6 @@
    "quote": "The little kindnesses and courtesies are so important. Small discourtesies, little unkindnesses, little forms of disrespect make large withdrawals. In relationships, the little things are the big things.",
    "score": 0.673,
    "toHighlight": 19
-  },
-  {
-   "title": "Daily stoic",
-   "slug": "daily-stoic",
-   "author": "Ryan Holliday",
-   "cover": "covers/daily-stoic.jpg",
-   "color": "#3A5C8B",
-   "quote": "The point is not to wish for these adversities, but for the virtue that makes adversities bearable. We’d be crazy to want to face difficulty in life. But we’d be equally crazy to pretend that it isn’t going to happen.",
-   "score": 0.67,
-   "toHighlight": 12
   }
  ],
  "Anything you want": [
@@ -1857,6 +1857,16 @@
  ],
  "High Output Management": [
   {
+   "title": "Radical Candor",
+   "slug": "radical-candor",
+   "author": "Kim Scott",
+   "cover": "covers/radical-candor.jpg",
+   "color": "#8B6B2E",
+   "quote": "In many ways, your job as the boss is to set and uphold a quality bar. That can feel harsh in the short term, but in the long run the only thing that is meaner is lowering the bar.",
+   "score": 0.693,
+   "toHighlight": 13
+  },
+  {
    "title": "The 7 habits of highly effective people",
    "slug": "the-7-habits-of-highly-effective-people",
    "author": "Stephen Covey",
@@ -1875,16 +1885,6 @@
    "quote": "My own observations are similar, and I’ve come to think of the multitude of tasks that fill up a manager’s day as sorting neatly into three buckets: purpose, people, and process.",
    "score": 0.701,
    "toHighlight": 1
-  },
-  {
-   "title": "Decisive",
-   "slug": "decisive",
-   "author": "Chip Heath and Dan Heath",
-   "cover": "covers/decisive.jpg",
-   "color": "#8B6B2E",
-   "quote": "Success emerges from the quality of the decisions we make and the quantity of luck we receive. We can’t control luck. But we can control the way we make choices.",
-   "score": 0.687,
-   "toHighlight": 25
   }
  ],
  "Fundamentals": [
@@ -2139,6 +2139,16 @@
    "toHighlight": 6
   },
   {
+   "title": "Radical Candor",
+   "slug": "radical-candor",
+   "author": "Kim Scott",
+   "cover": "covers/radical-candor.jpg",
+   "color": "#8B6B2E",
+   "quote": "Your job as a boss is to turn on that “rock tumbler.” Too many bosses think their role is to turn it off—to avoid all the friction by simply making a decision and sparing the team the pain of debate. It’s not.",
+   "score": 0.705,
+   "toHighlight": 15
+  },
+  {
    "title": "Decisive",
    "slug": "decisive",
    "author": "Chip Heath and Dan Heath",
@@ -2147,16 +2157,6 @@
    "quote": "Sometimes we think we’re gathering information when we’re actually fishing for support. Take the tradition of calling people’s references when you want to hire them.",
    "score": 0.684,
    "toHighlight": 17
-  },
-  {
-   "title": "Negotiation Genius",
-   "slug": "negotiation-genius",
-   "author": "Deepak Malhotra",
-   "cover": "covers/negotiation-genius.jpg",
-   "color": "#8B3A2E",
-   "quote": "We stated that one way to obtain better outcomes is to have high aspirations; those who set aggressive targets tend to capture more value.",
-   "score": 0.684,
-   "toHighlight": 4
   }
  ],
  "Outlive": [
@@ -2753,6 +2753,16 @@
  ],
  "The Making of a Manager": [
   {
+   "title": "Radical Candor",
+   "slug": "radical-candor",
+   "author": "Kim Scott",
+   "cover": "covers/radical-candor.jpg",
+   "color": "#8B6B2E",
+   "quote": "In many ways, your job as the boss is to set and uphold a quality bar. That can feel harsh in the short term, but in the long run the only thing that is meaner is lowering the bar.",
+   "score": 0.734,
+   "toHighlight": 13
+  },
+  {
    "title": "No rules rules",
    "slug": "no-rules-rules",
    "author": "Erin Meyer and Reed Hastings",
@@ -2771,16 +2781,6 @@
    "quote": "As a means to obtain this leverage, a manager must understand, as Andy writes: “When a person is not doing his job, there can only be two reasons for it.",
    "score": 0.701,
    "toHighlight": 4
-  },
-  {
-   "title": "The 7 habits of highly effective people",
-   "slug": "the-7-habits-of-highly-effective-people",
-   "author": "Stephen Covey",
-   "cover": "covers/the-7-habits-of-highly-effective-people.jpg",
-   "color": "#6B4C9A",
-   "quote": "Management is a bottom line focus: How can I best accomplish certain things? Leadership deals with the top line: What are the things I want to accomplish?",
-   "score": 0.69,
-   "toHighlight": 11
   }
  ],
  "No Filter": [
@@ -2936,14 +2936,14 @@
    "toHighlight": 7
   },
   {
-   "title": "Decisive",
-   "slug": "decisive",
-   "author": "Chip Heath and Dan Heath",
-   "cover": "covers/decisive.jpg",
+   "title": "Radical Candor",
+   "slug": "radical-candor",
+   "author": "Kim Scott",
+   "cover": "covers/radical-candor.jpg",
    "color": "#8B6B2E",
-   "quote": "Sometimes we think we’re gathering information when we’re actually fishing for support. Take the tradition of calling people’s references when you want to hire them.",
-   "score": 0.683,
-   "toHighlight": 17
+   "quote": "The first dimension is about being more than “just professional.” It’s about giving a damn, sharing more than just your work self, and encouraging everyone who reports to you to do the same.",
+   "score": 0.703,
+   "toHighlight": 3
   }
  ],
  "The Infinite Machine": [
@@ -3073,6 +3073,38 @@
    "quote": "Another inflationary bias to the consumer price index is that it counts only those things that most people are likely to buy.",
    "score": 0.683,
    "toHighlight": 8
+  }
+ ],
+ "Radical Candor": [
+  {
+   "title": "The Making of a Manager",
+   "slug": "the-making-of-a-manager",
+   "author": "Julie Zhuo",
+   "cover": "covers/the-making-of-a-manager.jpg",
+   "color": "#3A5C8B",
+   "quote": "If you have five people on your team, four of whom are doing well and one who isn’t, you may feel like you should focus most of your time and energy on the struggling report because you want to “fix” the problem.",
+   "score": 0.734,
+   "toHighlight": 5
+  },
+  {
+   "title": "Never split the difference",
+   "slug": "never-split-the-difference",
+   "author": "Chris Voss",
+   "cover": "covers/never-split-the-difference.jpg",
+   "color": "#2E4A6B",
+   "quote": "Though the intensity may differ from person to person, you can be sure that everyone you meet is driven by two primal urges: the need to feel safe and secure, and the need to feel in control.",
+   "score": 0.703,
+   "toHighlight": 10
+  },
+  {
+   "title": "No rules rules",
+   "slug": "no-rules-rules",
+   "author": "Erin Meyer and Reed Hastings",
+   "cover": "covers/no-rules-rules.jpg",
+   "color": "#2E4A6B",
+   "quote": "If you’re serious about talent density, you have to get in the habit of doing something a lot harder: firing a good employee when you think you can get a great one.",
+   "score": 0.705,
+   "toHighlight": 15
   }
  ]
 }
