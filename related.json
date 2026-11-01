@@ -1370,6 +1370,16 @@
    "toHighlight": 9
   },
   {
+   "title": "Hooked",
+   "slug": "hooked",
+   "author": "Nir Eyal",
+   "cover": "covers/hooked.jpg",
+   "color": "#7A2E4A",
+   "quote": "As part of a French study, researchers wanted to know if they could influence how much money people handed to a total stranger asking for bus fare by using just a few specially encoded words.",
+   "score": 0.671,
+   "toHighlight": 11
+  },
+  {
    "title": "The Art of the Good life",
    "slug": "the-art-of-the-good-life",
    "author": "Rolf Dobelli",
@@ -1378,16 +1388,6 @@
    "quote": "It’s much nicer to mull things over than to seize the initiative. Speculation is more agreeable than realization.",
    "score": 0.671,
    "toHighlight": 15
-  },
-  {
-   "title": "The most important thing",
-   "slug": "the-most-important-thing",
-   "author": "Howard Marks",
-   "cover": "covers/the-most-important-thing.jpg",
-   "color": "#6B5A2E",
-   "quote": "Rule number one: most things will prove to be cyclical. Rule number two: some of the greatest opportunities for gain and loss come when other people forget rule number one.",
-   "score": 0.67,
-   "toHighlight": 9
   }
  ],
  "A beautiful question": [
@@ -2074,6 +2074,16 @@
  ],
  "Atomic Habits": [
   {
+   "title": "Hooked",
+   "slug": "hooked",
+   "author": "Nir Eyal",
+   "cover": "covers/hooked.jpg",
+   "color": "#7A2E4A",
+   "quote": "A company can begin to determine its product’s habit-forming potential by plotting two factors: frequency (how often the behavior occurs) and perceived utility (how useful and rewarding the behavior is in the user’s mind over alternative…",
+   "score": 0.717,
+   "toHighlight": 2
+  },
+  {
    "title": "The 7 habits of highly effective people",
    "slug": "the-7-habits-of-highly-effective-people",
    "author": "Stephen Covey",
@@ -2092,16 +2102,6 @@
    "quote": "If you don’t know how much you need, the default easily becomes: more. Ego rejects trade-offs. Why compromise? Ego wants it all.",
    "score": 0.686,
    "toHighlight": 11
-  },
-  {
-   "title": "The Happiness Hypothesis",
-   "slug": "the-happiness-hypothesis",
-   "author": "",
-   "cover": "covers/the-happiness-hypothesis.jpg",
-   "color": "#2E6B6B",
-   "quote": "Most of the life goals that people pursue at the level of “characteristic adaptations” can be sorted—as the psychologist Robert Emmons has found—into four categories: work and achievement, relationships and intimacy, religion and…",
-   "score": 0.679,
-   "toHighlight": 14
   }
  ],
  "Getting to Yes": [
@@ -2598,7 +2598,18 @@
    "toHighlight": 4
   }
  ],
- "The design of everyday things": [],
+ "The design of everyday things": [
+  {
+   "title": "Hooked",
+   "slug": "hooked",
+   "author": "Nir Eyal",
+   "cover": "covers/hooked.jpg",
+   "color": "#7A2E4A",
+   "quote": "The Manipulation Matrix does not try to answer which businesses are moral or which will succeed, nor does it describe what can and cannot become a habit-forming technology.",
+   "score": 0.663,
+   "toHighlight": 13
+  }
+ ],
  "Inspired": [
   {
    "title": "Crossing the chasm",
@@ -3190,6 +3201,38 @@
    "quote": "In this case, researchers collected price data in the neighborhood stores. But the causes of those high prices were not the people who posted those prices in the stores.",
    "score": 0.665,
    "toHighlight": 6
+  }
+ ],
+ "Hooked": [
+  {
+   "title": "Atomic Habits",
+   "slug": "atomic-habits",
+   "author": "James Clear",
+   "cover": "covers/atomic-habits.jpg",
+   "color": "#4A3B6B",
+   "quote": "The first three laws of behavior change—make it obvious, make it attractive, and make it easy—increase the odds that a behavior will be performed this time.",
+   "score": 0.717,
+   "toHighlight": 15
+  },
+  {
+   "title": "The innovator's solution",
+   "slug": "the-innovator-s-solution",
+   "author": "Clay Christensen",
+   "cover": "covers/the-innovator-s-solution.jpg",
+   "color": "#7A2E4A",
+   "quote": "One of the most exciting insights from our research about commoditization is that whenever it is at work somewhere in a value chain, a reciprocal process of de-commoditization is at work somewhere else in the value chain.",
+   "score": 0.682,
+   "toHighlight": 7
+  },
+  {
+   "title": "Never split the difference",
+   "slug": "never-split-the-difference",
+   "author": "Chris Voss",
+   "cover": "covers/never-split-the-difference.jpg",
+   "color": "#2E4A6B",
+   "quote": "Though the intensity may differ from person to person, you can be sure that everyone you meet is driven by two primal urges: the need to feel safe and secure, and the need to feel in control.",
+   "score": 0.679,
+   "toHighlight": 10
   }
  ]
 }
