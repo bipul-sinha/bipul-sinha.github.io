@@ -1274,6 +1274,16 @@
    "toHighlight": 7
   },
   {
+   "title": "Evicted",
+   "slug": "evicted",
+   "author": "Matthew Desmond",
+   "cover": "covers/evicted.jpg",
+   "color": "#6B5A2E",
+   "quote": "Exploitation. Now, there’s a word that has been scrubbed out of the poverty debate. It is a word that speaks to the fact that poverty is not just a product of low incomes. It is also a product of extractive markets.",
+   "score": 0.7,
+   "toHighlight": 11
+  },
+  {
    "title": "Discrimination and Disparities",
    "slug": "discrimination-and-disparities",
    "author": "Thomas Sowell",
@@ -1282,16 +1292,6 @@
    "quote": "The most spectacularly successful political doctrine that swept into power in countries around the world in the twentieth century was Marxism, based on the implicit presumption that differences in wealth were due to capitalists growing…",
    "score": 0.69,
    "toHighlight": 22
-  },
-  {
-   "title": "Social Justice Fallacies",
-   "slug": "social-justice-fallacies",
-   "author": "Thomas Sowell",
-   "cover": "covers/social-justice-fallacies.jpg",
-   "color": "#6B5A2E",
-   "quote": "In the social justice literature, unmerited advantages tend to be treated as if they are deductions from the well-being of the rest of the population.",
-   "score": 0.686,
-   "toHighlight": 8
   }
  ],
  "Rework": [
@@ -3158,6 +3158,38 @@
    "quote": "The limitations of Latin America’s geography were compounded right from the beginning in the formation of its nation states.",
    "score": 0.673,
    "toHighlight": 13
+  }
+ ],
+ "Evicted": [
+  {
+   "title": "Poverty, by America",
+   "slug": "poverty-by-america",
+   "author": "Matthew Desmond",
+   "cover": "covers/poverty-by-america.jpg",
+   "color": "#2E6B6B",
+   "quote": "Poverty isn’t simply the condition of not having enough money. It’s the condition of not having enough choice and being taken advantage of because of that.",
+   "score": 0.7,
+   "toHighlight": 6
+  },
+  {
+   "title": "Economic Facts and Fallacies",
+   "slug": "economic-facts-and-fallacies",
+   "author": "Thomas Sowell",
+   "cover": "covers/economic-facts-and-fallacies.jpg",
+   "color": "#8B3A2E",
+   "quote": "Increased real income per person enables more people to live in their own separate dwelling units, instead of with parents, roommates, or strangers in a rooming house.",
+   "score": 0.677,
+   "toHighlight": 7
+  },
+  {
+   "title": "Discrimination and Disparities",
+   "slug": "discrimination-and-disparities",
+   "author": "Thomas Sowell",
+   "cover": "covers/discrimination-and-disparities.jpg",
+   "color": "#7A2E4A",
+   "quote": "In this case, researchers collected price data in the neighborhood stores. But the causes of those high prices were not the people who posted those prices in the stores.",
+   "score": 0.665,
+   "toHighlight": 6
   }
  ]
 }
