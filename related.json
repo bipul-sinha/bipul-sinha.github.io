@@ -1360,6 +1360,16 @@
  ],
  "Diary of CEO": [
   {
+   "title": "Influence",
+   "slug": "influence",
+   "author": "Robert Cialdini",
+   "cover": "covers/influence.jpg",
+   "color": "#2E4A6B",
+   "quote": "Just after placing a bet, they are much more confident of their horse’s chances of winning than they are immediately before laying down that bet.",
+   "score": 0.679,
+   "toHighlight": 7
+  },
+  {
    "title": "The Art of Thinking Clearly",
    "slug": "the-art-of-thinking-clearly",
    "author": "Rolf Dobelli",
@@ -1378,16 +1388,6 @@
    "quote": "As part of a French study, researchers wanted to know if they could influence how much money people handed to a total stranger asking for bus fare by using just a few specially encoded words.",
    "score": 0.671,
    "toHighlight": 11
-  },
-  {
-   "title": "The Art of the Good life",
-   "slug": "the-art-of-the-good-life",
-   "author": "Rolf Dobelli",
-   "cover": "covers/the-art-of-the-good-life.jpg",
-   "color": "#2E5C45",
-   "quote": "It’s much nicer to mull things over than to seize the initiative. Speculation is more agreeable than realization.",
-   "score": 0.671,
-   "toHighlight": 15
   }
  ],
  "A beautiful question": [
@@ -1552,6 +1552,16 @@
    "toHighlight": 0
   },
   {
+   "title": "Influence",
+   "slug": "influence",
+   "author": "Robert Cialdini",
+   "cover": "covers/influence.jpg",
+   "color": "#2E4A6B",
+   "quote": "A well-known principle of human behavior says that when we ask someone to do us a favor we will be more successful if we provide a reason. People simply like to have reasons for what they do.",
+   "score": 0.693,
+   "toHighlight": 0
+  },
+  {
    "title": "The most important thing",
    "slug": "the-most-important-thing",
    "author": "Howard Marks",
@@ -1560,16 +1570,6 @@
    "quote": "Rule number one: most things will prove to be cyclical. Rule number two: some of the greatest opportunities for gain and loss come when other people forget rule number one.",
    "score": 0.696,
    "toHighlight": 9
-  },
-  {
-   "title": "The almanack of Naval Ravikant",
-   "slug": "the-almanack-of-naval-ravikant",
-   "author": "Eric Jorgenson",
-   "cover": "covers/the-almanack-of-naval-ravikant.jpg",
-   "color": "#8B6B2E",
-   "quote": "What you want in life is to be in control of your time. You want to get into a leveraged job where you control your own time and you’re tracked on the outputs.",
-   "score": 0.679,
-   "toHighlight": 2
   }
  ],
  "The anthology of Balaji": [
@@ -2126,14 +2126,14 @@
    "toHighlight": 7
   },
   {
-   "title": "The Happiness Hypothesis",
-   "slug": "the-happiness-hypothesis",
-   "author": "",
-   "cover": "covers/the-happiness-hypothesis.jpg",
-   "color": "#2E6B6B",
-   "quote": "George Loewenstein and his colleagues at Carnegie Mellon found a way to study the process by giving pairs of research subjects a real legal case to read (about a motorcycle accident in Texas), assigning one subject to play the defendant…",
-   "score": 0.693,
-   "toHighlight": 4
+   "title": "Influence",
+   "slug": "influence",
+   "author": "Robert Cialdini",
+   "cover": "covers/influence.jpg",
+   "color": "#2E4A6B",
+   "quote": "Because the rule for reciprocation governs the compromise process, it is possible to use an initial concession as part of a highly effective compliance technique.",
+   "score": 0.701,
+   "toHighlight": 6
   }
  ],
  "How to avoid a climate disaster": [
@@ -2773,14 +2773,14 @@
    "toHighlight": 17
   },
   {
-   "title": "Understanding Michael Porter",
-   "slug": "understanding-michael-porter",
-   "author": "Joan Magretta",
-   "cover": "covers/understanding-michael-porter.jpg",
-   "color": "#6B5A2E",
-   "quote": "Trade-offs make choices about what not to do as important as choices of what to do. Deciding which needs to serve and which products to offer is absolutely key to developing a strategy.",
-   "score": 0.695,
-   "toHighlight": 15
+   "title": "Influence",
+   "slug": "influence",
+   "author": "Robert Cialdini",
+   "cover": "covers/influence.jpg",
+   "color": "#2E4A6B",
+   "quote": "Because the rule for reciprocation governs the compromise process, it is possible to use an initial concession as part of a highly effective compliance technique.",
+   "score": 0.718,
+   "toHighlight": 6
   }
  ],
  "The Making of a Manager": [
@@ -2901,14 +2901,14 @@
    "toHighlight": 17
   },
   {
-   "title": "The Art of the Good life",
-   "slug": "the-art-of-the-good-life",
-   "author": "Rolf Dobelli",
-   "cover": "covers/the-art-of-the-good-life.jpg",
-   "color": "#2E5C45",
-   "quote": "It’s much nicer to mull things over than to seize the initiative. Speculation is more agreeable than realization.",
+   "title": "Influence",
+   "slug": "influence",
+   "author": "Robert Cialdini",
+   "cover": "covers/influence.jpg",
+   "color": "#2E4A6B",
+   "quote": "Just after placing a bet, they are much more confident of their horse’s chances of winning than they are immediately before laying down that bet.",
    "score": 0.694,
-   "toHighlight": 15
+   "toHighlight": 7
   }
  ],
  "Stuff Matters": [
@@ -3215,6 +3215,16 @@
    "toHighlight": 15
   },
   {
+   "title": "Influence",
+   "slug": "influence",
+   "author": "Robert Cialdini",
+   "cover": "covers/influence.jpg",
+   "color": "#2E4A6B",
+   "quote": "A well-known principle of human behavior says that when we ask someone to do us a favor we will be more successful if we provide a reason. People simply like to have reasons for what they do.",
+   "score": 0.693,
+   "toHighlight": 0
+  },
+  {
    "title": "The innovator's solution",
    "slug": "the-innovator-s-solution",
    "author": "Clay Christensen",
@@ -3223,6 +3233,18 @@
    "quote": "One of the most exciting insights from our research about commoditization is that whenever it is at work somewhere in a value chain, a reciprocal process of de-commoditization is at work somewhere else in the value chain.",
    "score": 0.682,
    "toHighlight": 7
+  }
+ ],
+ "Influence": [
+  {
+   "title": "Negotiation Genius",
+   "slug": "negotiation-genius",
+   "author": "Deepak Malhotra",
+   "cover": "covers/negotiation-genius.jpg",
+   "color": "#8B3A2E",
+   "quote": "According to the norm of reciprocity, negotiators should reciprocate the concessions made by others.",
+   "score": 0.718,
+   "toHighlight": 2
   },
   {
    "title": "Never split the difference",
@@ -3231,8 +3253,18 @@
    "cover": "covers/never-split-the-difference.jpg",
    "color": "#2E4A6B",
    "quote": "Though the intensity may differ from person to person, you can be sure that everyone you meet is driven by two primal urges: the need to feel safe and secure, and the need to feel in control.",
-   "score": 0.679,
+   "score": 0.701,
    "toHighlight": 10
+  },
+  {
+   "title": "Getting to Yes",
+   "slug": "getting-to-yes",
+   "author": "Roger Fisher , William L. Ury",
+   "cover": "covers/getting-to-yes.jpg",
+   "color": "#6B5A2E",
+   "quote": "In many negotiations, each side explains and condemns at great length the motivations and intentions of the other side.",
+   "score": 0.701,
+   "toHighlight": 4
   }
  ]
 }
