@@ -3266,5 +3266,37 @@
    "score": 0.701,
    "toHighlight": 4
   }
+ ],
+ "Nudge": [
+  {
+   "title": "The Psychology of Money",
+   "slug": "the-psychology-of-money",
+   "author": "Morgan Housel",
+   "cover": "covers/the-psychology-of-money.jpg",
+   "color": "#2E6B6B",
+   "quote": "An idea exists in finance that seems innocent but has done incalculable damage. It’s the notion that assets have one rational price in a world where investors have different goals and time horizons.",
+   "score": 0.673,
+   "toHighlight": 11
+  },
+  {
+   "title": "The most important thing",
+   "slug": "the-most-important-thing",
+   "author": "Howard Marks",
+   "cover": "covers/the-most-important-thing.jpg",
+   "color": "#6B5A2E",
+   "quote": "Rule number one: most things will prove to be cyclical. Rule number two: some of the greatest opportunities for gain and loss come when other people forget rule number one.",
+   "score": 0.67,
+   "toHighlight": 9
+  },
+  {
+   "title": "The Art of Thinking Clearly",
+   "slug": "the-art-of-thinking-clearly",
+   "author": "Rolf Dobelli",
+   "cover": "covers/the-art-of-thinking-clearly.jpg",
+   "color": "#6B4C9A",
+   "quote": "Motivation crowding: When people do something for well-meaning, nonmonetary reasons—out of the goodness of their hearts, so to speak—payments throw a wrench into the works. Financial reward erodes any other motivations.",
+   "score": 0.667,
+   "toHighlight": 13
+  }
  ]
 }
