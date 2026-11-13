@@ -2126,14 +2126,14 @@
    "toHighlight": 7
   },
   {
-   "title": "Influence",
-   "slug": "influence",
-   "author": "Robert Cialdini",
-   "cover": "covers/influence.jpg",
-   "color": "#2E4A6B",
-   "quote": "Because the rule for reciprocation governs the compromise process, it is possible to use an initial concession as part of a highly effective compliance technique.",
-   "score": 0.701,
-   "toHighlight": 6
+   "title": "Negotiating the Impossible",
+   "slug": "negotiating-the-impossible",
+   "author": "Deepak Malhotra",
+   "cover": "covers/negotiating-the-impossible.jpg",
+   "color": "#8B3A2E",
+   "quote": "Counterintuitive as it may seem, negotiations are often easier when you have more than one thing to fight about.",
+   "score": 0.724,
+   "toHighlight": 3
   }
  ],
  "How to avoid a climate disaster": [
@@ -2753,6 +2753,16 @@
  ],
  "Negotiation Genius": [
   {
+   "title": "Negotiating the Impossible",
+   "slug": "negotiating-the-impossible",
+   "author": "Deepak Malhotra",
+   "cover": "covers/negotiating-the-impossible.jpg",
+   "color": "#8B3A2E",
+   "quote": "Counterintuitive as it may seem, negotiations are often easier when you have more than one thing to fight about.",
+   "score": 0.728,
+   "toHighlight": 3
+  },
+  {
    "title": "Getting to Yes",
    "slug": "getting-to-yes",
    "author": "Roger Fisher , William L. Ury",
@@ -2771,16 +2781,6 @@
    "quote": "People always make more effort to implement a solution when they think it’s theirs. That is simply human nature. That’s why negotiation is often called “the art of letting someone else have your way.”",
    "score": 0.727,
    "toHighlight": 17
-  },
-  {
-   "title": "Influence",
-   "slug": "influence",
-   "author": "Robert Cialdini",
-   "cover": "covers/influence.jpg",
-   "color": "#2E4A6B",
-   "quote": "Because the rule for reciprocation governs the compromise process, it is possible to use an initial concession as part of a highly effective compliance technique.",
-   "score": 0.718,
-   "toHighlight": 6
   }
  ],
  "The Making of a Manager": [
@@ -3297,6 +3297,38 @@
    "quote": "Motivation crowding: When people do something for well-meaning, nonmonetary reasons—out of the goodness of their hearts, so to speak—payments throw a wrench into the works. Financial reward erodes any other motivations.",
    "score": 0.667,
    "toHighlight": 13
+  }
+ ],
+ "Negotiating the Impossible": [
+  {
+   "title": "Negotiation Genius",
+   "slug": "negotiation-genius",
+   "author": "Deepak Malhotra",
+   "cover": "covers/negotiation-genius.jpg",
+   "color": "#8B3A2E",
+   "quote": "Even the most self-interested negotiators must rely on others to satisfy their own interests. Remember: to take what is there, you must work with the other side to make what is there.",
+   "score": 0.728,
+   "toHighlight": 7
+  },
+  {
+   "title": "Getting to Yes",
+   "slug": "getting-to-yes",
+   "author": "Roger Fisher , William L. Ury",
+   "cover": "covers/getting-to-yes.jpg",
+   "color": "#6B5A2E",
+   "quote": "Yet all too often negotiators end up like the proverbial children who quarreled over an orange.",
+   "score": 0.724,
+   "toHighlight": 7
+  },
+  {
+   "title": "Never split the difference",
+   "slug": "never-split-the-difference",
+   "author": "Chris Voss",
+   "cover": "covers/never-split-the-difference.jpg",
+   "color": "#2E4A6B",
+   "quote": "People always make more effort to implement a solution when they think it’s theirs. That is simply human nature. That’s why negotiation is often called “the art of letting someone else have your way.”",
+   "score": 0.696,
+   "toHighlight": 17
   }
  ]
 }
