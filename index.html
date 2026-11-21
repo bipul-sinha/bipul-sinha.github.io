@@ -1733,21 +1733,25 @@ function renderShelf(){
     if(!byYear.has(y)) byYear.set(y, []);
     byYear.get(y).push(x);
   });
-  const years = [...byYear.keys()].sort((x, y) => x === 'Unknown' ? 1 : y === 'Unknown' ? -1 : y - x);
-  const allYears = [...new Set(books.filter(inShelf).map(b => b.year).filter(Boolean))].sort((a, b) => b - a);
+  // Numeric years newest first, then text buckets like "Before 2020", then "Unknown" last.
+  const yearRank = y => /^\d{4}$/.test(y) ? 0 : y === 'Unknown' ? 2 : 1;
+  const yearOrder = (x, y) => yearRank(x) - yearRank(y) || (yearRank(x) === 0 ? Number(y) - Number(x) : 0);
+  const tlId = y => 'tl-' + String(y).replace(/[^A-Za-z0-9]+/g, '-');
+  const years = [...byYear.keys()].sort(yearOrder);
+  const allYears = [...new Set(books.filter(inShelf).map(b => b.year).filter(Boolean).map(String))].sort(yearOrder);
   const sortList = arr => [...arr].sort((x, y) => bookFilter.sort === 'title'
     ? x.b.title.localeCompare(y.b.title)
     : (y.b.rating || 0) - (x.b.rating || 0) || x.b.title.localeCompare(y.b.title));
 
   yearJump.innerHTML = allYears.map(y =>
-    `<a href="#tl-${y}" data-year="${y}" class="${byYear.has(y) ? '' : 'muted'}">${y}</a>`).join('');
+    `<a href="#${tlId(y)}" data-year="${y}" class="${byYear.has(y) ? '' : 'muted'}">${y}</a>`).join('');
 
   timeline.innerHTML = years.length ? years.map(y => {
     const items = byYear.get(y);
     const rated = items.filter(x => x.b.rating);
     const avg = rated.reduce((s, x) => s + x.b.rating, 0) / (rated.length || 1);
     const highlights = items.reduce((s, x) => s + (x.b.highlights || []).length, 0);
-    return `<section class="tl-year" id="tl-${y}">
+    return `<section class="tl-year" id="${tlId(y)}">
       <div class="tl-head">
         <div class="tl-yr">${y}</div>
         <div class="tl-sum"><b>${items.length}</b> ${items.length === 1 ? 'book' : 'books'} · avg <b>${avg.toFixed(1)}</b>/10${highlights ? ` · <b>${highlights}</b> highlights` : ''}</div>
@@ -1787,7 +1791,7 @@ yearJump.addEventListener('click', ev => {
   const a = ev.target.closest('[data-year]');
   if(!a) return;
   ev.preventDefault();
-  const target = document.getElementById('tl-' + a.dataset.year);
+  const target = document.getElementById('tl-' + String(a.dataset.year).replace(/[^A-Za-z0-9]+/g, '-'));
   if(!target) return;
   const calm = window.matchMedia('(prefers-reduced-motion:reduce)').matches;
   target.scrollIntoView({ behavior: calm ? 'auto' : 'smooth', block: 'start' });
@@ -1850,7 +1854,7 @@ function fillDailyLeaf(el, entry){
 // Banner pool: the original rain scene plus the landmark banners. One is picked per page load.
 const DAILY_BANNERS = [
   { desktop: 'book-panel/rain-desktop.jpg', mobile: 'book-panel/rain-mobile.jpg' },
-  ...Array.from({ length: 16 }, (_, i) => {
+  ...Array.from({ length: 18 }, (_, i) => {
     const f = `book-panel/banners/banner-${String(i + 1).padStart(2, '0')}.jpg`;
     return { desktop: f, mobile: f };
   })
@@ -1969,7 +1973,7 @@ function openBook(i, opts){
   document.getElementById('detailTitle').textContent = b.title;
   document.getElementById('detailAuthor').textContent = b.author;
   document.getElementById('detailStats').innerHTML = (b.rating || b.year)
-    ? (b.rating ? `${starsHTML(b.rating, 15)}<span class="num">${b.rating}/10</span>` : '') + (b.rating && b.year ? '<span class="dot">·</span>' : '') + (b.year ? `<span class="yr">Read in ${b.year}</span>` : '')
+    ? (b.rating ? `${starsHTML(b.rating, 15)}<span class="num">${b.rating}/10</span>` : '') + (b.rating && b.year ? '<span class="dot">·</span>' : '') + (b.year ? `<span class="yr">${/^\d{4}$/.test(b.year) ? 'Read in ' : ''}${b.year}</span>` : '')
     : '';
 
   renderHighlights(b);
